@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "plaza": {
+      "name": "Glow Plaza",
+      "icon": "🔆",
+      "detail": "The central meeting area glows with small emergency lamps while the East Ring lanterns remain dark.",
+      "scene": "hall"
+    },
+    "control": {
+      "name": "Signal Control Room",
+      "icon": "🖥️",
+      "detail": "A console logs each warning, switch operation, and lighting change to the second.",
+      "scene": "office"
+    },
+    "garden": {
+      "name": "Moss Garden Vent Gallery",
+      "icon": "🌿",
+      "detail": "A fan and condensation drain sit beside the enclosed growing beds; a wall clock may be misleading.",
+      "scene": "storage"
+    },
+    "relay": {
+      "name": "East Ring Relay Cabinet",
+      "icon": "⚡",
+      "detail": "Protective switch R-6 controls the East Ring lamps. A sealed panel shows how it responded.",
+      "scene": "storage"
+    },
+    "passage": {
+      "name": "Cart Passage",
+      "icon": "🛒",
+      "detail": "A service cart left a scrape beside the walkway shortly after the lights went out.",
+      "scene": "hall"
+    },
+    "workshop": {
+      "name": "Maintenance Workshop",
+      "icon": "🔧",
+      "detail": "Repair reports and staff tools can confirm which explanation fits the physical evidence.",
+      "scene": "office"
+    }
+  },
+  "evidence": [
+    {
+      "id": "east-ring-dark",
+      "place": "plaza",
+      "icon": "💡",
+      "title": "Emergency Glow Lamps",
+      "type": "Physical observation",
+      "texts": {
+        "1-2": "The walkway lights are off. Tiny red safety lights are on. The rest of town is bright.",
+        "3-5": "The East Ring lanterns are dark, although red emergency markers still glow along the walkway. Lights in Glow Plaza and the western tunnels remain on.",
+        "6-8": "The East Ring light band is dark, but battery-powered red guide lamps remain lit. The unaffected western circuits suggest a localized electrical isolation rather than a settlement-wide loss of power."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which lights are still on?",
+          "a": [
+            "The red safety lights",
+            "The East Ring lanterns",
+            "Every light in town"
+          ],
+          "c": 0,
+          "h": "Look for the color of the lights that still work.",
+          "why": "Small red safety lights remain on even though the walkway lanterns are off."
+        },
+        "3-5": {
+          "q": "What does the lighting pattern suggest?",
+          "a": [
+            "Every electrical circuit has failed.",
+            "Only part of the settlement lost normal lighting.",
+            "Someone turned off the whole town."
+          ],
+          "c": 1,
+          "h": "Compare the East Ring to the plaza and western tunnels.",
+          "why": "Other places remain lit, so the evidence points to a limited outage."
+        },
+        "6-8": {
+          "q": "Which inference stays within the observed evidence?",
+          "a": [
+            "The central generator has been destroyed.",
+            "Someone deliberately sabotaged a tunnel.",
+            "The disruption affects a particular lighting circuit."
+          ],
+          "c": 2,
+          "h": "Distinguish what the lights show from guesses about causes.",
+          "why": "The observations establish a limited outage, not a cause or culprit."
+        }
+      }
+    },
+    {
+      "id": "public-time-board",
+      "place": "plaza",
+      "icon": "🕘",
+      "title": "Public Time Board",
+      "type": "Timestamped record",
+      "texts": {
+        "1-2": "The town board says the lamps went off at 9:42. The board uses the town clock.",
+        "3-5": "The public board records “East Ring lighting interrupted — 9:42 a.m.” Its time comes from the same central clock that stamps equipment reports.",
+        "6-8": "An automatically updated public time board lists the East Ring interruption at 9:42 a.m. and synchronizes with the control-room clock. This dated record provides a stronger chronological anchor than an observer’s recollection."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did the lights go off?",
+          "a": [
+            "10:12 a.m.",
+            "9:42 a.m.",
+            "8:42 a.m."
+          ],
+          "c": 1,
+          "h": "Read the time printed on the town board.",
+          "why": "The public board gives the interruption time as 9:42 a.m."
+        },
+        "3-5": {
+          "q": "Why is this board useful to detectives?",
+          "a": [
+            "It tells who broke a wire.",
+            "It proves a cart caused the outage.",
+            "It gives an official time to compare with witness stories."
+          ],
+          "c": 2,
+          "h": "Think about what a shared clock can confirm.",
+          "why": "The synchronized timestamp helps order the reports without identifying a cause."
+        },
+        "6-8": {
+          "q": "What is the strongest use of this source?",
+          "a": [
+            "To anchor a chronology with a synchronized timestamp",
+            "To decide why the sensor was wet",
+            "To confirm a maintenance worker’s motives"
+          ],
+          "c": 0,
+          "h": "Focus on the information the board actually records.",
+          "why": "A synchronized timestamp establishes when the interruption was recorded, not its cause."
+        }
+      }
+    },
+    {
+      "id": "control-alarm",
+      "place": "control",
+      "icon": "🚨",
+      "title": "Sensor and Relay Alarm Strip",
+      "type": "Primary machine log",
+      "texts": {
+        "1-2": "A sensor named Q-4 sent a warning at 9:42. Then switch R-6 turned the lights off.",
+        "3-5": "The control strip lists “09:42:03 — Q-4 moisture warning” followed by “09:42:05 — R-6 safety relay opened.” The record labels the second action automatic.",
+        "6-8": "The original controller log records a Q-4 moisture alarm at 09:42:03 and an automatic R-6 protective opening at 09:42:05. Because the machine recorded both events as they happened, the strip provides contemporaneous evidence of the sequence—not proof of why Q-4 signaled."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What happened first?",
+          "a": [
+            "R-6 turned off the lights.",
+            "The cart hit the wall.",
+            "Q-4 sent a warning."
+          ],
+          "c": 2,
+          "h": "Look at the first time on the strip.",
+          "why": "The Q-4 warning came before the R-6 safety switch opened."
+        },
+        "3-5": {
+          "q": "Which event happened immediately after the Q-4 warning?",
+          "a": [
+            "R-6 opened automatically.",
+            "The museum bell rang.",
+            "A worker unplugged every light."
+          ],
+          "c": 0,
+          "h": "Follow the order of the two timestamped entries.",
+          "why": "The log reports an automatic relay opening two seconds after the warning."
+        },
+        "6-8": {
+          "q": "Which cause-and-effect statement is supported by this primary record?",
+          "a": [
+            "A cart strike produced a power cut.",
+            "A Q-4 alarm preceded an automatic R-6 safety isolation.",
+            "The garden sprinkler destroyed the generator."
+          ],
+          "c": 1,
+          "h": "The log identifies a trigger and an automatic action, not the origin of the moisture.",
+          "why": "The controller directly records the alarm followed two seconds later by the automatic isolation."
+        }
+      }
+    },
+    {
+      "id": "dispatcher-log",
+      "place": "control",
+      "icon": "📘",
+      "title": "Dispatcher Shift Ledger",
+      "type": "Signed operations record",
+      "texts": {
+        "1-2": "The control worker wrote, “No planned lights-off today.” No person pushed a power-off button.",
+        "3-5": "The signed shift ledger lists no scheduled East Ring shutdown. Its manual-command column is blank; the alarm entry is labeled “automatic protective trip.”",
+        "6-8": "Dispatcher records show no scheduled circuit test and no manual isolation request during the incident. The signed ledger classifies R-6’s opening as an automatic protective trip, undercutting the claim that a dispatcher intentionally ordered the blackout."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Was a planned power-off written in the ledger?",
+          "a": [
+            "No",
+            "Yes",
+            "The ledger was lost"
+          ],
+          "c": 0,
+          "h": "Read what the worker wrote about the day’s plan.",
+          "why": "The ledger specifically says no lights-off was planned."
+        },
+        "3-5": {
+          "q": "Which idea does the dispatcher log weaken?",
+          "a": [
+            "A sensor raised an alarm.",
+            "A worker deliberately ordered a scheduled shutdown.",
+            "Emergency markers stayed lit."
+          ],
+          "c": 1,
+          "h": "Look at the scheduled shutdown and manual-command fields.",
+          "why": "No scheduled shutdown or manual off command appears in the signed log."
+        },
+        "6-8": {
+          "q": "What conclusion is warranted when this ledger is combined with the alarm strip?",
+          "a": [
+            "Dispatch deliberately hid a test.",
+            "There was never a real outage.",
+            "The shutdown appears to have been automatic rather than manually ordered."
+          ],
+          "c": 2,
+          "h": "Read both documents for the presence of a manual command.",
+          "why": "The controller shows an automatic trip and the ledger has no manual shutoff entry."
+        }
+      }
+    },
+    {
+      "id": "garden-clock",
+      "place": "garden",
+      "icon": "🕰️",
+      "title": "Fast Garden Clock",
+      "type": "Calibration note",
+      "texts": {
+        "1-2": "A note says, “Garden clock is 4 minutes fast.” When it says 9:42, the real time is 9:38.",
+        "3-5": "A calibration slip warns that the Moss Garden wall clock runs four minutes ahead of town time. A garden report marked “9:42 on wall clock” therefore refers to 9:38 on the official clock.",
+        "6-8": "The wall clock’s posted calibration reads “+4 minutes relative to central time.” Consequently, a witness who saw 09:42 on that clock actually observed events at 09:38. Failing to reconcile the two clocks makes a watering event appear simultaneous with the 09:42 outage."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is wrong with the garden clock?",
+          "a": [
+            "It has no hands.",
+            "It is four minutes fast.",
+            "It runs four hours slow."
+          ],
+          "c": 1,
+          "h": "Read the note attached to the clock.",
+          "why": "The note says the garden clock is four minutes fast."
+        },
+        "3-5": {
+          "q": "What was the real time when this clock showed 9:42?",
+          "a": [
+            "9:46",
+            "10:42",
+            "9:38"
+          ],
+          "c": 2,
+          "h": "Subtract four minutes from the wall-clock reading.",
+          "why": "A fast clock displays four minutes more than the actual time: 9:38."
+        },
+        "6-8": {
+          "q": "How does the calibration note affect a witness’s apparent contradiction?",
+          "a": [
+            "It reconciles two reports that use clocks four minutes apart.",
+            "It proves the witness invented the event.",
+            "It shows that time has stopped underground."
+          ],
+          "c": 0,
+          "h": "Separate an inaccurate clock from an inaccurate observation.",
+          "why": "Correcting the garden clock shows that an event seen at wall-clock 09:42 occurred at central 09:38."
+        }
+      }
+    },
+    {
+      "id": "wet-sensor",
+      "place": "garden",
+      "icon": "💧",
+      "title": "Blocked Drain and Wet Q-4",
+      "type": "Physical inspection",
+      "texts": {
+        "1-2": "The fan’s water tube is blocked. Drops wet the Q-4 sensor. The garden watering tube is dry.",
+        "3-5": "A clogged fan drain drips condensation onto Q-4’s exposed connector. The enclosed garden sprinkler line is dry on the outside and does not run above the sensor.",
+        "6-8": "Inspection reveals debris obstructing the ventilation unit’s condensate drain and moisture bridging the contacts at sensor Q-4. The sealed irrigation line runs elsewhere. This physical pattern supports a fan-drain fault, rather than a sprinkler leak or deliberate tampering."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What made the sensor wet?",
+          "a": [
+            "The dry garden hose",
+            "A spilled cup of juice",
+            "Water from the blocked fan drain"
+          ],
+          "c": 2,
+          "h": "Follow the water drops to where they begin.",
+          "why": "Condensation from the blocked fan drain dripped onto Q-4."
+        },
+        "3-5": {
+          "q": "Which explanation best fits the physical clues?",
+          "a": [
+            "A clogged fan drain dripped onto Q-4.",
+            "The sprinkler line sprayed Q-4 directly.",
+            "Someone splashed paint on the sensor."
+          ],
+          "c": 0,
+          "h": "Look at what was wet and what was dry.",
+          "why": "The drain and Q-4 were wet, while the sprinkler line was not leaking onto them."
+        },
+        "6-8": {
+          "q": "What causal link does the inspection add to the controller log?",
+          "a": [
+            "Someone entered a secret override code.",
+            "Condensation could have caused the Q-4 warning that triggered the protective relay.",
+            "The garden mist extinguished every lamp directly."
+          ],
+          "c": 1,
+          "h": "Connect moisture on Q-4 to the logged Q-4 alarm.",
+          "why": "The physical moisture explains why Q-4 could signal a warning; the log then shows R-6 opening in response."
+        }
+      }
+    },
+    {
+      "id": "relay-inspection",
+      "place": "relay",
+      "icon": "🧰",
+      "title": "Unbroken Relay Seal",
+      "type": "Equipment inspection",
+      "texts": {
+        "1-2": "The R-6 box has an unbroken seal. Its red safety light is on. No wires are cut.",
+        "3-5": "The R-6 cabinet seal is intact and no wires are damaged. Its indicator reads “automatic safety open”; a nearby log shows the protective action, not a forced break.",
+        "6-8": "The physical seal on relay cabinet R-6 is unbroken, the conductor terminals are intact, and the status flag shows a protective opening. This does not prove who maintained the sensor, but it challenges claims of a deliberate cut at the cabinet."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did the detective find on the box?",
+          "a": [
+            "An unbroken seal",
+            "Broken wires",
+            "A smashed handle"
+          ],
+          "c": 0,
+          "h": "Look for the word describing the seal.",
+          "why": "The cabinet seal had not been broken."
+        },
+        "3-5": {
+          "q": "Which claim is weakened by the cabinet inspection?",
+          "a": [
+            "The red safety indicator is on.",
+            "Someone cut wires inside R-6.",
+            "The box contains a relay."
+          ],
+          "c": 1,
+          "h": "Look at the intact seal and undamaged wires.",
+          "why": "An intact seal and wires make a forced break at this cabinet unsupported."
+        },
+        "6-8": {
+          "q": "How should investigators interpret the intact seal?",
+          "a": [
+            "It proves nobody anywhere made a mistake.",
+            "It shows the clock is four minutes fast.",
+            "It weighs against tampering inside R-6 but does not by itself identify the sensor fault."
+          ],
+          "c": 2,
+          "h": "A negative observation can rule out one idea without proving every other idea.",
+          "why": "The seal weighs against cabinet sabotage, while separate evidence is needed to establish the actual Q-4 fault."
+        }
+      }
+    },
+    {
+      "id": "relay-status",
+      "place": "relay",
+      "icon": "📟",
+      "title": "Relay Reset History",
+      "type": "Automatic switching record",
+      "texts": {
+        "1-2": "R-6 went off at 9:42. After repairs, R-6 came on at 10:12.",
+        "3-5": "The R-6 history lists an automatic opening at 9:42:05 and a supervised reset at 10:12 after the Q-4 alarm was cleared. No second power failure follows.",
+        "6-8": "The time-stamped relay history identifies a Q-4-linked automatic isolation at 09:42:05 and a supervised restoration at 10:12:00, after technicians cleared the alarm. Recovery following repair strengthens the link between the sensor fault and the lighting outage."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did the normal lights return?",
+          "a": [
+            "9:12",
+            "10:12",
+            "8:42"
+          ],
+          "c": 1,
+          "h": "Read the second time on the record.",
+          "why": "The relay record says power came back at 10:12."
+        },
+        "3-5": {
+          "q": "Which event happened last?",
+          "a": [
+            "The first Q-4 warning",
+            "The East Ring lights going dark",
+            "The supervised relay reset"
+          ],
+          "c": 2,
+          "h": "Compare the start and finish times in the history.",
+          "why": "The reset at 10:12 follows the opening and warning at 9:42."
+        },
+        "6-8": {
+          "q": "Why does the restoration record support the repair explanation?",
+          "a": [
+            "The circuit operated again after the sensor alarm was cleared.",
+            "It proves an ancient legend is real.",
+            "It says a cart cut the wire."
+          ],
+          "c": 0,
+          "h": "Look at what changed before the lights returned.",
+          "why": "Recovery after clearing the alarm supports the claim that the protective shutoff came from the sensor fault."
+        }
+      }
+    },
+    {
+      "id": "cart-scuff",
+      "place": "passage",
+      "icon": "🛒",
+      "title": "Cart Passage Scrape",
+      "type": "Time-stamped incident note",
+      "texts": {
+        "1-2": "A cart scratched the wall at 9:44. That was after the lights went off at 9:42.",
+        "3-5": "A delivery-cart report notes a wall scrape at 9:44, two minutes after the outage. An inspection finds the nearby cable cover undamaged.",
+        "6-8": "A contemporaneous delivery slip and corridor inspection place the cart scrape at 09:44 and record an intact protective conduit. The noise was conspicuous in the dark, but it occurred after the 09:42 isolation, making it an unlikely cause."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Was the wall scrape before or after the lights went off?",
+          "a": [
+            "Before",
+            "At midnight",
+            "After"
+          ],
+          "c": 2,
+          "h": "Compare 9:44 with 9:42.",
+          "why": "The cart scraped the wall at 9:44, two minutes after the lights went off."
+        },
+        "3-5": {
+          "q": "Why is the cart an unlikely cause of the power loss?",
+          "a": [
+            "The scratch was made after the outage and the cable cover was intact.",
+            "The cart was painted blue.",
+            "The driver was late for lunch."
+          ],
+          "c": 0,
+          "h": "Check both the times and the damaged area.",
+          "why": "The scrape happened later, and the cable cover shows no electrical damage."
+        },
+        "6-8": {
+          "q": "Which reasoning error would blaming the cart illustrate?",
+          "a": [
+            "Distinguishing primary and secondary evidence.",
+            "Assuming a dramatic later event caused an earlier failure.",
+            "Correcting an unsynchronized clock."
+          ],
+          "c": 1,
+          "h": "Cause must come before its effect.",
+          "why": "A scrape at 09:44 cannot cause a shutdown documented at 09:42, and the conduit was intact."
+        }
+      }
+    },
+    {
+      "id": "neri-repair",
+      "place": "workshop",
+      "icon": "📝",
+      "title": "Signed Q-4 Repair Ticket",
+      "type": "Primary repair report",
+      "texts": {
+        "1-2": "Neri Pell fixed the blocked tube and dried Q-4. The lights worked again.",
+        "3-5": "Neri Pell’s signed ticket begins at 9:56. Neri clears debris from the fan drain, dries Q-4’s connector, and replaces its protective sleeve. The alarm clears before lights return at 10:12.",
+        "6-8": "Work ticket M-17, signed by technician Neri Pell, records diagnosis at 09:56, removal of drain debris, connector drying, and replacement of Q-4’s protective sleeve by 10:08. The Q-4 alarm cleared prior to the supervised 10:12 reset. The signed repair sequence directly identifies the technician, the fault site, and the corrective action."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who fixed Q-4?",
+          "a": [
+            "Neri Pell",
+            "Brin Hale",
+            "Tal Venn"
+          ],
+          "c": 0,
+          "h": "Look at the name on the repair ticket.",
+          "why": "Neri Pell signed the ticket and repaired the drain and sensor."
+        },
+        "3-5": {
+          "q": "Which sequence matches the repair ticket?",
+          "a": [
+            "Reset lights, then locate the drain, then check Q-4.",
+            "Clear the drain, dry Q-4, then restore normal lighting.",
+            "Cart scratches wall, then town closes for a festival."
+          ],
+          "c": 1,
+          "h": "Find what Neri did before the reset.",
+          "why": "The repair removed moisture before the circuit was safely reset."
+        },
+        "6-8": {
+          "q": "What makes this source especially useful for the final theory?",
+          "a": [
+            "It quotes a rumor about a mysterious intruder.",
+            "It proves every witness remembers the same time.",
+            "Its signed chronology links Neri’s work on Q-4 to the cleared alarm and restored power."
+          ],
+          "c": 2,
+          "h": "Look for the author, the work performed, and the times.",
+          "why": "The contemporaneous signed ticket identifies who repaired what and connects the repair to restoration."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "omi-lark",
+      "place": "plaza",
+      "icon": "🧑",
+      "name": "Omi Lark",
+      "role": "Student Courier",
+      "texts": {
+        "1-2": "“I saw red lights flash when the main lamps went off,” says Omi. “I was scared.”",
+        "3-5": "“I thought there was a red flash right before darkness,” says Omi, the school courier. “But I was facing the bright path, then I turned toward the emergency lamps. I did not see anyone touch a switch.”",
+        "6-8": "Omi Lark recalls a red flash “before” the outage, then acknowledges turning around only after the main lanterns dimmed. Omi witnessed an alarming scene, but the changing field of view makes the reported sequence less precise than the controller timestamps."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What color did Omi see?",
+          "a": [
+            "Green",
+            "Red",
+            "Blue"
+          ],
+          "c": 1,
+          "h": "Find the color in Omi’s words.",
+          "why": "Omi noticed red emergency lights."
+        },
+        "3-5": {
+          "q": "Which part of Omi’s statement is uncertain?",
+          "a": [
+            "Whether the path had lamps.",
+            "Whether Omi is a courier.",
+            "Whether the red light appeared before or after the main lamps went dark."
+          ],
+          "c": 2,
+          "h": "Omi turned around and may have mixed up the order.",
+          "why": "Omi is unsure of the sequence because the red lamps were noticed after turning."
+        },
+        "6-8": {
+          "q": "How should Omi’s account be evaluated against the machine log?",
+          "a": [
+            "Treat Omi’s perception as sincere but rely on precise timestamps for the order of events.",
+            "Reject all eyewitness testimony as useless.",
+            "Assume a hidden worker triggered the flash."
+          ],
+          "c": 0,
+          "h": "Differentiate sincere observation from precise timing.",
+          "why": "Omi may honestly misremember order; timestamped records more reliably establish which system event occurred first."
+        }
+      }
+    },
+    {
+      "id": "lyra-senn",
+      "place": "control",
+      "icon": "🧑‍💼",
+      "name": "Lyra Senn",
+      "role": "Control-Room Dispatcher",
+      "texts": {
+        "1-2": "“I did not push a power-off button,” says Lyra. “The safety switch opened by itself.”",
+        "3-5": "“The alarm arrived at 9:42:03,” says dispatcher Lyra Senn. “I watched the R-6 relay open automatically two seconds later. I had not ordered a shutdown.”",
+        "6-8": "Lyra Senn reports watching the Q-4 warning and the automatic R-6 opening at their logged times. As the dispatcher on duty, Lyra could have entered a manual command, but the signed shift ledger and controller log contain no such command. Her testimony is corroborated by independent records."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Lyra turn the lights off by hand?",
+          "a": [
+            "Yes",
+            "The statement does not say",
+            "No"
+          ],
+          "c": 2,
+          "h": "Listen to what Lyra says about the button.",
+          "why": "Lyra said no power-off button was pressed."
+        },
+        "3-5": {
+          "q": "Which record could confirm Lyra’s claim?",
+          "a": [
+            "The controller’s automatic alarm and switching log",
+            "A poem about underground stars",
+            "A cafeteria menu"
+          ],
+          "c": 0,
+          "h": "Choose a source that records switch commands.",
+          "why": "The controller strip reports an automatic opening of R-6."
+        },
+        "6-8": {
+          "q": "Why is Lyra’s statement more persuasive when combined with the logs?",
+          "a": [
+            "Lyra speaks confidently.",
+            "Her account matches timestamped records showing an automatic, not manual, operation.",
+            "Lyra was closest to the lamps."
+          ],
+          "c": 1,
+          "h": "Corroboration is stronger than confidence alone.",
+          "why": "The machine records independently support the dispatcher’s description of the sequence."
+        }
+      }
+    },
+    {
+      "id": "tal-venn",
+      "place": "garden",
+      "icon": "🧑‍🌾",
+      "name": "Tal Venn",
+      "role": "Garden Keeper",
+      "texts": {
+        "1-2": "“My clock said 9:42 when the water mist came on,” says Tal. “Maybe it made the lights go off.”",
+        "3-5": "“I saw 9:42 on the garden clock as the mister began,” says Tal Venn. “I guessed the watering made the lights go dark, but I did not check the clock note or the sealed pipes.”",
+        "6-8": "Tal Venn associates the start of the garden mister with the outage because the unsynchronized wall clock read 09:42. Tal had not consulted the +4-minute calibration notice or inspected the enclosed irrigation line. The statement records a genuine observation coupled with an untested causal interpretation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Tal think caused the outage?",
+          "a": [
+            "The garden water mist",
+            "A thunderstorm outside",
+            "A missing book"
+          ],
+          "c": 0,
+          "h": "Look for Tal’s guess.",
+          "why": "Tal guessed that the garden mister caused the lights to fail."
+        },
+        "3-5": {
+          "q": "What fact weakens Tal’s conclusion?",
+          "a": [
+            "All clocks stopped forever.",
+            "The garden clock is four minutes fast and the sprinkler line is dry outside.",
+            "Tal has never worked in a garden."
+          ],
+          "c": 1,
+          "h": "Compare the clock note with the wet-sensor inspection.",
+          "why": "The corrected time and intact sprinkler line make the mistaken connection less likely."
+        },
+        "6-8": {
+          "q": "Which distinction is essential when interpreting Tal’s testimony?",
+          "a": [
+            "An official clock must always be wrong.",
+            "An eyewitness is never credible.",
+            "Seeing two events near each other does not prove one caused the other."
+          ],
+          "c": 2,
+          "h": "Tal saw something, then added an explanation.",
+          "why": "The testimony mixes observation (mister started) with inference (mister caused outage)."
+        }
+      }
+    },
+    {
+      "id": "brin-hale",
+      "place": "passage",
+      "icon": "🧑‍🔧",
+      "name": "Brin Hale",
+      "role": "Delivery Cart Driver",
+      "texts": {
+        "1-2": "“My cart hit the wall after it got dark,” says Brin. “I did not hit a wire.”",
+        "3-5": "“I scraped the wall in the dim passage at 9:44,” Brin Hale says. “People heard the bang and thought the cart broke a cable, but the wiring cover was untouched.”",
+        "6-8": "Brin Hale acknowledges scraping a corridor wall with a delivery cart at 09:44, after the lamps had failed. Brin’s account is potentially self-protective, so investigators should test it against the signed delivery slip and the undamaged conduit rather than accepting or rejecting it solely on trust."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did Brin scrape the wall?",
+          "a": [
+            "Before sunrise",
+            "After it became dark",
+            "At lunch"
+          ],
+          "c": 1,
+          "h": "Listen for the word “after.”",
+          "why": "Brin says the scrape happened after the passage went dark."
+        },
+        "3-5": {
+          "q": "Which two details support Brin’s account?",
+          "a": [
+            "The cart was heavy and the driver was hurried.",
+            "Tal’s garden clock and the school bell.",
+            "A 9:44 delivery slip and an unbroken cable cover."
+          ],
+          "c": 2,
+          "h": "Check the time record and the cable inspection.",
+          "why": "The 9:44 note and intact cover corroborate that the scrape did not damage the wire."
+        },
+        "6-8": {
+          "q": "How can investigators handle the driver’s possible self-interest fairly?",
+          "a": [
+            "Test the testimony against the timestamp and physical conduit inspection.",
+            "Automatically accuse Brin because drivers make mistakes.",
+            "Ignore the driver because the claim is embarrassing."
+          ],
+          "c": 0,
+          "h": "Use independent evidence to evaluate testimony.",
+          "why": "Independent records can confirm or challenge a witness regardless of possible bias."
+        }
+      }
+    },
+    {
+      "id": "neri-pell",
+      "place": "workshop",
+      "icon": "🧑‍🔬",
+      "name": "Neri Pell",
+      "role": "Ventilation Technician",
+      "texts": {
+        "1-2": "“I found water on Q-4,” says Neri. “I fixed the drain and dried the sensor. Then the lights came back.”",
+        "3-5": "“At 9:56 I found a clogged fan drain dripping onto Q-4,” says Neri Pell. “That false warning made R-6 open to keep people safe. After I cleaned the drain and replaced a sleeve, the alarm cleared.”",
+        "6-8": "Neri Pell states that fan condensation bridged Q-4’s exposed contacts, causing the sensor to transmit a false warning. The controller then automatically opened R-6 to isolate the East Ring. Neri documents the diagnostic inspection and repair in signed ticket M-17; successful restoration followed, consistent with a non-malicious malfunction rather than deliberate interference."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Neri repair?",
+          "a": [
+            "The school door",
+            "The cart wheel",
+            "The clogged drain and wet sensor"
+          ],
+          "c": 2,
+          "h": "Find the two things Neri fixed.",
+          "why": "Neri cleared the drain and dried Q-4."
+        },
+        "3-5": {
+          "q": "Why did R-6 open according to Neri?",
+          "a": [
+            "A false sensor warning triggered the safety system.",
+            "Brin pulled a secret lever.",
+            "Garden plants needed more sunlight."
+          ],
+          "c": 0,
+          "h": "Look for the signal from Q-4.",
+          "why": "The protective system opened R-6 after Q-4 transmitted a false warning."
+        },
+        "6-8": {
+          "q": "What evidence best corroborates Neri’s causal explanation?",
+          "a": [
+            "Only Neri’s reputation as a skilled worker.",
+            "The wet Q-4 inspection, automatic alarm strip, and signed repair ticket.",
+            "The legend painted on the plaza wall."
+          ],
+          "c": 1,
+          "h": "Look for physical evidence, system sequence, and documented correction.",
+          "why": "Three independent forms of evidence align with Neri’s account of an accidental sensor fault."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "underground-blackout",
+    "title": "The Underground Blackout",
+    "subtitle": "CASE FILE 004 • THE EAST RING POWER FAILURE",
+    "goal": "Determine which technician diagnosed the malfunction, where the initial fault occurred, and why the East Ring lights shut off. Compare witness memories with time-stamped records.",
+    "brief": {
+      "1-2": "The East Ring lights in the underground town of Glintwell went out! Red safety lamps still shine. People tell different stories. Read clues to find who fixed the lights, where the trouble began, and why it happened.",
+      "3-5": "Glintwell is a town built in a wide cavern. One morning, the East Ring lanterns suddenly go dark, although the rest of town stays bright. A garden keeper blames the mister, a cart driver is blamed for a loud bang, and a student recalls a strange flash. Investigate the clocks, control reports, and repair records to discover the real cause.",
+      "6-8": "In the original underground settlement of Glintwell, a protective switch isolates the East Ring lighting circuit at 09:42 a.m. and contradictory witness accounts rapidly turn an equipment alarm into rumors of sabotage. A garden keeper insists the irrigation mist coincided with the blackout, a delivery cart leaves a conspicuous scrape, and a courier recalls a red flash. Compare unreliable recollection with contemporaneous controller logs, a miscalibrated clock, and a signed technician report. Reconstruct the causal sequence before deciding whether anyone intentionally cut the power."
+    },
+    "theoryLabels": {
+      "who": "Who diagnosed and repaired the fault?",
+      "where": "Where did the original equipment fault occur?",
+      "why": "What caused the East Ring safety shutdown?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "tal",
+          "label": "Tal Venn — garden keeper"
+        },
+        {
+          "id": "lyra",
+          "label": "Lyra Senn — dispatcher"
+        },
+        {
+          "id": "neri",
+          "label": "Neri Pell — ventilation technician"
+        },
+        {
+          "id": "brin",
+          "label": "Brin Hale — delivery driver"
+        },
+        {
+          "id": "omi",
+          "label": "Omi Lark — student courier"
+        }
+      ],
+      "where": [
+        {
+          "id": "cart",
+          "label": "Cart Passage electrical conduit"
+        },
+        {
+          "id": "generator",
+          "label": "The central town generator"
+        },
+        {
+          "id": "garden-mister",
+          "label": "Enclosed garden sprinkler system"
+        },
+        {
+          "id": "q4",
+          "label": "Ventilation sensor Q-4 beside the fan drain"
+        },
+        {
+          "id": "relay",
+          "label": "R-6 cabinet broken by a forced entry"
+        }
+      ],
+      "why": [
+        {
+          "id": "mist",
+          "label": "Garden mist directly shorted the power cables"
+        },
+        {
+          "id": "intentional",
+          "label": "A dispatcher intentionally shut off the lights"
+        },
+        {
+          "id": "cart-crash",
+          "label": "A delivery cart destroyed a cable"
+        },
+        {
+          "id": "condensate",
+          "label": "A blocked fan drain wetted Q-4, causing a false alarm and automatic safety isolation"
+        },
+        {
+          "id": "permanent",
+          "label": "The central generator permanently ran out of power"
+        }
+      ]
+    },
+    "who": "neri",
+    "where": "q4",
+    "why": "condensate",
+    "proofs": [
+      "control-alarm",
+      "neri-repair"
+    ],
+    "feedback": {
+      "who": "Check the name and signature on repair ticket M-17. The witness who observed a possible cause is not necessarily the technician who inspected and fixed it.",
+      "where": "Follow the moisture trail in the Moss Garden Vent Gallery. The Q-4 connector became wet before R-6 opened; the relay cabinet responded to the fault but was not its origin.",
+      "why": "Compare the 09:42:03 Q-4 alarm, the 09:42:05 automatic R-6 opening, and the wet-sensor inspection. Check which of the garden mist and cart reports occur at the wrong time to be a cause.",
+      "proofs": "Choose the primary Sensor and Relay Alarm Strip AND Neri’s Signed Q-4 Repair Ticket. Together they show the automatic shutdown sequence, the technician who verified the physical cause, and the safe restoration."
+    },
+    "resolution": {
+      "summary": "No one sabotaged Glintwell’s lights. Technician Neri Pell traced the blackout to ventilation sensor Q-4, wetted by a blocked condensate drain; the automatic safety relay R-6 isolated the East Ring.",
+      "outcome": "Glintwell’s East Ring lanterns went dark at 09:42 because an automatic protection system responded to a misleading equipment warning. Moisture from a clogged ventilation condensate drain reached the exposed connector of sensor Q-4. At 09:42:03 Q-4 flagged a fault, and two seconds later relay R-6 opened automatically, leaving the East Ring on red battery guide lights. This was a protective shutdown, not deliberate sabotage. Tal Venn remembered the garden mister starting when the wall clock read 09:42, but that clock ran four minutes fast: the mister began at 09:38 town time, and the irrigation pipe was dry outside. Brin Hale’s cart scraped a wall at 09:44, after the outage, and the electrical conduit remained intact. Omi Lark’s impression of an earlier red flash came from turning toward the emergency lamps after the normal lights dimmed. Dispatcher Lyra Senn’s signed log shows no manual cut. At 09:56 technician Neri Pell inspected Q-4, cleared the blocked fan drain, dried the connector, and replaced its protective sleeve. Once the warning cleared, staff safely reset R-6 and lighting returned at 10:12. The case shows why eyewitness accounts should be evaluated against the sequence and reliability of physical and contemporary records.",
+      "timeline": [
+        {
+          "time": "9:35 a.m.",
+          "event": "The East Ring ventilation fan begins its morning run; debris gradually blocks the condensate drain near Q-4."
+        },
+        {
+          "time": "9:38 a.m.",
+          "event": "The enclosed Moss Garden mister starts. Its four-minutes-fast wall clock shows 9:42; the irrigation line does not leak onto Q-4."
+        },
+        {
+          "time": "9:40 a.m.",
+          "event": "Condensation spills from the blocked fan drain and begins wetting the Q-4 connector."
+        },
+        {
+          "time": "9:42:03 a.m.",
+          "event": "Moisture makes Q-4 send a false equipment warning, recorded in the original controller log."
+        },
+        {
+          "time": "9:42:05 a.m.",
+          "event": "Relay R-6 automatically opens for safety, darkening the East Ring. Battery-powered red guide lights continue working."
+        },
+        {
+          "time": "9:44 a.m.",
+          "event": "Brin’s delivery cart scrapes a wall in the dim passage; the cable conduit remains undamaged."
+        },
+        {
+          "time": "9:48 a.m.",
+          "event": "Dispatcher Lyra compares calls, confirms no manual shutdown, and requests maintenance inspection."
+        },
+        {
+          "time": "9:56 a.m.",
+          "event": "Neri Pell begins ticket M-17 and identifies the blocked drain and wet Q-4 contacts."
+        },
+        {
+          "time": "10:08 a.m.",
+          "event": "Neri has removed debris, dried the connector, and fitted a replacement protective sleeve, clearing the Q-4 alarm."
+        },
+        {
+          "time": "10:12 a.m.",
+          "event": "Staff supervise the R-6 reset; East Ring lanterns return, and the false sabotage rumors are corrected."
+        }
+      ]
+    }
+  }
+}

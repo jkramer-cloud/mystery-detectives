@@ -40,9 +40,10 @@
       "number": "004",
       "category": "Science Fiction",
       "icon": "💡",
-      "summary": "A blackout in an underground town creates conflicting witness reports.",
-      "grades": "5–8",
-      "status": "planned"
+      "summary": "An underground lighting outage sparks conflicting accounts. Compare clock readings, witness testimony, and maintenance records to identify an accidental safety shutdown.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "ready",
+      "file": "cases/underground-blackout.json"
     },
     {
       "id": "vanishing-esports-trophy",
