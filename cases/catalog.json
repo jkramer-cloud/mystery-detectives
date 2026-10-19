@@ -29,9 +29,10 @@
       "number": "003",
       "category": "Mythology",
       "icon": "⚡",
-      "summary": "A museum artifact disappears on the eve of a mythology exhibition.",
-      "grades": "5–8",
-      "status": "planned"
+      "summary": "A vanished bronze medallion, a fictional mountain myth, and conflicting interpretations lead detectives from an ancient inscription to modern preservation records.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "ready",
+      "file": "cases/olympian-artifact.json"
     },
     {
       "id": "underground-blackout",

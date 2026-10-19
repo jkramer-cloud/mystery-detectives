@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "gallery": {
+      "name": "Stormglass Gallery",
+      "icon": "🏛️",
+      "detail": "The First Light Medallion has vanished from a high display beneath a skylight.",
+      "scene": "art"
+    },
+    "inscriptions": {
+      "name": "Hall of Inscribed Tales",
+      "icon": "🪨",
+      "detail": "Ancient words and carved story scenes invite different interpretations.",
+      "scene": "hall"
+    },
+    "workshop": {
+      "name": "Myth Study Studio",
+      "icon": "📜",
+      "detail": "Modern exhibition notes, visitor leaflets, and translation drafts sit on a long desk.",
+      "scene": "library"
+    },
+    "roof": {
+      "name": "Skylight Service Landing",
+      "icon": "🌧️",
+      "detail": "A maintenance cabinet holds records from the morning rainstorm.",
+      "scene": "hall"
+    },
+    "lift": {
+      "name": "Collection Service Lift",
+      "icon": "📦",
+      "detail": "A guarded service elevator connects public galleries to staff-only storage.",
+      "scene": "storage"
+    },
+    "archive": {
+      "name": "Stone Archive",
+      "icon": "🛡️",
+      "detail": "The lower conservation room has padded drawers and controlled humidity.",
+      "scene": "storage"
+    }
+  },
+  "evidence": [
+    {
+      "id": "vacant-plinth",
+      "place": "gallery",
+      "icon": "🏺",
+      "title": "Empty Medallion Stand",
+      "type": "Physical observation",
+      "texts": {
+        "1-2": "The round medal is not on its stand. The cloth beneath it is damp.",
+        "3-5": "The First Light Medallion is absent from its labeled display. Damp felt lies where its bronze rim once rested; no glass is broken.",
+        "6-8": "The display plinth is empty, but its security pane is intact. Moisture darkens the felt mount beneath object H-18, suggesting a threat to the artifact without proving that anyone stole it."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is missing from the stand?",
+          "a": [
+            "A chair",
+            "The medallion",
+            "A clock"
+          ],
+          "c": 1,
+          "h": "Look at the first sentence.",
+          "why": "The text says the medallion is no longer on its stand."
+        },
+        "3-5": {
+          "q": "Which conclusion is best supported by this display?",
+          "a": [
+            "A thief smashed the glass.",
+            "The medallion was sold.",
+            "The object is missing and the stand is damp."
+          ],
+          "c": 2,
+          "h": "Notice what the clue observes and what it does not prove.",
+          "why": "An empty, damp display does not establish theft, and the glass was not broken."
+        },
+        "6-8": {
+          "q": "Which claim would go beyond the physical evidence?",
+          "a": [
+            "A thief intentionally removed H-18.",
+            "The case glass is undamaged.",
+            "Moisture reached the display mount."
+          ],
+          "c": 0,
+          "h": "Distinguish inference from a directly observed feature.",
+          "why": "The physical scene does not identify who moved H-18 or why; intentional theft is unsupported."
+        }
+      }
+    },
+    {
+      "id": "humidity-alert",
+      "place": "gallery",
+      "icon": "💧",
+      "title": "Gallery Moisture Alert",
+      "type": "Sensor record",
+      "texts": {
+        "1-2": "The sensor made a beep at 9:13. It said the room was too wet.",
+        "3-5": "A wall monitor reads: “9:13 a.m. — Gallery humidity rising; protect sensitive objects.” The log was saved automatically before anyone reported a missing medallion.",
+        "6-8": "An automatic environmental log marks a sharp humidity increase at 9:13 a.m. The alert predates the discovery of H-18’s absence, offering independent evidence that the gallery environment had become unsafe."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did the sensor beep?",
+          "a": [
+            "The air was too wet.",
+            "The museum was closing for lunch.",
+            "A visitor won a prize."
+          ],
+          "c": 0,
+          "h": "Read what the sensor noticed.",
+          "why": "The sensor detected too much moisture in the air."
+        },
+        "3-5": {
+          "q": "What does the 9:13 warning help explain?",
+          "a": [
+            "Why a mythological prediction came true.",
+            "Why workers might move a fragile exhibit to safety.",
+            "Why a museum ticket was expensive."
+          ],
+          "c": 1,
+          "h": "Think about what humidity could do to an old object.",
+          "why": "Rising humidity can damage sensitive materials, giving staff a preservation reason to relocate the artifact."
+        },
+        "6-8": {
+          "q": "Why is the automated log useful evidence?",
+          "a": [
+            "It proves which employee carried H-18.",
+            "It translates the ancient inscription correctly.",
+            "It records environmental conditions independently of witness opinions."
+          ],
+          "c": 2,
+          "h": "Separate what instruments measure from what people claim.",
+          "why": "The monitor documents moisture and time, not a suspect or an interpretation of the myth."
+        }
+      }
+    },
+    {
+      "id": "stone-inscription",
+      "place": "inscriptions",
+      "icon": "🔤",
+      "title": "The Ancient Inscription",
+      "type": "Primary source: carved words",
+      "texts": {
+        "1-2": "The old stone says, “Guard the first light when storms come.” It is part of a made-up mountain story.",
+        "3-5": "A stone inscription from the fictional Tale of the Three Beacons reads: “When clouds hide the summit, guard the first light beneath quiet stone. Return its warmth when the path clears.” The museum calls the medallion a symbol of that “first light.”",
+        "6-8": "A translated transcription of an ancient inscription reads: “When clouds close the summit, bear the first light into the keeping of quiet stone; restore its glow when the path is clear.” Within the original Tale of the Three Beacons, “first light” symbolizes the community’s duty to preserve knowledge during crisis—not a literal command issued to museum employees."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What should the story’s people guard?",
+          "a": [
+            "A noisy drum",
+            "A pair of boots",
+            "The first light"
+          ],
+          "c": 2,
+          "h": "Find the words after “Guard the.”",
+          "why": "The inscription says to guard the first light when storms arrive."
+        },
+        "3-5": {
+          "q": "What does “first light” most likely stand for in this story?",
+          "a": [
+            "Something valuable that people promise to protect.",
+            "A lamp that must be switched on at noon.",
+            "A rule that all museums must close."
+          ],
+          "c": 0,
+          "h": "Think about a symbol rather than only the literal words.",
+          "why": "The story uses first light as a symbol of valuable knowledge or hope people safeguard."
+        },
+        "6-8": {
+          "q": "Why can the carved inscription be treated as a primary source for the old myth?",
+          "a": [
+            "It names the modern employee who moved H-18.",
+            "It preserves words from the tradition itself, unlike a modern critic’s interpretation.",
+            "It was printed in a new visitor pamphlet."
+          ],
+          "c": 1,
+          "h": "Ask whether the record comes from the tradition being studied or from later commentary.",
+          "why": "The inscription is direct surviving evidence of the tale’s language; later explanations are secondary interpretations."
+        }
+      }
+    },
+    {
+      "id": "beacon-relief",
+      "place": "inscriptions",
+      "icon": "🗿",
+      "title": "Relief of the Three Keepers",
+      "type": "Primary source: carved scene",
+      "texts": {
+        "1-2": "A wall picture shows three keepers taking a bright circle under a stone roof while rain falls.",
+        "3-5": "An old relief shows three legendary keepers carrying a glowing circle into a stone shelter during a storm. A later caption claims the image shows a secret hiding place, but the carving depicts people working together to protect a shared light.",
+        "6-8": "The carved panel juxtaposes storm clouds with three figures shielding a circular flame under an arch. The original image is primary visual evidence; the recent wall caption describing it as a “map to concealed treasure” is a secondary, speculative interpretation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What are the keepers doing?",
+          "a": [
+            "Playing a ball game.",
+            "Protecting a light from rain.",
+            "Planting a tree."
+          ],
+          "c": 1,
+          "h": "Look at where they carry the circle.",
+          "why": "The carved figures shelter their light under a roof while it rains."
+        },
+        "3-5": {
+          "q": "Which idea is best supported by both the image and the inscription?",
+          "a": [
+            "The community works together to protect something important.",
+            "A treasure thief must enter the museum at night.",
+            "The arch is a secret door in the modern building."
+          ],
+          "c": 0,
+          "h": "Compare the keepers’ action with the inscription’s call to guard the light.",
+          "why": "Both sources emphasize shared protection through danger, not a predicted theft."
+        },
+        "6-8": {
+          "q": "Which statement best distinguishes these two sources?",
+          "a": [
+            "Both the carving and new caption are ancient primary sources.",
+            "The wall caption is older and more reliable than the carving.",
+            "The carving is an original source; the modern treasure-map caption is an interpretation."
+          ],
+          "c": 2,
+          "h": "Check which item came from the past and which was written recently.",
+          "why": "The relief directly survives from the original tradition, whereas the modern caption adds an unsupported theory."
+        }
+      }
+    },
+    {
+      "id": "visitor-leaflet",
+      "place": "workshop",
+      "icon": "📰",
+      "title": "Dramatic Visitor Leaflet",
+      "type": "Secondary source: popular retelling",
+      "texts": {
+        "1-2": "A new paper says the medallion might be taken by a storm spirit. That is somebody’s guess.",
+        "3-5": "A colorful visitor leaflet announces, “The storm will steal the first light!” Its author turned the old myth into an exciting prediction. The leaflet was printed last month and does not report anything observed at the museum today.",
+        "6-8": "Last month’s interpretive leaflet sensationalizes the legend: “When thunder comes, the first light is destined to vanish.” Its rhetoric is a modern secondary retelling, not a contemporaneous eyewitness record, and it should not be mistaken for proof of supernatural theft."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Is the leaflet a fact report about today or a story guess?",
+          "a": [
+            "A signed security log",
+            "A weather sensor reading",
+            "A story guess"
+          ],
+          "c": 2,
+          "h": "Look at when it was written.",
+          "why": "The leaflet retells a story and was printed before today’s event."
+        },
+        "3-5": {
+          "q": "Why should the leaflet not prove that the medallion was stolen?",
+          "a": [
+            "It was typed on colorful paper.",
+            "It retells a myth instead of recording what happened today.",
+            "It mentions a storm in its title."
+          ],
+          "c": 1,
+          "h": "Ask whether the writer actually saw a theft.",
+          "why": "A dramatic modern interpretation is not eyewitness or documentary evidence of what happened."
+        },
+        "6-8": {
+          "q": "What makes the leaflet a weaker source for reconstructing today’s events?",
+          "a": [
+            "It was composed before the event and emphasizes dramatic interpretation over observation.",
+            "It uses letters instead of pictures.",
+            "It quotes part of the ancient legend."
+          ],
+          "c": 0,
+          "h": "Evaluate purpose, date, and proximity to the event.",
+          "why": "The leaflet is a secondary narrative designed to entertain, not a primary record of the disappearance."
+        }
+      }
+    },
+    {
+      "id": "scholars-margins",
+      "place": "workshop",
+      "icon": "📝",
+      "title": "Translator’s Margin Notes",
+      "type": "Secondary source: scholarly analysis",
+      "texts": {
+        "1-2": "The scholar wrote that “first light” can mean hope. The note says the story is not a warning about today.",
+        "3-5": "Dr. Lin Orr’s translation notes compare two meanings of “first light”: a real lamp in the tale and the knowledge the lamp represents. Lin warns that the words “quiet stone” describe a shelter in the legend, not a known modern vault.",
+        "6-8": "Lin Orr’s annotated draft contrasts a literal motif (a sheltered flame) with its symbolic function (transmission of communal knowledge). The notes caution against mapping the myth’s imagined stone shelter directly onto a specific room in the modern museum."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What might “first light” mean besides a lamp?",
+          "a": [
+            "Hope and knowledge",
+            "A rainy window",
+            "A museum ticket"
+          ],
+          "c": 0,
+          "h": "Read the scholar’s explanation.",
+          "why": "The notes say that the first light can stand for hope and knowledge."
+        },
+        "3-5": {
+          "q": "What is the scholar warning readers not to do?",
+          "a": [
+            "Read stories about lamps.",
+            "Notice the meaning of symbols.",
+            "Treat the myth as a floor plan for the museum."
+          ],
+          "c": 2,
+          "h": "Look for the comment about “quiet stone.”",
+          "why": "The old story’s shelter is symbolic and not an identified room in the modern museum."
+        },
+        "6-8": {
+          "q": "What is the strongest evaluation of Lin’s notes?",
+          "a": [
+            "They are the original words carved centuries ago.",
+            "They offer a reasoned secondary interpretation, but cannot independently prove the artifact’s new location.",
+            "They document the exact time H-18 traveled in the service lift."
+          ],
+          "c": 1,
+          "h": "Distinguish useful interpretation from direct event evidence.",
+          "why": "The notes help interpret symbolism; a transfer record is needed to establish where H-18 went today."
+        }
+      }
+    },
+    {
+      "id": "skylight-work-order",
+      "place": "roof",
+      "icon": "🛠️",
+      "title": "Skylight Repair Record",
+      "type": "Primary source: maintenance record",
+      "texts": {
+        "1-2": "At 9:11 the roof window leaked. Water dripped toward the display below.",
+        "3-5": "A maintenance work order logged at 9:11 a.m. says the skylight seal failed after heavy rain. Technician Bran Kess placed a temporary drip shield and warned staff that water could reach the medallion case.",
+        "6-8": "Facilities ticket #214, timestamped 9:11 a.m., documents a failed skylight gasket, ongoing water entry, and an interim drip shield. Its contemporaneous observations corroborate the 9:13 humidity spike without implying deliberate tampering."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What broke during the rain?",
+          "a": [
+            "The museum clock",
+            "A painting frame",
+            "The skylight seal"
+          ],
+          "c": 2,
+          "h": "Find what the worker wrote about the roof window.",
+          "why": "The work order says the skylight seal failed."
+        },
+        "3-5": {
+          "q": "How does the repair record help explain the missing exhibit?",
+          "a": [
+            "It shows staff had a real reason to protect objects from water.",
+            "It proves a visitor sold the medallion.",
+            "It describes an ancient storm spirit entering the room."
+          ],
+          "c": 0,
+          "h": "Connect the repair problem to the damp exhibit.",
+          "why": "The leak endangered an old object, so moving it could be a safety measure."
+        },
+        "6-8": {
+          "q": "Which inference is justified when the repair ticket is paired with the sensor log?",
+          "a": [
+            "The damage was deliberately staged to hide a robbery.",
+            "A physical leak caused a documented increase in moisture near the exhibit.",
+            "The myth predicted a measurable sensor value."
+          ],
+          "c": 1,
+          "h": "Combine the records without adding an unsupported motive.",
+          "why": "A contemporaneous ticket and independent measurement support environmental risk, not sabotage or prophecy."
+        }
+      }
+    },
+    {
+      "id": "relocation-order",
+      "place": "roof",
+      "icon": "✍️",
+      "title": "Signed Emergency Order",
+      "type": "Primary source: authorization",
+      "texts": {
+        "1-2": "At 9:19, Mara Quill signed a note: “Move H-18 to the dry archive.”",
+        "3-5": "An emergency collections form signed by conservator Mara Quill at 9:19 a.m. authorizes moving artifact H-18 because its painted backing might absorb moisture. The destination is written as “Stone Archive — drawer A-3.”",
+        "6-8": "Signed emergency authorization E-12 identifies Mara Quill as the responsible conservator at 9:19 a.m. It cites moisture risk to H-18’s fragile pigment-backed surface and directs a documented transfer to the climate-controlled Stone Archive, drawer A-3."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the order to move H-18?",
+          "a": [
+            "Mara Quill",
+            "Bran Kess",
+            "A storm spirit"
+          ],
+          "c": 0,
+          "h": "Find the name written after “signed.”",
+          "why": "The signed order names Mara Quill."
+        },
+        "3-5": {
+          "q": "What two facts can you learn directly from this order?",
+          "a": [
+            "A visitor hid the object, and no record was made.",
+            "The old inscription ordered a secret theft.",
+            "Mara approved the move, and the destination was drawer A-3."
+          ],
+          "c": 2,
+          "h": "A signed form documents actions and destinations.",
+          "why": "The form is direct contemporary evidence of authorization and intended destination."
+        },
+        "6-8": {
+          "q": "Why is E-12 especially strong primary evidence for the modern case?",
+          "a": [
+            "It is a dated authorization naming the responsible person, the endangered item, and its intended destination.",
+            "It offers an imaginative translation of an ancient prophecy.",
+            "It expresses only a visitor’s impression of the empty stand."
+          ],
+          "c": 0,
+          "h": "Identify what the signatory documented at the time.",
+          "why": "The signed, time-stamped order explicitly links who, what, where, and why, unlike speculative interpretations."
+        }
+      }
+    },
+    {
+      "id": "lift-transfer-stub",
+      "place": "lift",
+      "icon": "📦",
+      "title": "Transfer Tag H-18",
+      "type": "Primary source: movement log",
+      "texts": {
+        "1-2": "A tag says H-18 went down in the lift at 9:24 with a museum worker.",
+        "3-5": "A padded transport case passed through the staff lift at 9:24 a.m. The transfer stub lists H-18, “lower level,” and the initials MQ beside a staff badge number.",
+        "6-8": "The 9:24 lift manifest records padded crate H-18 traveling to the lower collection level, authenticated by staff badge MQ-04. This independently traces the object’s movement after Mara’s 9:19 authorization and contradicts claims of an unlogged exit through the public doors."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did the crate travel?",
+          "a": [
+            "Outside to the street",
+            "Down to the lower level",
+            "Up onto the roof"
+          ],
+          "c": 1,
+          "h": "Check the direction written on the tag.",
+          "why": "The transfer tag says the crate went to the lower level."
+        },
+        "3-5": {
+          "q": "How does this log connect to the signed order?",
+          "a": [
+            "Both were written in the ancient myth.",
+            "Both identify H-18 and show the planned transfer happened afterward.",
+            "Both claim that the medallion was melted down."
+          ],
+          "c": 1,
+          "h": "Find the shared object code and compare the times.",
+          "why": "The same code H-18 appears in both; the lift record follows the earlier authorization."
+        },
+        "6-8": {
+          "q": "Which sequence is supported by the primary records?",
+          "a": [
+            "Lower-level transport at 9:24, then authorization at 9:19.",
+            "Visitor leaflet printed at 9:24, then a mythical storm.",
+            "Order at 9:19, then lower-level transport at 9:24."
+          ],
+          "c": 2,
+          "h": "Read the time stamps rather than the witnesses’ predictions.",
+          "why": "The documented chronology places formal approval before the recorded lift movement."
+        }
+      }
+    },
+    {
+      "id": "archive-intake",
+      "place": "archive",
+      "icon": "🗃️",
+      "title": "Stone Archive Intake Register",
+      "type": "Primary source: condition and location",
+      "texts": {
+        "1-2": "The archive book says H-18 is safe in drawer A-3. It arrived at 9:28.",
+        "3-5": "The Stone Archive register lists H-18 as received at 9:28 a.m. in drawer A-3. An intake note describes the medallion’s bronze front and delicate painted back; its surface was dry when stored.",
+        "6-8": "A 9:28 a.m. accession entry confirms the arrival of H-18 in climate-controlled drawer A-3. The conservator documented its dry bronze face, vulnerable pigment backing, and an unbroken seal on the transport case, closing the custody chain from order to storage."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where is H-18 now?",
+          "a": [
+            "Under the gallery steps",
+            "Drawer A-3 in the Stone Archive",
+            "In the gift shop"
+          ],
+          "c": 1,
+          "h": "Find the location in the archive book.",
+          "why": "The register lists H-18 in drawer A-3."
+        },
+        "3-5": {
+          "q": "What does the intake register establish?",
+          "a": [
+            "The museum put the medallion up for sale.",
+            "A mythical keeper removed the medallion.",
+            "The medallion reached the archive and was recorded there."
+          ],
+          "c": 2,
+          "h": "Look for the time and storage location.",
+          "why": "The record confirms H-18’s arrival and condition at its new location."
+        },
+        "6-8": {
+          "q": "Which evidence best confirms the artifact was preserved rather than secretly taken off-site?",
+          "a": [
+            "A matching intake record with time, drawer number, and intact transport seal.",
+            "A visitor’s theory about “quiet stone.”",
+            "An old carving of a torchbearer."
+          ],
+          "c": 0,
+          "h": "Choose the source that directly documents present custody.",
+          "why": "The accession register tracks object H-18 to controlled storage and records its physical condition."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "mara-quill",
+      "place": "archive",
+      "icon": "🧑‍🔬",
+      "name": "Mara Quill",
+      "role": "Museum Conservator",
+      "texts": {
+        "1-2": "“I signed the move,” says Mara. “I put the old medallion in a dry drawer so water would not hurt it.”",
+        "3-5": "“When the moisture alarm sounded, I checked the painted back of H-18,” says Mara Quill. “I signed the emergency order at 9:19, packed the medallion, and had it placed in drawer A-3. The gallery label was not updated quickly enough.”",
+        "6-8": "Mara Quill, the museum conservator, acknowledges that she authorized the relocation when the skylight leak endangered the pigment backing. She distinguishes a documented preservation transfer from concealment, and admits that the delayed public notice created needless suspicion."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Mara move the medallion?",
+          "a": [
+            "To keep it dry and safe",
+            "To win a race",
+            "To hide a birthday present"
+          ],
+          "c": 0,
+          "h": "Listen for the reason Mara gives.",
+          "why": "Mara says she moved it to protect it from water."
+        },
+        "3-5": {
+          "q": "Which document can check Mara’s account?",
+          "a": [
+            "The ancient carving alone.",
+            "Her 9:19 signed emergency relocation order.",
+            "A visitor’s story about a thief."
+          ],
+          "c": 1,
+          "h": "Find a dated record written when the move occurred.",
+          "why": "The signed order independently confirms Mara’s authorization and destination."
+        },
+        "6-8": {
+          "q": "What is the strongest conclusion about Mara’s reliability?",
+          "a": [
+            "Her admission of a delayed sign proves the transfer was a theft.",
+            "Her job title means her statement needs no verification.",
+            "Her account is corroborated by independent logs, although she admits a communication failure."
+          ],
+          "c": 2,
+          "h": "Check both corroboration and any admitted limitation.",
+          "why": "The order and transfer records support Mara’s chronology; the missing notice explains confusion but not theft."
+        }
+      }
+    },
+    {
+      "id": "lin-orr",
+      "place": "inscriptions",
+      "icon": "👩‍🏫",
+      "name": "Dr. Lin Orr",
+      "role": "Researcher of Ancient Stories",
+      "texts": {
+        "1-2": "“The first light can mean hope,” says Lin. “It is a story symbol, not a magic warning.”",
+        "3-5": "“The Tale of the Three Beacons was about people sheltering knowledge during a storm,” says Lin. “The inscription’s ‘first light’ stands for hope. A modern leaflet made it sound like an exact prediction of a theft.”",
+        "6-8": "Lin Orr stresses that the original verse and relief are primary witnesses to an ancient cultural narrative, while the modern brochure supplies a later interpretation. Lin rejects the idea that a figurative promise about stewardship can establish what happened in a modern gallery."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does “first light” help show?",
+          "a": [
+            "A lunch menu",
+            "A broken lock",
+            "Hope"
+          ],
+          "c": 2,
+          "h": "Lin explains that this word has a special meaning.",
+          "why": "Lin describes first light as a symbol of hope."
+        },
+        "3-5": {
+          "q": "Which statement best compares the myth and the leaflet?",
+          "a": [
+            "The old myth uses a symbol; the new leaflet turns it into a prediction.",
+            "The leaflet is older than the inscription.",
+            "Both are security videos from today."
+          ],
+          "c": 0,
+          "h": "Compare the original source with the later retelling.",
+          "why": "Lin says the leaflet exaggerates the old symbolic language into a specific prediction."
+        },
+        "6-8": {
+          "q": "How does Lin separate primary and secondary sources?",
+          "a": [
+            "Only modern printed texts count as primary sources.",
+            "The inscription and relief originate in the tradition; Lin’s notes and the leaflet interpret that material later.",
+            "A source becomes primary whenever it mentions mythology."
+          ],
+          "c": 1,
+          "h": "A primary source originates with the material under study.",
+          "why": "Directly surviving words and art are primary for the myth; modern interpretive commentary is secondary."
+        }
+      }
+    },
+    {
+      "id": "bran-kess",
+      "place": "roof",
+      "icon": "🧰",
+      "name": "Bran Kess",
+      "role": "Museum Facilities Technician",
+      "texts": {
+        "1-2": "“The roof window leaked,” says Bran. “I put up a cover and called for help.”",
+        "3-5": "“At 9:11 I recorded a damaged skylight seal,” says Bran Kess. “I shielded the drip, but the humidity alarm went off two minutes later. I did not carry the medallion, and I never entered the archive.”",
+        "6-8": "Bran Kess recalls logging the failed gasket at 9:11 and installing a temporary shield. His report addresses the environmental hazard, not the relocation decision; he identifies Mara as the staff member later authorized to handle collections."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Bran find?",
+          "a": [
+            "A leaking skylight",
+            "A lost dog",
+            "A closed ticket booth"
+          ],
+          "c": 0,
+          "h": "Bran worked near the roof.",
+          "why": "He discovered the skylight seal was leaking."
+        },
+        "3-5": {
+          "q": "Which two records support Bran’s explanation of the danger?",
+          "a": [
+            "The visitor leaflet and the ancient relief.",
+            "The repair ticket and the humidity alarm.",
+            "The souvenir price list and the ticket booth schedule."
+          ],
+          "c": 1,
+          "h": "Look for measurements and maintenance notes from that morning.",
+          "why": "The work order identifies the physical leak, and the sensor log shows damp conditions."
+        },
+        "6-8": {
+          "q": "Why does Bran’s testimony not identify who moved the artifact?",
+          "a": [
+            "He says the medallion never existed.",
+            "He wrote the original ancient inscription.",
+            "It describes the leak and his repairs, while a different record authorizes the transfer."
+          ],
+          "c": 2,
+          "h": "Notice the limits of what this witness observed.",
+          "why": "A witness to environmental damage is not necessarily a witness to the separate movement of H-18."
+        }
+      }
+    },
+    {
+      "id": "soren-pell",
+      "place": "workshop",
+      "icon": "🎤",
+      "name": "Soren Pell",
+      "role": "Museum Story Guide",
+      "texts": {
+        "1-2": "“I read the new leaflet,” says Soren. “I thought a storm spirit had taken the medal. I did not see that happen.”",
+        "3-5": "“I told visitors the legend predicted a stolen medallion,” says Soren Pell. “It sounded exciting in the new leaflet. Later I learned I had mistaken a dramatic retelling for a report about today.”",
+        "6-8": "Soren Pell concedes that his claim about a “prophesied theft” relied on the museum’s promotional leaflet, not first-hand observation. His testimony illustrates how a confident secondary interpretation can circulate as a rumor without proving a contemporary event."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Soren see someone steal the medallion?",
+          "a": [
+            "Yes, through a window.",
+            "No, he only read a story.",
+            "Yes, on a camera recording."
+          ],
+          "c": 1,
+          "h": "What does Soren say about seeing it happen?",
+          "why": "Soren admits he did not witness a theft."
+        },
+        "3-5": {
+          "q": "Why was Soren’s claim unreliable?",
+          "a": [
+            "He saw the signed relocation form.",
+            "He checked the archive drawer himself.",
+            "He treated an exciting story retelling as evidence of a real event."
+          ],
+          "c": 2,
+          "h": "Ask whether his information came from observation or a dramatic leaflet.",
+          "why": "Soren’s claim was based on a secondary story, not direct evidence."
+        },
+        "6-8": {
+          "q": "What reading error best explains the spread of this rumor?",
+          "a": [
+            "Rejecting the museum’s sensor measurements because they contain numbers.",
+            "Confusing figurative narrative and promotional speculation with eyewitness fact.",
+            "Accurately interpreting the intake record as proof of secure storage."
+          ],
+          "c": 1,
+          "h": "Focus on the source and the purpose of the dramatic wording.",
+          "why": "Soren failed to distinguish a modern, persuasive interpretation from documented events."
+        }
+      }
+    },
+    {
+      "id": "mika-vale",
+      "place": "lift",
+      "icon": "🧑‍💼",
+      "name": "Mika Vale",
+      "role": "Visitor Services Assistant",
+      "texts": {
+        "1-2": "“I saw a worker push a padded box into the lift,” says Mika. “I did not know what was inside.”",
+        "3-5": "“At about 9:24, I saw a padded crate go down in the staff lift,” recalls Mika Vale. “I thought it was unusual, but I could not read the label from the desk. I never saw the crate leave the museum.”",
+        "6-8": "Mika Vale reports a padded case entering the lower-level service lift around 9:24. She carefully distinguishes direct observation from assumptions about its contents, noting that the transport record—not her distant view—identifies the crate as H-18."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Mika actually see?",
+          "a": [
+            "The medallion being sold",
+            "A storm spirit leaving the roof",
+            "A padded box going down in a lift"
+          ],
+          "c": 2,
+          "h": "Pay attention to the object Mika describes.",
+          "why": "Mika saw a padded crate, not a confirmed theft."
+        },
+        "3-5": {
+          "q": "Which part of Mika’s story is an observation?",
+          "a": [
+            "A padded crate traveled downward in the staff lift.",
+            "The medallion must have been stolen.",
+            "The crate definitely contained a magic lamp."
+          ],
+          "c": 0,
+          "h": "Choose the part she could see directly.",
+          "why": "Mika observed the crate and its direction, but could not read its label."
+        },
+        "6-8": {
+          "q": "Why should investigators pair Mika’s account with the lift manifest?",
+          "a": [
+            "Her sighting establishes movement, and the signed manifest identifies the item and staff badge.",
+            "Her distant view alone proves the case contained an enchanted object.",
+            "The manifest is an ancient interpretation of the inscription."
+          ],
+          "c": 0,
+          "h": "One source records an observation; another supplies identifying documentation.",
+          "why": "Together, testimony and the primary transport record build a stronger, bounded conclusion than either alone."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "olympian-artifact",
+    "title": "The Olympian Artifact",
+    "subtitle": "CASE FILE 003 • THE FIRST LIGHT MEDALLION",
+    "goal": "Find who authorized the relocation of the First Light Medallion (H-18), where it was stored, and why. Tell an ancient symbolic tale apart from modern records of an actual event.",
+    "brief": {
+      "1-2": "The museum’s First Light Medallion is missing! Rain fell through a roof window. Some people say an old story made it disappear. Explore the museum. Find out who moved it, where it went, and why.",
+      "3-5": "Just before a new exhibit opens, a bronze medallion disappears from the Stormglass Gallery. A heavy shower has damaged the skylight, and an ancient tale seems to speak about hiding the “first light.” Did a thief copy the legend, or was the object moved for another reason? Compare the myth with museum records.",
+      "6-8": "The Highcrest Museum prepares its exhibition of the entirely fictional Tale of the Three Beacons, which celebrates a community protecting knowledge through a storm. Then the First Light Medallion, catalog number H-18, vanishes from the Stormglass Gallery during a real downpour. A sensational modern retelling makes the disappearance sound like prophecy. Investigate the competing interpretations of an ancient inscription, distinguish primary sources from secondary commentary, and reconstruct the chain of custody before alleging theft."
+    },
+    "theoryLabels": {
+      "who": "Who authorized and carried out the protective relocation?",
+      "where": "Where was the First Light Medallion placed?",
+      "why": "What is the evidence-supported reason it was moved?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "soren",
+          "label": "Soren Pell — story guide"
+        },
+        {
+          "id": "mara",
+          "label": "Mara Quill — conservator"
+        },
+        {
+          "id": "bran",
+          "label": "Bran Kess — facilities technician"
+        },
+        {
+          "id": "lin",
+          "label": "Dr. Lin Orr — mythology researcher"
+        },
+        {
+          "id": "mika",
+          "label": "Mika Vale — visitor services assistant"
+        }
+      ],
+      "where": [
+        {
+          "id": "gift-shop",
+          "label": "Gift shop delivery storage"
+        },
+        {
+          "id": "roof-cabinet",
+          "label": "Roof access cabinet"
+        },
+        {
+          "id": "stone-a3",
+          "label": "Stone Archive, drawer A-3"
+        },
+        {
+          "id": "gallery-hidden",
+          "label": "A concealed compartment behind the gallery plinth"
+        },
+        {
+          "id": "outside",
+          "label": "A private collection outside the museum"
+        }
+      ],
+      "why": [
+        {
+          "id": "prophecy",
+          "label": "To obey an ancient supernatural prophecy"
+        },
+        {
+          "id": "preserve",
+          "label": "To protect the artifact’s fragile painted backing from moisture"
+        },
+        {
+          "id": "sell",
+          "label": "To sell H-18 secretly"
+        },
+        {
+          "id": "publicity",
+          "label": "To stage a dramatic publicity stunt"
+        },
+        {
+          "id": "revenge",
+          "label": "To punish the exhibit staff"
+        }
+      ]
+    },
+    "who": "mara",
+    "where": "stone-a3",
+    "why": "preserve",
+    "proofs": [
+      "relocation-order",
+      "archive-intake"
+    ],
+    "feedback": {
+      "who": "Revisit the signature on emergency form E-12 and match its initials to the staff badge on the lift manifest. A person who retold the legend may have spread a rumor without moving H-18.",
+      "where": "Track catalog number H-18 from the 9:19 order, through the 9:24 service-lift manifest, to the 9:28 intake register. Which room and numbered drawer appear at the end?",
+      "why": "Compare the skylight repair ticket, the humidity warning, and the object’s vulnerable painted backing. Does an interpretation of the ancient inscription prove what caused the modern move?",
+      "proofs": "The old inscription and leak reports explain the danger, but they do not by themselves prove who authorized the transfer or where H-18 ended up. Select the signed Emergency Order E-12 and the Stone Archive Intake Register together."
+    },
+    "resolution": {
+      "summary": "The First Light Medallion was not stolen or spirited away by legend. Conservator Mara Quill documented an emergency transfer after a skylight leak threatened its painted backing.",
+      "outcome": "The Highcrest Museum’s exhibit features the entirely invented Tale of the Three Beacons. In that story, three keepers protect the “first light” from a storm; it is a symbol of a community safeguarding knowledge. The ancient inscription and relief are primary sources for the myth, while the visitor leaflet and Lin Orr’s annotations are modern secondary interpretations. During an actual rainstorm, a failed skylight seal raised gallery humidity and endangered the delicate painted back of the bronze First Light Medallion, cataloged H-18. Mara Quill, the museum conservator, signed emergency order E-12 at 9:19 a.m. She packed the medallion in a padded case, moved it through the staff lift, and logged it in the climate-controlled Stone Archive, drawer A-3, at 9:28. The delayed gallery notice allowed Soren Pell’s dramatic interpretation of the myth to circulate as an alleged theft. Primary maintenance, movement, and intake records establish the real timeline. The medallion remains safely preserved, and the display will reopen after the roof is repaired.",
+      "timeline": [
+        {
+          "time": "8:45 a.m.",
+          "event": "Mara Quill inspects H-18 for the opening exhibit; the bronze face is sound, but the painted back requires stable, dry storage."
+        },
+        {
+          "time": "9:11 a.m.",
+          "event": "Heavy rain enters through a failed skylight gasket; Bran Kess opens repair ticket #214 and installs a temporary drip shield."
+        },
+        {
+          "time": "9:13 a.m.",
+          "event": "The Stormglass Gallery environmental monitor records a humidity alert near the medallion display."
+        },
+        {
+          "time": "9:16 a.m.",
+          "event": "Staff clear visitors from the affected gallery and halt public viewing while the leak is investigated."
+        },
+        {
+          "time": "9:19 a.m.",
+          "event": "Mara signs emergency order E-12 authorizing H-18 to move to the Stone Archive, drawer A-3."
+        },
+        {
+          "time": "9:24 a.m.",
+          "event": "A padded case bearing H-18 travels down the staff service lift under badge MQ-04."
+        },
+        {
+          "time": "9:28 a.m.",
+          "event": "The climate-controlled Stone Archive records H-18’s arrival in drawer A-3 with an intact transport seal."
+        },
+        {
+          "time": "9:35 a.m.",
+          "event": "Visitors notice the empty gallery. Because the temporary label has not yet been updated, a dramatic leaflet fuels rumors of a myth-inspired theft."
+        },
+        {
+          "time": "After investigation",
+          "event": "The signed records resolve the mystery; staff post an accurate preservation notice, and the medallion remains safely stored until repairs are complete."
+        }
+      ]
+    }
+  }
+}
