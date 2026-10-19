@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "trailhead": {
+      "name": "Mirrow Basin Trailhead",
+      "icon": "🥾",
+      "detail": "Arrival notes and the current camp plan are posted near a wind-worn sign.",
+      "scene": "hall"
+    },
+    "salt-flat": {
+      "name": "Glass Salt Flat",
+      "icon": "🏜️",
+      "detail": "A pale mineral crust marks the site of the original research collection.",
+      "scene": "art"
+    },
+    "field-tent": {
+      "name": "Old Field Tent",
+      "icon": "⛺",
+      "detail": "A faded inventory tag makes the sample look as though it ought to be here.",
+      "scene": "storage"
+    },
+    "map-room": {
+      "name": "Camp Map Room",
+      "icon": "🗺️",
+      "detail": "Old symbols, dated notebooks, and copied maps tell different parts of the story.",
+      "scene": "library"
+    },
+    "echo-alcove": {
+      "name": "Echo Alcove",
+      "icon": "🌙",
+      "detail": "A shaded cleft behind two stone ledges hides a weatherproof cache.",
+      "scene": "storage"
+    },
+    "dry-archive": {
+      "name": "Dry Archive Room",
+      "icon": "🧪",
+      "detail": "The modern climate-controlled archive has sealed cabinets and a transfer desk.",
+      "scene": "office"
+    }
+  },
+  "evidence": [
+    {
+      "id": "2018-collection-card",
+      "place": "salt-flat",
+      "icon": "🪨",
+      "texts": {
+        "1-2": "On May 12, 2018, a team takes a small salt-crust sample. It is called S-17. The team carries it to the field tent.",
+        "3-5": "A signed card dated May 12, 2018 records collection of the sealed salt-crust core S-17 at Glass Salt Flat. The collector checked a box marked TEMPORARY: FIELD TENT. That label names the first stop, not a permanent home.",
+        "6-8": "This contemporaneous field card establishes the origin and unique identifier of specimen S-17 on May 12, 2018. Its “temporary holding: field tent” field documents initial custody only; it does not preclude a later authorized relocation. Treat this as a dated primary record, not a prediction of the sample’s location eight years later."
+      },
+      "title": "2018 Sample Collection Card",
+      "type": "Original field record",
+      "questions": {
+        "1-2": {
+          "q": "Where did S-17 go first?",
+          "a": [
+            "To a museum",
+            "To the camp kitchen",
+            "To the field tent"
+          ],
+          "c": 2,
+          "h": "Look for the place named after the sample was taken.",
+          "why": "The team first carried S-17 to the field tent."
+        },
+        "3-5": {
+          "q": "What can the 2018 collection card prove?",
+          "a": [
+            "Where S-17 is stored in 2026",
+            "Where S-17 was first held in 2018",
+            "That someone stole S-17"
+          ],
+          "c": 1,
+          "h": "Notice that the card says temporary and gives a 2018 date.",
+          "why": "It establishes an initial 2018 location, not a permanent or current one."
+        },
+        "6-8": {
+          "q": "Which inference is least justified by this primary source?",
+          "a": [
+            "S-17 must still be in the field tent in 2026",
+            "The sample identifier was S-17",
+            "It was initially taken to the tent"
+          ],
+          "c": 0,
+          "h": "A temporary record cannot rule out later transfers.",
+          "why": "The collection card is strong firsthand evidence for May 12, 2018 but cannot establish the present-day location."
+        }
+      }
+    },
+    {
+      "id": "2018-wind-alert",
+      "place": "field-tent",
+      "icon": "🌪️",
+      "texts": {
+        "1-2": "On May 13, 2018, strong desert wind is coming. The camp must move fragile things out of the hot tent.",
+        "3-5": "The camp weather sheet for May 13, 2018 predicts severe gusts and heat by afternoon. It advises staff to move delicate study materials away from the fabric tent into a cooler, sheltered spot. It names no person or exact hiding place.",
+        "6-8": "Issued on May 13, 2018, the archived advisory forecasts abrasive gusts and intense exposure. Its preservation guidance provides a credible motive for relocating the fragile salt-crust core; however, an instruction to secure materials is not proof that any particular worker moved S-17."
+      },
+      "title": "May 13 Wind Advisory",
+      "type": "Historical weather bulletin",
+      "questions": {
+        "1-2": {
+          "q": "Why was the field tent a poor place for S-17?",
+          "a": [
+            "Wind and heat could hurt it",
+            "It was too quiet",
+            "The tent had books in it"
+          ],
+          "c": 0,
+          "h": "Find the two kinds of weather in the note.",
+          "why": "The alert warns of strong wind and heat."
+        },
+        "3-5": {
+          "q": "What does the wind advisory help explain?",
+          "a": [
+            "Who took the sample in 2026",
+            "Why the sample was stolen",
+            "Why someone might move a fragile sample"
+          ],
+          "c": 2,
+          "h": "This notice concerns weather, not a suspect.",
+          "why": "The advisory supplies a reason for a protective move, not the identity of a mover."
+        },
+        "6-8": {
+          "q": "How should investigators use this bulletin?",
+          "a": [
+            "As proof that the sample was destroyed",
+            "As contextual support for a protective motive",
+            "As proof of a modern theft"
+          ],
+          "c": 1,
+          "h": "Separate a recommended action from a completed action.",
+          "why": "The weather bulletin explains risk, but a movement record is needed to establish what was done."
+        }
+      }
+    },
+    {
+      "id": "mara-flashback-page",
+      "place": "map-room",
+      "icon": "📓",
+      "texts": {
+        "1-2": "Mara writes on May 14, 2018: “I remember the day we found S-17 on May 12.” The page tells about an earlier day.",
+        "3-5": "A page headed May 14, 2018 begins, “Two mornings ago, when we collected S-17, the flat glittered like glass.” The writer then describes the May 12 discovery. A reader might mistake the page date for the date of the collection if they ignore “two mornings ago.”",
+        "6-8": "The entry is dated May 14, 2018 but deliberately shifts backward: “Two mornings ago, at first light, the salt crust fractured beneath the corer.” Its narrative date is May 14; the narrated event occurred May 12. This flashback creates an apparent discrepancy only if the reader confuses the date of composition with the time being recalled."
+      },
+      "title": "May 14 Notebook with a Flashback",
+      "type": "Personal field journal",
+      "questions": {
+        "1-2": {
+          "q": "When was the sample found?",
+          "a": [
+            "May 14",
+            "May 12",
+            "October 9"
+          ],
+          "c": 1,
+          "h": "The writer remembers an earlier day.",
+          "why": "The entry says the discovery took place May 12, although the page was written May 14."
+        },
+        "3-5": {
+          "q": "Why is the May 14 page not a contradiction?",
+          "a": [
+            "It uses a flashback to describe May 12",
+            "It proves the sample was collected twice",
+            "It refers to a different camp"
+          ],
+          "c": 0,
+          "h": "Pay attention to the phrase “two mornings ago.”",
+          "why": "A later journal date and an earlier remembered event can both be true."
+        },
+        "6-8": {
+          "q": "Which reading best resolves the apparent chronology conflict?",
+          "a": [
+            "The author intentionally fabricated the collection date",
+            "The original field card was written in 2026",
+            "The narrator recounts May 12 from a May 14 vantage point"
+          ],
+          "c": 2,
+          "h": "Identify the difference between narration time and event time.",
+          "why": "Flashback shifts the narrated action to an earlier date without changing when the diary was written."
+        }
+      }
+    },
+    {
+      "id": "symbol-key",
+      "place": "map-room",
+      "icon": "🗝️",
+      "texts": {
+        "1-2": "An old map shows a moon over two short lines. The key says it means ECHO ALCOVE, a shady rock shelter.",
+        "3-5": "The annotated map defines the symbol of a crescent above two parallel bars as “Echo Alcove — shelf below twin ledges.” A triangle means “field tent.” The two symbols appear near each other in the margins of a 2018 note.",
+        "6-8": "A legend in the cartographer’s original map identifies a crescent over paired bars as Echo Alcove’s shaded lower shelf; a separate triangular mark denotes the field tent. This fixed legend is stronger evidence than later guesses that the crescent represents midnight or a secret meeting."
+      },
+      "title": "Field Symbol Key",
+      "type": "Annotated campsite map",
+      "questions": {
+        "1-2": {
+          "q": "Where does the moon symbol point?",
+          "a": [
+            "The camp kitchen",
+            "Echo Alcove",
+            "The salt lake"
+          ],
+          "c": 1,
+          "h": "Use the key beside the map.",
+          "why": "The crescent-over-bars mark stands for Echo Alcove."
+        },
+        "3-5": {
+          "q": "Which map mark identifies the shelter with two ledges?",
+          "a": [
+            "The crescent over two bars",
+            "The triangle alone",
+            "An unmarked square"
+          ],
+          "c": 0,
+          "h": "Match the symbol with the map legend.",
+          "why": "The legend explicitly assigns the crescent and bars to Echo Alcove."
+        },
+        "6-8": {
+          "q": "Why is the symbol key important to interpreting the old note?",
+          "a": [
+            "It proves that someone traveled at midnight",
+            "It changes the 2018 weather forecast",
+            "It supplies a documented meaning instead of a guess"
+          ],
+          "c": 2,
+          "h": "Look for a direct symbol definition, not an imaginative association.",
+          "why": "The legend makes the cryptic directions geographically specific and testable."
+        }
+      }
+    },
+    {
+      "id": "2018-relocation-slip",
+      "place": "echo-alcove",
+      "icon": "📜",
+      "texts": {
+        "1-2": "On May 13, 2018, Mara signs: “S-17 moved from tent to moon-and-two-lines shelf for shade.”",
+        "3-5": "At 4:20 p.m. on May 13, 2018, Mara Solis signs a relocation slip for S-17: FROM FIELD TENT → CRESCENT / TWO BARS. She writes “gust protection” in the reason box. The map key identifies the destination as Echo Alcove.",
+        "6-8": "Mara’s authenticated 4:20 p.m. May 13, 2018 custody slip records S-17 leaving the field tent for the crescent-over-bars shelf because gust-driven grit threatened the sample. Cross-referencing the independent cartographic key resolves the destination as Echo Alcove. The slip proves a historical move, not the identity of the person responsible for a different move in 2026."
+      },
+      "title": "Mara’s May 13 Relocation Slip",
+      "type": "Signed historical transfer",
+      "questions": {
+        "1-2": {
+          "q": "Who moved S-17 in 2018?",
+          "a": [
+            "Lio",
+            "Tessa",
+            "Mara"
+          ],
+          "c": 2,
+          "h": "Read the name beside the old signature.",
+          "why": "Mara signed the 2018 move to the shaded shelf."
+        },
+        "3-5": {
+          "q": "What two documents together locate S-17 after May 13, 2018?",
+          "a": [
+            "The 2026 visitor list and lunch menu",
+            "The relocation slip and symbol key",
+            "The wind alert and modern photo alone"
+          ],
+          "c": 1,
+          "h": "One record gives a symbol; the other translates it.",
+          "why": "The dated transfer uses the crescent symbol and the map key identifies that symbol as Echo Alcove."
+        },
+        "6-8": {
+          "q": "What is the most defensible conclusion from this record pair?",
+          "a": [
+            "Mara moved S-17 to Echo Alcove in 2018 for protection",
+            "Mara secretly sold S-17 in 2026",
+            "Lio invented the old map in 2018"
+          ],
+          "c": 0,
+          "h": "Keep the year and signer attached to the correct transfer.",
+          "why": "The two contemporaneous documents establish the earlier move, not the later custody chain."
+        }
+      }
+    },
+    {
+      "id": "2026-display-plan",
+      "place": "trailhead",
+      "icon": "📋",
+      "texts": {
+        "1-2": "A new camp list says, “Look in the old field tent for S-17.” The list copied the first 2018 card.",
+        "3-5": "The October 9, 2026 visitor checklist tells students to find S-17 in the old field tent. A margin note says “based on 2018 collection card.” The writer did not check the later 2018 relocation slip or the 2026 transfer records.",
+        "6-8": "The current exhibition handout reproduces the initial 2018 FIELD TENT location from an archival index without incorporating the dated May 13 relocation or the later October 2026 recovery. Its misleading instruction is a secondary compilation error, not eyewitness proof of where the specimen must now be."
+      },
+      "title": "October 9 Display Checklist",
+      "type": "Contemporary planning sheet",
+      "questions": {
+        "1-2": {
+          "q": "Why did the checklist send students to the wrong place?",
+          "a": [
+            "It copied an old location",
+            "It followed a new delivery receipt",
+            "It was a secret map"
+          ],
+          "c": 0,
+          "h": "Find which older record the list used.",
+          "why": "The display checklist repeated the temporary 2018 field-tent location."
+        },
+        "3-5": {
+          "q": "Which source should correct the outdated checklist?",
+          "a": [
+            "A louder rumor from other students",
+            "The color of the tent fabric",
+            "Dated records showing later movements"
+          ],
+          "c": 2,
+          "h": "The checklist was made from an incomplete record.",
+          "why": "Later signed transfers can supersede a secondary plan copied from an initial location."
+        },
+        "6-8": {
+          "q": "What is the specific weakness of the checklist as evidence?",
+          "a": [
+            "It reports a firsthand sighting of S-17 at 10:15",
+            "It derives from an incomplete earlier source and omits later transfers",
+            "It contains no mention of a location"
+          ],
+          "c": 1,
+          "h": "Consider the difference between a copied plan and an observed fact.",
+          "why": "A secondary checklist based on one archival entry cannot rebut subsequent custody documents."
+        }
+      }
+    },
+    {
+      "id": "echo-scout-log",
+      "place": "echo-alcove",
+      "icon": "🔦",
+      "texts": {
+        "1-2": "At 9:20 a.m. on October 9, 2026, Lio finds a sealed tube marked S-17 in Echo Alcove.",
+        "3-5": "Lio’s October 9 scouting note reports that at 9:20 a.m. the original S-17 ceramic tube was found intact in Echo Alcove. The tag and old transfer slip match. The note says the tube was carried away for safe storage, but it does not name the final room.",
+        "6-8": "The signed 9:20 a.m. October 9 recovery entry documents Lio Chen’s observation of the original ceramic tube in Echo Alcove, verified against the 2018 identifier S-17. As a field sighting, this bridges the historical and present timelines; it does not, by itself, determine the specimen’s destination after recovery."
+      },
+      "title": "October 9 Echo Alcove Scout Log",
+      "type": "Field observation",
+      "questions": {
+        "1-2": {
+          "q": "Where did Lio find S-17 in 2026?",
+          "a": [
+            "Echo Alcove",
+            "The cafeteria",
+            "The empty field tent"
+          ],
+          "c": 0,
+          "h": "Look at the place named in the scouting note.",
+          "why": "Lio found the sealed tube in Echo Alcove."
+        },
+        "3-5": {
+          "q": "What link does the scout log make between the timelines?",
+          "a": [
+            "It proves the sample was sold to a collector",
+            "It shows Mara moved it in 2026",
+            "It confirms S-17 remained at the old mapped shelter"
+          ],
+          "c": 2,
+          "h": "Compare the old transfer destination with the new recovery place.",
+          "why": "The 2018 move points to Echo Alcove, and the 2026 scout finds the same labeled tube there."
+        },
+        "6-8": {
+          "q": "Which statement stays within the limits of the scout log?",
+          "a": [
+            "The sample has stayed in Echo Alcove ever since",
+            "Lio recovered the matching tube at Echo Alcove at 9:20",
+            "The dry archive was locked permanently"
+          ],
+          "c": 1,
+          "h": "A recovery entry describes a moment, not an entire subsequent itinerary.",
+          "why": "It establishes location at 9:20; a separate custody document is needed for the later destination."
+        }
+      }
+    },
+    {
+      "id": "2026-transfer-form",
+      "place": "map-room",
+      "icon": "🧾",
+      "texts": {
+        "1-2": "At 9:40 a.m., Lio signs: “S-17 from Echo Alcove to Dry Archive Room. Keep it cool.”",
+        "3-5": "The signed October 9, 2026 form names Lio Chen as the person transporting S-17 at 9:40 a.m. It lists FROM: Echo Alcove and TO: Dry Archive Room. The reason is “protect fragile salt layers from heat and dust before the exhibit.”",
+        "6-8": "A contemporaneous 9:40 a.m. specimen-transfer form identifies Lio Chen as transporter, Echo Alcove as origin, and Dry Archive Room as the authorized destination. The reason explicitly cites heat and airborne grit as conservation risks. This document distinguishes the recent relocation from Mara’s 2018 precaution and is one of the two decisive proofs of the present-day outcome."
+      },
+      "title": "Lio’s October 9 Transfer Form",
+      "type": "Signed custody document",
+      "questions": {
+        "1-2": {
+          "q": "Who carried S-17 to its new room?",
+          "a": [
+            "Mara",
+            "Tessa",
+            "Lio"
+          ],
+          "c": 2,
+          "h": "Look beside the 2026 signature.",
+          "why": "Lio signed the 2026 transfer to Dry Archive Room."
+        },
+        "3-5": {
+          "q": "Which conclusion follows directly from the transfer form?",
+          "a": [
+            "Lio intentionally moved S-17 into protected storage",
+            "The field tent was robbed",
+            "Mara moved S-17 on October 9, 2026"
+          ],
+          "c": 0,
+          "h": "Check the transporter, destination, and reason boxes together.",
+          "why": "The 2026 form names Lio and Dry Archive Room and explains the protective purpose."
+        },
+        "6-8": {
+          "q": "Which evidence best attributes the CURRENT movement to a specific person?",
+          "a": [
+            "The 2018 wind advisory",
+            "A student’s rumor about a missing tube",
+            "The dated, signed 2026 transfer form"
+          ],
+          "c": 2,
+          "h": "Use a contemporary primary source recording the transfer.",
+          "why": "The signed custody form documents who handled S-17 in 2026, when, and where it went."
+        }
+      }
+    },
+    {
+      "id": "archive-intake-record",
+      "place": "dry-archive",
+      "icon": "🗄️",
+      "texts": {
+        "1-2": "At 9:52 a.m., the archive worker checks in tube S-17. It is safe in a cool cabinet.",
+        "3-5": "A separate archive receipt dated October 9, 2026 at 9:52 a.m. shows “S-17 received, seal intact, cabinet D-2.” The archivist initials the record, confirming arrival after Lio’s 9:40 transfer. The old field tent can be empty while S-17 is safely inside.",
+        "6-8": "The independently signed 9:52 a.m. receiving ledger records specimen S-17, undamaged seal, Dry Archive cabinet D-2, and a successful intake check. Its timestamp follows Lio’s custody form by 12 minutes. Together these two primary documents establish an unbroken recent chain from Echo Alcove to verified climate-controlled storage."
+      },
+      "title": "Dry Archive Intake Receipt",
+      "type": "Receiving record",
+      "questions": {
+        "1-2": {
+          "q": "Where is S-17 after 9:52 a.m.?",
+          "a": [
+            "At the old tent",
+            "In the Dry Archive Room",
+            "On a visitor bus"
+          ],
+          "c": 1,
+          "h": "Read the place beside the signed receipt.",
+          "why": "The archive receipt records S-17 in cabinet D-2."
+        },
+        "3-5": {
+          "q": "Why is the intake record stronger than the empty-tent rumor?",
+          "a": [
+            "It repeats the same guess about a thief",
+            "It documents a positive sighting of the matching sealed tube",
+            "It was written eight years earlier"
+          ],
+          "c": 1,
+          "h": "Compare a signed receiving record with an assumption based on an empty box.",
+          "why": "The receipt confirms the sample was received, rather than merely absent somewhere else."
+        },
+        "6-8": {
+          "q": "What do the transfer and receipt establish together?",
+          "a": [
+            "A documented transfer to the archive followed by verified receipt",
+            "A return to the original tent in 2018",
+            "A proven theft between 9:40 and 9:52"
+          ],
+          "c": 0,
+          "h": "Read both timestamps and matching specimen IDs.",
+          "why": "The chain of custody documents Lio’s move and the archive’s later receipt of S-17."
+        }
+      }
+    },
+    {
+      "id": "archive-climate-strip",
+      "place": "dry-archive",
+      "icon": "🌡️",
+      "texts": {
+        "1-2": "Outside, it is 38°C. Inside the archive, it is 19°C. S-17 is safer in the cool room.",
+        "3-5": "A sensor printout for October 9 shows the afternoon desert air reached 38°C, while Dry Archive Room stayed near 19°C. The reading supports the stated reason for a protective transfer, though a thermometer alone cannot identify who moved the tube.",
+        "6-8": "The environmental trace contrasts a 38°C exposed trail environment with the archive’s stable 19°C cabinet zone and controlled humidity. These measurements corroborate the conservation rationale specified in Lio’s transfer form. They are corroborative contextual evidence, not an independent chain-of-custody record."
+      },
+      "title": "Heat and Humidity Monitor",
+      "type": "Environmental record",
+      "questions": {
+        "1-2": {
+          "q": "Which place was cooler?",
+          "a": [
+            "The archive room",
+            "The desert trail",
+            "The outside bench"
+          ],
+          "c": 0,
+          "h": "Compare the two numbers.",
+          "why": "The archive was 19°C and the outside air was 38°C."
+        },
+        "3-5": {
+          "q": "How does the temperature strip contribute to the investigation?",
+          "a": [
+            "It proves Tessa stole S-17",
+            "It explains where Mara went in 2018",
+            "It supports the reason for protecting S-17 indoors"
+          ],
+          "c": 2,
+          "h": "Look at the difference between outside and inside temperatures.",
+          "why": "The cooler controlled room makes a protective transfer plausible."
+        },
+        "6-8": {
+          "q": "Which claim would overstate the temperature data?",
+          "a": [
+            "The archive environment was cooler than outside",
+            "Heat exposure could threaten the fragile specimen",
+            "The monitor alone proves Lio physically moved S-17"
+          ],
+          "c": 2,
+          "h": "A thermometer records conditions, not custody.",
+          "why": "The climate trace supports motive, but only signed transfer documents identify the person and destination."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "mara-solis",
+      "place": "map-room",
+      "icon": "👩‍🔬",
+      "texts": {
+        "1-2": "“I moved S-17 in 2018,” says Mara. “The wind was strong. I put it under the shady rocks.”",
+        "3-5": "Mara Solis, the 2018 field archivist, remembers moving S-17 away from the tent after a gust warning. “I used a symbol because the rock shelter did not have a sign. I did not move it this week.”",
+        "6-8": "Mara Solis distinguishes her original May 13, 2018 move from the current investigation: she authored the crescent-and-bars relocation slip when the weather threatened the fragile core. Her recollection is consistent with the dated transfer and map legend, but she explicitly lacks firsthand knowledge of the October 2026 transport."
+      },
+      "name": "Mara Solis",
+      "role": "Former Field Archivist",
+      "questions": {
+        "1-2": {
+          "q": "When did Mara move the sample?",
+          "a": [
+            "This morning",
+            "Never",
+            "In 2018"
+          ],
+          "c": 2,
+          "h": "Look at the year Mara mentions.",
+          "why": "Mara carried S-17 to shade in 2018."
+        },
+        "3-5": {
+          "q": "Why might Mara be wrongly blamed for a new disappearance?",
+          "a": [
+            "She signed a 2026 archive receipt",
+            "Her name is on an old relocation record",
+            "She operated the newest storage cabinet"
+          ],
+          "c": 1,
+          "h": "Separate the old event from the current one.",
+          "why": "Her dated role belongs to the 2018 move, not the 2026 transfer."
+        },
+        "6-8": {
+          "q": "Which interpretation best evaluates Mara’s testimony?",
+          "a": [
+            "It contradicts the signed 2018 document",
+            "It corroborates the 2018 relocation but cannot establish 2026 custody",
+            "It alone proves the current archive intake time"
+          ],
+          "c": 1,
+          "h": "A witness can directly know one event without witnessing later events.",
+          "why": "Her firsthand knowledge is valuable within its historical scope but limited for present-day movement."
+        }
+      }
+    },
+    {
+      "id": "lio-chen",
+      "place": "echo-alcove",
+      "icon": "🧭",
+      "texts": {
+        "1-2": "“I found S-17 under the rocks,” says Lio. “I took it inside so it would stay safe.”",
+        "3-5": "Lio Chen says the old map led him to Echo Alcove. “I found the sealed S-17 tube at 9:20. The outside heat was rising, so I signed it into the dry archive.” He asks the team to check his paperwork rather than just believe his story.",
+        "6-8": "Lio Chen explains that the original symbol key led him to the previously sheltered core; he then transferred it to climate-controlled storage to protect the salt layers from heat and dust. Although his statement is firsthand about his actions, independent forms and the receiving ledger are necessary to corroborate the full movement and rule out self-serving testimony."
+      },
+      "name": "Lio Chen",
+      "role": "Current Ecology Technician",
+      "questions": {
+        "1-2": {
+          "q": "What did Lio do with S-17?",
+          "a": [
+            "He buried it in the road",
+            "He took it inside for safety",
+            "He threw it away"
+          ],
+          "c": 1,
+          "h": "Read what Lio says about keeping it safe.",
+          "why": "Lio says he brought S-17 into protected storage."
+        },
+        "3-5": {
+          "q": "What would best check Lio’s claim?",
+          "a": [
+            "A signed transfer plus receiving record",
+            "A guess from someone at lunch",
+            "A picture of an empty field tent"
+          ],
+          "c": 0,
+          "h": "Look for independent records of both sending and receiving.",
+          "why": "Both the custody form and the archive receipt can verify Lio’s account."
+        },
+        "6-8": {
+          "q": "Why should detectives corroborate Lio’s otherwise detailed account?",
+          "a": [
+            "He describes his own actions, so independent documentation strengthens the claim",
+            "He was too young to read the 2018 notes",
+            "No first-person statement is ever useful"
+          ],
+          "c": 0,
+          "h": "Consider the strengths and limits of self-reported action.",
+          "why": "Matching signed records provide external confirmation of the claimed chain of custody."
+        }
+      }
+    },
+    {
+      "id": "tessa-mori",
+      "place": "field-tent",
+      "icon": "📷",
+      "texts": {
+        "1-2": "“The old box was empty,” says Tessa. “I thought S-17 had been stolen. I did not see anyone take it.”",
+        "3-5": "Student photographer Tessa Mori checked the old field-tent chest at 10:15 and saw no tube. “The copied display sheet told me it would be there. I posted that it had vanished, but I never checked the later records.”",
+        "6-8": "Tessa Mori offers direct observation of an empty chest at 10:15, followed by a conjecture amplified through a student post. Her inference depends on the outdated display checklist, which copied the 2018 temporary location and ignored both the historical relocation slip and contemporary archive intake. Her observation is credible; her theft conclusion is not established."
+      },
+      "name": "Tessa Mori",
+      "role": "Student Camp Reporter",
+      "questions": {
+        "1-2": {
+          "q": "What did Tessa actually see?",
+          "a": [
+            "Lio steal the sample",
+            "An empty field-tent box",
+            "Mara leave in a truck"
+          ],
+          "c": 1,
+          "h": "Separate what Tessa saw from what she guessed.",
+          "why": "Tessa saw an empty box; she did not see a theft."
+        },
+        "3-5": {
+          "q": "Which part of Tessa’s story is an inference rather than an observation?",
+          "a": [
+            "That S-17 had been stolen",
+            "That the chest was empty",
+            "That she arrived at 10:15"
+          ],
+          "c": 0,
+          "h": "Find the claim she did not personally witness.",
+          "why": "The theft claim goes beyond the observed empty box."
+        },
+        "6-8": {
+          "q": "Why is Tessa’s post insufficient to establish wrongdoing?",
+          "a": [
+            "It infers theft from an expected location based on an outdated source",
+            "It includes a time for her visit",
+            "It reports a direct view of an empty chest"
+          ],
+          "c": 0,
+          "h": "Evaluate the assumptions that connect an empty chest to a theft allegation.",
+          "why": "The incomplete checklist made the chest seem definitive despite multiple documented transfers."
+        }
+      }
+    },
+    {
+      "id": "galen-reed",
+      "place": "trailhead",
+      "icon": "🧑‍🎨",
+      "texts": {
+        "1-2": "“The moon mark means Echo Alcove,” says Galen. “It is a place, not a time.”",
+        "3-5": "Cartographer Galen Reed says the crescent-over-bars icon labels Echo Alcove on the original camp map. “Some readers thought it meant midnight. The bars actually show the two ledges above the lower shelf.”",
+        "6-8": "Galen Reed, the mapmaker, explains the conventional meaning of the crescent-and-bars notation. Its geographic referent is Echo Alcove’s shelf beneath paired stone ledges, not a midnight rendezvous. His expertise clarifies the sign system, though the physical recovery log is needed to verify whether the sample was actually there in 2026."
+      },
+      "name": "Galen Reed",
+      "role": "Field Mapmaker",
+      "questions": {
+        "1-2": {
+          "q": "What does the moon mark name?",
+          "a": [
+            "Echo Alcove",
+            "A midnight party",
+            "A new animal"
+          ],
+          "c": 0,
+          "h": "Look at Galen’s map explanation.",
+          "why": "The symbol identifies a rock shelter."
+        },
+        "3-5": {
+          "q": "What misunderstanding does Galen correct?",
+          "a": [
+            "That the sample had a label",
+            "That the field tent had a door",
+            "That a map symbol for a place meant a time of day"
+          ],
+          "c": 2,
+          "h": "Does the symbol name WHEN or WHERE?",
+          "why": "The crescent symbol is geographical, not a midnight timestamp."
+        },
+        "6-8": {
+          "q": "What kind of claim can Galen best support?",
+          "a": [
+            "The 9:52 archive receipt without seeing it",
+            "The established meaning of a map symbol",
+            "A motive of sabotage by another camper"
+          ],
+          "c": 1,
+          "h": "Consider what a cartographer can know firsthand.",
+          "why": "His authorship supports interpretation of his own legend, not all later movements."
+        }
+      }
+    },
+    {
+      "id": "ravi-patel",
+      "place": "dry-archive",
+      "icon": "🗂️",
+      "texts": {
+        "1-2": "“The pages are not in time order,” says Ravi. “A May 14 page tells about May 12. Read the dates carefully.”",
+        "3-5": "Archivist Ravi Patel sorted the camp notebooks by page number, not by the dates of the events being described. “A May 14 entry tells a story about May 12. I checked the original 2018 slips and the new 2026 receipt so we would not join two different moves into one.”",
+        "6-8": "Ravi Patel cautions against treating narrative order as event order. The May 14 notebook flashback records an earlier May 12 collection, while Mara’s May 13 relocation and Lio’s October 2026 transport are distinct. Ravi verified the modern receipt and advises comparing event times with document dates and source provenance."
+      },
+      "name": "Ravi Patel",
+      "role": "Camp Research Archivist",
+      "questions": {
+        "1-2": {
+          "q": "What does Ravi say about the May 14 page?",
+          "a": [
+            "It shows the sample was never found",
+            "It is a note from the future",
+            "It tells about an earlier day"
+          ],
+          "c": 2,
+          "h": "Read what date the page remembers.",
+          "why": "A May 14 entry can describe something that happened on May 12."
+        },
+        "3-5": {
+          "q": "What helps Ravi reconstruct the correct order?",
+          "a": [
+            "Reading notebook pages only from first to last",
+            "Checking event dates on separate original records",
+            "Ignoring the signed receipts"
+          ],
+          "c": 1,
+          "h": "Focus on dates when events happened, not just page order.",
+          "why": "Document dates, narrated event dates, and independent transfer records distinguish the timelines."
+        },
+        "6-8": {
+          "q": "Which mistake is Ravi warning investigators to avoid?",
+          "a": [
+            "Giving too much weight to signed contemporary receipts",
+            "Checking that identifiers match across documents",
+            "Conflating narrative order with chronology and merging 2018 and 2026 moves"
+          ],
+          "c": 2,
+          "h": "Differentiate when a page was composed from when its described event occurred.",
+          "why": "A flashback and two moves eight years apart cannot be collapsed into one sequence."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "desert-camp-cipher",
+    "title": "The Desert Camp Cipher",
+    "subtitle": "CASE FILE 007 • THE TWO TIMELINES",
+    "goal": "Find who moved the lost research sample in the present, where it is now, and why. Reconstruct the 2018 and 2026 timelines separately, decode the map symbol, and distinguish firsthand records from guesses.",
+    "brief": {
+      "1-2": "At Mirrow Basin Ecology Camp, a special salt sample called S-17 is missing from an old tent. Some notes are from 2018. Other notes are from 2026. Read the dates, follow a moon-shaped map sign, and find where the sample is safe.",
+      "3-5": "At fictional Mirrow Basin Ecology Camp, a rare salt-crust sample called S-17 appears to have disappeared. A visitor checklist directs students to an empty field-tent chest, while an older field journal points toward an unfamiliar moon symbol. Some pages are written after the events they describe. Compare the 2018 field trip with the current 2026 camp investigation, then follow the custody trail to learn what actually happened.",
+      "6-8": "Fictional Mirrow Basin Ecology Camp prepares to display its original salt-crust specimen S-17, collected at Glass Salt Flat in 2018. A contemporary checklist cites the 2018 field tent as its location, but that chest is empty. The archival notebook uses a flashback; a dated gust advisory precedes a relocation encoded with a crescent-and-bars symbol. The present-day recovery and custody logs introduce a second transfer in October 2026. Reconstruct both chronologies independently, test witness inferences against primary sources, and identify S-17’s latest verified location and the reason for its protective movement."
+    },
+    "theoryLabels": {
+      "who": "Who transported S-17 from the 2018 shelter during the current 2026 camp session?",
+      "where": "Where is S-17 currently secured, according to the latest receiving record?",
+      "why": "Why was S-17 transferred there instead of placed in the old display tent?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "mara",
+          "label": "Mara Solis — the 2018 field archivist"
+        },
+        {
+          "id": "lio",
+          "label": "Lio Chen — current ecology technician"
+        },
+        {
+          "id": "tessa",
+          "label": "Tessa Mori — student reporter"
+        },
+        {
+          "id": "ravi",
+          "label": "Ravi Patel — camp archivist"
+        },
+        {
+          "id": "galen",
+          "label": "Galen Reed — mapmaker"
+        }
+      ],
+      "where": [
+        {
+          "id": "field-tent",
+          "label": "The old field-tent chest"
+        },
+        {
+          "id": "echo-alcove",
+          "label": "Echo Alcove, still under the twin ledges"
+        },
+        {
+          "id": "dry-archive",
+          "label": "Dry Archive Room, cabinet D-2"
+        },
+        {
+          "id": "salt-flat",
+          "label": "Glass Salt Flat sampling site"
+        },
+        {
+          "id": "trailhead",
+          "label": "The trailhead visitor stand"
+        }
+      ],
+      "why": [
+        {
+          "id": "theft",
+          "label": "A camper secretly took the sample to keep it"
+        },
+        {
+          "id": "prank",
+          "label": "Someone staged a mystery for attention"
+        },
+        {
+          "id": "lost",
+          "label": "The sample fell out on the desert trail"
+        },
+        {
+          "id": "protect",
+          "label": "To preserve fragile salt layers in cool, controlled storage"
+        },
+        {
+          "id": "midnight",
+          "label": "To meet at the “moon” symbol at midnight"
+        }
+      ]
+    },
+    "who": "lio",
+    "where": "dry-archive",
+    "why": "protect",
+    "proofs": [
+      "2026-transfer-form",
+      "archive-intake-record"
+    ],
+    "feedback": {
+      "who": "Separate the 2018 and 2026 moves. Mara signed the May 13 historical slip; the October 9, 2026 transfer form names the technician who physically carried the recovered tube onward.",
+      "where": "Echo Alcove is the 2018 shelter and the 9:20 recovery location, not the last verified stop. Follow the 9:40 transfer and 9:52 signed receipt to identify the CURRENT cabinet.",
+      "why": "Compare the October 9 transfer reason with the climate readings: the sample needed protection from heat and abrasive dust. A crescent on the old map names a place, not a midnight meeting or evidence of theft.",
+      "proofs": "Select BOTH “Lio’s October 9 Transfer Form” and “Dry Archive Intake Receipt.” The first documents who moved S-17 and why; the second independently verifies where the matching tube arrived."
+    },
+    "resolution": {
+      "summary": "Two timelines, one intact specimen: Mara sheltered S-17 in Echo Alcove in 2018; Lio recovered it in 2026 and transferred it to Dry Archive Room for preservation.",
+      "outcome": "The investigators separate events that occurred eight years apart. On May 12, 2018 the camp collected S-17 and briefly stored it in a field tent. A May 13 gust warning prompted Mara Solis to sign a move to the crescent-over-bars shelf—Echo Alcove. Her May 14 notebook then flashed back to the May 12 discovery, which confused anyone reading page dates as event dates. In October 2026, a copied display checklist repeated only the old temporary tent location. Guided by the authentic map key, Lio Chen recovered the correctly marked sealed sample at Echo Alcove at 9:20 a.m. and signed a 9:40 protective transfer to Dry Archive Room. A separate 9:52 receipt confirms safe arrival in cabinet D-2. Tessa reported an empty tent, not a theft. S-17 was never stolen; a misunderstanding about documents and two sensible preservation moves created the mystery.",
+      "timeline": [
+        {
+          "time": "May 12, 2018 • 7:40 a.m.",
+          "event": "The ecology team collects salt-crust core S-17 at Glass Salt Flat and records temporary storage in the field tent."
+        },
+        {
+          "time": "May 13, 2018 • 3:00 p.m.",
+          "event": "A wind and heat advisory warns that fragile materials need protection."
+        },
+        {
+          "time": "May 13, 2018 • 4:20 p.m.",
+          "event": "Mara signs a transfer from the tent to the crescent-over-bars shelf, identified by the map key as Echo Alcove."
+        },
+        {
+          "time": "May 14, 2018",
+          "event": "Mara writes a journal entry recalling the May 12 collection—an intentional flashback, not a second sampling."
+        },
+        {
+          "time": "October 9, 2026 • 8:30 a.m.",
+          "event": "The display team circulates a checklist copied from the old temporary tent entry."
+        },
+        {
+          "time": "October 9, 2026 • 9:20 a.m.",
+          "event": "Lio locates the sealed S-17 tube at Echo Alcove, matching the old transfer and symbol key."
+        },
+        {
+          "time": "October 9, 2026 • 9:40 a.m.",
+          "event": "Lio signs the specimen’s transfer from Echo Alcove to Dry Archive Room because the exposed site is hot and dusty."
+        },
+        {
+          "time": "October 9, 2026 • 9:52 a.m.",
+          "event": "The archive signs receipt of S-17, seal intact, in cabinet D-2."
+        },
+        {
+          "time": "October 9, 2026 • 10:15 a.m.",
+          "event": "Tessa sees the tent chest empty and posts a mistaken theory of theft based on the outdated checklist."
+        },
+        {
+          "time": "October 9, 2026 • 11:30 a.m.",
+          "event": "Detectives compare historical and present-day records and confirm both relocations and the specimen’s safe location."
+        }
+      ]
+    }
+  }
+}

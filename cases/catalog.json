@@ -73,9 +73,9 @@
       "number": "007",
       "category": "Adventure Mystery",
       "icon": "🏜️",
-      "summary": "Old desert camp notes seem to disagree; reconstruct two timelines to trace a missing research sample.",
+      "summary": "A missing desert research sample, cryptic field symbols, and a flashback notebook demand two timelines: a 2018 shelter move and a 2026 conservation transfer.",
       "grades": "1–8 (focus: 5–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/desert-camp-cipher.json"
     },
     {
