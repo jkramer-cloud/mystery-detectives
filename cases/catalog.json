@@ -55,6 +55,138 @@
       "grades": "1–8 (focus: 5–8)",
       "status": "ready",
       "file": "cases/vanishing-esports-trophy.json"
+    },
+    {
+      "id": "orchard-ledger",
+      "title": "The Orchard Ledger",
+      "number": "006",
+      "category": "Local Agriculture",
+      "icon": "🍎",
+      "summary": "A 48-crate apple donation goes missing at a fictional Naches Valley orchard. Compare lot tags, dispatch sheets, printer logs, and cooler records to solve the labeling mix-up.",
+      "grades": "1–8 (focus: 3–8)",
+      "status": "ready",
+      "file": "cases/orchard-ledger.json"
+    },
+    {
+      "id": "desert-camp-cipher",
+      "title": "The Desert Camp Cipher",
+      "number": "007",
+      "category": "Adventure Mystery",
+      "icon": "🏜️",
+      "summary": "Old desert camp notes seem to disagree; reconstruct two timelines to trace a missing research sample.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "planned",
+      "file": "cases/desert-camp-cipher.json"
+    },
+    {
+      "id": "memory-archive",
+      "title": "The Memory Archive",
+      "number": "008",
+      "category": "Science Fiction",
+      "icon": "🧠",
+      "summary": "Contradictory recollections in a fictional memory museum challenge the reliability of recorded history.",
+      "grades": "1–8 (focus: 6–8)",
+      "status": "planned",
+      "file": "cases/memory-archive.json"
+    },
+    {
+      "id": "forest-robot",
+      "title": "The Vanishing Forest Robot",
+      "number": "009",
+      "category": "Nature Mystery",
+      "icon": "🤖",
+      "summary": "A missing forest-monitoring robot leaves weather reports and wildlife clues behind.",
+      "grades": "1–8 (focus: 3–8)",
+      "status": "planned",
+      "file": "cases/forest-robot.json"
+    },
+    {
+      "id": "hidden-inheritance",
+      "title": "The Hidden Inheritance",
+      "number": "010",
+      "category": "Puzzle Mystery",
+      "icon": "🗝️",
+      "summary": "A retired inventor’s puzzling instructions hide the destination of a community collection.",
+      "grades": "1–8 (focus: 6–8)",
+      "status": "planned",
+      "file": "cases/hidden-inheritance.json"
+    },
+    {
+      "id": "dragon-council",
+      "title": "The Dragon Council",
+      "number": "011",
+      "category": "Fantasy Mystery",
+      "icon": "🐉",
+      "summary": "Rival dragon clans dispute a peace letter; compare their viewpoints to reconstruct its journey.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "planned",
+      "file": "cases/dragon-council.json"
+    },
+    {
+      "id": "stormbound-expedition",
+      "title": "The Stormbound Expedition",
+      "number": "012",
+      "category": "Survival Mystery",
+      "icon": "⛈️",
+      "summary": "A wilderness expedition’s emergency supply cache is misplaced during a storm.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "planned",
+      "file": "cases/stormbound-expedition.json"
+    },
+    {
+      "id": "secret-academy",
+      "title": "The Secret Academy",
+      "number": "013",
+      "category": "Code Mystery",
+      "icon": "🧩",
+      "summary": "Students follow word puzzles and coded instructions through a mysterious academy.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "planned",
+      "file": "cases/secret-academy.json"
+    },
+    {
+      "id": "time-capsule",
+      "title": "The School Time Capsule",
+      "number": "014",
+      "category": "Historical Mystery",
+      "icon": "🕰️",
+      "summary": "A time capsule reveals an old letter with missing pages and contradictory records.",
+      "grades": "1–8 (focus: 3–8)",
+      "status": "planned",
+      "file": "cases/time-capsule.json"
+    },
+    {
+      "id": "museum-forgery",
+      "title": "The Painted Replica",
+      "number": "015",
+      "category": "Art Mystery",
+      "icon": "🎨",
+      "summary": "Two paintings share a title, but labels and artist notes reveal a teaching replica.",
+      "grades": "1–8 (focus: 6–8)",
+      "status": "planned",
+      "file": "cases/museum-forgery.json"
+    },
+    {
+      "id": "radio-signal",
+      "title": "The Midnight Radio Signal",
+      "number": "016",
+      "category": "Signal Mystery",
+      "icon": "📻",
+      "summary": "A puzzling mountain-town radio broadcast leads students to compare transcripts and weather logs.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "planned",
+      "file": "cases/radio-signal.json"
+    },
+    {
+      "id": "trail-journal",
+      "title": "The Trail Journal",
+      "number": "017",
+      "category": "Outdoor Mystery",
+      "icon": "🥾",
+      "summary": "Conflicting trail journal entries point toward a seasonal path adjustment.",
+      "grades": "1–8 (focus: 3–8)",
+      "status": "planned",
+      "file": "cases/trail-journal.json"
     }
   ]
 }

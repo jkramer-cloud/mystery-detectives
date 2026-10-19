@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "orchard-rows": {
+      "name": "Crestview Orchard Rows",
+      "icon": "🍎",
+      "detail": "The day begins among ripe apples and handwritten picking tallies.",
+      "scene": "art"
+    },
+    "sorting-shed": {
+      "name": "Sorting and Labeling Shed",
+      "icon": "📦",
+      "detail": "A busy printer, stacked produce crates, and two kinds of labels compete for attention.",
+      "scene": "storage"
+    },
+    "dispatch-office": {
+      "name": "Dispatch Office",
+      "icon": "📋",
+      "detail": "Shipping instructions and scanned records give the official plan.",
+      "scene": "office"
+    },
+    "loading-bay": {
+      "name": "Loading Bay A",
+      "icon": "🚚",
+      "detail": "The pantry truck arrives on time, but one pallet never reaches the loading lane.",
+      "scene": "hall"
+    },
+    "cold-room-b": {
+      "name": "Cold Room B",
+      "icon": "❄️",
+      "detail": "The room holds fruit at safe temperatures while its labels are checked.",
+      "scene": "storage"
+    },
+    "community-gate": {
+      "name": "Pantry Collection Gate",
+      "icon": "🥕",
+      "detail": "A recipient waits for fruit, and a rumor spreads faster than the delivery truck.",
+      "scene": "library"
+    }
+  },
+  "evidence": [
+    {
+      "id": "harvest-tally",
+      "place": "orchard-rows",
+      "icon": "🍏",
+      "texts": {
+        "1-2": "At 7:35, workers pick 48 crates of apples. The lot is OR-42. All 48 crates go to the packing shed.",
+        "3-5": "The 7:35 harvest tally records 48 crates of apples from lot OR-42. A checker signs that all 48 went to the sorting shed; the record does not say they left the orchard property.",
+        "6-8": "An original 7:35 field tally documents 48 crates under harvest-lot identifier OR-42, with a checker’s signature confirming transfer to the sorting shed. This primary source establishes initial quantity and identity, but not the shipment’s final location."
+      },
+      "title": "Morning Harvest Tally",
+      "type": "Farm record",
+      "questions": {
+        "1-2": {
+          "q": "How many crates were picked?",
+          "a": [
+            "24 crates",
+            "8 crates",
+            "48 crates"
+          ],
+          "c": 2,
+          "h": "Find the number after 7:35.",
+          "why": "The tally says workers picked 48 crates."
+        },
+        "3-5": {
+          "q": "What does the 7:35 tally establish?",
+          "a": [
+            "That the pantry already received the fruit",
+            "The lot and number of crates sent to sorting",
+            "That the truck was stolen"
+          ],
+          "c": 1,
+          "h": "Notice where the tally says the crates went.",
+          "why": "It documents OR-42 and 48 crates going to sorting, not their final delivery."
+        },
+        "6-8": {
+          "q": "Which claim exceeds what this primary record proves?",
+          "a": [
+            "That the 48 crates were delivered to the pantry",
+            "That OR-42 was the harvest identifier",
+            "That the checker recorded 48 crates"
+          ],
+          "c": 0,
+          "h": "A field tally covers harvesting, not delivery.",
+          "why": "The tally verifies a harvest and internal transfer, but cannot establish delivery to a recipient."
+        }
+      }
+    },
+    {
+      "id": "packing-count",
+      "place": "sorting-shed",
+      "icon": "🧮",
+      "texts": {
+        "1-2": "At 8:03, Sera counts 48 apple crates. She checks the small tags. Every tag says OR-42.",
+        "3-5": "Sera’s 8:03 packing sheet lists 48 crates of lot OR-42 and confirms that the small tag on each crate matches the harvest tally. It is signed before the outer pallet sticker is printed.",
+        "6-8": "The signed 8:03 packing audit reconciles 48 internal crate tags marked OR-42 with the harvest tally. Crucially, the audit precedes the printing of the pallet-level routing label; it cannot certify the accuracy of a later label."
+      },
+      "title": "Packing Count Sheet",
+      "type": "Functional text",
+      "questions": {
+        "1-2": {
+          "q": "What do the small crate tags say?",
+          "a": [
+            "OR-42",
+            "OR-24",
+            "B-38"
+          ],
+          "c": 0,
+          "h": "Look at the last words of the note.",
+          "why": "All 48 individual crate tags are marked OR-42."
+        },
+        "3-5": {
+          "q": "Why is the time on this sheet important?",
+          "a": [
+            "It proves the truck left at 8:03",
+            "It shows the fruit spoiled at 8:03",
+            "It was signed before the pallet sticker was printed"
+          ],
+          "c": 2,
+          "h": "Compare the packing count with the later printer note.",
+          "why": "The reliable internal tags were checked before the later pallet label mix-up."
+        },
+        "6-8": {
+          "q": "Which limitation applies to the packing audit?",
+          "a": [
+            "It cannot verify how many crates were packed",
+            "It does not verify the later outer routing label",
+            "It proves the forklift operator ignored instructions"
+          ],
+          "c": 1,
+          "h": "Distinguish the item examined from the item printed afterward.",
+          "why": "An internal-tag audit cannot establish the accuracy of a separate outer pallet sticker printed later."
+        }
+      }
+    },
+    {
+      "id": "printer-queue-slip",
+      "place": "sorting-shed",
+      "icon": "🖨️",
+      "texts": {
+        "1-2": "The label printer jams at 8:12. When it starts again, it prints an old sticker: MARKET HOLD / COLD B. That is not the pantry order.",
+        "3-5": "At 8:12, the pallet-label printer pauses after a ribbon jam. Its restart record shows that an older MARKET HOLD / COLD B job printed first, before the new pantry label could run. The printer did not change the small OR-42 tags already on the crates.",
+        "6-8": "The original printer event log timestamps a ribbon fault at 8:12 and a queued restart job at 8:14. The first resumed output is the previous MARKET HOLD / COLD B routing template, not the active VALLEY TABLE / BAY A order. This explains how a visually plausible but obsolete outer label could redirect a correctly counted pallet."
+      },
+      "title": "Printer Restart Log",
+      "type": "Equipment record",
+      "questions": {
+        "1-2": {
+          "q": "Why did the printer make the wrong sticker?",
+          "a": [
+            "Someone ate the paper",
+            "It printed an old job after a jam",
+            "A driver tore off the label"
+          ],
+          "c": 1,
+          "h": "Read what happened after the printer restarted.",
+          "why": "The old queued job printed before the new pantry job."
+        },
+        "3-5": {
+          "q": "What is the best explanation for the pallet’s wrong destination?",
+          "a": [
+            "An old routing label printed after a jam",
+            "The orchard had no apples",
+            "The pantry had canceled its order"
+          ],
+          "c": 0,
+          "h": "Focus on the restart job name.",
+          "why": "The restart log identifies the obsolete MARKET HOLD / COLD B template."
+        },
+        "6-8": {
+          "q": "Which causal claim is most strongly supported by the printer log?",
+          "a": [
+            "A worker deliberately falsified the harvest total",
+            "The cooling system destroyed the fruit",
+            "A stale queued job created the misleading pallet label"
+          ],
+          "c": 2,
+          "h": "Use the equipment timestamps, not guesses about motives.",
+          "why": "The recorded sequence is fault, restart, old routing template; it supports an accidental labeling error."
+        }
+      }
+    },
+    {
+      "id": "outer-pallet-sticker",
+      "place": "sorting-shed",
+      "icon": "🏷️",
+      "texts": {
+        "1-2": "A big yellow sticker on the pallet says MARKET HOLD / COLD B. But the small tags on the apples say OR-42.",
+        "3-5": "The outer yellow sticker reads MARKET HOLD / COLD B. A note beneath it lists 48 crates, but the small individual crate tags still say OR-42. The two sets of labels disagree about where the pallet belongs.",
+        "6-8": "The pallet-level sticker orders MARKET HOLD / COLD B, while the 48 nested crate tags retain OR-42. The sticker is direct evidence of the instructions visible to a forklift operator, not reliable proof of the pallet’s true shipment identity; compare document scope before inferring destination."
+      },
+      "title": "Misleading Pallet Sticker",
+      "type": "Shipping label",
+      "questions": {
+        "1-2": {
+          "q": "Where does the big sticker tell workers to put the pallet?",
+          "a": [
+            "Cold Room B",
+            "Loading Bay A",
+            "The school library"
+          ],
+          "c": 0,
+          "h": "Read the words after MARKET HOLD.",
+          "why": "The large label directs the pallet to Cold Room B."
+        },
+        "3-5": {
+          "q": "What is the key conflict between the labels?",
+          "a": [
+            "Both labels say the pallet was delivered",
+            "Neither label contains letters",
+            "The outer sticker gives a different route from the crate tags"
+          ],
+          "c": 2,
+          "h": "Compare the large sticker with each small tag.",
+          "why": "The exterior sticker says MARKET HOLD while the individual crates remain lot OR-42."
+        },
+        "6-8": {
+          "q": "How should investigators interpret the outer sticker?",
+          "a": [
+            "It proves a market purchased OR-42",
+            "It documents a visible instruction but not verified lot identity",
+            "It guarantees the pallet never entered the cooler"
+          ],
+          "c": 1,
+          "h": "Distinguish directions printed on a label from verified contents.",
+          "why": "The printed label explains a worker’s action, but internal tags and source records identify the actual fruit."
+        }
+      }
+    },
+    {
+      "id": "dispatch-manifest",
+      "place": "dispatch-office",
+      "icon": "📑",
+      "texts": {
+        "1-2": "The office plan says OR-42, 48 crates, Valley Table Pantry, Bay A. The truck should pick up at 10:30.",
+        "3-5": "The signed shipping manifest assigns all 48 OR-42 crates to Valley Table Pantry, with pickup at 10:30 from Loading Bay A. There is no authorized market-hold instruction for this lot.",
+        "6-8": "The original dispatch manifest specifies OR-42, quantity 48, recipient Valley Table Pantry, loading location Bay A, and 10:30 collection. Its absence of a hold authorization directly contradicts the obsolete market-hold sticker while documenting intended, not completed, shipment."
+      },
+      "title": "Official Dispatch Manifest",
+      "type": "Delivery record",
+      "questions": {
+        "1-2": {
+          "q": "Where should the truck get the apples?",
+          "a": [
+            "Cold Room B",
+            "The lunchroom",
+            "Loading Bay A"
+          ],
+          "c": 2,
+          "h": "Find the pickup place on the plan.",
+          "why": "The official manifest assigns the shipment to Bay A."
+        },
+        "3-5": {
+          "q": "How does the dispatch manifest challenge the yellow sticker?",
+          "a": [
+            "It says the pallet contains no apples",
+            "It directs OR-42 to the pantry at Bay A",
+            "It authorizes a market hold in Cold B"
+          ],
+          "c": 1,
+          "h": "Find the named destination and loading place.",
+          "why": "The active manifest points to Bay A and the pantry, not the previous market-hold job."
+        },
+        "6-8": {
+          "q": "Which comparison most directly tests whether the outer sticker was current?",
+          "a": [
+            "Count how many workers wore gloves",
+            "Compare the orchard’s trees to a photograph",
+            "Match its route to the signed manifest for OR-42"
+          ],
+          "c": 2,
+          "h": "Compare two records about the SAME lot’s authorized destination.",
+          "why": "The dispatch manifest is the controlling plan for the OR-42 order and contradicts the old sticker."
+        }
+      }
+    },
+    {
+      "id": "forklift-transfer-log",
+      "place": "cold-room-b",
+      "icon": "🚜",
+      "texts": {
+        "1-2": "At 8:23, Tavi drives one pallet with 48 crates to Cold Room B. The scanner lists the yellow sticker number.",
+        "3-5": "The forklift scan at 8:23 identifies operator Tavi Rowan, 48 crates, and destination Cold Room B. Tavi scanned the printed yellow pallet routing code, not the small lot tags inside the stack.",
+        "6-8": "The timestamped equipment scan records Tavi Rowan as the operator moving a 48-crate pallet into Cold Room B at 8:23. The scan references the obsolete exterior routing sticker rather than the internal OR-42 tags; it establishes who moved the load and where, without suggesting deliberate concealment."
+      },
+      "title": "Forklift Transfer Scan",
+      "type": "Movement log",
+      "questions": {
+        "1-2": {
+          "q": "Who moved a pallet into Cold Room B?",
+          "a": [
+            "Emory Finch",
+            "Tavi Rowan",
+            "Kian Vale"
+          ],
+          "c": 1,
+          "h": "Find the operator named in the scan.",
+          "why": "Tavi Rowan is listed as the forklift operator."
+        },
+        "3-5": {
+          "q": "What does the scan reliably tell detectives?",
+          "a": [
+            "Tavi moved a 48-crate pallet into Cold Room B",
+            "Tavi stole the pantry donation",
+            "The crates were destroyed"
+          ],
+          "c": 0,
+          "h": "Separate a recorded movement from a guessed motive.",
+          "why": "The scan confirms the operator, quantity and destination, but not theft."
+        },
+        "6-8": {
+          "q": "What conclusion is warranted when the scan is paired with the printer log?",
+          "a": [
+            "Tavi followed an obsolete route printed after a jam",
+            "Tavi rewrote the harvest count",
+            "A different truck took the load from Bay A"
+          ],
+          "c": 0,
+          "h": "Use the scanner’s route and the printer’s earlier job record together.",
+          "why": "One primary record explains the incorrect printed direction; the other documents the resulting transfer."
+        }
+      }
+    },
+    {
+      "id": "cooler-temp-log",
+      "place": "cold-room-b",
+      "icon": "🌡️",
+      "texts": {
+        "1-2": "The cooler stayed at 38°F. The apples did not get too warm. The log does not name the apple lot.",
+        "3-5": "The Cold Room B temperature sheet reports a steady 38°F from 8:20 through 11:15. It supports that fruit stored there stayed cool, but the temperature reading alone does not identify the missing OR-42 crates.",
+        "6-8": "The cold-chain monitor shows a stable 38°F throughout the disputed interval, consistent with safe temporary storage. Because its readings refer to the room rather than individual pallet IDs, the record can support product condition but cannot independently prove lot identity or who relocated the shipment."
+      },
+      "title": "Cold-Room Temperature Log",
+      "type": "Safety record",
+      "questions": {
+        "1-2": {
+          "q": "How warm was Cold Room B?",
+          "a": [
+            "90°F",
+            "15°F",
+            "38°F"
+          ],
+          "c": 2,
+          "h": "Read the number with the degree symbol.",
+          "why": "The cooling record shows 38 degrees Fahrenheit."
+        },
+        "3-5": {
+          "q": "Which question can the temperature log help answer?",
+          "a": [
+            "Whether the fruit stayed cool while it was stored",
+            "Which person printed the wrong label",
+            "Which truck drove out at 10:30"
+          ],
+          "c": 0,
+          "h": "Think about what a thermometer measures.",
+          "why": "The record tracks room temperature, not people or lot IDs."
+        },
+        "6-8": {
+          "q": "Why is the temperature log insufficient as proof of the shipment’s location by itself?",
+          "a": [
+            "It was handwritten instead of typed",
+            "It records 38°F rather than 40°F",
+            "It measures a room, not a particular lot of apples"
+          ],
+          "c": 2,
+          "h": "Identify the unit being measured and what is missing.",
+          "why": "A stable room temperature cannot identify specific crates without a corresponding location or lot record."
+        }
+      }
+    },
+    {
+      "id": "inner-crate-tags",
+      "place": "cold-room-b",
+      "icon": "🔍",
+      "texts": {
+        "1-2": "Inside the pallet in Cold Room B, every small tag says OR-42. There are 48 crates. The missing apples are here!",
+        "3-5": "When staff check the pallet in Cold Room B at 11:10, they find 48 inner crate tags marked OR-42. The number and lot code match the harvest tally and pantry manifest, even though the outer yellow sticker says MARKET HOLD.",
+        "6-8": "The 11:10 physical inventory inside Cold Room B documents 48 original crate tags labeled OR-42, matching both the signed harvest tally and dispatch manifest. This cross-check ties the misplaced pallet to the missing pantry order and refutes the exterior routing label’s implied contents."
+      },
+      "title": "Inner Crate Lot Tags",
+      "type": "Physical evidence",
+      "questions": {
+        "1-2": {
+          "q": "What is written on the small tags in the cooler?",
+          "a": [
+            "OR-24",
+            "OR-42",
+            "MARKET ONLY"
+          ],
+          "c": 1,
+          "h": "Look at the tags inside the stack.",
+          "why": "The small tags on all the crates identify lot OR-42."
+        },
+        "3-5": {
+          "q": "Why does counting the inner tags matter?",
+          "a": [
+            "It proves the apples were sold",
+            "It shows the printer was never jammed",
+            "The lot and all 48 crates match the missing order"
+          ],
+          "c": 2,
+          "h": "Compare the inner lot tags with the office manifest.",
+          "why": "The same lot and quantity connect the cooler pallet to the pantry shipment."
+        },
+        "6-8": {
+          "q": "Which combination makes the identification especially persuasive?",
+          "a": [
+            "Matching crate lot IDs, quantity, and the authorized manifest",
+            "A rumor and the yellow outer sticker alone",
+            "The room thermometer and a driver’s guess"
+          ],
+          "c": 0,
+          "h": "Look for independent records agreeing on lot AND quantity.",
+          "why": "The physical tags agree with both harvest and dispatch primary sources."
+        }
+      }
+    },
+    {
+      "id": "dock-departure",
+      "place": "loading-bay",
+      "icon": "🛻",
+      "texts": {
+        "1-2": "At 10:30, Emory’s truck leaves Bay A. OR-42 is marked NOT LOADED. That does not mean it was stolen.",
+        "3-5": "The 10:30 Bay A truck checklist records other orders leaving, but OR-42 is marked NOT LOADED. The driver reports no 48-crate pallet waiting in the assigned lane when loading began.",
+        "6-8": "The signed 10:30 departure checklist marks OR-42 NOT LOADED while documenting all other scheduled pallets. This record proves an omission from the truck, not disappearance from the orchard; combine it with internal movement records before claiming a theft."
+      },
+      "title": "Bay A Loading Checklist",
+      "type": "Departure record",
+      "questions": {
+        "1-2": {
+          "q": "Was lot OR-42 on the truck?",
+          "a": [
+            "No, it was marked not loaded",
+            "Yes, it was delivered",
+            "No trucks came that day"
+          ],
+          "c": 0,
+          "h": "Read the words written beside OR-42.",
+          "why": "OR-42 is marked NOT LOADED on the departure checklist."
+        },
+        "3-5": {
+          "q": "What does NOT LOADED establish?",
+          "a": [
+            "Someone sold the fruit secretly",
+            "The pallet did not depart on that truck",
+            "The pantry changed the order"
+          ],
+          "c": 1,
+          "h": "The loading sheet tracks a truck, not every orchard room.",
+          "why": "The checklist proves a missed pickup, not where the fruit was stored."
+        },
+        "6-8": {
+          "q": "Which conclusion would be an overreach from the departure checklist alone?",
+          "a": [
+            "That the OR-42 shipment missed the truck",
+            "That the missing pallet was stolen",
+            "That other pallets were recorded as loaded"
+          ],
+          "c": 1,
+          "h": "Treat absence from one truck as limited evidence.",
+          "why": "A missed departure is not direct proof of theft or the pallet’s later location."
+        }
+      }
+    },
+    {
+      "id": "pantry-order",
+      "place": "community-gate",
+      "icon": "🥬",
+      "texts": {
+        "1-2": "Valley Table Pantry needs 48 crates of OR-42 apples. At 10:45, Kian calls to ask why the truck has none.",
+        "3-5": "Valley Table Pantry’s dated request specifies 48 crates of OR-42 apples. A 10:45 follow-up says the truck arrived without that lot; it asks the orchard to trace the order instead of accusing anyone.",
+        "6-8": "The recipient’s original request identifies the expected lot, quantity, and collection window; its 10:45 follow-up documents nondelivery and explicitly asks for a shipment trace. The request is a primary source for expectations, but cannot reveal internal routing without the orchard’s records."
+      },
+      "title": "Pantry Request and Follow-Up",
+      "type": "Recipient record",
+      "questions": {
+        "1-2": {
+          "q": "Who was waiting for the apples?",
+          "a": [
+            "The museum",
+            "Valley Table Pantry",
+            "A soccer team"
+          ],
+          "c": 1,
+          "h": "Find the name on the request.",
+          "why": "The order belongs to Valley Table Pantry."
+        },
+        "3-5": {
+          "q": "What did the pantry do after the apples failed to arrive?",
+          "a": [
+            "Accused Tavi of stealing the crates",
+            "Canceled every food order",
+            "Asked the orchard to trace the missing order"
+          ],
+          "c": 2,
+          "h": "Read the follow-up note rather than a rumor.",
+          "why": "The pantry requested an investigation, not punishment."
+        },
+        "6-8": {
+          "q": "What is the proper evidentiary role of the pantry request?",
+          "a": [
+            "It documents the recipient’s expectations and the nondelivery report",
+            "It proves how the printer jam occurred",
+            "It identifies the forklift operator who moved the pallet"
+          ],
+          "c": 0,
+          "h": "Consider what the pantry can directly observe.",
+          "why": "The pantry’s records verify what was expected and received, not internal orchard movements."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "sera-bell",
+      "place": "sorting-shed",
+      "icon": "👩",
+      "texts": {
+        "1-2": "“I counted 48 OR-42 crates,” says Sera. “The printer jammed after my count. I did not drive the forklift.”",
+        "3-5": "“I finished counting 48 OR-42 crates at 8:03,” says packer Sera Bell. “The printer jammed later. I trusted the big label to print correctly, but I did not take the pallet anywhere.”",
+        "6-8": "Sera Bell distinguishes her completed 8:03 internal-tag audit from the later printer restart. She acknowledges she did not compare the freshly printed exterior route against the manifest, but she neither operated the forklift nor witnessed the pallet’s final storage location."
+      },
+      "name": "Sera Bell",
+      "role": "Packing Inspector",
+      "questions": {
+        "1-2": {
+          "q": "What did Sera count?",
+          "a": [
+            "48 OR-42 crates",
+            "12 boxes of books",
+            "A pile of helmets"
+          ],
+          "c": 0,
+          "h": "Find the number Sera says.",
+          "why": "Sera counted the same 48 crates listed on the harvest tally."
+        },
+        "3-5": {
+          "q": "Which detail limits what Sera can prove?",
+          "a": [
+            "She did not transport the pallet or check the later route label",
+            "She was absent for the entire morning",
+            "She wrote the pantry’s delivery receipt"
+          ],
+          "c": 0,
+          "h": "Separate the packing job from the forklift job.",
+          "why": "Sera can confirm the internal count, not the final location of the pallet."
+        },
+        "6-8": {
+          "q": "How should detectives evaluate Sera’s statement?",
+          "a": [
+            "It proves she deliberately rerouted the truck",
+            "It overrides the timestamped equipment scan",
+            "It is firsthand about packing but limited about subsequent transport"
+          ],
+          "c": 2,
+          "h": "Identify which actions she actually witnessed.",
+          "why": "Her first-hand count is useful, but her lack of observation of the later transport limits her testimony."
+        }
+      }
+    },
+    {
+      "id": "tavi-rowan",
+      "place": "cold-room-b",
+      "icon": "🧑",
+      "texts": {
+        "1-2": "“The sticker said COLD B,” says Tavi. “So I moved the pallet there at 8:23. I did not know the little tags said OR-42.”",
+        "3-5": "“I moved a 48-crate pallet into Cold Room B at 8:23,” explains forklift driver Tavi Rowan. “The outside label said MARKET HOLD. I followed it. I never opened the stack to read the smaller tags.”",
+        "6-8": "Tavi Rowan confirms moving the 48-crate pallet at 8:23 to Cold Room B under the outer sticker’s MARKET HOLD routing instruction. His recollection aligns with the digital forklift scan, but he cannot attest to the internal contents because the pallet remained wrapped during transfer."
+      },
+      "name": null,
+      "role": null,
+      "questions": {
+        "1-2": {
+          "q": "Where did Tavi put the pallet?",
+          "a": [
+            "Loading Bay A",
+            "The playground",
+            "Cold Room B"
+          ],
+          "c": 2,
+          "h": "Find the room Tavi names.",
+          "why": "He says he drove the pallet into Cold Room B."
+        },
+        "3-5": {
+          "q": "Why did Tavi choose Cold Room B?",
+          "a": [
+            "He wanted to hide donated food",
+            "He followed the outside routing sticker",
+            "The pantry driver told him to sell it"
+          ],
+          "c": 1,
+          "h": "Use his reason, not an accusation.",
+          "why": "Tavi followed MARKET HOLD on the exterior sticker."
+        },
+        "6-8": {
+          "q": "What corroborates Tavi’s account without proving intent?",
+          "a": [
+            "A rumor that someone sold the apples",
+            "The timestamped forklift transfer scan",
+            "The orchard weather forecast"
+          ],
+          "c": 1,
+          "h": "Look for a separate source that records his movement.",
+          "why": "The independent scan confirms the destination and time; neither source establishes malicious intent."
+        }
+      }
+    },
+    {
+      "id": "lena-moss",
+      "place": "dispatch-office",
+      "icon": "👩‍💼",
+      "texts": {
+        "1-2": "“The plan said Bay A,” says Lena. “I did not write COLD B on the pantry order.”",
+        "3-5": "“My signed dispatch order sent OR-42 to Valley Table Pantry through Bay A,” says Lena Moss. “When the truck missed it, I checked the route labels and found a possible printer mix-up.”",
+        "6-8": "Dispatch coordinator Lena Moss identifies Bay A as the sole authorized loading point for the 48-crate pantry shipment and distinguishes the signed manifest from temporary pallet signage. She began a trace after the nondelivery report, rather than assuming someone stole the fruit."
+      },
+      "name": "Lena Moss",
+      "role": "Dispatch Coordinator",
+      "questions": {
+        "1-2": {
+          "q": "Where did Lena plan to send the apples?",
+          "a": [
+            "Cold Room B for sale",
+            "Bay A for the pantry",
+            "The gym for practice"
+          ],
+          "c": 1,
+          "h": "Find the place in her plan.",
+          "why": "Lena’s order called for Bay A and the pantry."
+        },
+        "3-5": {
+          "q": "Which action demonstrates a careful response to the missing load?",
+          "a": [
+            "Telling everyone the crates were stolen",
+            "Checking signed instructions against route labels",
+            "Ignoring the pantry’s message"
+          ],
+          "c": 1,
+          "h": "Look at what Lena checked.",
+          "why": "She compared primary records before drawing conclusions."
+        },
+        "6-8": {
+          "q": "Why is Lena’s testimony especially relevant to the intended route?",
+          "a": [
+            "She personally operated every forklift",
+            "She authored the signed dispatch manifest",
+            "She watched the entire loading trip"
+          ],
+          "c": 1,
+          "h": "Consider her responsibility and direct knowledge.",
+          "why": "She is a primary witness for what the dispatch plan authorized, not necessarily for later movements."
+        }
+      }
+    },
+    {
+      "id": "emory-finch",
+      "place": "loading-bay",
+      "icon": "🧢",
+      "texts": {
+        "1-2": "“I waited at Bay A,” says Emory. “The OR-42 apples were not there when I loaded the truck.”",
+        "3-5": "Truck driver Emory Finch says the truck reached Loading Bay A on time. Other pallets were ready, but no OR-42 pallet waited in the lane. Emory signed NOT LOADED instead of guessing where it went.",
+        "6-8": "Emory Finch describes a timely loading operation at Bay A and explains why OR-42 was marked NOT LOADED. His observation establishes absence from the assigned dock, but he had no access to Cold Room B and cannot personally account for orchard-internal handling."
+      },
+      "name": "Emory Finch",
+      "role": "Pantry Truck Driver",
+      "questions": {
+        "1-2": {
+          "q": "What was missing from Bay A?",
+          "a": [
+            "Emory’s whole truck",
+            "The cold-room door",
+            "The OR-42 pallet"
+          ],
+          "c": 2,
+          "h": "Read what Emory says was not there.",
+          "why": "The OR-42 shipment was absent from the loading lane."
+        },
+        "3-5": {
+          "q": "Why did Emory write NOT LOADED?",
+          "a": [
+            "The pallet never appeared in his loading lane",
+            "He delivered the pallet early",
+            "He knew the apples were spoiled"
+          ],
+          "c": 0,
+          "h": "Focus on what the driver saw at the dock.",
+          "why": "He recorded the shipment as not loaded rather than making an unsupported delivery claim."
+        },
+        "6-8": {
+          "q": "What is the main limitation of Emory’s evidence?",
+          "a": [
+            "He cannot identify any loaded pallets",
+            "He wrote the printer restart log",
+            "He saw the dock but not internal cooler movements"
+          ],
+          "c": 2,
+          "h": "Ask which physical areas Emory observed.",
+          "why": "His firsthand testimony covers Bay A, not the location of every pallet elsewhere on site."
+        }
+      }
+    },
+    {
+      "id": "kian-vale",
+      "place": "community-gate",
+      "icon": "🧑‍🌾",
+      "texts": {
+        "1-2": "“I heard someone say the apples were stolen,” says Kian. “But I did not see anyone take them. I asked for help.”",
+        "3-5": "Volunteer Kian Vale says someone at the collection gate claimed the donation had been stolen. “That is only a rumor. I saw the truck arrive without the apples, but I did not see what happened in the orchard. I called the dispatch office.”",
+        "6-8": "Kian Vale distinguishes personal observation—the pantry’s truck arrived without OR-42—from secondhand allegations of theft. Their request to trace the shipment rather than accuse a worker illustrates why investigators must rank direct observations above an unattributed rumor."
+      },
+      "name": "Kian Vale",
+      "role": "Pantry Collection Volunteer",
+      "questions": {
+        "1-2": {
+          "q": "Did Kian see someone steal apples?",
+          "a": [
+            "No, Kian only heard a rumor",
+            "Yes, Kian saw a thief",
+            "Yes, Kian moved the crates"
+          ],
+          "c": 0,
+          "h": "Find what Kian did NOT see.",
+          "why": "Kian heard a story but did not witness a theft."
+        },
+        "3-5": {
+          "q": "Which part of Kian’s statement is firsthand?",
+          "a": [
+            "Someone definitely stole the shipment",
+            "The printer was broken on purpose",
+            "The truck arrived without the apple shipment"
+          ],
+          "c": 2,
+          "h": "Separate what Kian saw from what someone said.",
+          "why": "Kian saw the missing delivery; the theft allegation was secondhand."
+        },
+        "6-8": {
+          "q": "Why is the rumor a weaker source than the transfer scan?",
+          "a": [
+            "It has no identified observer or verifiable timestamp",
+            "It uses simpler vocabulary",
+            "It was shared near the orchard gate"
+          ],
+          "c": 0,
+          "h": "Evaluate whether the claim has a traceable source.",
+          "why": "A scan is a timed movement record; an unattributed rumor cannot identify what actually happened."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "orchard-ledger",
+    "title": "The Orchard Ledger",
+    "subtitle": "CASE FILE 006 • THE MISSING PANTRY PALLET",
+    "goal": "Find who moved the 48-crate OR-42 apple pallet, where it was actually stored, and why it missed its scheduled collection. Compare first-hand records, shipping labels, temperatures, and witness accounts.",
+    "brief": {
+      "1-2": "Forty-eight apple crates are missing from a delivery! The truck came, but the apples were not at the loading bay. Look for the small crate tags, follow the big sticker, and discover where the apples went.",
+      "3-5": "At Crestview Orchard, a 48-crate apple shipment for Valley Table Pantry seems to have vanished before pickup. A truck driver marks the order NOT LOADED. A yellow sticker sends workers to a different room, and a rumor claims someone stole the fruit. Compare signed paperwork, temperature logs, and witness accounts to find the truth.",
+      "6-8": "At fictional Crestview Orchard in the Naches Valley, lot OR-42—48 crates intended for Valley Table Pantry—fails to reach its scheduled 10:30 pickup at Loading Bay A. The driver records NOT LOADED while a yellow MARKET HOLD sticker and contradictory employee recollections point elsewhere. A printer restart after a ribbon jam may have revived an obsolete destination label. Reconstruct the chain of custody using the harvest tally, scan timestamps, manifest, refrigerated-storage data, and firsthand interviews; determine whether the discrepancy reflects theft, spoilage, or ordinary misrouting."
+    },
+    "theoryLabels": {
+      "who": "Who physically moved the OR-42 pallet into the incorrect storage area?",
+      "where": "Where were the missing 48 crates found?",
+      "why": "Why did OR-42 miss its scheduled pantry pickup?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "sera",
+          "label": "Sera Bell — packing inspector"
+        },
+        {
+          "id": "tavi",
+          "label": "Tavi Rowan — forklift driver"
+        },
+        {
+          "id": "lena",
+          "label": "Lena Moss — dispatch coordinator"
+        },
+        {
+          "id": "emory",
+          "label": "Emory Finch — truck driver"
+        },
+        {
+          "id": "kian",
+          "label": "Kian Vale — pantry volunteer"
+        }
+      ],
+      "where": [
+        {
+          "id": "bay-a",
+          "label": "Loading Bay A, waiting for the truck"
+        },
+        {
+          "id": "cold-b",
+          "label": "Cold Room B, still on the orchard property"
+        },
+        {
+          "id": "community-gate",
+          "label": "The pantry collection gate"
+        },
+        {
+          "id": "market-truck",
+          "label": "A market truck that left the property"
+        },
+        {
+          "id": "sorting",
+          "label": "The empty sorting shed"
+        }
+      ],
+      "why": [
+        {
+          "id": "theft",
+          "label": "A worker secretly stole the apple donation"
+        },
+        {
+          "id": "spoilage",
+          "label": "The apples overheated and were discarded"
+        },
+        {
+          "id": "mixup",
+          "label": "A jammed printer released an obsolete HOLD B routing label"
+        },
+        {
+          "id": "canceled",
+          "label": "The pantry canceled its order"
+        },
+        {
+          "id": "storm",
+          "label": "A storm closed the loading dock"
+        }
+      ]
+    },
+    "who": "tavi",
+    "where": "cold-b",
+    "why": "mixup",
+    "proofs": [
+      "printer-queue-slip",
+      "forklift-transfer-log"
+    ],
+    "feedback": {
+      "who": "Review the 8:23 Forklift Transfer Scan. It names the person who physically carried the pallet to Cold Room B. The packing inspector counted the fruit and the dispatcher authorized the original route, but neither transported this pallet.",
+      "where": "Compare the forklift destination with the 11:10 physical inventory. The crate tags on the recovered 48-crate pallet show OR-42; NOT LOADED only describes its absence from Bay A.",
+      "why": "Match the 8:12 printer jam and 8:14 restart job against the authorized dispatch manifest. The old MARKET HOLD / COLD B label—not a theft, cancelation, or spoilage order—redirected the pallet.",
+      "proofs": "Select BOTH the original Printer Restart Log and the timestamped Forklift Transfer Scan. Together they establish why the wrong directions printed and who followed them to Cold Room B. The crate tags and manifest offer additional corroboration."
+    },
+    "resolution": {
+      "summary": "No apples were stolen. A printer reprinted an old MARKET HOLD label, and forklift operator Tavi Rowan followed it, storing all 48 OR-42 crates safely in Cold Room B instead of sending them to Bay A.",
+      "outcome": "Crestview Orchard harvested 48 crates of OR-42 apples for Valley Table Pantry. At 7:35 the lot was tallied, and at 8:03 Sera Bell verified the internal OR-42 crate tags. A ribbon jam at 8:12 interrupted the large pallet-label printer; at 8:14 it mistakenly released a queued MARKET HOLD / COLD B sticker from an earlier job. The separate signed dispatch manifest still directed OR-42 to Valley Table Pantry through Loading Bay A at 10:30. At 8:23 forklift operator Tavi Rowan followed the visible exterior sticker and moved the intact 48-crate pallet into Cold Room B. Its temperature stayed at 38°F, so the apples remained properly stored. Driver Emory Finch found no OR-42 pallet at Bay A and marked the shipment NOT LOADED; Kian Vale later heard a theft rumor but did not witness any theft. At 11:10 staff opened the cooler pallet and found all 48 internal OR-42 tags matching the harvest and pantry records. Lena Moss traced the misleading sticker to the printer restart job; the fruit was relabeled and moved to Bay A at 11:25, then delivered to Valley Table Pantry at 11:50. Tavi did not steal the food, and the equipment fault—not sabotage—caused the error. The detectives solved the case by comparing quantities, distinct types of labels, accurate timestamps, firsthand testimony, and documentary records.",
+      "timeline": [
+        {
+          "time": "7:35 a.m.",
+          "event": "The harvest tally records 48 crates of OR-42 apples moving from orchard rows to the sorting shed."
+        },
+        {
+          "time": "8:03 a.m.",
+          "event": "Sera Bell signs the packing count after checking the 48 small OR-42 lot tags."
+        },
+        {
+          "time": "8:12 a.m.",
+          "event": "The pallet-label printer jams because of a ribbon fault."
+        },
+        {
+          "time": "8:14 a.m.",
+          "event": "On restart, the printer releases an obsolete MARKET HOLD / COLD B outer pallet sticker."
+        },
+        {
+          "time": "8:23 a.m.",
+          "event": "Tavi Rowan scans the printed routing code and transfers the 48-crate pallet into Cold Room B."
+        },
+        {
+          "time": "8:26–11:15 a.m.",
+          "event": "Cold Room B stays near 38°F, keeping the misplaced apples cool."
+        },
+        {
+          "time": "10:30 a.m.",
+          "event": "Emory Finch departs Bay A without OR-42 and signs the NOT LOADED checklist."
+        },
+        {
+          "time": "10:45 a.m.",
+          "event": "Valley Table Pantry requests a trace; an unsupported theft rumor circulates."
+        },
+        {
+          "time": "11:10 a.m.",
+          "event": "Staff inspect the Cold Room B pallet and match all 48 internal crate tags to OR-42."
+        },
+        {
+          "time": "11:25 a.m.",
+          "event": "The routing mistake is corrected; the apples are relabeled and released to Loading Bay A."
+        },
+        {
+          "time": "11:50 a.m.",
+          "event": "The 48 crates arrive safely at Valley Table Pantry and the error is documented."
+        }
+      ]
+    }
+  }
+}
