@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "foyer": {
+      "name": "Library Foyer",
+      "icon": "🚪",
+      "detail": "The notice board and the door where the temporary closure began.",
+      "scene": "hall"
+    },
+    "catalog": {
+      "name": "Catalog Corner",
+      "icon": "🗂️",
+      "detail": "Handwritten index cards and an unusual numeric catalog entry.",
+      "scene": "library"
+    },
+    "reading": {
+      "name": "Reading Nook",
+      "icon": "🧩",
+      "detail": "A puzzle poster and a series of events pinned beside a compass.",
+      "scene": "library"
+    },
+    "returns": {
+      "name": "Book Returns",
+      "icon": "📖",
+      "detail": "An archival tray and supplies left behind in a hurry.",
+      "scene": "storage"
+    },
+    "corridor": {
+      "name": "Staff Corridor",
+      "icon": "🔑",
+      "detail": "The access log and passage connecting the library to its workroom.",
+      "scene": "hall"
+    },
+    "restoration": {
+      "name": "Restoration Workroom",
+      "icon": "🪶",
+      "detail": "The quiet room where staff repair and protect fragile books.",
+      "scene": "art"
+    }
+  },
+  "evidence": [
+    {
+      "id": "drip-pattern",
+      "place": "foyer",
+      "icon": "💧",
+      "title": "Water Stains Above the Exhibit",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "A little water dripped near the old book. The floor has a wet spot.",
+        "3-5": "Fresh water marks run from a ceiling seam toward the case that held the River Lantern Atlas. A catch pan sits below the drip.",
+        "6-8": "A narrow trail of fresh water stains begins at a ceiling joint above the historical atlas display. The catch pan beneath it suggests staff reacted to a leak rather than an attempted theft."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What made the wet spot?",
+          "a": [
+            "Spilled paint",
+            "Water dripping from above",
+            "Sand from outside"
+          ],
+          "c": 1,
+          "h": "Look at what fell from the ceiling.",
+          "why": "The clue says water dripped down near the book."
+        },
+        "3-5": {
+          "q": "Which detail best explains why the exhibit was in danger?",
+          "a": [
+            "A ceiling leak was close to the book.",
+            "A student checked out a novel.",
+            "The reading chairs were moved."
+          ],
+          "c": 0,
+          "h": "Consider what water could do to paper.",
+          "why": "Water near a rare book can damage its pages and ink."
+        },
+        "6-8": {
+          "q": "Which inference is best supported by the stain pattern and catch pan?",
+          "a": [
+            "Staff responded to moisture threatening the display.",
+            "A visitor spilled a drink inside the case.",
+            "The rare atlas was deliberately hidden before the rain."
+          ],
+          "c": 0,
+          "h": "Distinguish what the physical evidence shows from guesses about motives.",
+          "why": "The ceiling stain and catch pan together support an active leak near the display, not a deliberate disappearance."
+        }
+      }
+    },
+    {
+      "id": "clearance-sheet",
+      "place": "foyer",
+      "icon": "📋",
+      "title": "Room-Clearance Checklist",
+      "type": "Document",
+      "texts": {
+        "1-2": "The library was empty at 2:14. Everyone went out before the door was closed.",
+        "3-5": "A checked form reads, “2:14 p.m.—reading group out, tables checked, room clear.” The next line says staff-only access until the leak is fixed.",
+        "6-8": "The room-clearance checklist contains a time-stamped sweep at 2:14 p.m., including reading corners and study tables. It records a staff-only restriction only after the room was confirmed empty; the exit could still be opened from inside."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Were students inside when the library closed?",
+          "a": [
+            "No, the room was empty",
+            "Yes, many students",
+            "The paper does not say"
+          ],
+          "c": 0,
+          "h": "Find the words “library was empty.”",
+          "why": "The checklist says everyone had gone out by 2:14."
+        },
+        "3-5": {
+          "q": "What happened immediately before access was restricted?",
+          "a": [
+            "The librarian canceled all classes.",
+            "The book was put on a bus.",
+            "The room was checked and cleared."
+          ],
+          "c": 2,
+          "h": "Follow the order of the two checklist entries.",
+          "why": "The 2:14 room-clear entry comes before the staff-only restriction."
+        },
+        "6-8": {
+          "q": "What conclusion corrects the rumor that someone was locked in?",
+          "a": [
+            "The room was cleared before access was restricted.",
+            "The checklist proves the leak was imaginary.",
+            "A closed door always means people are trapped."
+          ],
+          "c": 0,
+          "h": "Use the sequence and the note about the interior exit.",
+          "why": "The recorded sweep and operable interior exit contradict the claim that the closure trapped people."
+        }
+      }
+    },
+    {
+      "id": "catalog-riddle",
+      "place": "catalog",
+      "icon": "🗃️",
+      "title": "Cryptic Catalog Card",
+      "type": "Document",
+      "texts": {
+        "1-2": "A card for book B-47 says, “Go NORTH to find a dry place.”",
+        "3-5": "The catalog card for book B-47 reads, “14–15–18–20–8. Where the compass points, let damp pages breathe.” A small note says to use the alphabet key in the Reading Nook.",
+        "6-8": "Book B-47 has a penciled catalog update: “14–15–18–20–8 / where the compass points, let damp pages breathe.” The reference to a decoding key suggests a location note disguised with a familiar library puzzle, not a threat."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which direction does the card name?",
+          "a": [
+            "South",
+            "West",
+            "North"
+          ],
+          "c": 2,
+          "h": "Look for the word after “Go.”",
+          "why": "The short card says NORTH."
+        },
+        "3-5": {
+          "q": "What should investigators do with the numbers on the card?",
+          "a": [
+            "Use the alphabet key to decode a direction.",
+            "Add them to learn the price of the book.",
+            "Ignore them because the book is missing."
+          ],
+          "c": 0,
+          "h": "The card points to another clue in the Reading Nook.",
+          "why": "The alphabet key turns the numbers into letters that spell a direction."
+        },
+        "6-8": {
+          "q": "Which interpretation best fits “let damp pages breathe”?",
+          "a": [
+            "Leave the book outside in the storm.",
+            "Lock wet pages in a sealed plastic box.",
+            "Move the damp book to an airy, supervised drying area."
+          ],
+          "c": 2,
+          "h": "Infer the figurative meaning of “breathe” from the water-damage context.",
+          "why": "The phrase suggests gentle air circulation during preservation, which fits the leak evidence."
+        }
+      }
+    },
+    {
+      "id": "alphabet-key",
+      "place": "reading",
+      "icon": "🔤",
+      "title": "Alphabet Number Key",
+      "type": "Puzzle",
+      "texts": {
+        "1-2": "A chart says A=1, B=2, C=3. The number 14 means N.",
+        "3-5": "A puzzle poster shows A=1, B=2, all the way to Z=26. Under it someone has written, “14=N; 15=O; 18=R; 20=T; 8=H.”",
+        "6-8": "A reading-week cipher chart assigns each letter its alphabetical position. The catalog sequence 14–15–18–20–8 decodes to N-O-R-T-H, confirming a compass direction rather than a shelf number or a date."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What letter is number 14?",
+          "a": [
+            "B",
+            "H",
+            "N"
+          ],
+          "c": 2,
+          "h": "The chart gives this letter as an example.",
+          "why": "The alphabet key pairs 14 with N."
+        },
+        "3-5": {
+          "q": "What word do the catalog numbers spell?",
+          "a": [
+            "SHELF",
+            "STORM",
+            "NORTH"
+          ],
+          "c": 2,
+          "h": "Read the letters in the same order as the numbers.",
+          "why": "The decoded letters N-O-R-T-H spell NORTH."
+        },
+        "6-8": {
+          "q": "Why is NORTH more likely a direction than a secret password?",
+          "a": [
+            "The numbers match a price label.",
+            "The letters name a suspect.",
+            "The catalog riddle mentions a compass, and the cipher spells NORTH."
+          ],
+          "c": 2,
+          "h": "Combine evidence from two places, not just one poster.",
+          "why": "Both the compass language and the decoded letters point toward a physical direction."
+        }
+      }
+    },
+    {
+      "id": "sequence-cards",
+      "place": "reading",
+      "icon": "🕒",
+      "title": "Out-of-Order Emergency Steps",
+      "type": "Timeline puzzle",
+      "texts": {
+        "1-2": "Three cards say: See the leak. Clear the room. Move the book.",
+        "3-5": "Three cards fell off a display: “Move the atlas to dry air,” “Notice the ceiling leak,” and “Make sure the room is empty.” Their printed step numbers are 3, 1, and 2.",
+        "6-8": "A preservation-training display has three displaced cards. Although their position on the board is misleading, their original step numbers establish a clear response sequence: identify the leak (1), clear the room (2), relocate the vulnerable atlas (3)."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What comes first?",
+          "a": [
+            "See the leak",
+            "Close your eyes",
+            "Move the book"
+          ],
+          "c": 0,
+          "h": "Read the first card in the list.",
+          "why": "Staff must notice the leak before deciding how to respond."
+        },
+        "3-5": {
+          "q": "Which order matches the numbered steps?",
+          "a": [
+            "Clear room → move atlas → notice leak",
+            "Notice leak → clear room → move atlas",
+            "Move atlas → clear room → notice leak"
+          ],
+          "c": 1,
+          "h": "Follow step numbers 1, 2, and 3.",
+          "why": "The cards tell the emergency-response sequence in that order."
+        },
+        "6-8": {
+          "q": "Why is the order important when evaluating the lockdown?",
+          "a": [
+            "It proves someone intended a prank.",
+            "It shows the book was returned before the leak.",
+            "It places safety and room clearance before conservation work."
+          ],
+          "c": 2,
+          "h": "Consider how order changes the meaning of the locked door.",
+          "why": "The documented sequence supports a precautionary closure, not an attempt to trap people."
+        }
+      }
+    },
+    {
+      "id": "blotter-fibers",
+      "place": "returns",
+      "icon": "🧻",
+      "title": "Archival Blotting Paper",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "Soft paper near the returns desk has blue ink marks. It was used to help a wet book.",
+        "3-5": "Unused absorbent sheets sit beside one sheet marked by a blue river-shaped ink transfer. A label reads, “Archival blotter—use for damp paper; do not rub.”",
+        "6-8": "A partially used archival blotter carries a reversed blue river line matching the atlas cover description. Its handling label cautions against rubbing damp ink, reinforcing the hypothesis that staff were stabilizing water damage."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why was the soft paper used?",
+          "a": [
+            "To make a paper airplane",
+            "To help with wet pages",
+            "To wrap food"
+          ],
+          "c": 1,
+          "h": "Look at what the paper was used for.",
+          "why": "The blotting paper helps absorb moisture without rubbing the pages."
+        },
+        "3-5": {
+          "q": "Which explanation best fits the blue marks?",
+          "a": [
+            "Someone wrote a shopping list on it.",
+            "Ink transferred while someone protected a damp book.",
+            "The paper was used for a paint lesson."
+          ],
+          "c": 1,
+          "h": "Combine the handling label and the river-shaped mark.",
+          "why": "The blotter and ink transfer indicate careful handling of a wet illustrated book."
+        },
+        "6-8": {
+          "q": "What does the caution “do not rub” imply about the book?",
+          "a": [
+            "The ink may smear while damp, so delicate handling is necessary.",
+            "The ink must be completely waterproof.",
+            "The atlas was made from glass."
+          ],
+          "c": 0,
+          "h": "Use the context around archival paper and fresh water.",
+          "why": "Wet pigments and old pages can be damaged by friction, so the instruction fits preservation."
+        }
+      }
+    },
+    {
+      "id": "tray-ticket",
+      "place": "returns",
+      "icon": "🛞",
+      "title": "Padded Tray Ticket",
+      "type": "Document",
+      "texts": {
+        "1-2": "A ticket says book B-47 went to a dry workroom at 2:17.",
+        "3-5": "A ticket attached to a padded cart reads: “B-47 / 2:17 p.m. / Restoration Workroom / keep flat.” There is no checkout slip for a student.",
+        "6-8": "The transfer tag on a padded conservation tray documents movement of item B-47 at 2:17 p.m. to the Restoration Workroom. Instructions to transport it flat and the absence of a public checkout record suggest authorized conservation work."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where was book B-47 sent?",
+          "a": [
+            "A school bus",
+            "The gym",
+            "The Restoration Workroom"
+          ],
+          "c": 2,
+          "h": "The ticket names the room.",
+          "why": "The ticket lists the Restoration Workroom as the destination."
+        },
+        "3-5": {
+          "q": "What does “keep flat” suggest about the movement?",
+          "a": [
+            "The tray was carrying sports shoes.",
+            "The item was being handled carefully.",
+            "The book was thrown into a box."
+          ],
+          "c": 1,
+          "h": "Think about how someone moves a fragile wet book.",
+          "why": "A flat padded tray helps protect a fragile book during transport."
+        },
+        "6-8": {
+          "q": "Which inference is best supported by the ticket and the missing checkout slip?",
+          "a": [
+            "A student borrowed the atlas without permission.",
+            "Someone planned to sell the atlas.",
+            "A staff preservation transfer is more likely than an ordinary loan."
+          ],
+          "c": 2,
+          "h": "Look for the difference between an internal transfer and a loan.",
+          "why": "The destination and protective instructions match a staff transfer, and no public loan is recorded."
+        }
+      }
+    },
+    {
+      "id": "door-log",
+      "place": "corridor",
+      "icon": "🔐",
+      "title": "Restricted-Access Door Log",
+      "type": "Access record",
+      "texts": {
+        "1-2": "At 2:15 Elara Vale signed the door log. She closed the library after it was empty.",
+        "3-5": "The access log reads, “2:15 p.m., E. Vale—library closed to visitors; leak response.” Under it, a note confirms the room-clearance checklist was completed first.",
+        "6-8": "A signed access record attributes the 2:15 p.m. temporary staff-only restriction to Elara Vale, the school archivist. Its reference to the completed clearance check makes the action a documented safety measure rather than an unexplained lockout."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the door log?",
+          "a": [
+            "Elara Vale",
+            "Theo Orr",
+            "Cass Reed"
+          ],
+          "c": 0,
+          "h": "Read the name beside 2:15.",
+          "why": "Elara Vale signed the record for closing visitor access."
+        },
+        "3-5": {
+          "q": "What was Elara Vale doing at 2:15 p.m.?",
+          "a": [
+            "Replacing a library computer",
+            "Opening a lunch cart",
+            "Restricting visitor access because of a leak"
+          ],
+          "c": 2,
+          "h": "The record describes the reason next to her name.",
+          "why": "The log connects Elara Vale with closing visitor access for the leak response."
+        },
+        "6-8": {
+          "q": "Which conclusion is best supported by this primary record?",
+          "a": [
+            "Cass secretly closed the library after school.",
+            "Elara Vale authorized the temporary closure after the room was cleared.",
+            "The library was locked because of a stolen laptop."
+          ],
+          "c": 1,
+          "h": "Give greater weight to the dated, signed entry than to hallway rumors.",
+          "why": "The signed log identifies the person, time, and documented reason for the restriction."
+        }
+      }
+    },
+    {
+      "id": "transfer-card",
+      "place": "restoration",
+      "icon": "📝",
+      "title": "Conservation Transfer Record",
+      "type": "Primary source",
+      "texts": {
+        "1-2": "A form says Elara Vale put book B-47 on the north drying table at 2:19.",
+        "3-5": "The preservation form says, “2:19 p.m. — Elara Vale — B-47 moved to north drying table. Pages damp; keep in open air on clean blotters.”",
+        "6-8": "A signed conservation record confirms that Elara Vale transferred B-47 to the north drying table at 2:19 p.m. The condition note describes damp edges and an open-air blotting setup, linking the cryptic NORTH clue to a legitimate preservation method."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did Elara put the book?",
+          "a": [
+            "The north drying table",
+            "The playground",
+            "A locker"
+          ],
+          "c": 0,
+          "h": "Look for the place after “put.”",
+          "why": "The record names the north drying table."
+        },
+        "3-5": {
+          "q": "Why was the book left on open blotters?",
+          "a": [
+            "To make it easier to hide from staff",
+            "To prepare it for a book sale",
+            "To help damp pages dry carefully"
+          ],
+          "c": 2,
+          "h": "Read the condition note about damp pages.",
+          "why": "Clean blotters and air help protect a wet book while it dries."
+        },
+        "6-8": {
+          "q": "Which pair of earlier clues does this signed form connect?",
+          "a": [
+            "The coded NORTH catalog note and the padded transfer ticket",
+            "A sports schedule and a lost key",
+            "A cafeteria menu and a bus route"
+          ],
+          "c": 0,
+          "h": "Find the direction and transfer clues that appear elsewhere.",
+          "why": "The preservation form identifies both the destination decoded from the catalog and the B-47 transfer recorded on the tray ticket."
+        }
+      }
+    },
+    {
+      "id": "north-drying-table",
+      "place": "restoration",
+      "icon": "📚",
+      "title": "Rare Atlas on the North Table",
+      "type": "Physical proof",
+      "texts": {
+        "1-2": "Book B-47 is safe on a dry table. Its pages are spread carefully to dry.",
+        "3-5": "The River Lantern Atlas lies open on clean blotting paper at the north table. Its outer edge is wet, and a card reads, “Do not touch—conservation in progress.”",
+        "6-8": "On the northernmost restoration table, the one-of-a-kind River Lantern Atlas rests on fresh archival blotters. The still-damp edges and supervised “conservation in progress” label confirm both its location and the protective purpose of the transfer."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is on the north table?",
+          "a": [
+            "The rare atlas",
+            "A lunch tray",
+            "A basketball"
+          ],
+          "c": 0,
+          "h": "Look for the book on the table.",
+          "why": "The book B-47, the rare atlas, is being cared for there."
+        },
+        "3-5": {
+          "q": "Which observation shows the atlas is being protected rather than hidden for a prank?",
+          "a": [
+            "The book has a conservation notice and clean blotters.",
+            "The table is painted blue.",
+            "A student wrote a joke on a locker."
+          ],
+          "c": 0,
+          "h": "Notice the materials and the sign beside the book.",
+          "why": "A conservation notice and careful drying materials support the preservation explanation."
+        },
+        "6-8": {
+          "q": "Which overall interpretation is best supported by this final physical evidence?",
+          "a": [
+            "The atlas was stolen and secretly sold.",
+            "The atlas was moved for supervised preservation after a leak.",
+            "The water damage was invented to close the library."
+          ],
+          "c": 1,
+          "h": "Combine the book’s condition with where it was found.",
+          "why": "The authentic atlas is present in the workroom and is being dried, consistent with an emergency conservation transfer."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "cass-reed",
+      "place": "foyer",
+      "icon": "🧑‍🎓",
+      "name": "Cass Reed",
+      "role": "Student Library Monitor",
+      "texts": {
+        "1-2": "“I checked the reading room. Everyone left before the door closed,” says Cass.",
+        "3-5": "“I was the student library monitor,” Cass Reed says. “At 2:14 I checked the study corners and told Ms. Vale that everyone had left. I saw no one locked inside.”",
+        "6-8": "Cass Reed, the student monitor, recalls conducting the 2:14 p.m. room sweep and reporting the all-clear to Elara Vale. Cass distinguishes the temporary closure of visitor entry from trapping someone inside."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Cass check?",
+          "a": [
+            "The playground",
+            "The cafeteria",
+            "The empty reading room"
+          ],
+          "c": 2,
+          "h": "Cass says where the check happened.",
+          "why": "Cass checked the room to make sure people had left."
+        },
+        "3-5": {
+          "q": "What does Cass’s statement help establish?",
+          "a": [
+            "All students remained in the room.",
+            "The room was cleared before the closure.",
+            "Cass moved the atlas to a locker."
+          ],
+          "c": 1,
+          "h": "Look at the 2:14 time and what Cass reported.",
+          "why": "Cass’s all-clear supports the checklist that no one was trapped."
+        },
+        "6-8": {
+          "q": "How does Cass’s testimony affect the rumor of a dangerous lockdown?",
+          "a": [
+            "It proves nobody knew about the leak.",
+            "It indicates the archivist hid the book overnight.",
+            "It contradicts the rumor because visitors had exited before access was restricted."
+          ],
+          "c": 2,
+          "h": "Compare Cass’s observation with the time on the door log.",
+          "why": "Cass saw the room emptied at 2:14; the restricted-access record begins at 2:15."
+        }
+      }
+    },
+    {
+      "id": "imani-soto",
+      "place": "catalog",
+      "icon": "🧑‍🏫",
+      "name": "Imani Soto",
+      "role": "Catalog Club Adviser",
+      "texts": {
+        "1-2": "“Our club uses number clues for words. The letters help you find NORTH,” says Imani.",
+        "3-5": "“I designed the A=1 alphabet puzzle for Reading Week,” says Imani Soto. “Ms. Vale knew the key was posted. When the leak happened, she used the same code on the new B-47 catalog card.”",
+        "6-8": "Imani Soto, who advises the catalog club, explains that the A1Z26 cipher predates the emergency. Elara Vale reused the familiar code to note B-47’s location while keeping the damaged exhibit from attracting unsupervised handling."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who made the alphabet puzzle?",
+          "a": [
+            "Cass Reed",
+            "Imani Soto",
+            "Theo Orr"
+          ],
+          "c": 1,
+          "h": "The speaker says “our club.”",
+          "why": "Imani made the alphabet puzzle with the club."
+        },
+        "3-5": {
+          "q": "Why is the catalog card written in numbers?",
+          "a": [
+            "The archivist reused the club’s number-to-letter code.",
+            "Numbers show how many pages were torn.",
+            "The numbers are the price of the atlas."
+          ],
+          "c": 0,
+          "h": "Read why Imani says the posted key matters.",
+          "why": "The familiar cipher decodes a direction and links the catalog entry to the workroom."
+        },
+        "6-8": {
+          "q": "How does Imani’s statement change the meaning of the cryptic catalog?",
+          "a": [
+            "It proves Imani closed the library herself.",
+            "It explains the code as a repurposed learning puzzle used for a real location note.",
+            "It shows the cipher was evidence of a criminal conspiracy."
+          ],
+          "c": 1,
+          "h": "Consider when the cipher existed and who reused it.",
+          "why": "The cipher was part of an earlier Reading Week activity; its emergency use is not evidence of a malicious plan."
+        }
+      }
+    },
+    {
+      "id": "lark-benson",
+      "place": "returns",
+      "icon": "📚",
+      "name": "Lark Benson",
+      "role": "School Librarian",
+      "texts": {
+        "1-2": "“I saw a wet book and a soft paper pad. Elara got a tray,” says Lark.",
+        "3-5": "“The old atlas was damp along one edge,” librarian Lark Benson explains. “I fetched blotters, and Elara Vale chose a padded tray so the binding would not bend.”",
+        "6-8": "Librarian Lark Benson reports seeing moisture along the atlas’s spine and recalls supplying archival blotters. Elara Vale requested a flat, padded transfer tray, a choice consistent with stabilizing a vulnerable binding rather than concealing an object."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What was wrong with the book?",
+          "a": [
+            "It was lost on a bus",
+            "Its cover was painted red",
+            "Its pages were wet"
+          ],
+          "c": 2,
+          "h": "Lark describes the book as damp.",
+          "why": "The atlas had wet edges and needed careful handling."
+        },
+        "3-5": {
+          "q": "Why did Elara use a padded tray?",
+          "a": [
+            "To send the book to a student",
+            "To protect its fragile binding",
+            "To make the book disappear quickly"
+          ],
+          "c": 1,
+          "h": "Look for the reason Lark mentions a bent binding.",
+          "why": "The tray kept the damp book flat and supported."
+        },
+        "6-8": {
+          "q": "Which evidence would best corroborate Lark’s explanation?",
+          "a": [
+            "A list of library club members",
+            "The blotting paper and conservation transfer record",
+            "A poster for a basketball game"
+          ],
+          "c": 1,
+          "h": "Choose physical or written evidence that matches the described conservation steps.",
+          "why": "The blotter and transfer record independently support Lark’s account of protective handling."
+        }
+      }
+    },
+    {
+      "id": "theo-orr",
+      "place": "corridor",
+      "icon": "🛠️",
+      "name": "Theo Orr",
+      "role": "Maintenance Technician",
+      "texts": {
+        "1-2": "“I saw the wet ceiling and put out a catch pan,” says Theo. “The exit door still opened.”",
+        "3-5": "Maintenance technician Theo Orr says, “I placed the catch pan at 2:08. After the room was empty, the library was marked staff-only. The door could still open from inside.”",
+        "6-8": "Theo Orr’s maintenance report places a catch pan below the ceiling leak at 2:08 p.m. He confirms the access restriction controlled entry during cleanup, but it did not disable the interior exit—an important distinction from the hallway rumor."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Theo put under the leak?",
+          "a": [
+            "A new computer",
+            "A catch pan",
+            "A chair"
+          ],
+          "c": 1,
+          "h": "The pan catches drips.",
+          "why": "Theo used a catch pan to collect the leaking water."
+        },
+        "3-5": {
+          "q": "What does Theo say about the library door?",
+          "a": [
+            "People could still exit from inside.",
+            "It led to the gym only.",
+            "It was broken all morning."
+          ],
+          "c": 0,
+          "h": "Read the final sentence of Theo’s report.",
+          "why": "The closure limited entry but did not trap people."
+        },
+        "6-8": {
+          "q": "Which account is most consistent with Theo’s timed observations?",
+          "a": [
+            "Students were locked inside because the handle failed.",
+            "Staff limited access after recognizing a leak and clearing the library.",
+            "The atlas vanished before any leak occurred."
+          ],
+          "c": 1,
+          "h": "Use the maintenance time and how the door actually worked.",
+          "why": "Theo’s report corroborates a real leak and a controlled, safe closure."
+        }
+      }
+    },
+    {
+      "id": "elara-vale",
+      "place": "restoration",
+      "icon": "🧑‍🔬",
+      "name": "Elara Vale",
+      "role": "School Archivist",
+      "texts": {
+        "1-2": "“I helped the wet atlas,” says Elara. “I used a safe table and closed the library to visitors.”",
+        "3-5": "Elara Vale says, “Once Cass confirmed the room was clear, I signed the temporary closure log. I moved B-47 to the north worktable with clean blotters. It needed time to dry.”",
+        "6-8": "School archivist Elara Vale acknowledges signing the 2:15 p.m. staff-access restriction only after Cass’s clearance check. She explains that she transferred B-47 to the north restoration table because further exposure to the leak could permanently damage its ink and binding."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who moved the book to safety?",
+          "a": [
+            "Imani Soto",
+            "Elara Vale",
+            "Cass Reed"
+          ],
+          "c": 1,
+          "h": "Elara says “I helped the wet atlas.”",
+          "why": "Elara took responsibility for protecting the rare book."
+        },
+        "3-5": {
+          "q": "Which two actions does Elara claim she completed?",
+          "a": [
+            "Selling the book and closing the cafeteria",
+            "Hiding the book and canceling Reading Week",
+            "Signing the closure log and transferring the book to dry air"
+          ],
+          "c": 2,
+          "h": "Find the actions after Cass cleared the room.",
+          "why": "Elara says she restricted access and moved B-47 for preservation."
+        },
+        "6-8": {
+          "q": "What evidence should be checked before accepting Elara’s explanation?",
+          "a": [
+            "The signed door log, clearance record, and conservation form",
+            "Only the rumor about a locked door",
+            "Only Elara’s job title"
+          ],
+          "c": 0,
+          "h": "A suspect’s statement is strongest when independent records corroborate it.",
+          "why": "The timed records and physical state of the atlas independently support Elara’s account."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "library-lockdown",
+    "title": "The Library Lockdown",
+    "subtitle": "CASE FILE 002 • THE CODED CATALOG",
+    "goal": "Discover who temporarily restricted library access, where the River Lantern Atlas was taken, and why. Decode the catalog and verify your theory with records—not rumors.",
+    "brief": {
+      "1-2": "Rain dripped into the school library. A very old book was missing from its case, and the library door was closed to visitors. No one was trapped. Find the clues to learn who helped the book and where it went.",
+      "3-5": "A storm sends water through a ceiling seam above the display for the rare River Lantern Atlas. Minutes later, the library is closed to visitors, the book is gone, and someone has added a number riddle to its catalog card. Some students suspect a prank. Follow the times, decode the clue, and find out what happened.",
+      "6-8": "Shortly after a storm begins, the school library restricts visitor access and its rare, hand-illustrated River Lantern Atlas disappears from an exhibit case. The only public explanation is a puzzling catalog entry: “14–15–18–20–8.” Rumors call it a lockdown, perhaps even a staged theft. Evaluate time-stamped records, decode the catalog notation, and distinguish protective action from suspicious appearances."
+    },
+    "theoryLabels": {
+      "who": "Who authorized the temporary library closure?",
+      "where": "Where was the rare atlas moved?",
+      "why": "Why was library access restricted?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "imani",
+          "label": "Imani Soto — catalog club adviser"
+        },
+        {
+          "id": "elara",
+          "label": "Elara Vale — school archivist"
+        },
+        {
+          "id": "cass",
+          "label": "Cass Reed — student library monitor"
+        },
+        {
+          "id": "theo",
+          "label": "Theo Orr — maintenance technician"
+        }
+      ],
+      "where": [
+        {
+          "id": "north-table",
+          "label": "North drying table in the Restoration Workroom"
+        },
+        {
+          "id": "gym-locker",
+          "label": "Locked equipment cupboard in the gym"
+        },
+        {
+          "id": "return-bin",
+          "label": "Ordinary returns bin"
+        },
+        {
+          "id": "south-display",
+          "label": "South glass display shelf"
+        }
+      ],
+      "why": [
+        {
+          "id": "prank",
+          "label": "To stage a confusing school prank"
+        },
+        {
+          "id": "punishment",
+          "label": "To punish students for a missing book"
+        },
+        {
+          "id": "protect-book",
+          "label": "To prevent further water damage and allow safe conservation"
+        },
+        {
+          "id": "hide-sale",
+          "label": "To secretly sell the rare atlas"
+        }
+      ]
+    },
+    "who": "elara",
+    "where": "north-table",
+    "why": "protect-book",
+    "proofs": [
+      "door-log",
+      "transfer-card",
+      "north-drying-table",
+      "clearance-sheet"
+    ],
+    "feedback": {
+      "who": "Check the signed 2:15 access log and compare it with each witness. The person who wrote the catalog puzzle is not necessarily the person who restricted the door.",
+      "where": "Decode 14–15–18–20–8 with the Reading Nook key, then follow B-47 on the padded-tray ticket. Which table does the transfer record actually name?",
+      "why": "Compare the damp ink and blotting paper with the clearance sheet. Which explanation fits both the physical damage and the recorded safety steps?",
+      "proofs": "Your explanation needs stronger documentary or physical proof. Look for the signed door log, the B-47 transfer ticket, the room-clearance sheet, and the atlas on the drying table."
+    },
+    "resolution": {
+      "summary": "Elara Vale secured the empty library so a leaking ceiling could not cause further harm. The missing atlas was being preserved, not stolen.",
+      "outcome": "The River Lantern Atlas, cataloged as B-47, was caught beneath a fresh ceiling leak. Librarian Lark Benson supplied archival blotters while student monitor Cass Reed checked that everyone had left. Elara Vale, the school archivist, then signed a temporary staff-only access restriction; the inside exit continued to work. Using a padded tray, Elara moved the damp atlas to the north drying table in the Restoration Workroom. She reused a familiar number-to-letter puzzle on the catalog card so staff could decode NORTH and locate the workroom destination. Imani Soto had designed the original cipher for Reading Week, which made the card look more mysterious than it was. The atlas is safe, and the school can reopen the library once maintenance has repaired the leak. Nobody was deliberately trapped or accused of a theft.",
+      "timeline": [
+        {
+          "time": "1:45 p.m.",
+          "event": "Imani Soto finishes a Reading Week alphabet cipher displayed in the Reading Nook; staff will later reuse its familiar key."
+        },
+        {
+          "time": "2:06 p.m.",
+          "event": "Rainwater begins dripping through the ceiling near the River Lantern Atlas exhibit, dampening part of B-47."
+        },
+        {
+          "time": "2:08 p.m.",
+          "event": "Theo Orr puts a catch pan under the leak while Lark Benson brings clean archival blotting paper."
+        },
+        {
+          "time": "2:12–2:14 p.m.",
+          "event": "Cass Reed guides visitors out and checks the reading corners; the room is confirmed empty at 2:14."
+        },
+        {
+          "time": "2:15 p.m.",
+          "event": "Elara Vale signs the temporary staff-only access log after room clearance; the exit remains operable from inside."
+        },
+        {
+          "time": "2:17 p.m.",
+          "event": "Elara moves book B-47 flat on a padded tray along the staff corridor toward the Restoration Workroom."
+        },
+        {
+          "time": "2:19 p.m.",
+          "event": "Elara places the atlas on clean blotters at the north drying table and records its condition."
+        },
+        {
+          "time": "2:22 p.m.",
+          "event": "The updated catalog card uses the familiar number code to point to NORTH while maintenance addresses the ceiling leak."
+        }
+      ]
+    }
+  }
+}

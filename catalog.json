@@ -18,9 +18,10 @@
       "number": "002",
       "category": "Puzzle Mystery",
       "icon": "📚",
-      "summary": "A locked library, strange riddles, and an unexpected message.",
-      "grades": "5–8",
-      "status": "planned"
+      "summary": "A storm, a locked library, and a coded catalog reveal the truth behind a missing rare atlas.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "ready",
+      "file": "cases/library-lockdown.json"
     },
     {
       "id": "olympian-artifact",
