@@ -1,0 +1,738 @@
+{
+  "locations": {
+    "gym": {
+      "name": "Gymnasium",
+      "icon": "🏀",
+      "detail": "The last confirmed location of the Ranger mascot costume.",
+      "scene": "gym"
+    },
+    "hall": {
+      "name": "Main Hall",
+      "icon": "👣",
+      "detail": "Footsteps, lockers, and a view toward the side hallway.",
+      "scene": "hall"
+    },
+    "art": {
+      "name": "Art Studio",
+      "icon": "🎨",
+      "detail": "Costume-making supplies are kept in this colorful room.",
+      "scene": "art"
+    },
+    "library": {
+      "name": "Library",
+      "icon": "📚",
+      "detail": "The quietest witnesses often notice the most.",
+      "scene": "library"
+    },
+    "office": {
+      "name": "Front Office",
+      "icon": "📋",
+      "detail": "Assembly plans and staff notes pass through this desk.",
+      "scene": "office"
+    },
+    "storage": {
+      "name": "Supply Room",
+      "icon": "🗝️",
+      "detail": "The locked supply room near the gym.",
+      "scene": "storage"
+    }
+  },
+  "evidence": [
+    {
+      "id": "seam",
+      "place": "gym",
+      "icon": "🧵",
+      "title": "Loose Orange Thread",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "A piece of orange cloth is on the gym floor. Its edge is torn.",
+        "3-5": "A strip of orange fabric lies near the gym doors. One edge has a fresh tear, with several threads hanging loose.",
+        "6-8": "An orange fabric scrap is caught beneath the gym bleachers. Its newly frayed edge suggests a recent tear rather than ordinary wear."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What happened to the cloth?",
+          "a": [
+            "It was torn.",
+            "It was painted blue.",
+            "It was made of metal."
+          ],
+          "c": 0,
+          "h": "Look for the word “torn.”",
+          "why": "The cloth has a torn edge."
+        },
+        "3-5": {
+          "q": "Which detail suggests the mascot costume may need repair?",
+          "a": [
+            "The orange cloth has a fresh tear.",
+            "The bleachers are folded.",
+            "The gym doors are open."
+          ],
+          "c": 0,
+          "h": "Think about why loose threads matter.",
+          "why": "A fresh tear could explain why someone would need sewing supplies."
+        },
+        "6-8": {
+          "q": "Which conclusion is best supported by the condition of the scrap?",
+          "a": [
+            "The costume may have been damaged recently.",
+            "A student deliberately stole the mascot.",
+            "The cloth has been there for months."
+          ],
+          "c": 0,
+          "h": "Separate what the evidence suggests from what it cannot prove.",
+          "why": "The fresh fraying suggests recent damage, but does not establish who moved the costume."
+        }
+      }
+    },
+    {
+      "id": "schedule",
+      "place": "gym",
+      "icon": "🗓️",
+      "title": "Rehearsal Schedule",
+      "type": "Document",
+      "texts": {
+        "1-2": "The mascot was in the gym at 2:40. The assembly starts at 3:30.",
+        "3-5": "A rehearsal schedule says the mascot was used at 2:40 p.m. and was needed again for an assembly at 3:30 p.m.",
+        "6-8": "The production schedule lists a 2:40 p.m. mascot rehearsal and a 3:30 p.m. assembly. A handwritten note beside the rehearsal reads, “Check costume condition before next use.”"
+      },
+      "questions": {
+        "1-2": {
+          "q": "What comes after 2:40?",
+          "a": [
+            "The 3:30 assembly.",
+            "The morning bus.",
+            "Lunch at noon."
+          ],
+          "c": 0,
+          "h": "Look at the two times.",
+          "why": "The assembly begins later, at 3:30."
+        },
+        "3-5": {
+          "q": "Why would the schedule matter to investigators?",
+          "a": [
+            "It provides a timeline for the costume.",
+            "It proves who took the costume.",
+            "It lists everyone in the school."
+          ],
+          "c": 0,
+          "h": "Schedules tell us when events occur.",
+          "why": "It establishes the costume was in use shortly before it went missing."
+        },
+        "6-8": {
+          "q": "What is the most defensible use of this document?",
+          "a": [
+            "To establish when the mascot was expected and when it was last scheduled.",
+            "To prove that a particular student took it.",
+            "To show that the assembly was canceled."
+          ],
+          "c": 0,
+          "h": "A schedule records planned times, not every action.",
+          "why": "The document supports a timeline; it does not identify who moved the costume."
+        }
+      }
+    },
+    {
+      "id": "tracks",
+      "place": "hall",
+      "icon": "👟",
+      "title": "Muddy Shoeprints",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "Muddy shoeprints are on the floor. They lead toward the supply room.",
+        "3-5": "A trail of muddy prints runs from the outside entrance toward the supply-room hall. The prints are too common to identify one person.",
+        "6-8": "Damp shoe impressions lead from the east entrance toward the supply corridor. Several shoes could have made the marks, so the direction is more reliable than the identity of their owner."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where do the footprints go?",
+          "a": [
+            "Toward the supply room.",
+            "To the playground.",
+            "Into the ceiling."
+          ],
+          "c": 0,
+          "h": "Read where the prints lead.",
+          "why": "They point toward the supply-room hallway."
+        },
+        "3-5": {
+          "q": "What can the footprints tell us for certain?",
+          "a": [
+            "Someone traveled toward the supply room.",
+            "Riley stole the mascot.",
+            "A person carried the mascot costume."
+          ],
+          "c": 0,
+          "h": "A footprint records movement, not motive.",
+          "why": "The direction is supported, but the person’s identity is not."
+        },
+        "6-8": {
+          "q": "Which statement avoids overstating the evidence?",
+          "a": [
+            "At least one person walked toward the supply corridor.",
+            "The prints belong to the person who moved the costume.",
+            "The costume was carried by the custodian."
+          ],
+          "c": 0,
+          "h": "What is directly observable from the prints?",
+          "why": "The prints suggest movement but cannot connect one person to the missing costume."
+        }
+      }
+    },
+    {
+      "id": "bag",
+      "place": "hall",
+      "icon": "🎒",
+      "title": "Blue-Bag Tag",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "A blue bag tag fell by the hallway. It says STAGE CREW.",
+        "3-5": "A blue fabric luggage tag labeled “STAGE CREW” lies beside the hallway lockers.",
+        "6-8": "A detachable blue luggage tag bearing the words “STAGE CREW” is found near the gym corridor. Its clasp is bent, as if it pulled loose."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which group is named on the tag?",
+          "a": [
+            "Stage crew.",
+            "The lunch team.",
+            "The bus drivers."
+          ],
+          "c": 0,
+          "h": "Read the words on the tag.",
+          "why": "The tag is labeled STAGE CREW."
+        },
+        "3-5": {
+          "q": "What is a reasonable inference from the tag?",
+          "a": [
+            "A stage-crew bag may have passed through the hall.",
+            "The mascot is inside the tag.",
+            "The librarian owns the costume."
+          ],
+          "c": 0,
+          "h": "Connect the label to where it was found.",
+          "why": "The tag may have come from equipment carried through the corridor."
+        },
+        "6-8": {
+          "q": "What does the tag imply, and what does it fail to prove?",
+          "a": [
+            "A stage-crew item was in the hall, but we cannot identify its carrier from the tag alone.",
+            "Riley definitely took the mascot.",
+            "All stage-crew members were absent."
+          ],
+          "c": 0,
+          "h": "Be cautious about identifying a suspect from one object.",
+          "why": "A shared stage-crew tag connects equipment to a location, not a specific individual."
+        }
+      }
+    },
+    {
+      "id": "kit",
+      "place": "art",
+      "icon": "🪡",
+      "title": "Borrowed Repair Kit",
+      "type": "Sign-out sheet",
+      "texts": {
+        "1-2": "Riley borrowed a sewing kit at 2:50. The art teacher wrote it down.",
+        "3-5": "The art-room sign-out sheet shows that Riley borrowed a needle, blue thread, and a sewing kit at 2:50 p.m.",
+        "6-8": "The art studio inventory lists a loan to Riley at 2:50 p.m.: needle, heavy-duty blue thread, scissors, and a compact fabric-repair kit."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who took the sewing kit?",
+          "a": [
+            "Riley.",
+            "Kai.",
+            "The librarian."
+          ],
+          "c": 0,
+          "h": "Find the name on the sign-out sheet.",
+          "why": "Riley signed out the kit."
+        },
+        "3-5": {
+          "q": "Which idea does the record support?",
+          "a": [
+            "Riley may have planned to fix something made of fabric.",
+            "Riley borrowed a basketball.",
+            "Riley was absent at 2:50."
+          ],
+          "c": 0,
+          "h": "What are needles and thread used for?",
+          "why": "A sewing kit is consistent with a clothing or costume repair."
+        },
+        "6-8": {
+          "q": "How does this record affect the theory that the mascot was stolen?",
+          "a": [
+            "It introduces a plausible repair-related explanation.",
+            "It conclusively proves theft.",
+            "It eliminates all other explanations."
+          ],
+          "c": 0,
+          "h": "A repair kit suggests an alternative motive.",
+          "why": "The tools and timing support a repair hypothesis without proving it on their own."
+        }
+      }
+    },
+    {
+      "id": "thread",
+      "place": "art",
+      "icon": "🔎",
+      "title": "Matching Thread Spool",
+      "type": "Physical clue",
+      "texts": {
+        "1-2": "A spool of blue thread has a label: COSTUME FIX.",
+        "3-5": "One blue thread spool is labeled “costume repair.” A strip of orange thread is caught under the spool.",
+        "6-8": "A blue thread spool marked “costume repair” has orange fibers stuck beneath its label, providing a possible connection to the orange fabric found in the gym."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What job is written on the spool?",
+          "a": [
+            "Costume repair.",
+            "Painting a wall.",
+            "Moving books."
+          ],
+          "c": 0,
+          "h": "Look at the spool label.",
+          "why": "It says costume repair."
+        },
+        "3-5": {
+          "q": "Why might the orange thread be important?",
+          "a": [
+            "It may connect the repair materials with the torn orange fabric.",
+            "It tells us who opened the office.",
+            "It proves the gym is flooded."
+          ],
+          "c": 0,
+          "h": "Remember the cloth in the gym.",
+          "why": "The similar fibers might link the two clues, although color alone is not a perfect match."
+        },
+        "6-8": {
+          "q": "Which inference is strongest when paired with the gym fabric?",
+          "a": [
+            "The thread may have been used on damaged orange costume material.",
+            "The orange fabric and thread must be unrelated.",
+            "The spool identifies the person who took the mascot."
+          ],
+          "c": 0,
+          "h": "Combine material evidence without assuming it identifies a person.",
+          "why": "Together, the fabric and spool strengthen a repair hypothesis."
+        }
+      }
+    },
+    {
+      "id": "memo",
+      "place": "office",
+      "icon": "✉️",
+      "title": "Unsent Message",
+      "type": "Office memo",
+      "texts": {
+        "1-2": "A message says, “The mascot is safe. I am fixing it.” It has no name.",
+        "3-5": "An unfinished message on the front-office computer reads, “The mascot is safe. I am fixing the torn seam. I will bring it back before the assembly.” It has not been sent.",
+        "6-8": "An unsent front-office draft reads, “Mascot secured; torn seam repair underway. Expect return before the 3:30 assembly.” The message has no signature or confirmed sender."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does the message say?",
+          "a": [
+            "The mascot is being fixed.",
+            "The mascot is in the cafeteria.",
+            "The assembly is tomorrow."
+          ],
+          "c": 0,
+          "h": "Read the sentence about fixing.",
+          "why": "The note says someone is repairing the mascot."
+        },
+        "3-5": {
+          "q": "Why is the unfinished message helpful?",
+          "a": [
+            "It suggests someone intended to return the mascot.",
+            "It proves the sender wrote the schedule.",
+            "It identifies the sender by name."
+          ],
+          "c": 0,
+          "h": "What does a promise to return suggest about intent?",
+          "why": "The note suggests an attempted repair, but the writer is not confirmed."
+        },
+        "6-8": {
+          "q": "How should an investigator evaluate this anonymous draft?",
+          "a": [
+            "It supports a repair motive but does not identify who wrote it.",
+            "It is sufficient proof that Riley wrote it.",
+            "It proves the mascot never left the gym."
+          ],
+          "c": 0,
+          "h": "A document without a signature has limits.",
+          "why": "The wording supports a repair explanation, but the sender remains unknown."
+        }
+      }
+    },
+    {
+      "id": "keylog",
+      "place": "storage",
+      "icon": "🔑",
+      "title": "Supply-Room Key Log",
+      "type": "Sign-out sheet",
+      "texts": {
+        "1-2": "Riley borrowed the supply-room key at 2:57.",
+        "3-5": "The custodian’s log shows that Riley checked out the supply-room key at 2:57 p.m. and returned it at 3:16 p.m.",
+        "6-8": "A signed key ledger records that Riley obtained the supply-room key at 2:57 p.m. and returned it at 3:16 p.m. The location is close to the gym and has a worktable."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who had the supply-room key?",
+          "a": [
+            "Riley.",
+            "The bus driver.",
+            "The principal."
+          ],
+          "c": 0,
+          "h": "Look at the name in the log.",
+          "why": "The entry names Riley."
+        },
+        "3-5": {
+          "q": "What is the key log evidence of?",
+          "a": [
+            "Riley had access to the supply room.",
+            "Riley certainly stole the mascot.",
+            "The costume was sold."
+          ],
+          "c": 0,
+          "h": "Having a key proves access, not wrongdoing.",
+          "why": "It connects Riley to a location where the mascot might have been moved."
+        },
+        "6-8": {
+          "q": "What does the key log establish when combined with the repair-kit record?",
+          "a": [
+            "Riley had both repair tools and access to a work area.",
+            "Riley confessed to stealing the costume.",
+            "The mascot costume was destroyed."
+          ],
+          "c": 0,
+          "h": "Link tools, opportunity, and location; do not assume a crime.",
+          "why": "Taken together, these records strongly support a possible repair in the supply room."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "riley",
+      "place": "gym",
+      "name": "Riley",
+      "role": "Stage Manager",
+      "icon": "🎭",
+      "texts": {
+        "1-2": "“I saw a tear on the mascot. I wanted to help before the assembly.”",
+        "3-5": "“The mascot had a ripped seam. I was worried the costume would fall apart during the assembly, so I tried to find a way to repair it.”",
+        "6-8": "“I spotted a split seam during rehearsal and was concerned it would worsen at the assembly. I decided to deal with it quickly, but I should have told the team my plan.”"
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why was Riley worried?",
+          "a": [
+            "The costume was torn.",
+            "It was snowing.",
+            "The gym was locked."
+          ],
+          "c": 0,
+          "h": "What was wrong with the mascot?",
+          "why": "Riley noticed the tear."
+        },
+        "3-5": {
+          "q": "What was Riley’s likely motivation?",
+          "a": [
+            "To prevent the damaged costume from getting worse.",
+            "To cancel the assembly.",
+            "To hide a basketball."
+          ],
+          "c": 0,
+          "h": "What problem did Riley describe?",
+          "why": "Riley says the goal was to protect the costume."
+        },
+        "6-8": {
+          "q": "How should a detective treat Riley’s statement?",
+          "a": [
+            "As a possible explanation that should be checked against records.",
+            "As unquestionable proof of innocence.",
+            "As evidence that the librarian moved it."
+          ],
+          "c": 0,
+          "h": "Witnesses can have useful information but still need corroboration.",
+          "why": "Riley’s account should be compared with the repair-kit and key logs."
+        }
+      }
+    },
+    {
+      "id": "morgan",
+      "place": "art",
+      "name": "Morgan",
+      "role": "Art Club Leader",
+      "icon": "🖌️",
+      "texts": {
+        "1-2": "“Riley came in for sewing supplies.”",
+        "3-5": "“Riley asked me for strong thread and a repair kit shortly before 3:00. They seemed to be in a hurry.”",
+        "6-8": "“Just before three, Riley asked for a heavy-duty needle and matching thread. The request sounded urgent, but Riley did not explain exactly what needed fixing.”"
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who asked Morgan for supplies?",
+          "a": [
+            "Riley.",
+            "Kai.",
+            "Taylor."
+          ],
+          "c": 0,
+          "h": "Find the name in Morgan’s words.",
+          "why": "Morgan named Riley."
+        },
+        "3-5": {
+          "q": "Which detail supports Morgan’s statement?",
+          "a": [
+            "The repair-kit sign-out sheet.",
+            "The muddy footprints.",
+            "The library’s book list."
+          ],
+          "c": 0,
+          "h": "Which other clue records a supply loan?",
+          "why": "The art-room sign-out sheet corroborates Morgan’s statement."
+        },
+        "6-8": {
+          "q": "What makes Morgan’s statement relatively credible?",
+          "a": [
+            "It can be checked against the dated supply record.",
+            "Morgan speaks the loudest.",
+            "Morgan likes costumes."
+          ],
+          "c": 0,
+          "h": "Good testimony can be verified independently.",
+          "why": "The dated record independently supports the reported request."
+        }
+      }
+    },
+    {
+      "id": "kai",
+      "place": "hall",
+      "name": "Kai",
+      "role": "Basketball Player",
+      "icon": "🏀",
+      "texts": {
+        "1-2": "“I came in from outside. My shoes were muddy. I did not see the mascot.”",
+        "3-5": "“I came back from the wet outdoor courts at about 3:00. My shoes were muddy, but I was headed to basketball practice.”",
+        "6-8": "“At around three, I walked in from the wet outdoor courts. I realize my muddy shoes may have left prints, but I had practice and did not handle the mascot costume.”"
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why were Kai’s shoes muddy?",
+          "a": [
+            "Kai came from outside.",
+            "Kai painted them.",
+            "Kai stepped in a cake."
+          ],
+          "c": 0,
+          "h": "Where was Kai before entering?",
+          "why": "Kai had been at the outdoor courts."
+        },
+        "3-5": {
+          "q": "Why should detectives be cautious about the footprints?",
+          "a": [
+            "Several people could have made them.",
+            "Footprints never show movement.",
+            "Kai must have moved the mascot."
+          ],
+          "c": 0,
+          "h": "Are the prints unique?",
+          "why": "The tracks alone cannot identify the owner or connect them to the costume."
+        },
+        "6-8": {
+          "q": "Which interpretation best handles Kai’s statement?",
+          "a": [
+            "It offers a possible source for footprints but does not establish who moved the mascot.",
+            "It proves Kai is lying.",
+            "It establishes that no one entered the hall."
+          ],
+          "c": 0,
+          "h": "Consider both useful details and their limits.",
+          "why": "The testimony offers context but cannot settle the case alone."
+        }
+      }
+    },
+    {
+      "id": "taylor",
+      "place": "library",
+      "name": "Taylor",
+      "role": "Library Assistant",
+      "icon": "📚",
+      "texts": {
+        "1-2": "“I saw a big blue bag go by near 3:00.”",
+        "3-5": "“Just before 3:00, I noticed someone carrying a bulky blue equipment bag down the hall. I couldn’t see their face clearly.”",
+        "6-8": "“A few minutes before three, I observed someone struggling with an unusually bulky blue bag heading toward the supply corridor. My view was partly blocked, so I could not identify the person.”"
+      },
+      "questions": {
+        "1-2": {
+          "q": "What color was the bag?",
+          "a": [
+            "Blue.",
+            "Green.",
+            "Orange."
+          ],
+          "c": 0,
+          "h": "Look for a color in the statement.",
+          "why": "Taylor reports a blue bag."
+        },
+        "3-5": {
+          "q": "What can Taylor reliably tell us?",
+          "a": [
+            "Someone carried a bulky blue bag.",
+            "Riley was definitely inside the bag.",
+            "The bag contained the costume."
+          ],
+          "c": 0,
+          "h": "Only use what the witness actually saw.",
+          "why": "Taylor describes a bag but could not identify its carrier or contents."
+        },
+        "6-8": {
+          "q": "Which part of Taylor’s account is observation rather than inference?",
+          "a": [
+            "A person carried a bulky blue bag.",
+            "The person was stealing the mascot.",
+            "The bag contained an entire costume."
+          ],
+          "c": 0,
+          "h": "Observation is what was directly seen.",
+          "why": "The bag itself was observed; its contents and the carrier’s motive were not."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "missing-mascot",
+    "title": "The Missing Mascot",
+    "subtitle": "CASE FILE 001 • RANGER THE FOX",
+    "goal": "Find who moved the Ranger mascot costume, where it went, and why.",
+    "who": "riley",
+    "where": "storage",
+    "why": "repair",
+    "proofs": [
+      "seam",
+      "kit",
+      "keylog",
+      "memo",
+      "thread"
+    ],
+    "brief": {
+      "1-2": "Ranger the Fox is missing! The mascot was in the gym. Now no one can find the costume. The school assembly starts soon. Can your detective team find out what happened?",
+      "3-5": "The Ranger the Fox costume has disappeared between rehearsal and the afternoon assembly. Several witnesses saw unusual activity near the gym. Investigate what happened, follow the timeline, and support your answer with evidence.",
+      "6-8": "The Ranger the Fox mascot costume vanished during a narrow window between rehearsal and the school assembly. Conflicting witness accounts, an unusual equipment-bag sighting, and several material clues offer competing theories. Reconstruct events and distinguish inference from proof."
+    },
+    "number": "001",
+    "category": "School Mystery",
+    "icon": "🦊",
+    "setting": "Naches Valley school campus",
+    "readingBands": [
+      "1-2",
+      "3-5",
+      "6-8"
+    ],
+    "minEvidence": 8,
+    "minInterviews": 3,
+    "theoryLabels": {
+      "who": "Who moved the costume?",
+      "where": "Where was it taken?",
+      "why": "Why was it moved?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "riley",
+          "label": "Riley • Stage Manager"
+        },
+        {
+          "id": "morgan",
+          "label": "Morgan • Art Club"
+        },
+        {
+          "id": "kai",
+          "label": "Kai • Basketball Player"
+        },
+        {
+          "id": "taylor",
+          "label": "Taylor • Library Assistant"
+        }
+      ],
+      "where": [
+        {
+          "id": "gym",
+          "label": "Gymnasium"
+        },
+        {
+          "id": "art",
+          "label": "Art Studio"
+        },
+        {
+          "id": "library",
+          "label": "Library"
+        },
+        {
+          "id": "storage",
+          "label": "Supply Room"
+        }
+      ],
+      "why": [
+        {
+          "id": "repair",
+          "label": "To repair a damaged seam"
+        },
+        {
+          "id": "hide",
+          "label": "To prevent the assembly"
+        },
+        {
+          "id": "sell",
+          "label": "To sell the costume"
+        },
+        {
+          "id": "prank",
+          "label": "As a prank"
+        }
+      ]
+    },
+    "feedback": {
+      "who": "The person you chose does not fit all the sign-out records. Check the witnesses and the key log.",
+      "where": "The location does not match the trail of access records. Look for the key log.",
+      "why": "Your proposed motive does not explain the sewing tools and damaged fabric.",
+      "proofs": "Your chosen proof does not sufficiently support the full explanation. Include records related to repairs or supply-room access."
+    },
+    "resolution": {
+      "summary": "The Ranger mascot costume was never stolen. Your detective team uncovered the truth by connecting witness statements, a torn costume seam, and school records.",
+      "outcome": "Riley, the stage manager, moved the mascot costume to the supply room to repair a torn seam. Riley meant to help before the 3:30 assembly but failed to tell the rest of the team where the costume went.",
+      "timeline": [
+        {
+          "time": "2:40 p.m.",
+          "event": "The mascot is used at rehearsal. A seam is torn."
+        },
+        {
+          "time": "2:50 p.m.",
+          "event": "Riley checks out a sewing kit and thread from the art room."
+        },
+        {
+          "time": "About 2:55 p.m.",
+          "event": "A bulky blue stage-crew bag is seen in the hallway."
+        },
+        {
+          "time": "2:57 p.m.",
+          "event": "Riley checks out the supply-room key."
+        },
+        {
+          "time": "3:16 p.m.",
+          "event": "Riley returns the key after working on the repair."
+        },
+        {
+          "time": "Before 3:30 p.m.",
+          "event": "The repaired mascot is returned for the assembly."
+        }
+      ]
+    }
+  },
+  "schemaVersion": 1
+}

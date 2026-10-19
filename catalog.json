@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "missing-mascot",
+      "title": "The Missing Mascot",
+      "number": "001",
+      "category": "School Mystery",
+      "icon": "🦊",
+      "summary": "The school mascot has vanished before an assembly. Follow the clues and discover what happened.",
+      "grades": "1–8",
+      "status": "ready",
+      "file": "cases/missing-mascot.json"
+    },
+    {
+      "id": "library-lockdown",
+      "title": "The Library Lockdown",
+      "number": "002",
+      "category": "Puzzle Mystery",
+      "icon": "📚",
+      "summary": "A locked library, strange riddles, and an unexpected message.",
+      "grades": "5–8",
+      "status": "planned"
+    },
+    {
+      "id": "olympian-artifact",
+      "title": "The Olympian Artifact",
+      "number": "003",
+      "category": "Mythology",
+      "icon": "⚡",
+      "summary": "A museum artifact disappears on the eve of a mythology exhibition.",
+      "grades": "5–8",
+      "status": "planned"
+    },
+    {
+      "id": "underground-blackout",
+      "title": "The Underground Blackout",
+      "number": "004",
+      "category": "Science Fiction",
+      "icon": "💡",
+      "summary": "A blackout in an underground town creates conflicting witness reports.",
+      "grades": "5–8",
+      "status": "planned"
+    },
+    {
+      "id": "vanishing-esports-trophy",
+      "title": "The Vanishing Esports Trophy",
+      "number": "005",
+      "category": "School Mystery",
+      "icon": "🏆",
+      "summary": "A championship trophy goes missing before an awards ceremony.",
+      "grades": "5–8",
+      "status": "planned"
+    }
+  ]
+}
