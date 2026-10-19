@@ -51,9 +51,10 @@
       "number": "005",
       "category": "School Mystery",
       "icon": "🏆",
-      "summary": "A championship trophy goes missing before an awards ceremony.",
-      "grades": "5–8",
-      "status": "planned"
+      "summary": "Before the esports awards, a vanished trophy, an old bracket, and an oddly timed photo spark rumors. Follow authentic tournament and custody records to uncover a routine engraving transfer.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "ready",
+      "file": "cases/vanishing-esports-trophy.json"
     }
   ]
 }

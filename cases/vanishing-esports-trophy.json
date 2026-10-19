@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "display-hall": {
+      "name": "Hall of Champions",
+      "icon": "🏆",
+      "detail": "An empty pedestal has set the entire school talking.",
+      "scene": "hall"
+    },
+    "competition-stage": {
+      "name": "Tournament Arena",
+      "icon": "🎮",
+      "detail": "Brackets, score sheets, and yesterday’s final match are on record.",
+      "scene": "gym"
+    },
+    "practice-lab": {
+      "name": "Esports Practice Lab",
+      "icon": "🖥️",
+      "detail": "Students prepare equipment while rumors race ahead of facts.",
+      "scene": "art"
+    },
+    "media-desk": {
+      "name": "Student Media Studio",
+      "icon": "📸",
+      "detail": "A popular post and an older photograph tell different stories.",
+      "scene": "library"
+    },
+    "activities-office": {
+      "name": "Activities Office",
+      "icon": "🗂️",
+      "detail": "Signed approvals and sign-out records establish the chain of custody.",
+      "scene": "office"
+    },
+    "engraving-bay": {
+      "name": "Engraving Workshop",
+      "icon": "🔧",
+      "detail": "A protected workbench and job sheet hold the last part of the puzzle.",
+      "scene": "storage"
+    }
+  },
+  "evidence": [
+    {
+      "id": "empty-pedestal",
+      "place": "display-hall",
+      "icon": "🏆",
+      "title": "Undamaged Display Case",
+      "type": "Physical observation",
+      "texts": {
+        "1-2": "The trophy shelf is empty. The glass door is locked. Nothing is broken.",
+        "3-5": "The Hall of Champions display case is locked, but its silver trophy is gone. No glass is broken, and its hinges and lock are undamaged.",
+        "6-8": "The display case is empty yet intact: neither the lock nor the hinges show damage. That observation supports removal with authorized access more strongly than a forced break-in, although it cannot by itself identify who opened it."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is missing from the case?",
+          "a": [
+            "The door",
+            "The glass",
+            "The trophy"
+          ],
+          "c": 2,
+          "h": "Look at the first sentence.",
+          "why": "The shelf is empty because the trophy is missing."
+        },
+        "3-5": {
+          "q": "Which detail makes a break-in less likely?",
+          "a": [
+            "A loud hallway",
+            "The undamaged lock and glass",
+            "A blue poster"
+          ],
+          "c": 1,
+          "h": "Find the clue about how the case looks.",
+          "why": "An undamaged locked case suggests the trophy may have been taken out with a key."
+        },
+        "6-8": {
+          "q": "Which conclusion is justified by the physical evidence alone?",
+          "a": [
+            "There is no visible evidence of forced entry",
+            "The captain stole the award",
+            "No one moved the trophy"
+          ],
+          "c": 0,
+          "h": "Do not jump from an intact case to a named culprit.",
+          "why": "The case condition rules against an obvious forced entry but does not establish who removed the trophy or why."
+        }
+      }
+    },
+    {
+      "id": "early-bracket",
+      "place": "competition-stage",
+      "icon": "🗺️",
+      "title": "Preliminary Tournament Bracket",
+      "type": "Tournament chart",
+      "texts": {
+        "1-2": "A paper says \"SEMIFINAL.\" It shows the Night Lynx team in one game. It does not show the final winner.",
+        "3-5": "A photograph of the tournament bracket shows Night Lynx advancing from a semifinal. The page is labeled \"Thursday, 2:00 p.m. — BEFORE FINAL\"; it does not report who won the championship.",
+        "6-8": "A circulating bracket image names Night Lynx as a semifinal qualifier. Its header explicitly states \"Preliminary / 2:00 p.m., Thursday.\" Treating it as a final result confuses a snapshot of tournament progress with the certified outcome."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Is this paper from before or after the final?",
+          "a": [
+            "Before the final",
+            "After the awards",
+            "Next week"
+          ],
+          "c": 0,
+          "h": "Read the big word at the top.",
+          "why": "A semifinal occurs before the final game."
+        },
+        "3-5": {
+          "q": "Why can this bracket not prove who won the tournament?",
+          "a": [
+            "It is folded",
+            "It has team names",
+            "It was recorded before the final match"
+          ],
+          "c": 2,
+          "h": "Check its time and the word \"preliminary.\"",
+          "why": "It records an earlier round, not the championship outcome."
+        },
+        "6-8": {
+          "q": "What source-evaluation error occurs if someone cites this image as the final result?",
+          "a": [
+            "Checking the image timestamp",
+            "Comparing two official records",
+            "Confusing a preliminary record with an authoritative final result"
+          ],
+          "c": 2,
+          "h": "Ask what stage of competition the document actually records.",
+          "why": "A semifinal chart is authentic evidence about that stage, but not about the later championship result."
+        }
+      }
+    },
+    {
+      "id": "certified-final",
+      "place": "competition-stage",
+      "icon": "📋",
+      "title": "Certified Championship Result",
+      "type": "Official result",
+      "texts": {
+        "1-2": "The final score sheet says Comet Circuit won the match. It is signed by the referee.",
+        "3-5": "The official final report states that Comet Circuit defeated Night Lynx two games to one at 4:35 p.m. Thursday. The event referee signed the report after the final match.",
+        "6-8": "Unlike the preliminary bracket, the tournament referee’s signed report documents the completed championship at 4:35 p.m. Thursday: Comet Circuit defeated Night Lynx, 2–1. It is the controlling primary record for the winner’s identity."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which team won the final?",
+          "a": [
+            "Night Lynx",
+            "Comet Circuit",
+            "Both teams"
+          ],
+          "c": 1,
+          "h": "Look for the name next to the win.",
+          "why": "The signed final sheet names Comet Circuit as champion."
+        },
+        "3-5": {
+          "q": "Which document should be used to determine the champion?",
+          "a": [
+            "The signed championship report",
+            "A semifinal photo",
+            "A rumor message"
+          ],
+          "c": 0,
+          "h": "Which one was written after the final game?",
+          "why": "The signed final report records the actual completed match."
+        },
+        "6-8": {
+          "q": "Why does the referee’s report outweigh the earlier bracket when identifying the champion?",
+          "a": [
+            "It is prettier",
+            "It was certified after the decisive match",
+            "It has more signatures than all documents"
+          ],
+          "c": 1,
+          "h": "Think about chronology, purpose, and authority.",
+          "why": "The report is contemporaneous, signed by the official, and covers the completed final."
+        }
+      }
+    },
+    {
+      "id": "photo-metadata",
+      "place": "media-desk",
+      "icon": "📷",
+      "title": "Photograph Metadata Card",
+      "type": "Media record",
+      "texts": {
+        "1-2": "The photo shows the trophy on its shelf at 9:55. The photo went online at 11:25.",
+        "3-5": "The student media file lists two different times. The trophy photo was taken at 9:55 a.m., but it was scheduled to publish at 11:25 a.m. The later post does not prove the trophy was still on display at 11:25.",
+        "6-8": "The image-management record preserves the original capture timestamp, 09:55, and a separate automated publication timestamp, 11:25. A late upload can circulate an accurate older picture while encouraging the false inference that the depicted state is current."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When was the trophy picture taken?",
+          "a": [
+            "11:25",
+            "9:55",
+            "2:30"
+          ],
+          "c": 1,
+          "h": "Find the words \"taken at.\"",
+          "why": "The photograph was captured at 9:55 a.m."
+        },
+        "3-5": {
+          "q": "What mistake might someone make when seeing the post time?",
+          "a": [
+            "Thinking a camera took the picture",
+            "Thinking the photo has a trophy",
+            "Thinking the photo shows what happened at 11:25"
+          ],
+          "c": 2,
+          "h": "Compare \"taken\" with \"published.\"",
+          "why": "The publication time is later than the moment captured in the image."
+        },
+        "6-8": {
+          "q": "Which statement most accurately evaluates the photograph?",
+          "a": [
+            "Every scheduled post is deliberately deceptive",
+            "Its capture is genuine, but its publication time cannot establish the trophy’s location at 11:25",
+            "The picture must have been fabricated"
+          ],
+          "c": 1,
+          "h": "A picture can be accurate without being current.",
+          "why": "Metadata distinguishes when the scene occurred from when the audience encountered it."
+        }
+      }
+    },
+    {
+      "id": "rumor-post",
+      "place": "media-desk",
+      "icon": "📱",
+      "title": "Viral \"Stolen!\" Message",
+      "type": "Social media claim",
+      "texts": {
+        "1-2": "A message says, \"Someone stole the cup!\" It has no name and no proof.",
+        "3-5": "A widely shared student post claims, \"Someone stole the trophy!\" The account cites \"people are saying\" but includes no witness name, video of a theft, or verified source.",
+        "6-8": "A viral repost announces \"STOLEN!\" and relies entirely on an unattributed phrase, \"everyone knows.\" It provides neither a firsthand observation nor a verifiable document, even though its certainty encourages readers to confuse popularity with reliability."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Does the post show proof of stealing?",
+          "a": [
+            "Yes, a signed record",
+            "Yes, a photo of a thief",
+            "No, it gives no proof"
+          ],
+          "c": 2,
+          "h": "The post says something but does not show evidence.",
+          "why": "The message makes a claim without showing how the writer knows."
+        },
+        "3-5": {
+          "q": "Which question should a careful reader ask first?",
+          "a": [
+            "How many reactions did it get?",
+            "Who witnessed this and what evidence supports it?",
+            "Is its font exciting?"
+          ],
+          "c": 1,
+          "h": "Look for a named source, not the number of shares.",
+          "why": "Verification requires evidence, not repeated anonymous claims."
+        },
+        "6-8": {
+          "q": "Which weakness most directly limits this post’s credibility?",
+          "a": [
+            "Its accusation lacks an attributable source and corroboration",
+            "It has been reposted several times",
+            "It uses capital letters"
+          ],
+          "c": 0,
+          "h": "Popularity and punctuation are not proof.",
+          "why": "Unattributed claims need independent confirmation before being treated as factual."
+        }
+      }
+    },
+    {
+      "id": "practice-roster",
+      "place": "practice-lab",
+      "icon": "🕒",
+      "title": "Practice Attendance Roster",
+      "type": "Schedule and sign-in record",
+      "texts": {
+        "1-2": "Teo signed in to practice at 10:00. The teacher marked Teo present at 10:20.",
+        "3-5": "The esports practice roster lists Teo Marin at the computers from 10:00 to 11:00 a.m. A staff attendance check at 10:20 confirms Teo was in the practice lab near the time the trophy was moved.",
+        "6-8": "The planned 10:00–11:00 practice block is supplemented by a signed 10:20 attendance check. That check corroborates Teo Marin’s presence in the lab, but does not establish Teo’s exact location at every minute of the hour."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where was Teo at 10:20?",
+          "a": [
+            "In the practice lab",
+            "At the museum",
+            "On the school bus"
+          ],
+          "c": 0,
+          "h": "Read where the teacher checked attendance.",
+          "why": "Teo was marked present in the practice room at 10:20."
+        },
+        "3-5": {
+          "q": "Why is the attendance check stronger than the schedule alone?",
+          "a": [
+            "It confirms someone was actually present",
+            "It has bigger letters",
+            "It predicts tomorrow"
+          ],
+          "c": 0,
+          "h": "A plan is not always what happened.",
+          "why": "A schedule lists an intended activity; the attendance check records participation."
+        },
+        "6-8": {
+          "q": "What is the most defensible interpretation of Teo’s alibi?",
+          "a": [
+            "It proves Teo could never leave the building",
+            "It proves the entire trophy story was invented",
+            "It corroborates Teo’s presence at 10:20, not necessarily every moment"
+          ],
+          "c": 2,
+          "h": "Beware of turning a single check into continuous surveillance.",
+          "why": "A contemporaneous attendance check supports a specific time and place, with appropriate limits."
+        }
+      }
+    },
+    {
+      "id": "engraving-request",
+      "place": "activities-office",
+      "icon": "📝",
+      "title": "Approved Engraving Request E-27",
+      "type": "Signed work order",
+      "texts": {
+        "1-2": "Mila signed a paper at 8:20. It says, \"Put the winners’ name on the trophy.\"",
+        "3-5": "At 8:20 a.m. Friday, activities coordinator Mila Torres signed work request E-27. It directs staff to take the tournament trophy to the engraving workshop to update its champion plate before the awards ceremony.",
+        "6-8": "Approved request E-27, timestamped 08:20 and signed by activities coordinator Mila Torres, authorizes facilities staff to transfer the championship trophy to the engraving bay. Its explicit purpose is to replace the outdated winner plate before the 2:30 p.m. presentation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Mila sign the paper?",
+          "a": [
+            "To fix the winner plate",
+            "To cancel all games",
+            "To hide a prize"
+          ],
+          "c": 0,
+          "h": "Read what the paper says to do to the trophy.",
+          "why": "Mila requested an updated engraved nameplate."
+        },
+        "3-5": {
+          "q": "What does the signed work request most strongly establish?",
+          "a": [
+            "Permission to move the trophy for engraving",
+            "Proof that Teo stole it",
+            "Proof the ceremony was canceled"
+          ],
+          "c": 0,
+          "h": "Look for the approving person and the stated purpose.",
+          "why": "The document expressly approves a transfer for the award plate."
+        },
+        "6-8": {
+          "q": "How does request E-27 affect the theft hypothesis?",
+          "a": [
+            "It confirms the student rumor as eyewitness evidence",
+            "It proves every rumor writer acted dishonestly",
+            "It provides a documented, legitimate reason for temporarily removing the trophy"
+          ],
+          "c": 2,
+          "h": "Compare an authorized order with an unattributed claim.",
+          "why": "A signed, time-stamped primary document supports a lawful explanation for the removal."
+        }
+      }
+    },
+    {
+      "id": "custody-log",
+      "place": "activities-office",
+      "icon": "🔑",
+      "title": "Trophy Check-Out Log",
+      "type": "Chain-of-custody record",
+      "texts": {
+        "1-2": "Rowan signed for the trophy at 10:12. The log says \"Engraving Bay.\"",
+        "3-5": "The display cabinet check-out book shows that facilities technician Rowan Pike signed out the trophy at 10:12 a.m. The destination is written as \"Engraving Bay\" and the purpose as \"E-27 nameplate update.\"",
+        "6-8": "The key-controlled trophy custody ledger contains a 10:12 entry bearing Rowan Pike’s signature, authorized destination \"Engraving Bay,\" and cross-reference E-27. This contemporaneous record identifies the physical custodian, not merely the person who approved the task."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed for the trophy?",
+          "a": [
+            "Teo Marin",
+            "Rowan Pike",
+            "Nina Vale"
+          ],
+          "c": 1,
+          "h": "Find the name next to the time 10:12.",
+          "why": "The check-out record names Rowan Pike."
+        },
+        "3-5": {
+          "q": "Which detail connects the removal to an authorized job?",
+          "a": [
+            "A rumored thief",
+            "A tournament cheer",
+            "The reference to request E-27"
+          ],
+          "c": 2,
+          "h": "Find the matching number on the request and the log.",
+          "why": "E-27 connects the custody transfer to the approved engraving request."
+        },
+        "6-8": {
+          "q": "Which evidence is strongest for identifying the person who physically moved the award?",
+          "a": [
+            "The coordinator’s signature authorizing future work",
+            "The signed 10:12 custody entry",
+            "An anonymous accusation"
+          ],
+          "c": 1,
+          "h": "Differentiate who approved the work from who signed out the object.",
+          "why": "The custody log directly names Rowan as the individual taking responsibility for the trophy."
+        }
+      }
+    },
+    {
+      "id": "east-hall-still",
+      "place": "display-hall",
+      "icon": "📹",
+      "title": "East Hall Camera Still",
+      "type": "Security still and timestamp",
+      "texts": {
+        "1-2": "At 10:18, the camera shows Rowan carrying a padded box toward the workshop.",
+        "3-5": "An East Hall camera image from 10:18 a.m. shows Rowan in a facilities jacket carrying a foam-lined case toward the workshop corridor. The closed case hides its contents.",
+        "6-8": "The 10:18 security still places Rowan Pike on the route from the display cabinet to the engraving annex with a protective case. The image corroborates the custody log’s movement but cannot independently establish what was inside the closed case."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which way is Rowan walking?",
+          "a": [
+            "Toward the bus stop",
+            "Toward the playing field",
+            "Toward the engraving workshop"
+          ],
+          "c": 2,
+          "h": "The camera caption names the hallway.",
+          "why": "Rowan carries a padded box toward the workshop at 10:18."
+        },
+        "3-5": {
+          "q": "What can the camera image NOT prove by itself?",
+          "a": [
+            "The time of the photo",
+            "What is inside the closed case",
+            "Who is wearing a facilities jacket"
+          ],
+          "c": 1,
+          "h": "Think about what the camera cannot see.",
+          "why": "The box is closed, so the photo alone cannot confirm its contents."
+        },
+        "6-8": {
+          "q": "Which claim appropriately combines the still and custody log?",
+          "a": [
+            "Both sources support Rowan’s route to the workshop, while only the log identifies the stated contents",
+            "The still proves Rowan intended theft",
+            "The photo invalidates the signed log"
+          ],
+          "c": 0,
+          "h": "Recognize both corroboration and limitations.",
+          "why": "The two records align on time and direction, but the still alone does not reveal what Rowan carried."
+        }
+      }
+    },
+    {
+      "id": "engraving-job",
+      "place": "engraving-bay",
+      "icon": "🔩",
+      "title": "Workshop Engraving Job Sheet",
+      "type": "Service record",
+      "texts": {
+        "1-2": "The workshop paper says \"Comet Circuit.\" The trophy is safe in a padded cabinet.",
+        "3-5": "Workshop job sheet E-27 records that the plate was updated from last year’s name to \"Comet Circuit — Champions.\" At 12:10 p.m., the engraver marked it complete and placed the trophy in padded storage for pickup.",
+        "6-8": "The engraver’s job sheet records the E-27 transfer, a verified plate inscription naming Comet Circuit, and completion at 12:10. It identifies the trophy’s temporary protected location as the engraving bay’s padded cabinet pending collection, corroborating the stated purpose of the original authorization."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What new team name is on the plate?",
+          "a": [
+            "Night Lynx",
+            "Comet Circuit",
+            "Sky Whales"
+          ],
+          "c": 1,
+          "h": "Find the name after the word \"plate.\"",
+          "why": "The new winner plate names Comet Circuit."
+        },
+        "3-5": {
+          "q": "Which conclusion is supported by the completed workshop sheet?",
+          "a": [
+            "The trophy was destroyed",
+            "The trophy is stored safely after an engraving update",
+            "The trophy left campus in a delivery truck"
+          ],
+          "c": 1,
+          "h": "Look for both the completed job and where the item was placed.",
+          "why": "The work was finished and the trophy was placed in padded workshop storage."
+        },
+        "6-8": {
+          "q": "Why is the signed workshop job sheet essential corroboration?",
+          "a": [
+            "It merely repeats an anonymous post",
+            "It establishes the semifinal winner",
+            "It verifies the authorized engraving occurred and explains where the trophy remained afterward"
+          ],
+          "c": 2,
+          "h": "Which record documents the actual result of the work?",
+          "why": "The contemporaneous service record confirms the approved purpose and the artifact’s actual storage location."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "mila-torres",
+      "place": "activities-office",
+      "icon": "👩",
+      "texts": {
+        "1-2": "“I asked for a new winner plate,” says Mila. “I signed the job at 8:20.”",
+        "3-5": "“I approved the new plate at 8:20,” explains Mila Torres. “The old engraving listed last year’s winner. I did not carry the trophy myself; facilities handled that job.”",
+        "6-8": "Mila Torres explains that she approved a time-sensitive engraving request after verifying the official championship result. Her signature authorized the work, but she expressly distinguishes authorizing the transfer from physically taking custody of the trophy."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Mila approve?",
+          "a": [
+            "A new engraved plate",
+            "A new computer",
+            "A school bus trip"
+          ],
+          "c": 0,
+          "h": "Find the words \"new winner plate.\"",
+          "why": "Mila approved work on the trophy plate."
+        },
+        "3-5": {
+          "q": "Which job did Mila NOT say she performed?",
+          "a": [
+            "Carrying the trophy to the workshop",
+            "Approving the new plate",
+            "Signing the request"
+          ],
+          "c": 0,
+          "h": "Notice her last sentence.",
+          "why": "Mila approved the engraving; a facilities worker transported the trophy."
+        },
+        "6-8": {
+          "q": "What distinction in Mila’s account prevents a mistaken accusation?",
+          "a": [
+            "Administrative authorization is not the same as physical custody",
+            "Approval means she must have stolen the trophy",
+            "The championship never ended"
+          ],
+          "c": 0,
+          "h": "A signature on an order is not a sign-out receipt.",
+          "why": "Her role was to authorize the service, while custody is independently documented elsewhere."
+        }
+      },
+      "name": "Mila Torres",
+      "role": "Activities Coordinator"
+    },
+    {
+      "id": "rowan-pike",
+      "place": "engraving-bay",
+      "icon": "🧑‍🔧",
+      "texts": {
+        "1-2": "“I signed the trophy out and carried it in a soft box,” says Rowan. “It is at the workshop.”",
+        "3-5": "“I checked the cup out at 10:12,” says technician Rowan Pike. “I used the padded case so the metal finish would not scratch. The engraver finished at 12:10, and it is safe until pickup.”",
+        "6-8": "Rowan Pike recalls the 10:12 custody transfer and explains the protective case used along the east corridor. Rowan’s account aligns with the signed custody ledger and the workshop sheet, though those independent records should carry greater evidentiary weight than a statement alone."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Rowan use a soft box?",
+          "a": [
+            "To hide a pet",
+            "To carry lunch",
+            "To protect the trophy"
+          ],
+          "c": 2,
+          "h": "Rowan mentions what could scratch.",
+          "why": "The padded box protected the trophy from damage."
+        },
+        "3-5": {
+          "q": "What independent records should detectives use to check Rowan’s story?",
+          "a": [
+            "A rumor post and a cheer",
+            "An old semifinal photo",
+            "The check-out log and completed workshop sheet"
+          ],
+          "c": 2,
+          "h": "Look for signed records of both taking and servicing the cup.",
+          "why": "The log confirms custody, and the service sheet confirms the engraving work."
+        },
+        "6-8": {
+          "q": "What makes Rowan’s account credible without treating it as proof by itself?",
+          "a": [
+            "Rowan wears a uniform",
+            "It is corroborated by separate time-stamped records",
+            "Rowan spoke more confidently than others"
+          ],
+          "c": 1,
+          "h": "Which documentary records confirm the key details?",
+          "why": "The custody entry and engraving log independently support Rowan’s account."
+        }
+      },
+      "name": "Rowan Pike",
+      "role": "Facilities Technician"
+    },
+    {
+      "id": "teo-marin",
+      "place": "practice-lab",
+      "icon": "🧑‍💻",
+      "texts": {
+        "1-2": "“I was at practice,” says Teo. “I carried a headset case, not a trophy.”",
+        "3-5": "Teo Marin says a classmate saw a hard case near the practice lab and assumed it held the trophy. “My case held headsets,” Teo explains. “I was at the computers for the 10:20 attendance check.”",
+        "6-8": "Team captain Teo Marin acknowledges carrying a hard equipment case, a superficial resemblance that fueled suspicion. Teo’s account is partly corroborated by the signed 10:20 practice check, but investigators still need direct evidence of the trophy’s actual custody."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Teo carry?",
+          "a": [
+            "A headset case",
+            "A gold statue",
+            "A stack of books"
+          ],
+          "c": 0,
+          "h": "Teo tells you what was inside the case.",
+          "why": "Teo was transporting headsets for practice."
+        },
+        "3-5": {
+          "q": "Why might a student have suspected Teo?",
+          "a": [
+            "Teo signed the engraving job",
+            "Teo was in the trophy cabinet",
+            "Teo carried a case that could be mistaken for another case"
+          ],
+          "c": 2,
+          "h": "Look for the difference between appearance and known contents.",
+          "why": "The case resembled a trophy container, but that alone is not proof."
+        },
+        "6-8": {
+          "q": "What is the fairest evaluation of suspicion toward Teo?",
+          "a": [
+            "A team captain always controls every award",
+            "A similar-looking case is not enough; evaluate the practice record and custody log",
+            "Rumors become reliable if classmates repeat them"
+          ],
+          "c": 1,
+          "h": "Separate visual resemblance from direct documentary evidence.",
+          "why": "Suspicion based on a similar case cannot outweigh time-stamped records of the actual trophy transfer."
+        }
+      },
+      "name": "Teo Marin",
+      "role": "Esports Team Captain"
+    },
+    {
+      "id": "nina-vale",
+      "place": "media-desk",
+      "icon": "📸",
+      "texts": {
+        "1-2": "“I took the trophy picture early,” says Nina. “My post went out later.”",
+        "3-5": "“The photo was taken at 9:55,” says editor Nina Vale. “I scheduled it to post at 11:25 during lunch. I should have added the original photo time so it did not seem new.”",
+        "6-8": "Student editor Nina Vale confirms the publication system released a 09:55 image at 11:25. Nina recognizes that an authentic but uncontextualized image can mislead an audience, especially once another student attaches an unverified theft accusation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Nina take the picture at 11:25?",
+          "a": [
+            "Yes",
+            "No, next week",
+            "No, at 9:55"
+          ],
+          "c": 2,
+          "h": "Listen for the time Nina took the photo.",
+          "why": "Nina photographed the trophy at 9:55 and published later."
+        },
+        "3-5": {
+          "q": "What could Nina add to prevent confusion?",
+          "a": [
+            "The photo’s original capture time",
+            "A louder headline",
+            "More emojis"
+          ],
+          "c": 0,
+          "h": "What information is missing from the reader’s view?",
+          "why": "A capture-time label helps distinguish an older image from current conditions."
+        },
+        "6-8": {
+          "q": "Which media-literacy lesson best fits Nina’s experience?",
+          "a": [
+            "Every school photo should be deleted",
+            "View counts determine a photograph’s truth",
+            "Authenticity does not guarantee that an image communicates the current situation"
+          ],
+          "c": 2,
+          "h": "Think of the difference between accurate and timely.",
+          "why": "An accurate image can mislead when publication context hides when the photographed event occurred."
+        }
+      },
+      "name": "Nina Vale",
+      "role": "Student Media Editor"
+    },
+    {
+      "id": "emery-wu",
+      "place": "competition-stage",
+      "icon": "🧑‍⚖️",
+      "texts": {
+        "1-2": "“Comet Circuit won the final match,” says Emery. “I signed the scores.”",
+        "3-5": "Referee Emery Wu recalls Comet Circuit winning the final 2–1 on Thursday afternoon. “The widely shared bracket was photographed before the final,” Emery explains. “The signed championship sheet is the completed record.”",
+        "6-8": "Emery Wu differentiates a provisional semifinal bracket from the certified tournament outcome. As the referee who signed the final score report, Emery has direct knowledge of the result, which is independently documented in the tournament’s official record."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who won the championship?",
+          "a": [
+            "Night Lynx",
+            "Comet Circuit",
+            "Teo alone"
+          ],
+          "c": 1,
+          "h": "Find the team Emery says won.",
+          "why": "The referee signed a final result naming Comet Circuit."
+        },
+        "3-5": {
+          "q": "Why did the shared bracket confuse some students?",
+          "a": [
+            "It was made of paper",
+            "It showed an earlier tournament round",
+            "It had the trophy’s serial number"
+          ],
+          "c": 1,
+          "h": "Find the phrase \"before the final.\"",
+          "why": "The bracket was correct for an earlier point, but not the completed event."
+        },
+        "6-8": {
+          "q": "Which reasoning best resolves the competing claims about the winner?",
+          "a": [
+            "Use the final referee-signed score sheet because it documents the concluded championship",
+            "Treat an older bracket and certified final sheet as equally authoritative",
+            "Prefer whichever team has more online supporters"
+          ],
+          "c": 0,
+          "h": "Compare source purpose, timing, and authority.",
+          "why": "The primary signed report records the actual final, superseding an incomplete bracket."
+        }
+      },
+      "name": "Emery Wu",
+      "role": "Tournament Referee"
+    }
+  ],
+  "case": {
+    "id": "vanishing-esports-trophy",
+    "title": "The Vanishing Esports Trophy",
+    "subtitle": "CASE FILE 005 • THE SILVER CIRCUIT CUP",
+    "goal": "Determine who moved the Silver Circuit Cup, where it is being kept, and why it was taken from the display before the awards assembly. Evaluate rumors, media timestamps, and primary event records.",
+    "brief": {
+      "1-2": "The shiny Silver Circuit Cup is gone from the school trophy case! The awards show is this afternoon. Did someone take it? Look at pictures, talk to students, and find out where the trophy went.",
+      "3-5": "Cedar Vale Academy’s Silver Circuit Cup has vanished from its locked display case only hours before the esports awards ceremony. A student post shouts that it was stolen, and an old tournament bracket appears to name the wrong winner. Interview the team, read the schedule, and compare real records with rumors to find out what happened.",
+      "6-8": "At Cedar Vale Academy, the Silver Circuit Cup disappears from a locked display before the 2:30 p.m. esports awards ceremony. An 11:25 social post shows the trophy safely displayed, even though the post uses a photograph captured much earlier. A preliminary tournament bracket fuels arguments over the rightful champion, and a captain carrying an equipment case becomes the subject of speculation. Examine the source provenance, authentic timestamps, practice attendance, and the documented chain of custody to distinguish a theft allegation from an authorized engraving transfer."
+    },
+    "theoryLabels": {
+      "who": "Who physically signed out and moved the trophy?",
+      "where": "Where was the trophy safely kept during the investigation?",
+      "why": "Why was the trophy removed before the awards ceremony?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "teo",
+          "label": "Teo Marin — team captain"
+        },
+        {
+          "id": "mila",
+          "label": "Mila Torres — activities coordinator"
+        },
+        {
+          "id": "rowan",
+          "label": "Rowan Pike — facilities technician"
+        },
+        {
+          "id": "nina",
+          "label": "Nina Vale — student media editor"
+        },
+        {
+          "id": "emery",
+          "label": "Emery Wu — tournament referee"
+        }
+      ],
+      "where": [
+        {
+          "id": "practice",
+          "label": "The esports practice lab"
+        },
+        {
+          "id": "workshop",
+          "label": "The engraving workshop’s padded cabinet"
+        },
+        {
+          "id": "bus",
+          "label": "A delivery truck off campus"
+        },
+        {
+          "id": "arena",
+          "label": "The tournament arena storage closet"
+        },
+        {
+          "id": "office",
+          "label": "The activities office safe"
+        }
+      ],
+      "why": [
+        {
+          "id": "stolen",
+          "label": "A team captain wanted to steal the award"
+        },
+        {
+          "id": "engraving",
+          "label": "An authorized update to the championship engraving"
+        },
+        {
+          "id": "prank",
+          "label": "A secret prank to cancel the assembly"
+        },
+        {
+          "id": "coverup",
+          "label": "To hide the real tournament winner"
+        },
+        {
+          "id": "sale",
+          "label": "To sell the metal for money"
+        }
+      ]
+    },
+    "who": "rowan",
+    "where": "workshop",
+    "why": "engraving",
+    "proofs": [
+      "custody-log",
+      "engraving-job"
+    ],
+    "feedback": {
+      "who": "Return to the 10:12 trophy check-out entry. Mila Torres signed the authorization, but a different person signed the chain-of-custody log and carried the protected case.",
+      "where": "Read the completed workshop job sheet E-27. It names the padded cabinet holding the award during the investigation, not the room where it had been displayed or the practice room mentioned in rumors.",
+      "why": "Compare authorized request E-27 with the certified championship report and the engraver’s receipt. A preliminary bracket and an unattributed “stolen” post cannot establish motive.",
+      "proofs": "For documentary proof, select BOTH the signed Trophy Check-Out Log and the Workshop Engraving Job Sheet. The first identifies the transporter and destination; the second confirms the work was completed and the safe storage location."
+    },
+    "resolution": {
+      "summary": "No trophy was stolen. Facilities technician Rowan Pike signed out the Silver Circuit Cup at 10:12 and brought it to the engraving workshop, where the new Comet Circuit champion plate was installed and the cup stored safely.",
+      "outcome": "Cedar Vale Academy’s Silver Circuit Cup was never stolen. On Thursday at 4:35 p.m., Comet Circuit defeated Night Lynx 2–1 in the final match. An earlier bracket photograph showed only the semifinal, not the champion. At 8:20 Friday morning, activities coordinator Mila Torres approved request E-27 to update the trophy’s outdated engraved plate before the 2:30 awards ceremony. A 9:55 photograph still showed the cup on display, but that photograph was not published until 11:25; its late appearance caused people to misunderstand the timing. At 10:12, facilities technician Rowan Pike signed the cup out of the undamaged display case, and a 10:18 camera still shows Rowan carrying a padded case toward the engraving workshop. Teo Marin’s headset case and practice attendance were unrelated to the transfer. The engraver finished the new “Comet Circuit — Champions” plate at 12:10 and placed the cup in a protective cabinet. After the investigation, Rowan collected it at 1:15 and returned it to the Hall of Champions at 1:40, well before the 2:30 ceremony. The social-media theft accusation had no verified source. The detectives solved the case by separating the time a photo was taken from when it was posted and by checking signed primary records rather than repeating a rumor.",
+      "timeline": [
+        {
+          "time": "Thursday, 2:00 p.m.",
+          "event": "A preliminary semifinal bracket is photographed, showing Night Lynx advancing toward the final."
+        },
+        {
+          "time": "Thursday, 4:35 p.m.",
+          "event": "Comet Circuit wins the championship 2–1; referee Emery Wu signs the official final report."
+        },
+        {
+          "time": "Friday, 8:20 a.m.",
+          "event": "Mila Torres signs engraving request E-27 to update the Cup’s champion plate before awards."
+        },
+        {
+          "time": "Friday, 9:55 a.m.",
+          "event": "Nina Vale photographs the trophy still standing in the Hall of Champions display."
+        },
+        {
+          "time": "Friday, 10:12 a.m.",
+          "event": "Rowan Pike signs out the trophy for transfer to the engraving workshop under E-27."
+        },
+        {
+          "time": "Friday, 10:18 a.m.",
+          "event": "Hall footage shows Rowan taking a foam-lined case toward the workshop corridor."
+        },
+        {
+          "time": "Friday, 10:20 a.m.",
+          "event": "Staff check Teo Marin’s attendance in the practice lab while classmates confuse an equipment case with the trophy container."
+        },
+        {
+          "time": "Friday, 11:25 a.m.",
+          "event": "Nina’s earlier 9:55 trophy photo auto-publishes; an unverified theft claim spreads online."
+        },
+        {
+          "time": "Friday, 12:10 p.m.",
+          "event": "The engraver finishes the Comet Circuit plate and places the cup in protective workshop storage."
+        },
+        {
+          "time": "Friday, 1:15 p.m.",
+          "event": "Rowan collects the newly engraved trophy from the workshop."
+        },
+        {
+          "time": "Friday, 1:40 p.m.",
+          "event": "Rowan restores the cup to the Hall of Champions display, ready for the ceremony."
+        },
+        {
+          "time": "Friday, 2:30 p.m.",
+          "event": "The award is presented; students learn how checking publication times and primary sources prevented a false accusation."
+        }
+      ]
+    }
+  }
+}
