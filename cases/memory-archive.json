@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "listening-gallery": {
+      "name": "Listening Gallery",
+      "icon": "🎧",
+      "detail": "Visitors hear a shortened recording of the famous Bellwater evacuation.",
+      "scene": "art"
+    },
+    "bell-station": {
+      "name": "Old Bell Station",
+      "icon": "🔔",
+      "detail": "A preserved signal panel and watch records trace the original emergency warning.",
+      "scene": "hall"
+    },
+    "witness-studio": {
+      "name": "Witness Studio",
+      "icon": "🎙️",
+      "detail": "Firsthand accounts and a handwritten notebook complicate the official exhibit.",
+      "scene": "office"
+    },
+    "reading-room": {
+      "name": "Community Reading Room",
+      "icon": "📰",
+      "detail": "Newspaper retellings and local debates reveal how a story changed as it spread.",
+      "scene": "library"
+    },
+    "editing-booth": {
+      "name": "Audio Editing Booth",
+      "icon": "🎚️",
+      "detail": "A waveform display and signed redaction authorization explain the shorter recording.",
+      "scene": "art"
+    },
+    "climate-vault": {
+      "name": "Climate Vault",
+      "icon": "🗄️",
+      "detail": "The archive stores protected master recordings and documented consent decisions.",
+      "scene": "storage"
+    }
+  },
+  "evidence": [
+    {
+      "id": "gallery-caption",
+      "place": "listening-gallery",
+      "icon": "🎧",
+      "texts": {
+        "1-2": "The museum recording says, “Someone rang the bell. Then Oren opened the North Arch door.” A sign calls Oren the town hero. It does not name who rang the bell.",
+        "3-5": "The public listening exhibit says the alarm bell rang before night watchman Oren Voss opened North Arch. Its caption praises Oren but never names the first person to raise the alarm. The excerpt was prepared in 2024, five years after the evacuation.",
+        "6-8": "The 2024 exhibit joins two true events—an unidentified bell signal and Oren Voss opening North Arch—in one polished narrative. The narrator does not explicitly credit Oren with ringing the bell, yet the nearby “first rescuer” caption encourages that inference. Distinguish the transcript’s actual claim from an assumption invited by its framing."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does the recording NOT tell us?",
+          "a": [
+            "Who rang the first bell",
+            "That a bell rang",
+            "That Oren opened a door"
+          ],
+          "c": 0,
+          "h": "Look for the name missing from the first sentence.",
+          "why": "The voice says someone rang the bell, but leaves that person unnamed."
+        },
+        "3-5": {
+          "q": "Which fact cannot be established from the exhibit alone?",
+          "a": [
+            "That the bell rang before North Arch opened",
+            "The identity of the first person who rang the alarm",
+            "That Oren opened North Arch"
+          ],
+          "c": 1,
+          "h": "An unnamed action cannot be assigned to the nearby named person.",
+          "why": "The edited excerpt records order but omits the early bell ringer’s identity."
+        },
+        "6-8": {
+          "q": "Which conclusion overreaches the actual wording of the 2024 caption?",
+          "a": [
+            "The bell preceded North Arch opening",
+            "The passage was prepared years after the evacuation",
+            "Oren personally sounded the initial alarm"
+          ],
+          "c": 2,
+          "h": "Separate what the exhibit implies from what it documents.",
+          "why": "The caption praises Oren but never directly verifies that he rang the bell."
+        }
+      },
+      "title": "Public Exhibit Transcript",
+      "type": "Edited exhibit transcript"
+    },
+    {
+      "id": "signal-register",
+      "place": "bell-station",
+      "icon": "🔔",
+      "texts": {
+        "1-2": "The bell machine logged a ring at 6:02 p.m. on April 14, 2019. The badge used was K-7, the young apprentice badge.",
+        "3-5": "An original mechanical register stamped 6:02 p.m., April 14, 2019 beside the words BLUE BELL — BADGE K-7. A training roster identifies K-7 as the apprentice issued to Kira Sol. The signal was recorded four minutes before the watchman’s gate entry.",
+        "6-8": "The contemporaneous bell register independently timestamps activation at 18:02, using trainee credential K-7. The adjoining badge roster assigns K-7 to Kira Sol for that shift. Although a badge can theoretically be shared, together these documents outweigh a later summary that silently assigns the alarm to someone else."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did the blue bell ring?",
+          "a": [
+            "At 6:06 p.m.",
+            "At 7:02 p.m.",
+            "At 6:02 p.m."
+          ],
+          "c": 2,
+          "h": "Read the time beside BLUE BELL.",
+          "why": "The mechanical register shows 6:02 p.m."
+        },
+        "3-5": {
+          "q": "What most strongly links Kira to the initial warning?",
+          "a": [
+            "The bell log naming badge K-7 plus the badge roster",
+            "A later newspaper calling Oren a hero",
+            "The 2024 exhibit’s missing name"
+          ],
+          "c": 0,
+          "h": "Match the badge on the primary log to the roster.",
+          "why": "The paired records connect the 6:02 activation to Kira’s assigned badge."
+        },
+        "6-8": {
+          "q": "Why is the register useful when evaluating the museum narration?",
+          "a": [
+            "It proves every later witness remembered accurately",
+            "It is a dated primary record of the earlier bell activation",
+            "It shows that no edit occurred in 2024"
+          ],
+          "c": 1,
+          "h": "Ask which document was created during the event itself.",
+          "why": "A contemporaneous machine record provides a stronger timestamp than a retelling years later."
+        }
+      },
+      "title": "2019 Mechanical Bell Register",
+      "type": "Contemporaneous machine log"
+    },
+    {
+      "id": "north-arch-log",
+      "place": "bell-station",
+      "icon": "🚪",
+      "texts": {
+        "1-2": "The gate log says Oren Voss opened North Arch at 6:06 p.m. That was four minutes after the bell rang.",
+        "3-5": "Night watchman Oren Voss signed the North Arch gate open at 6:06 p.m. on April 14, 2019. A handwritten note reads “responded to blue bell; guided visitors toward the dry steps.” His work was important, but this log describes his response to a warning already sounded.",
+        "6-8": "Oren’s contemporaneous 18:06 access record reports that he responded to the blue-bell signal and cleared the North Arch escape route. It is firsthand evidence of his later action, not evidence that he initiated the warning. The distinction matters because public retellings collapsed separate contributions into a single heroic figure."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Oren do at 6:06?",
+          "a": [
+            "Rang the blue bell at 6:02",
+            "Opened the North Arch door",
+            "Made the exhibit recording"
+          ],
+          "c": 1,
+          "h": "Find the word beside Oren’s name.",
+          "why": "Oren opened the route after he heard the warning."
+        },
+        "3-5": {
+          "q": "Which sequence matches the two original logs?",
+          "a": [
+            "Oren opened the arch, then Kira rang the bell",
+            "Both actions occurred at exactly 6:06",
+            "The bell sounded, then Oren opened the arch"
+          ],
+          "c": 2,
+          "h": "Compare 6:02 with 6:06.",
+          "why": "The bell record is four minutes earlier than the gate record."
+        },
+        "6-8": {
+          "q": "What error results from treating Oren’s heroic response as proof he gave the first warning?",
+          "a": [
+            "Combining two documented actions into one person’s role",
+            "Treating a timestamped log as a primary source",
+            "Checking the order of emergency actions"
+          ],
+          "c": 0,
+          "h": "A person can help greatly without acting first.",
+          "why": "The gate log supports Oren’s rescue work but does not transfer credit for the earlier signal."
+        }
+      },
+      "title": "North Arch Access Log",
+      "type": "Original watch station record"
+    },
+    {
+      "id": "apprentice-notebook",
+      "place": "witness-studio",
+      "icon": "📓",
+      "texts": {
+        "1-2": "Kira wrote, “I saw water on the lower steps. I pulled the blue bell rope. I was afraid.” The notebook is dated the night of the flood.",
+        "3-5": "In a pocket notebook dated April 14, 2019, apprentice Kira Sol wrote, “The water reached the painted step. I pulled the blue bell before Oren came. I feared everyone would blame me for being near the warning station.” Her private account places her at the first alarm.",
+        "6-8": "Kira’s April 14 notebook is a contemporaneous first-person account: she reports the rising water, her decision to trigger the warning, and fear that others might misread her presence as carelessness. Because personal testimony can be mistaken, corroborate it with the independent K-7 bell register instead of treating sincere emotion as automatic proof."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Kira say she did?",
+          "a": [
+            "Pulled the blue bell rope",
+            "Opened North Arch",
+            "Edited a museum recording"
+          ],
+          "c": 0,
+          "h": "Look for the words “I pulled.”",
+          "why": "Kira wrote that she sounded the warning."
+        },
+        "3-5": {
+          "q": "Which other source best corroborates Kira’s notebook?",
+          "a": [
+            "A 2024 newspaper headline",
+            "The 6:02 mechanical bell register",
+            "A visitor’s guess about Oren"
+          ],
+          "c": 1,
+          "h": "Seek a record made at the same time that independently tracks the bell.",
+          "why": "The original bell register matches Kira’s described action and time."
+        },
+        "6-8": {
+          "q": "How should detectives evaluate Kira’s emotional firsthand entry?",
+          "a": [
+            "Reject it because fear makes a source worthless",
+            "Accept every sentence without checking another record",
+            "Corroborate its details with the independent register"
+          ],
+          "c": 2,
+          "h": "Emotion informs point of view but need not erase factual value.",
+          "why": "Her fear is perspective; the badge log independently supports the reported bell action."
+        }
+      },
+      "title": "Kira’s Field Notebook",
+      "type": "Firsthand written memory"
+    },
+    {
+      "id": "newspaper-retelling",
+      "place": "reading-room",
+      "icon": "📰",
+      "texts": {
+        "1-2": "A newspaper story from 2024 calls Oren “the man who warned the town.” Its writer listened to the short museum recording, not the old bell log.",
+        "3-5": "A fifth-anniversary newspaper article declares, “Oren Voss raised the alarm.” Its sources section cites the new gallery audio and an interview with a visitor; it does not cite the 2019 signal register. The public article offers a confident interpretation, not an independent record of the event.",
+        "6-8": "The anniversary article’s unqualified claim that Oren initiated the warning traces back to the redacted exhibit excerpt rather than contemporaneous logs. It is a secondary synthesis with a circular source trail: the exhibit’s omission became an asserted fact through repetition. Its polished prose may be persuasive without being evidentially strong."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did the newspaper writer use?",
+          "a": [
+            "The original bell machine",
+            "Kira’s sealed notebook",
+            "The short museum recording"
+          ],
+          "c": 2,
+          "h": "Look for what the writer listened to.",
+          "why": "The article relied on the shortened museum version."
+        },
+        "3-5": {
+          "q": "Why might the newspaper have repeated the wrong first-warner claim?",
+          "a": [
+            "It relied on a shortened retelling instead of the original log",
+            "The 2019 log clearly named Oren as the bell ringer",
+            "Oren wrote the 2024 edit instruction"
+          ],
+          "c": 0,
+          "h": "Look at the article’s listed sources.",
+          "why": "The writer repeated an interpretation without checking primary evidence."
+        },
+        "6-8": {
+          "q": "Which description best identifies the article’s reliability problem?",
+          "a": [
+            "Its author was not born in 2019, which makes every claim false",
+            "Its secondary claim depends on an excerpt that omits the decisive identity",
+            "A published article is automatically more reliable than a machine log"
+          ],
+          "c": 1,
+          "h": "Trace whether the claim rests on independent evidence.",
+          "why": "Its source chain loops back to a curated excerpt rather than the contemporaneous bell record."
+        }
+      },
+      "title": "The Anniversary Article",
+      "type": "Secondary source commentary"
+    },
+    {
+      "id": "waveform-comparison",
+      "place": "editing-booth",
+      "icon": "🎚️",
+      "texts": {
+        "1-2": "The old full interview is 58 seconds. The museum version is 41 seconds. A note says a name was removed, but the old full file still exists.",
+        "3-5": "The edit station compares a 58-second 2019 master recording with a 41-second 2024 gallery version. Seventeen seconds, including a speaker’s name and identifying background sounds, were muted in the public copy. The stored master was not overwritten.",
+        "6-8": "A waveform comparison shows the 2024 derivative runs 41 seconds against the 58-second preserved master. Seventeen seconds containing self-identification and distinctive ambient cues were excised. Metadata identifies a redaction, not a forged replacement: the source master remains a separate, unmodified asset."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which recording is shorter?",
+          "a": [
+            "The 58-second original",
+            "The 41-second museum recording",
+            "Both are the same length"
+          ],
+          "c": 1,
+          "h": "Compare the numbers 41 and 58.",
+          "why": "The gallery copy is seventeen seconds shorter."
+        },
+        "3-5": {
+          "q": "What does the length comparison support?",
+          "a": [
+            "The entire 2019 master disappeared",
+            "The bell never rang in 2019",
+            "A public excerpt was shortened while the master was retained"
+          ],
+          "c": 2,
+          "h": "Consider the difference between a copy and its source.",
+          "why": "The metadata documents a shorter derivative and a preserved original."
+        },
+        "6-8": {
+          "q": "Which claim is supported by the waveform metadata, without further assumptions?",
+          "a": [
+            "Identifying material was removed from a derivative, not the source file",
+            "The removal proves the editor intended to deceive everyone",
+            "Every word in the 2019 interview is necessarily accurate"
+          ],
+          "c": 0,
+          "h": "Metadata can show editing but not by itself establish intent.",
+          "why": "The waveform documents the edit; motive requires other records."
+        }
+      },
+      "title": "Audio Duration Comparison",
+      "type": "Digital preservation metadata"
+    },
+    {
+      "id": "redaction-authorization",
+      "place": "editing-booth",
+      "icon": "🖊️",
+      "texts": {
+        "1-2": "The 2024 paper says Sera Mott may hide Kira’s name in the public copy to keep Kira safe. It says, “Keep the full recording safe.”",
+        "3-5": "A June 8, 2024 authorization signed by audio steward Sera Mott reads: “Mask Kira Sol’s name in the public excerpt while her consent is pending. Recent threats make identification unsafe. Preserve the original 2019 recording intact. Mark the excerpt as edited.” An exhibit label later failed to make that last warning prominent.",
+        "6-8": "The June 8, 2024 primary editing directive is signed by Sera Mott. It instructs staff to mask Kira’s identifying speech pending renewed consent following targeted harassment, to retain the 2019 master unaltered, and to identify the public copy as an excerpt. The instruction records both the editor’s authorized protective motive and a transparency obligation the final display did not adequately fulfill."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the edit paper?",
+          "a": [
+            "Sera Mott",
+            "Oren Voss",
+            "The newspaper writer"
+          ],
+          "c": 0,
+          "h": "Read the name at the bottom of the authorization.",
+          "why": "Sera signed permission to make a safer public excerpt."
+        },
+        "3-5": {
+          "q": "What two goals did Sera’s instruction try to balance?",
+          "a": [
+            "Erase every recording and punish Oren",
+            "Protect Kira while keeping the original record intact",
+            "Make a fictional flood story for tourists"
+          ],
+          "c": 1,
+          "h": "Look for both “mask” and “preserve.”",
+          "why": "The order protects a witness’s identity without authorizing destruction of the original."
+        },
+        "6-8": {
+          "q": "Which interpretation best accounts for the edit without excusing the confusing gallery label?",
+          "a": [
+            "Sera created a fictional first warning to sell tickets",
+            "All privacy edits automatically make the edited version historically complete",
+            "Sera authorized a safety redaction but the public context was insufficient"
+          ],
+          "c": 2,
+          "h": "The directive separates purpose from consequences.",
+          "why": "The protective motive is documented, while inadequate labeling allowed a misleading inference."
+        }
+      },
+      "title": "Signed Redaction Authorization",
+      "type": "Original editorial directive"
+    },
+    {
+      "id": "protective-request",
+      "place": "reading-room",
+      "icon": "✉️",
+      "texts": {
+        "1-2": "A letter says Kira was getting mean messages. Her family asked the museum not to say her name in public until she felt safe.",
+        "3-5": "A May 2024 letter from Kira and her guardian documents threatening messages after a public argument about the evacuation. They request that the exhibition withhold Kira’s identifying details temporarily but keep her full testimony secure for later review.",
+        "6-8": "The May 2024 signed safeguarding request is a primary source for the witness’s wishes at that time. It documents targeted harassment and asks for temporary public anonymity—not deletion, alteration of the historic master, or permanent attribution of Kira’s warning to another person. This limits what an ethical editor could fairly infer from the request."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Kira’s family ask for privacy?",
+          "a": [
+            "Kira never went near the bell",
+            "The family wanted to hide a lost trophy",
+            "Kira was receiving threatening messages"
+          ],
+          "c": 2,
+          "h": "Look for the reason the letter gives.",
+          "why": "The family wanted to protect Kira from hostile messages."
+        },
+        "3-5": {
+          "q": "What did the request actually authorize?",
+          "a": [
+            "Temporarily hiding identifying details in the public version",
+            "Destroying the original 2019 recording",
+            "Claiming that Oren rang the first bell"
+          ],
+          "c": 0,
+          "h": "Notice the difference between privacy and changing history.",
+          "why": "The request sought protection through a temporary public redaction."
+        },
+        "6-8": {
+          "q": "What ethical limit does the protection letter place on the museum?",
+          "a": [
+            "It makes all later public corrections forbidden",
+            "It supports privacy but not falsely rewriting another person as the alarm originator",
+            "It transfers ownership of all events to the editor"
+          ],
+          "c": 1,
+          "h": "Compare the witness’s request with what the audience inferred.",
+          "why": "Confidentiality does not justify replacing a missing identity with a false positive claim."
+        }
+      },
+      "title": "Witness Protection Request",
+      "type": "Signed consent correspondence"
+    },
+    {
+      "id": "vault-master-receipt",
+      "place": "climate-vault",
+      "icon": "🗄️",
+      "texts": {
+        "1-2": "The vault receipt says the full recording is stored in Cabinet R-4. It has been there since 2024. The box seal is still good.",
+        "3-5": "A June 8, 2024 intake receipt lists “2019 Bellwater Oral History — FULL 58 seconds,” stored in Climate Vault cabinet R-4, with its original file checksum recorded. An October 2026 inspection confirms the same file and seal remain intact.",
+        "6-8": "The vault accession log supplies a verifiable chain of custody: the unredacted 58-second master entered Climate Vault cabinet R-4 on June 8, 2024, with a recorded file hash. The October 2026 audit reproduces that hash. Unlike the public exhibit, the master provides an authenticated record of the original account; the log establishes its location and integrity, not whether every remembered detail is true."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where is the complete recording?",
+          "a": [
+            "The front newspaper stand",
+            "Climate Vault cabinet R-4",
+            "The town bell tower"
+          ],
+          "c": 1,
+          "h": "Look beside “FULL 58 seconds.”",
+          "why": "The receipt places the complete file in R-4."
+        },
+        "3-5": {
+          "q": "Which record best proves the full audio was not discarded?",
+          "a": [
+            "The anniversary article praising Oren",
+            "A visitor’s memory of the gallery caption",
+            "The vault receipt and matching inspection"
+          ],
+          "c": 2,
+          "h": "Find documentation of storage and later verification.",
+          "why": "The receipt and inspection track the intact master at R-4."
+        },
+        "6-8": {
+          "q": "What is the strongest warranted claim from the matching 2024 and 2026 checksums?",
+          "a": [
+            "The archived master appears unchanged across those inspections",
+            "The narrator’s recollection must be infallible",
+            "The gallery clip and master must contain identical words"
+          ],
+          "c": 0,
+          "h": "A checksum evaluates file integrity, not witness truthfulness.",
+          "why": "Matching hashes support preservation of the same file, while content still needs critical evaluation."
+        }
+      },
+      "title": "Master Recording Vault Receipt",
+      "type": "Original custody and integrity record"
+    },
+    {
+      "id": "renewed-consent",
+      "place": "climate-vault",
+      "icon": "✅",
+      "texts": {
+        "1-2": "In 2026, Kira says the museum may use her name. She wants the truth told kindly, without blaming anyone unfairly.",
+        "3-5": "In an October 2026 recorded update, now-adult Kira Sol authorizes the museum to identify her as the first bell ringer and to publish a clearly labeled, contextualized version of her testimony. She asks that Oren receive credit for guiding people through North Arch and that the earlier protective edit be explained.",
+        "6-8": "Kira’s October 2026 consent update supersedes the former temporary anonymity request for future public use. She approves credit for sounding the first warning, insists the 2024 privacy edit be disclosed, and preserves Oren’s distinct contribution. Her testimony supplies an ethical route to correcting the display without erasing the reason an editor exercised caution."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does Kira allow in 2026?",
+          "a": [
+            "The museum may tell people she rang the bell",
+            "The museum must throw away the master",
+            "The museum must say Oren did nothing"
+          ],
+          "c": 0,
+          "h": "Look for what Kira says about using her name.",
+          "why": "Kira now agrees to be named as the first bell ringer."
+        },
+        "3-5": {
+          "q": "What is the best update for the exhibit after Kira’s new consent?",
+          "a": [
+            "Keep the confusing caption forever without context",
+            "Credit both Kira and Oren for their different actions and explain the edit",
+            "Remove every reference to the evacuation"
+          ],
+          "c": 1,
+          "h": "Kira wants the account corrected without blaming a helper.",
+          "why": "A corrected, labeled story credits Kira’s warning and Oren’s rescue route."
+        },
+        "6-8": {
+          "q": "Which editorial decision best respects both the historic record and the witness’s changing consent?",
+          "a": [
+            "Silently replace every historic document with a new heroic tale",
+            "Keep the redacted excerpt as the only public version and never explain it",
+            "Restore attribution with context and preserve the history of the earlier redaction"
+          ],
+          "c": 2,
+          "h": "Consider accuracy, informed consent, and the duty to label edits.",
+          "why": "The updated consent makes contextual attribution possible while the original and editorial history remain preserved."
+        }
+      },
+      "title": "Kira’s 2026 Consent Update",
+      "type": "Current firsthand consent record"
+    }
+  ],
+  "interviews": [
+    {
+      "id": "sera-mott",
+      "place": "editing-booth",
+      "icon": "👩‍💼",
+      "texts": {
+        "1-2": "Sera says, “I made the shorter copy in 2024. I did it to keep a young witness safe. I kept the full file.”",
+        "3-5": "Audio steward Sera Mott says she shortened the public recording after a family requested privacy in 2024. “I never deleted the original. I told the museum to label the audio as edited, but the small notice was easy to miss.” She accepts responsibility for how the exhibit was presented.",
+        "6-8": "Sera admits authoring the public derivative under a documented safeguarding request. She distinguishes the authorized redaction from the gallery team’s ambiguous caption. As a participant she can explain her actions, but her benign self-reported intent is most persuasive when compared with the signed edit instruction and original custody records."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does Sera admit making?",
+          "a": [
+            "The 2019 bell machine",
+            "The new bridge",
+            "The shorter museum recording"
+          ],
+          "c": 2,
+          "h": "Look for what Sera did in 2024.",
+          "why": "Sera made the public excerpt."
+        },
+        "3-5": {
+          "q": "Which document best checks Sera’s statement about her instructions?",
+          "a": [
+            "The signed 2024 redaction authorization",
+            "The 2024 anniversary newspaper story",
+            "Oren’s old North Arch log alone"
+          ],
+          "c": 0,
+          "h": "A signed directive is independent of her current interview.",
+          "why": "The authorization shows who ordered the masking and what safeguards were specified."
+        },
+        "6-8": {
+          "q": "What is a sound evaluation of Sera’s testimony?",
+          "a": [
+            "Trust her motive automatically because she is an archivist",
+            "Corroborate her claimed motive and preservation steps with signed records",
+            "Reject all her words because she took part in the editing"
+          ],
+          "c": 1,
+          "h": "A participant may be candid yet still have a personal stake.",
+          "why": "Her testimony is relevant but gains force from the protective request, directive, and master receipt."
+        }
+      },
+      "name": "Sera Mott",
+      "role": "Archive Audio Steward"
+    },
+    {
+      "id": "kira-sol",
+      "place": "witness-studio",
+      "icon": "👩",
+      "texts": {
+        "1-2": "Kira says, “I was young. I saw the water and rang the blue bell. People said unkind things afterward. Now I want the real story shared.”",
+        "3-5": "Kira Sol says she rang the blue bell at 6:02, then watched Oren open the route minutes later. She remembers feeling frightened by messages blaming her for the flood. “I wanted privacy for a while, not to erase what I did.”",
+        "6-8": "Kira recounts the 2019 warning from the standpoint of the then-teenage apprentice. She distinguishes fear of public retaliation from uncertainty about the bell action itself. Her narrative supports the safeguarding request but must still be checked against the mechanical register and Oren’s separate access log."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Kira do before Oren opened the route?",
+          "a": [
+            "Wrote the newspaper story",
+            "Rang the blue warning bell",
+            "Edited the museum display"
+          ],
+          "c": 1,
+          "h": "Find the first action Kira names.",
+          "why": "Kira sounded the warning first."
+        },
+        "3-5": {
+          "q": "How does Kira describe the purpose of the 2024 privacy request?",
+          "a": [
+            "An attempt to claim Oren never helped",
+            "Proof she had forgotten the bell entirely",
+            "Temporary protection, not permanent erasure"
+          ],
+          "c": 2,
+          "h": "Notice the contrast in her sentence “not to erase.”",
+          "why": "Kira wanted time and safety while keeping the historical truth intact."
+        },
+        "6-8": {
+          "q": "What would unfairly extend Kira’s firsthand authority?",
+          "a": [
+            "Assuming she knows every decision Sera made in 2024 without records",
+            "Using her testimony about her own 2019 bell action",
+            "Comparing her memory to a contemporaneous bell log"
+          ],
+          "c": 0,
+          "h": "Distinguish witnessed events from later actions by others.",
+          "why": "Kira can directly describe her warning, but documentary sources are needed to verify editorial decisions years later."
+        }
+      },
+      "name": "Kira Sol",
+      "role": "Former Apprentice and First Warning Witness"
+    },
+    {
+      "id": "oren-voss",
+      "place": "bell-station",
+      "icon": "👨‍🚒",
+      "texts": {
+        "1-2": "Oren says, “I heard the bell and opened North Arch. Kira warned us first. We both helped.”",
+        "3-5": "Former watchman Oren Voss remembers hearing the blue bell before unlocking North Arch at 6:06. “Kira gave the first warning. I cleared the exit. I’m proud of the team, not the wrong headline.” He did not ask the museum to credit him with ringing the bell.",
+        "6-8": "Oren’s recollection is potentially self-disinterested because it refuses sole heroic credit: he attributes the initial warning to Kira while claiming his documented task of opening North Arch. Nevertheless, evaluate even apparently modest testimony against the 18:02 signal and 18:06 access logs."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Oren do after he heard the bell?",
+          "a": [
+            "Opened North Arch",
+            "Locked the vault",
+            "Wrote Kira’s diary"
+          ],
+          "c": 0,
+          "h": "Look for the action after “heard the bell.”",
+          "why": "He opened the evacuation route."
+        },
+        "3-5": {
+          "q": "What two sources best support Oren’s division of responsibilities?",
+          "a": [
+            "The anniversary article alone",
+            "The bell register and North Arch access log",
+            "The modern gallery caption alone"
+          ],
+          "c": 1,
+          "h": "Use records from the day of the event.",
+          "why": "One timestamp documents the warning; the other documents Oren’s later response."
+        },
+        "6-8": {
+          "q": "Which evidence most strongly supports Oren’s version without relying on his apparent modesty?",
+          "a": [
+            "The fact that Oren declines praise",
+            "A visitor’s summary of the anniversary article",
+            "Two independent, contemporaneous machine and access logs"
+          ],
+          "c": 2,
+          "h": "A modest tone is not a substitute for primary documentation.",
+          "why": "Independent time-stamped records distinguish the bell warning from the route opening."
+        }
+      },
+      "name": "Oren Voss",
+      "role": "Former Night Watchman"
+    },
+    {
+      "id": "maeve-tallis",
+      "place": "reading-room",
+      "icon": "👩‍🏫",
+      "texts": {
+        "1-2": "Maeve says, “I thought Oren rang the bell because his picture was next to the sound recording. I did not see the old log.”",
+        "3-5": "Museum guide Maeve Tallis explains that visitors routinely assume Oren sounded the first bell because his portrait appears beside the edited gallery narration. “I repeated what I thought the display meant. I had never read the signal register.” Her account reveals how exhibit design can shape a story.",
+        "6-8": "Maeve is a useful example of a sincere but indirect narrator. Her belief originated with an ambiguous juxtaposition of portrait, caption, and excerpt rather than firsthand knowledge of 2019. Her testimony explains the spread of the public misconception but should not independently establish the historical sequence."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Maeve think Oren rang the bell?",
+          "a": [
+            "She was at the bell station in 2019",
+            "She read the complete master recording",
+            "She saw his picture beside the recording"
+          ],
+          "c": 2,
+          "h": "What did Maeve actually say she saw?",
+          "why": "The exhibit picture made her guess that Oren rang the bell."
+        },
+        "3-5": {
+          "q": "Which description best fits Maeve’s account of the first warning?",
+          "a": [
+            "An inference based on exhibit design, not firsthand observation",
+            "A direct memory from the 2019 evacuation",
+            "A mechanical timestamp from the bell station"
+          ],
+          "c": 0,
+          "h": "Consider whether she saw the event or a later display.",
+          "why": "Maeve reports how she interpreted a 2024 presentation, not what she witnessed in 2019."
+        },
+        "6-8": {
+          "q": "Why is Maeve’s honesty compatible with her conclusion being mistaken?",
+          "a": [
+            "Only dishonest witnesses can report false conclusions",
+            "She accurately recalls the exhibit but misinterprets what its layout implies",
+            "The exhibit cannot influence what a reader infers"
+          ],
+          "c": 1,
+          "h": "Differentiate a truthful report of seeing a display from an inference about history.",
+          "why": "A sincere reader can draw an unwarranted historical conclusion from incomplete framing."
+        }
+      },
+      "name": "Maeve Tallis",
+      "role": "Museum Education Guide"
+    },
+    {
+      "id": "jun-avel",
+      "place": "climate-vault",
+      "icon": "🧑‍🔬",
+      "texts": {
+        "1-2": "Jun says, “The whole 58-second recording is still safe in Cabinet R-4. We checked it again this year.”",
+        "3-5": "Vault technician Jun Avel checked the 2019 full recording in R-4 during the October 2026 audit. “The seal and file hash match our 2024 receipt. The shorter gallery file is a separate copy; the full record was never overwritten.”",
+        "6-8": "Jun describes a reproducible preservation check: the 58-second master’s accession checksum matches the October 2026 audit, while the 41-second gallery derivative has a distinct identifier. His custody evidence supports file continuity, not the truth of every claim uttered in the file; that distinction guards against equating technical authenticity with perfect memory."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does Jun keep the full recording?",
+          "a": [
+            "In the visitor newspaper rack",
+            "Climate Vault cabinet R-4",
+            "At the old bell station"
+          ],
+          "c": 1,
+          "h": "Look for the cabinet number.",
+          "why": "Jun confirms the full master is in R-4."
+        },
+        "3-5": {
+          "q": "Which fact makes Jun’s vault claim more trustworthy?",
+          "a": [
+            "His job title by itself",
+            "The gallery being popular with tourists",
+            "A receipt and matching later inspection"
+          ],
+          "c": 2,
+          "h": "Look for a record that can be checked independently.",
+          "why": "The custody log and inspection corroborate the same stored file."
+        },
+        "6-8": {
+          "q": "What does Jun’s checksum evidence establish, and what does it not?",
+          "a": [
+            "It supports an unchanged master file, not automatically a flawless recollection",
+            "It proves every narrator’s interpretation is historically correct",
+            "It shows the original file was replaced with the gallery edit"
+          ],
+          "c": 0,
+          "h": "A technical integrity check is different from testing narrative accuracy.",
+          "why": "File authenticity and testimony reliability are separate questions."
+        }
+      },
+      "name": "Jun Avel",
+      "role": "Vault Records Technician"
+    }
+  ],
+  "case": {
+    "id": "memory-archive",
+    "title": "The Memory Archive",
+    "subtitle": "CASE FILE 008 • THE MISSING VOICE",
+    "goal": "Identify who shortened the public memory exhibit, where the uncut primary recording is preserved, and why the edit was made. Evaluate narrator reliability, source bias, and the ethical tension between witness safety and accurate public history.",
+    "brief": {
+      "1-2": "At the Bellwater Memory Museum, one story sounds different from another. Who rang the warning bell in 2019? Why is a name missing from the museum recording? Read clues and find the safe, complete recording.",
+      "3-5": "The fictional Bellwater Memory Museum keeps recordings of the town’s 2019 flood evacuation. A public exhibit seems to praise Oren for the first warning, yet Kira’s notebook and the signal log suggest she rang the bell before he opened the escape route. Years later, someone shortened the recording. Investigate who did it, where the unedited version was stored, and whether the decision was an attempt to hide history or protect a person.",
+      "6-8": "At the fictional Bellwater Memory Museum, a 2024 anniversary exhibit presents the 2019 flood evacuation through a polished oral-history excerpt that omits the identity of the first warning bell ringer. The exhibition’s framing encourages a heroic but unsupported attribution to night watchman Oren Voss. A contemporaneous bell register, conflicting oral accounts, an editor’s signed redaction instruction, and an authenticated archival master reveal a more complex account. Distinguish the reliability of firsthand and secondary sources, trace how bias enters a public narrative, and weigh whether temporary anonymity justified an inadequately labeled edit. Your final report must establish the editor, the original recording’s documented location, and the reason for the redaction."
+    },
+    "theoryLabels": {
+      "who": "Who authorized and made the 2024 shortened public recording?",
+      "where": "Where is the complete, unedited 2019 oral-history recording kept?",
+      "why": "Why was the identifying part removed from the public exhibit?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "oren",
+          "label": "Oren Voss — former night watchman"
+        },
+        {
+          "id": "maeve",
+          "label": "Maeve Tallis — education guide"
+        },
+        {
+          "id": "sera",
+          "label": "Sera Mott — audio steward"
+        },
+        {
+          "id": "kira",
+          "label": "Kira Sol — former apprentice"
+        },
+        {
+          "id": "jun",
+          "label": "Jun Avel — vault technician"
+        }
+      ],
+      "where": [
+        {
+          "id": "bell-station",
+          "label": "Old Bell Station signal panel"
+        },
+        {
+          "id": "climate-vault",
+          "label": "Climate Vault, cabinet R-4"
+        },
+        {
+          "id": "listening-gallery",
+          "label": "Public Listening Gallery speakers"
+        },
+        {
+          "id": "reading-room",
+          "label": "Community Reading Room newspaper rack"
+        },
+        {
+          "id": "editing-booth",
+          "label": "Editing Booth public-copy workstation"
+        }
+      ],
+      "why": [
+        {
+          "id": "prank",
+          "label": "To invent an exciting fictional flood story"
+        },
+        {
+          "id": "protect",
+          "label": "To shield a young witness facing harassment while consent was pending"
+        },
+        {
+          "id": "credit",
+          "label": "To knowingly claim Oren alone caused the warning"
+        },
+        {
+          "id": "delete",
+          "label": "To erase all records of the 2019 evacuation"
+        },
+        {
+          "id": "damage",
+          "label": "Because the 2019 full recording had been destroyed"
+        }
+      ]
+    },
+    "who": "sera",
+    "where": "climate-vault",
+    "why": "protect",
+    "proofs": [
+      "redaction-authorization",
+      "vault-master-receipt"
+    ],
+    "feedback": {
+      "who": "The 2019 participants were part of the flood response, not necessarily the 2024 recording edit. Compare the signature on the June 8 redaction authorization with the audio steward’s interview.",
+      "where": "The listening gallery contains only a 41-second edited derivative. Follow the signed master accession and October 2026 checksum audit to find the intact 58-second recording and exact cabinet.",
+      "why": "Do not confuse an edit’s unfortunate public effect with its documented purpose. The signed family request and Sera’s authorization describe an effort to protect Kira after threats while consent remained pending.",
+      "proofs": "Use BOTH “Signed Redaction Authorization” and “Master Recording Vault Receipt.” The first documents who authorized the edit and its protective purpose; the second verifies where the complete recording remains preserved."
+    },
+    "resolution": {
+      "summary": "The museum’s public version was intentionally shortened for witness safety, not to fabricate the evacuation. Sera made the redaction; the original remains intact in Climate Vault R-4. Kira sounded the first warning, and Oren opened the escape route.",
+      "outcome": "Your detectives distinguish an imperfect public story from the evidence behind it. In April 2019, apprentice Kira Sol saw floodwater rising and triggered the blue bell at 6:02 p.m.; Oren Voss responded four minutes later by opening North Arch. Years afterward, threatening messages led Kira and her guardian to request temporary anonymity. On June 8, 2024 audio steward Sera Mott shortened the public oral-history clip by seventeen seconds, preserving the full recording in Climate Vault cabinet R-4. The exhibit’s weak “edited excerpt” labeling and Oren’s prominent portrait allowed a newspaper and visitors to wrongly assume he sounded the first alarm. The original was not erased; its archival hash matches in 2026. Now that adult Kira has renewed consent to be named, the museum can correct the display with transparent context, crediting both Kira’s warning and Oren’s rescue work while honestly explaining why privacy mattered. The ethical theme is that protecting a witness and telling accurate history are both responsibilities: an editor should label omissions and revisit them when consent changes.",
+      "timeline": [
+        {
+          "time": "April 14, 2019 • 6:02 p.m.",
+          "event": "Apprentice Kira Sol uses assigned badge K-7 and sounds the blue evacuation bell after noticing floodwater reach the painted steps."
+        },
+        {
+          "time": "April 14, 2019 • 6:06 p.m.",
+          "event": "Night watchman Oren Voss responds to the bell and opens North Arch for evacuation."
+        },
+        {
+          "time": "April 14, 2019 • evening",
+          "event": "Kira writes a private firsthand notebook entry about the warning and her fear of blame."
+        },
+        {
+          "time": "May 2024",
+          "event": "After threatening messages, Kira and her guardian request temporary anonymity in public exhibits while retaining the source record."
+        },
+        {
+          "time": "June 8, 2024 • morning",
+          "event": "Sera Mott signs the redaction authorization, directing that Kira’s identifying seconds be masked only in the public excerpt."
+        },
+        {
+          "time": "June 8, 2024 • afternoon",
+          "event": "The complete 58-second 2019 master is accessioned intact to Climate Vault cabinet R-4; the gallery receives a separate 41-second version."
+        },
+        {
+          "time": "Summer 2024",
+          "event": "Visitors infer that Oren sounded the first warning from a prominent portrait and an insufficiently labeled edited narration."
+        },
+        {
+          "time": "2024 anniversary publication",
+          "event": "A newspaper repeats the mistaken first-warning attribution without consulting the 2019 primary register."
+        },
+        {
+          "time": "October 2026 • vault audit",
+          "event": "Jun verifies that the uncut master in R-4 still matches its accession checksum."
+        },
+        {
+          "time": "October 2026 • renewed consent",
+          "event": "Kira, now an adult, gives permission for her role to be publicly identified with the protective edit explained."
+        },
+        {
+          "time": "October 2026 • case resolution",
+          "event": "Detectives identify Sera’s edit, locate the unaltered master, correct the sequence of heroism, and recommend an accurate, context-rich exhibit."
+        }
+      ]
+    }
+  }
+}

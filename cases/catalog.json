@@ -84,9 +84,9 @@
       "number": "008",
       "category": "Science Fiction",
       "icon": "🧠",
-      "summary": "Contradictory recollections in a fictional memory museum challenge the reliability of recorded history.",
+      "summary": "An edited oral-history exhibit misattributes a flood warning. Trace firsthand logs, protecting a witness, and an intact recording to reconcile privacy with truthful public memory.",
       "grades": "1–8 (focus: 6–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/memory-archive.json"
     },
     {
