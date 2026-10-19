@@ -95,9 +95,9 @@
       "number": "009",
       "category": "Nature Mystery",
       "icon": "🤖",
-      "summary": "A missing forest-monitoring robot leaves weather reports and wildlife clues behind.",
+      "summary": "A forest-monitoring robot goes silent during a flood warning. Compare wildlife tracks, telemetry, a misleading photo, and signed equipment records to find its safe new location.",
       "grades": "1–8 (focus: 3–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/forest-robot.json"
     },
     {

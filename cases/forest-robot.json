@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "dock": {
+      "name": "Forest Research Dock",
+      "icon": "🔌",
+      "detail": "An empty charging cradle and field checkout notes mark Pip-4’s last routine departure.",
+      "scene": "office"
+    },
+    "fern-ford": {
+      "name": "Fern Ford Boardwalk",
+      "icon": "🌿",
+      "detail": "Rain has swollen the creek beside the monitoring route, leaving tracks near a closed crossing.",
+      "scene": "hall"
+    },
+    "wildlife-blind": {
+      "name": "Wildlife Observation Blind",
+      "icon": "🦌",
+      "detail": "Remote cameras and tracking journals record the movements of a doe and her fawn.",
+      "scene": "art"
+    },
+    "comms-hub": {
+      "name": "Communications Hub",
+      "icon": "📡",
+      "detail": "Telemetry, radio messages, and a confusing social post can be compared for precise times.",
+      "scene": "office"
+    },
+    "maintenance-barn": {
+      "name": "Equipment Barn",
+      "icon": "🛠️",
+      "detail": "Staff store a wheeled rescue cart and sign weather-safety transfer orders here.",
+      "scene": "storage"
+    },
+    "ridge-shelter": {
+      "name": "Ridge Canopy Shelter",
+      "icon": "🏕️",
+      "detail": "A dry, elevated storage room contains equipment intake records after storm alerts.",
+      "scene": "storage"
+    }
+  },
+  "evidence": [
+    {
+      "id": "dock-checkout",
+      "place": "dock",
+      "icon": "🔋",
+      "texts": {
+        "1-2": "At 6:02, Pip-4 left its charging spot to check the creek. The card says Nia was on duty.",
+        "3-5": "The station card records that the monitoring robot Pip-4 left its dock at 6:02 a.m. for its normal creek survey. Technician Nia Rowan was on duty. The entry shows a planned departure, but it does not say who moved Pip-4 later.",
+        "6-8": "At 6:02 a.m., the authorized field checkout lists robot Pip-4 on a scheduled survey of Fern Ford. Nia Rowan is the duty technician, not the person documented as moving the robot at that time. The distinction matters: a routine assignment establishes the initial route, whereas later custody must be proved by a separate transfer record."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Pip-4 leave its dock at 6:02?",
+          "a": [
+            "To check the creek",
+            "To join an animal parade",
+            "To go to the ridge shelter"
+          ],
+          "c": 0,
+          "h": "Look for the job named on the card.",
+          "why": "The departure was a scheduled creek survey."
+        },
+        "3-5": {
+          "q": "What can this record establish?",
+          "a": [
+            "Nia stole the robot at 6:02.",
+            "Pip-4 began a planned creek survey at 6:02.",
+            "Pip-4 arrived at the ridge at 6:02."
+          ],
+          "c": 1,
+          "h": "A checkout card shows a departure, not every later movement.",
+          "why": "The original route is documented, but the eventual relocation needs other evidence."
+        },
+        "6-8": {
+          "q": "What is the limitation of this primary record?",
+          "a": [
+            "It independently verifies every later location.",
+            "It demonstrates the robot ran away of its own accord.",
+            "It proves the scheduled departure but not who later transferred Pip-4."
+          ],
+          "c": 2,
+          "h": "Consider exactly which action a checkout form records.",
+          "why": "The card provides an early anchor in the timeline, not a complete custody chain."
+        }
+      },
+      "title": "Robot Checkout Card",
+      "type": "Field checkout card"
+    },
+    {
+      "id": "robot-status",
+      "place": "comms-hub",
+      "icon": "📡",
+      "texts": {
+        "1-2": "The screen says Pip-4 lost its signal at 6:31. A lost signal is not the same as a lost robot.",
+        "3-5": "A sensor printout shows Pip-4 at Fern Ford at 6:22. At 6:31, its radio signal stopped while the battery entered power-saving mode under dense tree cover. A signal gap can explain why staff could not track it live; the display does not prove theft or damage.",
+        "6-8": "At 6:22 the telemetry placed Pip-4 near Fern Ford; at 6:31 a power-saving flag and canopy-obstructed radio link coincided with loss of contact. The screen records a communications failure, not an observation of disappearance. Without a later transfer or intake record, inferring that the machine was stolen would confuse missing data with affirmative evidence of theft."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What stopped working at 6:31?",
+          "a": [
+            "Every tree in the forest",
+            "Pip-4’s radio signal",
+            "The field station clock"
+          ],
+          "c": 1,
+          "h": "Find the word after “lost.”",
+          "why": "The panel describes a lost radio connection."
+        },
+        "3-5": {
+          "q": "What is the most reasonable conclusion from the signal gap?",
+          "a": [
+            "The robot was certainly stolen.",
+            "A deer switched off the field station.",
+            "Staff temporarily could not follow the robot by radio."
+          ],
+          "c": 2,
+          "h": "A broken connection limits what observers know.",
+          "why": "A telemetry gap does not itself establish where a robot went."
+        },
+        "6-8": {
+          "q": "Which inference would exceed the telemetry evidence?",
+          "a": [
+            "A thief carried Pip-4 away at 6:31.",
+            "The last confirmed position was Fern Ford.",
+            "A low-power condition affected the link."
+          ],
+          "c": 0,
+          "h": "Identify which claim asserts an unseen cause.",
+          "why": "No sensor reading identifies a thief; that interpretation requires independent evidence."
+        }
+      },
+      "title": "Pip-4 Telemetry Panel",
+      "type": "Sensor-status extract"
+    },
+    {
+      "id": "storm-gauge",
+      "place": "fern-ford",
+      "icon": "🌧️",
+      "texts": {
+        "1-2": "Rain made the creek rise. At 6:28, the creek reached the red safety mark. The bridge had to close.",
+        "3-5": "Rain gauges recorded 18 millimeters of rain by 6:10. At 6:28, the creek sensor crossed its red flood threshold. A safety warning followed at 6:33, instructing staff to stay off the low boardwalk and move equipment away from the rising water.",
+        "6-8": "The gauge recorded accumulated rainfall of 18 mm by 6:10 and a threshold crossing at Fern Ford at 6:28. The 6:33 restricted-access bulletin followed the measured rise, rather than causing it. This sequence supports a weather-related safety response; it does not establish that somebody intentionally damaged the robot."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What made the creek dangerous?",
+          "a": [
+            "A singing bird",
+            "A painted sign",
+            "Rising rainwater"
+          ],
+          "c": 2,
+          "h": "The gauge measures water.",
+          "why": "Heavy rain raised the creek to its warning mark."
+        },
+        "3-5": {
+          "q": "Which event happened first?",
+          "a": [
+            "The creek reached the red threshold at 6:28.",
+            "Staff posted the closure at 6:33.",
+            "Pip-4 entered the ridge shelter at 6:52."
+          ],
+          "c": 0,
+          "h": "Compare the three times.",
+          "why": "6:28 precedes the closure notice and later shelter intake."
+        },
+        "6-8": {
+          "q": "What cause-and-effect chain best fits these records?",
+          "a": [
+            "The closure order caused the rainfall.",
+            "Heavy rain raised the creek; the threshold triggered a closure order.",
+            "The sensor proves Pip-4 was deliberately hidden."
+          ],
+          "c": 1,
+          "h": "Separate the environmental cause from the human response.",
+          "why": "Measured high water prompted the safety response, not vice versa."
+        }
+      },
+      "title": "Storm and Creek Gauge",
+      "type": "Environmental measurements"
+    },
+    {
+      "id": "bridge-notice",
+      "place": "fern-ford",
+      "icon": "🚧",
+      "texts": {
+        "1-2": "A notice says, “Fern Ford is closed from 6:33. Stay away from the water. Move tools to high ground.”",
+        "3-5": "The dated closure notice instructs all staff to avoid Fern Ford after 6:33 and move vulnerable equipment to higher ground. Its instructions make a later transfer of Pip-4 understandable, but they do not identify who completed the move.",
+        "6-8": "The 6:33 notice directs staff to restrict human traffic, avoid disturbing animals sheltering along the creek, and relocate flood-exposed equipment to elevated storage. As a procedural document it establishes authorization for protective action, but it cannot substitute for a signed record linking a particular technician to this specific robot."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did the notice tell workers to take equipment?",
+          "a": [
+            "To higher ground",
+            "Into the creek",
+            "Into the animal nest"
+          ],
+          "c": 0,
+          "h": "Look for “high ground.”",
+          "why": "The closure directs equipment away from floodwater."
+        },
+        "3-5": {
+          "q": "Why is this notice relevant to Pip-4?",
+          "a": [
+            "It names the person who stole the robot.",
+            "It gives a safety reason to move creekside equipment.",
+            "It shows the weather was sunny."
+          ],
+          "c": 1,
+          "h": "Notice the difference between a rule and proof of a completed task.",
+          "why": "The instruction explains why a relocation might be appropriate, not exactly who performed it."
+        },
+        "6-8": {
+          "q": "What can the bulletin establish independently?",
+          "a": [
+            "Nia personally signed a transfer at 6:33.",
+            "Pip-4 had reached its final storage location by 6:33.",
+            "A legitimate policy permitted moving exposed equipment after 6:33."
+          ],
+          "c": 2,
+          "h": "Consider what a posted instruction proves.",
+          "why": "The safety policy authorizes relocation in general; custody documents establish the specific transfer."
+        }
+      },
+      "title": "Closed Boardwalk Notice",
+      "type": "Safety closure bulletin"
+    },
+    {
+      "id": "trail-camera",
+      "place": "wildlife-blind",
+      "icon": "📷",
+      "texts": {
+        "1-2": "At 6:22, a camera saw Pip-4. At 6:26, a doe and fawn walked beside it. No thief appears in the pictures.",
+        "3-5": "Two time-stamped frames show Pip-4 beside the creek at 6:22 and a doe with a fawn approaching the same path at 6:26. The photos show animals close to the monitoring route, but the camera stopped taking pictures before the maintenance cart arrived.",
+        "6-8": "The motion camera’s 6:22 and 6:26 frames capture the machine and a doe-fawn pair using the narrow creek corridor. Although the animal movement gives staff an additional reason to reduce disturbance, the limited image sequence neither documents Pip-4’s ultimate destination nor rules out every later human intervention. It establishes ecological context, not a complete relocation timeline."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which animals appear at 6:26?",
+          "a": [
+            "Two bears",
+            "A doe and a fawn",
+            "Three wolves"
+          ],
+          "c": 1,
+          "h": "Look for the animals named in the second photo.",
+          "why": "The camera shows a mother deer and her young."
+        },
+        "3-5": {
+          "q": "What do the photographs directly show?",
+          "a": [
+            "A stranger carried off Pip-4.",
+            "The robot was already stored uphill.",
+            "Deer used the same trail as Pip-4."
+          ],
+          "c": 2,
+          "h": "Only claim what the frames display.",
+          "why": "They establish proximity of animals, not who moved the robot."
+        },
+        "6-8": {
+          "q": "Which statement treats the photographs most responsibly?",
+          "a": [
+            "They support a concern about disturbing wildlife but cannot establish later custody.",
+            "They prove Nia personally moved the robot.",
+            "They prove the entire forest was deserted afterward."
+          ],
+          "c": 0,
+          "h": "A time-limited camera sequence has a limited scope.",
+          "why": "The image timestamps corroborate animal presence but leave later events unrecorded."
+        }
+      },
+      "title": "Wildlife Camera Frames",
+      "type": "Time-stamped photographs"
+    },
+    {
+      "id": "fawn-field-notes",
+      "place": "wildlife-blind",
+      "icon": "🦌",
+      "texts": {
+        "1-2": "Bex drew two deer tracks near the bridge. The notes ask people to leave the young deer alone.",
+        "3-5": "Wildlife volunteer Bex Halden traced the doe and fawn’s route toward sheltered reeds by Fern Ford. The journal notes that foot traffic and loud machinery could startle them. It recommends closing the path while the creek is high.",
+        "6-8": "Bex’s field journal documents fresh paired hoofprints, a sheltered resting area, and concern that unnecessary visits during storm runoff might disturb the doe-fawn pair. The assessment is a trained observer’s interpretation supported by tracks; it does not establish that the robot could think or choose to leave the area on behalf of the animals."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Bex want fewer people near the bridge?",
+          "a": [
+            "To hide a box of coins",
+            "To paint the rocks",
+            "To avoid scaring the deer"
+          ],
+          "c": 2,
+          "h": "Look for what could startle the animals.",
+          "why": "The notes aim to protect the doe and fawn from disturbance."
+        },
+        "3-5": {
+          "q": "What recommendation follows from the tracking evidence?",
+          "a": [
+            "Keep traffic away from the deer’s shelter while water is high.",
+            "Send a parade across the creek.",
+            "Treat every hoofprint as proof of theft."
+          ],
+          "c": 0,
+          "h": "Connect the observed tracks to the proposed response.",
+          "why": "Restricting traffic lowers the risk of frightening sheltered wildlife."
+        },
+        "6-8": {
+          "q": "Which reading best distinguishes observation from interpretation?",
+          "a": [
+            "The deer signed the equipment order.",
+            "Hoofprints were seen; the risk of disturbance is a reasoned judgment.",
+            "Pip-4 consciously decided to rescue the fawn."
+          ],
+          "c": 1,
+          "h": "Separate recorded physical signs from a human conclusion.",
+          "why": "The journal records tracks and interprets how traffic might affect the animals."
+        }
+      },
+      "title": "Wildlife Tracking Journal",
+      "type": "Field observation notes"
+    },
+    {
+      "id": "photo-rumor",
+      "place": "comms-hub",
+      "icon": "📱",
+      "texts": {
+        "1-2": "Jules posted, “Pip-4 is gone!” at 7:40. But the photo was taken at 6:16, before the storm warning.",
+        "3-5": "A widely shared post at 7:40 claims Pip-4 “vanished before the storm.” Its attached photograph was actually taken at 6:16, when the robot was still on its regular route. The later posting time caused readers to confuse when the picture was shared with when it was captured.",
+        "6-8": "Jules Finch’s 7:40 post combines an undated-sounding caption with a photograph whose original camera metadata reads 6:16. By ignoring the difference between capture and publication time, the post creates a false chronology. The writer may be sincerely concerned, but the claim that Pip-4 disappeared before the weather warning is uncorroborated by the image and contradicted by the station’s 6:22 telemetry."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When was the picture actually taken?",
+          "a": [
+            "6:16",
+            "7:40",
+            "8:30"
+          ],
+          "c": 0,
+          "h": "A post time is not always a photo time.",
+          "why": "The image was taken at 6:16 but shared later."
+        },
+        "3-5": {
+          "q": "Why might readers misunderstand this post?",
+          "a": [
+            "The camera shows the signed transfer form.",
+            "They could mistake the posting time for the photo’s capture time.",
+            "The post was written before Pip-4 left the dock."
+          ],
+          "c": 1,
+          "h": "Two different timestamps are involved.",
+          "why": "A caption can mislead when it does not distinguish capture time from publication time."
+        },
+        "6-8": {
+          "q": "What makes the headline an unreliable conclusion?",
+          "a": [
+            "It cites the signed ridge intake receipt exactly.",
+            "It verifies every moment between 6:16 and 7:40.",
+            "It treats a 6:16 image shared at 7:40 as proof of a disappearance before the storm."
+          ],
+          "c": 2,
+          "h": "Check the mismatch between claim and the source’s metadata.",
+          "why": "The photo shows an earlier moment; independent telemetry and safety records contradict the asserted timing."
+        }
+      },
+      "title": "“Missing Robot” Social Post",
+      "type": "Social-media screenshot"
+    },
+    {
+      "id": "cart-gate-pass",
+      "place": "maintenance-barn",
+      "icon": "🛒",
+      "texts": {
+        "1-2": "The gate recorded Nia pushing a covered equipment cart uphill at 6:41.",
+        "3-5": "The barn gate scanner recorded Nia’s approved maintenance badge leaving toward Ridge Canopy Shelter at 6:41 with a covered equipment cart. The gate log does not display what was underneath the tarp, so it must be compared with the equipment order and shelter intake record.",
+        "6-8": "The gate pass records Nia Rowan’s authorized badge, a wheeled equipment cart, and travel toward Ridge Canopy Shelter at 6:41. The opaque cart covering leaves the cargo unidentified on this record alone. The pass becomes stronger corroboration when its route and time align with a signed robot retrieval order and an independently completed shelter intake."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did Nia push the cart?",
+          "a": [
+            "Down into the creek",
+            "Uphill toward Ridge Canopy Shelter",
+            "To the town stadium"
+          ],
+          "c": 1,
+          "h": "Look for the direction written on the gate pass.",
+          "why": "The cart traveled uphill to the ridge shelter."
+        },
+        "3-5": {
+          "q": "What is still unknown from the gate record alone?",
+          "a": [
+            "Whether the cart went uphill.",
+            "Who scanned the maintenance badge.",
+            "Exactly what was under the cart cover."
+          ],
+          "c": 2,
+          "h": "A covered load hides its contents.",
+          "why": "The scan identifies the badge, time, and direction, but not the cart’s cargo."
+        },
+        "6-8": {
+          "q": "Which reasoning step would best corroborate the gate pass?",
+          "a": [
+            "Match its badge and timestamp with the signed order and intake receipt.",
+            "Assume covered carts always carry stolen items.",
+            "Ignore independent records because the tarp is opaque."
+          ],
+          "c": 0,
+          "h": "A chain of evidence links an authorized action to an identified object.",
+          "why": "The pass supports, but does not independently establish, custody of Pip-4."
+        }
+      },
+      "title": "Maintenance Cart Gate Pass",
+      "type": "Vehicle passage record"
+    },
+    {
+      "id": "signed-relocation-order",
+      "place": "maintenance-barn",
+      "icon": "📝",
+      "texts": {
+        "1-2": "At 6:36, Nia signed an order: “Move Pip-4 from the creek. Keep it safe from rising water and keep the deer trail quiet. Take it to Ridge Canopy Shelter.”",
+        "3-5": "At 6:36, Nia Rowan signed a protective retrieval order for robot Pip-4, serial PF-204. The order cites the red water alert and the doe-fawn corridor, names Ridge Canopy Shelter as its destination, and instructs the team to avoid the closed boardwalk. This is an authorized safety transfer, not a secret theft.",
+        "6-8": "The 6:36 directive bears Nia Rowan’s signature and identifies Pip-4 by unique serial PF-204. It cites the 6:28 flood-threshold reading and current wildlife restrictions as reasons for retrieving equipment without disturbing the doe-fawn corridor. It specifies transfer to Ridge Canopy Shelter. As a contemporaneous primary source, the directive establishes the responsible technician and intended protective purpose; an intake receipt is needed to verify completion."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the order to move Pip-4?",
+          "a": [
+            "Jules Finch",
+            "The doe",
+            "Nia Rowan"
+          ],
+          "c": 2,
+          "h": "Look for the name beside the signature.",
+          "why": "Nia signed the protective equipment order."
+        },
+        "3-5": {
+          "q": "What reason and destination does the signed order identify?",
+          "a": [
+            "Flood and wildlife safety; Ridge Canopy Shelter.",
+            "A robot prank; the school gym.",
+            "A sale; the town shop."
+          ],
+          "c": 0,
+          "h": "Look for both the “why” and the “where.”",
+          "why": "The directive identifies rising water and wildlife protection as the motivation, with the ridge shelter as destination."
+        },
+        "6-8": {
+          "q": "Which elements of the order are decisive for the final theory?",
+          "a": [
+            "Its paper color and the technician’s handwriting style alone.",
+            "Nia’s signature, Pip-4’s serial, the safety purpose, and the specified destination.",
+            "The unrelated rumors posted later."
+          ],
+          "c": 1,
+          "h": "A strong primary source identifies an actor, object, purpose, and intended action.",
+          "why": "The contemporaneous order connects the responsible person to the exact robot and authorized rationale."
+        }
+      },
+      "title": "Signed Wildlife-Safety Relocation Order",
+      "type": "Signed maintenance order"
+    },
+    {
+      "id": "ridge-intake-receipt",
+      "place": "ridge-shelter",
+      "icon": "📦",
+      "texts": {
+        "1-2": "At 6:52, the shelter helper signed for Pip-4. Its number is PF-204. It is safe on shelf C.",
+        "3-5": "A 6:52 Ridge Canopy Shelter receipt records “Pip-4 / PF-204,” delivered by Nia Rowan. The robot was dry, undamaged, and placed on shelf C. The serial number matches the protective order and ends the search with a confirmed location.",
+        "6-8": "The countersigned 6:52 custody record lists robot Pip-4, serial PF-204, transferred by Nia Rowan into Ridge Canopy Shelter, storage shelf C, with no noted damage. Because the intake was recorded by a separate shelter worker, it independently corroborates completion of the 6:36 order. Its matching serial number resolves the ambiguity created by the covered maintenance cart and telemetry outage."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where is Pip-4 now?",
+          "a": [
+            "On shelf C at Ridge Canopy Shelter",
+            "Under the closed bridge",
+            "Inside the deer nest"
+          ],
+          "c": 0,
+          "h": "Look for the shelf listed on the receipt.",
+          "why": "The signed intake shows Pip-4 safe on shelf C."
+        },
+        "3-5": {
+          "q": "Which detail links the intake to the earlier order?",
+          "a": [
+            "The color of the cart tarp.",
+            "The same robot serial number PF-204.",
+            "The social post’s like count."
+          ],
+          "c": 1,
+          "h": "A unique serial identifies the same item.",
+          "why": "The matching number connects the signed transfer order to the completed intake."
+        },
+        "6-8": {
+          "q": "Why is this receipt stronger than a rumor about the robot’s location?",
+          "a": [
+            "It guesses what the robot thought.",
+            "It uses a more dramatic headline.",
+            "It independently records the named object, handler, destination, condition, and time."
+          ],
+          "c": 2,
+          "h": "Compare documented custody with unsupported speculation.",
+          "why": "A countersigned, specific custody record verifies the transfer in ways a general impression cannot."
+        }
+      },
+      "title": "Ridge Shelter Intake Receipt",
+      "type": "Signed custody receipt"
+    }
+  ],
+  "interviews": [
+    {
+      "id": "nia-interview",
+      "place": "maintenance-barn",
+      "icon": "🧰",
+      "texts": {
+        "1-2": "Nia says, “I moved Pip-4 because the creek was rising. I used a cart so the doe and fawn could stay quiet.”",
+        "3-5": "Nia Rowan explains that she signed a rescue order after the flood alarm and animal-tracking update. She used a covered cart to carry Pip-4 to high ground without driving on the deer trail. She says, “I should have told the front desk sooner that the robot was safe.”",
+        "6-8": "Nia states that the water threshold and the doe-fawn corridor required a low-disturbance retrieval. She describes obtaining authorization, using a hand cart instead of a motorized vehicle, and leaving the unit at Ridge Canopy Shelter. As the person responsible, her explanation could minimize her own mistakes; compare it with the 6:36 signed directive, 6:41 gate scan, and independent 6:52 custody receipt."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Nia say she moved Pip-4?",
+          "a": [
+            "To win a robot race",
+            "To protect it and avoid upsetting the deer",
+            "To hide it forever"
+          ],
+          "c": 1,
+          "h": "Listen for her reason about water and animals.",
+          "why": "Nia describes a safety move during rising water."
+        },
+        "3-5": {
+          "q": "Which evidence best checks Nia’s account?",
+          "a": [
+            "Only Jules’s later post.",
+            "A guess about what the robot wanted.",
+            "The signed retrieval order and the shelter intake receipt."
+          ],
+          "c": 2,
+          "h": "A participant’s story should be checked against records.",
+          "why": "The two independent documents verify the plan and completed destination."
+        },
+        "6-8": {
+          "q": "How should investigators treat Nia’s explanation?",
+          "a": [
+            "Use it as relevant testimony, corroborated by records rather than accepted automatically.",
+            "Accept every detail simply because she has a job title.",
+            "Reject the account solely because she took part in the transfer."
+          ],
+          "c": 0,
+          "h": "Both involvement and documentary support matter to reliability.",
+          "why": "Her direct knowledge is useful, but signed contemporaneous evidence guards against self-serving interpretations."
+        }
+      },
+      "name": "Nia Rowan",
+      "role": "Field Equipment Technician"
+    },
+    {
+      "id": "bex-interview",
+      "place": "wildlife-blind",
+      "icon": "🔍",
+      "texts": {
+        "1-2": "Bex says, “I saw deer by Pip-4. I asked everyone to stay quiet near their path.”",
+        "3-5": "Wildlife volunteer Bex Halden reports fresh doe-and-fawn tracks near the low bridge. She worried that visitors and noisy equipment might disturb their shelter. She did not see Pip-4 being carried uphill, and she will not guess who handled it.",
+        "6-8": "Bex describes firsthand observations of paired hoofprints and the doe-fawn corridor, then clearly separates them from her recommendation to reduce disturbance. She does not claim to have witnessed a relocation. Her restraint makes the animal-tracking testimony credible on ecological risk, but it leaves questions of equipment custody to other sources."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Bex want people to do?",
+          "a": [
+            "Chase the fawn",
+            "Turn on loud music",
+            "Stay quiet near the deer"
+          ],
+          "c": 2,
+          "h": "Read what Bex asked people to do.",
+          "why": "She wanted people to avoid startling the animals."
+        },
+        "3-5": {
+          "q": "What does Bex know firsthand?",
+          "a": [
+            "Deer tracks were near the bridge.",
+            "Nia delivered Pip-4 to the shelter.",
+            "The robot planned its own escape."
+          ],
+          "c": 0,
+          "h": "Find the part Bex personally observed.",
+          "why": "She observed tracks and deer activity, not the final transfer."
+        },
+        "6-8": {
+          "q": "Why is Bex’s testimony appropriately limited?",
+          "a": [
+            "She personally signed the robot’s intake.",
+            "She states observed wildlife evidence without pretending to know who relocated the robot.",
+            "She insists every inference is equal to a witnessed fact."
+          ],
+          "c": 1,
+          "h": "A reliable witness acknowledges what they did not see.",
+          "why": "Her limits help separate valid ecological evidence from speculation about human actions."
+        }
+      },
+      "name": "Bex Halden",
+      "role": "Wildlife Tracking Volunteer"
+    },
+    {
+      "id": "imani-interview",
+      "place": "fern-ford",
+      "icon": "🌦️",
+      "texts": {
+        "1-2": "Imani says, “The creek reached the red mark at 6:28. I sent a warning at 6:33.”",
+        "3-5": "Weather specialist Imani Vale confirms that rainfall pushed the creek above the red threshold at 6:28 and that the field closure was broadcast at 6:33. She says Pip-4 would have been at risk beside the water, but she was at the gauge station, not the ridge shelter.",
+        "6-8": "Imani provides contemporaneous measurements and a broadcast timestamp that can be checked against instrument logs. Her assertion that equipment needed relocation is a professional interpretation of the flood threshold, not personal observation of Nia’s completed move. That distinction preserves the chronology of cause (rising water) and response (safety closure and retrieval)."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did the creek reach the red line?",
+          "a": [
+            "6:28",
+            "7:40",
+            "6:52"
+          ],
+          "c": 0,
+          "h": "Listen for the time named with the red mark.",
+          "why": "Imani recorded the high-water threshold at 6:28."
+        },
+        "3-5": {
+          "q": "What did the weather alert cause?",
+          "a": [
+            "The rain started only after the closure.",
+            "Staff closed the low boardwalk and moved equipment to safety.",
+            "The doe wrote the transfer receipt."
+          ],
+          "c": 1,
+          "h": "The closure was a response to measured conditions.",
+          "why": "High water led to restricted access and protective retrieval."
+        },
+        "6-8": {
+          "q": "What distinction improves the reliability of Imani’s account?",
+          "a": [
+            "Her observations prove she carried the robot.",
+            "A weather record is just a fictional opinion in the story.",
+            "She measured the creek but did not witness the later shelter delivery."
+          ],
+          "c": 2,
+          "h": "Separate measurement from inferences about other people’s actions.",
+          "why": "Her instruments establish timing and risk, not later chain of custody."
+        }
+      },
+      "name": "Imani Vale",
+      "role": "Weather and Creek Specialist"
+    },
+    {
+      "id": "tomas-interview",
+      "place": "comms-hub",
+      "icon": "🎛️",
+      "texts": {
+        "1-2": "Tomas says, “The radio stopped working. That did not mean Pip-4 was stolen.”",
+        "3-5": "Communications manager Tomas Reed recalls the telemetry going silent after Pip-4 passed below thick branches. He briefly thought the robot had “gone missing,” but after checking battery flags, he realized the radio could have dropped without damage. He later matched the shelter receipt to the robot serial.",
+        "6-8": "Tomas admits his early interpretation of the 6:31 telemetry gap was mistaken. Once he reviewed the power-saving indicator and shelter custody number, he revised his explanation. His change of view models evidence-responsive reasoning: a missing radio signal is a limitation of the observation system, not affirmative evidence of theft or autonomous escape."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Tomas learn about the radio?",
+          "a": [
+            "It could hear the fawn speak",
+            "It could lose contact without the robot being stolen",
+            "It recorded the robot swimming"
+          ],
+          "c": 1,
+          "h": "Find what a lost signal does not prove.",
+          "why": "A broken connection is not the same as a missing object."
+        },
+        "3-5": {
+          "q": "How did Tomas’s thinking change?",
+          "a": [
+            "He ignored all new evidence.",
+            "He concluded the robot must be alive.",
+            "He revised his guess after checking status and custody records."
+          ],
+          "c": 2,
+          "h": "Look for what changed his first belief.",
+          "why": "The records justified updating an unsupported initial assumption."
+        },
+        "6-8": {
+          "q": "Which trait is best shown by Tomas revising his claim?",
+          "a": [
+            "Intellectual honesty when new evidence contradicts an early inference.",
+            "Dishonesty because any change of mind is lying.",
+            "Certainty without needing evidence."
+          ],
+          "c": 0,
+          "h": "Consider the difference between correction and inconsistency.",
+          "why": "Revising a conclusion in light of stronger primary records is responsible reasoning."
+        }
+      },
+      "name": "Tomas Reed",
+      "role": "Communications Manager"
+    },
+    {
+      "id": "jules-interview",
+      "place": "dock",
+      "icon": "📰",
+      "texts": {
+        "1-2": "Jules says, “I posted a photo later. I thought Pip-4 went missing before the rain, but the photo was old.”",
+        "3-5": "Student reporter Jules Finch says the dramatic “robot vanished” caption was rushed. The photo was taken at 6:16 but posted at 7:40. Jules had not checked the station logs and now agrees the caption made an earlier picture sound like new proof.",
+        "6-8": "Jules acknowledges that the 7:40 headline was based on a 6:16 image, not firsthand observation of the 6:36–6:52 retrieval. The interview exposes how framing and temporal ambiguity can spread a credible-sounding rumor. Jules’s later correction improves transparency but does not retroactively turn the post into valid evidence of a theft."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why was Jules’s post confusing?",
+          "a": [
+            "It showed a dinosaur",
+            "It included the shelter key",
+            "The photo was taken earlier than the post"
+          ],
+          "c": 2,
+          "h": "Look at when the picture was taken.",
+          "why": "The photo’s age made the later caption misleading."
+        },
+        "3-5": {
+          "q": "What was Jules’s main reporting mistake?",
+          "a": [
+            "Treating an old photo as if it confirmed a new disappearance.",
+            "Confirming the custody receipt.",
+            "Interviewing too many witnesses."
+          ],
+          "c": 0,
+          "h": "A headline should match the available evidence.",
+          "why": "The post lacked independent confirmation and blurred two timestamps."
+        },
+        "6-8": {
+          "q": "What media-literacy principle does this interview illustrate?",
+          "a": [
+            "Popular posts are always primary evidence of events.",
+            "Verify image provenance and distinguish publication time from event time.",
+            "A correction makes the original unsupported claim true."
+          ],
+          "c": 1,
+          "h": "Ask whether the source actually documents the asserted event.",
+          "why": "Temporal metadata and corroboration are necessary to evaluate claims based on images."
+        }
+      },
+      "name": "Jules Finch",
+      "role": "Student Nature Reporter"
+    }
+  ],
+  "case": {
+    "id": "forest-robot",
+    "title": "The Vanishing Forest Robot",
+    "subtitle": "CASE FILE 009 • THE QUIET RESCUE",
+    "goal": "Determine who relocated Pip-4, where it was safely stored, and why a wildlife-safety retrieval followed the flood alert. Separate personification from fact, evaluate character actions, and trace cause and effect through first-hand records.",
+    "brief": {
+      "1-2": "Pip-4 is a small forest robot. It checks the creek, but today its charging spot is empty and its radio went quiet. Did it run away? Look at the rain, deer tracks, and notes to find who moved it and why.",
+      "3-5": "At the fictional Briar Hollow Forest Research Station, the friendly monitor robot Pip-4 has disappeared after a heavy rain. A student post says it went missing before the storm, while a wildlife camera shows deer beside the robot near the creek. A tracker stopped reporting, and staff have different ideas about what happened. Compare the weather warnings, wildlife observations, and equipment records to discover the robot’s actual route and why somebody moved it.",
+      "6-8": "At Briar Hollow Forest Research Station, an environmental monitoring robot called Pip-4 ceases transmitting during an autumn downpour. Dramatic rumors describe the machine as having “fled” to protect a doe and her fawn, while a later-posted photograph suggests it vanished before the storm. Contemporary telemetry, creek-threshold reports, wildlife observations, authorization records, and independent custody documentation offer a less sensational explanation. Determine which witness acted, where the machine ended up, and how weather and habitat protections motivated the transfer. Distinguish personification from literal characterization, separate observation from inference, and reconstruct the causal sequence rather than accepting the most exciting narrator."
+    },
+    "theoryLabels": {
+      "who": "Who carried out the authorized relocation of Pip-4?",
+      "where": "Where was Pip-4 confirmed safe after the storm alert?",
+      "why": "What was the documented reason for moving Pip-4?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "jules",
+          "label": "Jules Finch — student nature reporter"
+        },
+        {
+          "id": "nia",
+          "label": "Nia Rowan — field equipment technician"
+        },
+        {
+          "id": "tomas",
+          "label": "Tomas Reed — communications manager"
+        },
+        {
+          "id": "bex",
+          "label": "Bex Halden — wildlife tracking volunteer"
+        },
+        {
+          "id": "imani",
+          "label": "Imani Vale — weather specialist"
+        }
+      ],
+      "where": [
+        {
+          "id": "fern-ford",
+          "label": "Fern Ford beside the flooded boardwalk"
+        },
+        {
+          "id": "comms-hub",
+          "label": "Communications Hub radio desk"
+        },
+        {
+          "id": "ridge-shelter",
+          "label": "Ridge Canopy Shelter, shelf C"
+        },
+        {
+          "id": "wildlife-blind",
+          "label": "Wildlife blind beside the deer tracks"
+        },
+        {
+          "id": "dock",
+          "label": "Original charging cradle at the research dock"
+        }
+      ],
+      "why": [
+        {
+          "id": "prank",
+          "label": "To stage a dramatic disappearance for the school news"
+        },
+        {
+          "id": "sell",
+          "label": "To secretly sell the monitoring equipment"
+        },
+        {
+          "id": "self-escape",
+          "label": "Because Pip-4 independently decided to follow the deer"
+        },
+        {
+          "id": "safety",
+          "label": "To protect the robot from rising floodwater while limiting disturbance to the deer corridor"
+        },
+        {
+          "id": "data-hide",
+          "label": "To destroy records showing that the creek had flooded"
+        }
+      ]
+    },
+    "who": "nia",
+    "where": "ridge-shelter",
+    "why": "safety",
+    "proofs": [
+      "signed-relocation-order",
+      "ridge-intake-receipt"
+    ],
+    "feedback": {
+      "who": "Check the signature and exact robot serial on the 6:36 Wildlife-Safety Relocation Order. A person who reported seeing the robot is not automatically the person who moved it.",
+      "where": "An empty dock and an interrupted radio signal are not confirmed locations. Find the independently signed 6:52 Ridge Shelter Intake Receipt and match serial PF-204.",
+      "why": "The deer tracks and rain gauge explain the hazard, but they do not give Pip-4 human intentions. Read the signed order for the actual protective purpose, then compare it to the flood warning.",
+      "proofs": "Choose BOTH the “Signed Wildlife-Safety Relocation Order” and “Ridge Shelter Intake Receipt.” One records who authorized the action and why; the other proves where Pip-4 was delivered."
+    },
+    "resolution": {
+      "summary": "Nia Rowan retrieved Pip-4 from flood-exposed Fern Ford to protect equipment and avoid disturbing a doe-fawn shelter. It was safely received at Ridge Canopy Shelter, shelf C, at 6:52 a.m.",
+      "outcome": "Pip-4 was never stolen, and it did not decide to run away. At 6:02 a.m., the robot began a routine creek survey. Heavy rain raised Fern Ford above the safety threshold at 6:28, while wildlife cameras and field notes documented a doe and fawn near the route. The robot’s radio went silent at 6:31 because of power-saving and canopy interference, not because it had disappeared. After the 6:33 closure, field technician Nia Rowan signed a wildlife-safety retrieval order at 6:36 and took a covered hand cart uphill at 6:41. A separate shelter worker recorded Pip-4, serial PF-204, dry and intact on shelf C at Ridge Canopy Shelter at 6:52. The “missing robot” photo had been taken earlier but posted after the fact, creating an incorrect timeline. Students can enjoy the friendly phrase “Pip-4 hurried to help the deer,” but personification gives a machine human intentions that the evidence does not support. The more meaningful heroism belongs to workers who protected both equipment and wildlife through careful, documented actions. Jules publishes a correction and the station adds a status board so an interrupted signal no longer becomes a rumor.",
+      "timeline": [
+        {
+          "time": "October 9, 2026 • 6:02 a.m.",
+          "event": "Pip-4, serial PF-204, leaves its charging dock for a scheduled Fern Ford creek survey."
+        },
+        {
+          "time": "6:10 a.m.",
+          "event": "Rain gauge reaches 18 mm accumulated rainfall."
+        },
+        {
+          "time": "6:16 a.m.",
+          "event": "Jules takes a photograph later reused with a misleading caption."
+        },
+        {
+          "time": "6:22 a.m.",
+          "event": "Telemetry and the wildlife camera locate Pip-4 near Fern Ford."
+        },
+        {
+          "time": "6:26 a.m.",
+          "event": "Camera records a doe and fawn sharing the narrow creek corridor."
+        },
+        {
+          "time": "6:28 a.m.",
+          "event": "Fern Ford creek level crosses the red safety threshold."
+        },
+        {
+          "time": "6:31 a.m.",
+          "event": "Pip-4 radio contact fails under dense canopy as battery power-saving begins."
+        },
+        {
+          "time": "6:33 a.m.",
+          "event": "Imani broadcasts the boardwalk closure and equipment relocation warning."
+        },
+        {
+          "time": "6:36 a.m.",
+          "event": "Nia signs the protective relocation order naming Pip-4 and Ridge Canopy Shelter."
+        },
+        {
+          "time": "6:41 a.m.",
+          "event": "Nia wheels a covered hand cart through the maintenance gate toward high ground."
+        },
+        {
+          "time": "6:52 a.m.",
+          "event": "The Ridge Canopy Shelter intake verifies Pip-4 PF-204, undamaged, on shelf C."
+        },
+        {
+          "time": "7:40 a.m.",
+          "event": "Jules posts an earlier photo with a premature disappearance claim; investigators later correct the rumor."
+        }
+      ]
+    }
+  }
+}
