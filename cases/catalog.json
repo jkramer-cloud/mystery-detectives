@@ -187,6 +187,17 @@
       "grades": "1–8 (focus: 3–8)",
       "status": "ready",
       "file": "cases/trail-journal.json"
+    },
+    {
+      "id": "unwritten-mystery",
+      "title": "The Unwritten Mystery",
+      "number": "018",
+      "category": "Creator Studio",
+      "icon": "✍️",
+      "summary": "Create your own original mystery! Follow eight writing missions, gather clues, build a solution, and export a proposal for your teacher.",
+      "grades": "1–8 (focus: 5–8)",
+      "status": "creator",
+      "file": "creator.html"
     }
   ]
 }
