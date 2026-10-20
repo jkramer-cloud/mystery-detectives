@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "broadcast-studio": {
+      "name": "Wrenfall Radio Studio",
+      "icon": "🎙️",
+      "detail": "A quiet night studio with a public-band recorder and a clock that does not quite agree with other clocks.",
+      "scene": "office"
+    },
+    "northglass-relay": {
+      "name": "Northglass Relay Hut",
+      "icon": "📡",
+      "detail": "An icy transmitter shelter on the ridge, with a test desk, antenna switch, and service notebook.",
+      "scene": "storage"
+    },
+    "weather-deck": {
+      "name": "Weather Watch Deck",
+      "icon": "🌨️",
+      "detail": "A sheltered gauge platform where readings document when the ridge iced over.",
+      "scene": "hall"
+    },
+    "quarry-shed": {
+      "name": "Old Quarry Equipment Shed",
+      "icon": "⛏️",
+      "detail": "A boarded-up work shed whose disused radio mast has become the subject of rumors.",
+      "scene": "storage"
+    },
+    "history-archive": {
+      "name": "Wrenfall History Archive",
+      "icon": "📜",
+      "detail": "Photographs, songs, and radio-history notes illuminate the strange language in the message.",
+      "scene": "library"
+    },
+    "trail-overlook": {
+      "name": "Moonpine Trail Overlook",
+      "icon": "🌲",
+      "detail": "A foggy bend where listeners believed they saw a beacon responding to the radio call.",
+      "scene": "hall"
+    }
+  },
+  "evidence": [
+    {
+      "id": "public-transcript",
+      "place": "broadcast-studio",
+      "icon": "📃",
+      "title": "The Midnight Transcript",
+      "type": "Studio recording and transcript",
+      "texts": {
+        "1-2": "At night the town radio said, “The moon sews a silver road. The sleeping fir keeps one lantern.” Some people thought someone needed help.",
+        "3-5": "A studio recording captures a voice reading: “The moon sews a silver road. The sleeping fir keeps one lantern.” The message names no person in danger and asks for no rescue. Listeners nevertheless interpreted the mysterious lines as a warning.",
+        "6-8": "The complete 12:04 a.m. broadcast transcript records two figurative sentences: “The moon sews a silver road. The sleeping fir keeps one lantern.” A later recap paraphrased them as a distress call, although the original contains neither a plea for assistance nor an identifiable victim. The difference between verbatim text and interpretation matters."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did the voice talk about?",
+          "a": [
+            "A moon and a tree",
+            "A missing school bus",
+            "A hungry fox"
+          ],
+          "c": 0,
+          "h": "Look for two nature words.",
+          "why": "The broadcast mentions the moon and a sleeping fir, which is a kind of tree."
+        },
+        "3-5": {
+          "q": "Which statement is supported by the actual message?",
+          "a": [
+            "It identifies an injured climber by name",
+            "It uses strange descriptions without asking for rescue",
+            "It tells everyone to leave town at once"
+          ],
+          "c": 1,
+          "h": "Check whether the original words request help.",
+          "why": "The recording contains poetic descriptions but no named person or explicit request for aid."
+        },
+        "6-8": {
+          "q": "What is the strongest evaluation of the later distress-call recap?",
+          "a": [
+            "It reproduces the original message without change",
+            "It provides an eyewitness account of a rescue",
+            "It adds an interpretation not stated in the primary transcript"
+          ],
+          "c": 2,
+          "h": "Distinguish the literal recording from someone’s inference.",
+          "why": "The primary transcript offers imagery, while the recap adds an unsupported claim of imminent danger."
+        }
+      }
+    },
+    {
+      "id": "studio-clock-check",
+      "place": "broadcast-studio",
+      "icon": "🕒",
+      "title": "The Clock That Ran Ahead",
+      "type": "Clock calibration note",
+      "texts": {
+        "1-2": "The radio studio clock was three minutes fast. When it showed 12:07, the real time was 12:04.",
+        "3-5": "A calibration sticker says the studio wall clock ran three minutes fast. The announcer wrote “12:07” next to the strange message, while a synchronized recorder marked it 12:04. The two accounts refer to the same transmission.",
+        "6-8": "The studio calibration note documents a +3-minute drift, verified that morning against the district’s synchronized receiver. Therefore an eyewitness who wrote “12:07” from the wall clock and a digital log stamped 00:04 may describe the same event, not two separate broadcasts."
+      },
+      "questions": {
+        "1-2": {
+          "q": "If the fast clock showed 12:07, what was the real time?",
+          "a": [
+            "12:10",
+            "12:04",
+            "12:07"
+          ],
+          "c": 1,
+          "h": "Take away three minutes.",
+          "why": "A clock running three minutes fast shows 12:07 when the real time is 12:04."
+        },
+        "3-5": {
+          "q": "Why do two records give different times for the message?",
+          "a": [
+            "The town heard two separate messages",
+            "The radio was turned off at midnight",
+            "One clock was three minutes ahead"
+          ],
+          "c": 2,
+          "h": "Look at the calibration sticker before deciding there were two broadcasts.",
+          "why": "Correcting the clock’s three-minute drift aligns 12:07 with the synchronized 12:04 log."
+        },
+        "6-8": {
+          "q": "What is the best chronological inference after calibrating the clock?",
+          "a": [
+            "The wall-clock and digital entries likely document one 00:04 event",
+            "The wall-clock entry proves the message aired twice",
+            "The digital log must be fabricated because its time differs"
+          ],
+          "c": 0,
+          "h": "Apply the documented time offset, not an assumption about witnesses.",
+          "why": "A +3-minute drift reconciles the two observations without inventing an additional transmission."
+        }
+      }
+    },
+    {
+      "id": "signed-transmission-log",
+      "place": "northglass-relay",
+      "icon": "📝",
+      "title": "Mira’s Signed Test Log",
+      "type": "Primary operator record",
+      "texts": {
+        "1-2": "Mira Fen wrote in the relay book: “12:04. I tested our emergency radio at Northglass Hut. I read the old moon poem.” She signed her name.",
+        "3-5": "A signed relay notebook states that volunteer operator Mira Fen began an approved emergency-radio test at Northglass Relay Hut at 12:04 a.m. She read a familiar heritage verse to check whether the receiver could carry ordinary speech after the storm.",
+        "6-8": "Primary operator record NG-4, countersigned after inspection, states: “00:04, Northglass Relay Hut; operator Mira Fen; authorized post-ice emergency-repeater speech test; standard heritage-verse calibration.” Mira signed the entry contemporaneously. It specifies the intended test channel rather than a public warning broadcast."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the test log?",
+          "a": [
+            "Tessa Brook",
+            "Jalen Quill",
+            "Mira Fen"
+          ],
+          "c": 2,
+          "h": "Find the name at the end of the entry.",
+          "why": "Mira Fen signed the log and described the emergency-radio test."
+        },
+        "3-5": {
+          "q": "What does the signed log directly establish?",
+          "a": [
+            "Mira tested the emergency relay at Northglass Hut",
+            "A quarry worker sent a warning from the old mast",
+            "A hiker called for rescue from Moonpine Trail"
+          ],
+          "c": 0,
+          "h": "Read who, where, and purpose in the operator’s own record.",
+          "why": "The firsthand log identifies Mira, Northglass Relay Hut, and a speech test after the storm."
+        },
+        "6-8": {
+          "q": "Why is this record important to the final theory?",
+          "a": [
+            "It is an anonymous retelling of a rumor about a ghost",
+            "It is a contemporaneous primary source naming operator, site, and purpose",
+            "It proves the town’s public channel was intentionally used"
+          ],
+          "c": 1,
+          "h": "A signed entry made during an event has a different evidentiary role from hearsay.",
+          "why": "Mira’s original signed test entry identifies the actor, location, and authorized purpose; it does not claim the public rebroadcast was intentional."
+        }
+      }
+    },
+    {
+      "id": "receiver-id-record",
+      "place": "broadcast-studio",
+      "icon": "📟",
+      "title": "Receiver Identification Printout",
+      "type": "Independent electronic receiver record",
+      "texts": {
+        "1-2": "The town receiver printed “NG-4, Northglass Hut, 12:04.” It matched Mira’s radio test.",
+        "3-5": "The studio’s independently synchronized receiver printed station identifier NG-4 at 12:04 a.m. The station register maps NG-4 to Northglass Relay Hut. The quarry mast uses a different, inactive identifier.",
+        "6-8": "An automatically generated, independently time-synchronized receiver printout logged an NG-4 transmission at 00:04; its authenticated identifier maps only to the Northglass hut. That independently corroborates Mira’s signed test log and rules out the disconnected quarry transmitter as the actual source."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did the radio signal come from?",
+          "a": [
+            "Northglass Relay Hut",
+            "The school library",
+            "The river dock"
+          ],
+          "c": 0,
+          "h": "Read the place next to NG-4.",
+          "why": "The receiver identifies NG-4 as Northglass Relay Hut."
+        },
+        "3-5": {
+          "q": "Which source independently confirms Mira’s location?",
+          "a": [
+            "A listener guessing about lights on the trail",
+            "The receiver’s NG-4 identifier printout",
+            "An unsigned online rumor about the quarry"
+          ],
+          "c": 1,
+          "h": "Look for a machine record made separately from Mira’s notebook.",
+          "why": "The synchronized receiver independently ties the signal to Northglass Relay Hut."
+        },
+        "6-8": {
+          "q": "How does the receiver printout strengthen the case?",
+          "a": [
+            "It proves the radio message was a deliberate threat",
+            "It shows that every witness remembered the exact minute",
+            "Its independently recorded transmitter ID corroborates the signed operator log"
+          ],
+          "c": 2,
+          "h": "Compare independent sources rather than repeated opinions.",
+          "why": "A separate electronic record corroborates the location and time established by the operator’s firsthand account."
+        }
+      }
+    },
+    {
+      "id": "selector-inspection",
+      "place": "northglass-relay",
+      "icon": "🔧",
+      "title": "The Frozen Selector",
+      "type": "Technician maintenance finding",
+      "texts": {
+        "1-2": "Ice stuck a switch at Northglass Hut. That let Mira’s test be heard on the town radio by mistake. A technician fixed the switch.",
+        "3-5": "At 12:12 a.m., technician Rowan Pike found ice had bridged the relay’s channel selector. As a result, Mira’s authorized emergency-channel speech test leaked onto the public bulletin frequency. Once the contact was dried and reset, the overlap stopped.",
+        "6-8": "Rowan Pike’s signed 00:12 inspection documents moisture freezing across the channel-changeover contacts. This physical fault cross-connected an emergency-repeater calibration to the ordinary town-band transmitter. The public audience was accidental, not the intended recipient; removing the ice restored channel isolation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did everyone hear the test?",
+          "a": [
+            "A dragon carried the sound",
+            "A frozen switch joined two radio channels",
+            "Mira visited every house"
+          ],
+          "c": 1,
+          "h": "Look at what the ice did to the switch.",
+          "why": "Ice bridged the selector, so the test reached the town radio by accident."
+        },
+        "3-5": {
+          "q": "What caused the private test to reach town listeners?",
+          "a": [
+            "Mira mailed recordings to every household",
+            "The old quarry transmitter turned itself on",
+            "Ice joined the emergency test path to the public frequency"
+          ],
+          "c": 2,
+          "h": "Find the physical cause described in the maintenance report.",
+          "why": "The stuck selector cross-connected two channels until the technician repaired it."
+        },
+        "6-8": {
+          "q": "What causal distinction does the inspection establish?",
+          "a": [
+            "Mira intentionally ran a safety test, but an iced contact unintentionally rebroadcast it",
+            "The technician invented the message to frighten listeners",
+            "The public broadcast must have been a deliberate secret signal"
+          ],
+          "c": 0,
+          "h": "Separate the intended action from the equipment malfunction.",
+          "why": "The test was authorized; the public-band overlap resulted from an independently documented mechanical fault."
+        }
+      }
+    },
+    {
+      "id": "weather-ice-strip",
+      "place": "weather-deck",
+      "icon": "🌨️",
+      "title": "Ridge Weather Strip",
+      "type": "Weather observation record",
+      "texts": {
+        "1-2": "The weather sheet says hail fell at 11:15. The ridge got very cold, and ice formed on metal parts.",
+        "3-5": "The weather desk logged hail at 11:15 p.m., then a rapid drop below freezing. A sensor photographed glaze ice on ridge hardware shortly before midnight. This supports the technician’s explanation, but weather alone cannot name the radio operator.",
+        "6-8": "Time-stamped weather readings document convective hail at 23:15, subfreezing surface temperatures at 23:42, and visible rime accumulation on elevated metal fittings. These conditions make the observed selector icing plausible, but the weather record is circumstantial evidence of cause, not direct evidence of who transmitted."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What formed on the ridge equipment?",
+          "a": [
+            "Sand",
+            "Paint",
+            "Ice"
+          ],
+          "c": 2,
+          "h": "What happens to water when it freezes?",
+          "why": "The cold ridge weather left ice on exposed equipment."
+        },
+        "3-5": {
+          "q": "Which claim can the weather report help support?",
+          "a": [
+            "Ice could have jammed the relay switch",
+            "Jalen definitely broadcast from the quarry",
+            "The poem describes a real injured climber"
+          ],
+          "c": 0,
+          "h": "Think about conditions that could affect machinery.",
+          "why": "The freezing weather supports a mechanical problem, but it does not identify the person transmitting."
+        },
+        "6-8": {
+          "q": "What is the proper evidentiary role of the weather strip?",
+          "a": [
+            "Directly proving Mira’s signed entry is forged",
+            "Corroborating physical conditions without independently identifying the operator",
+            "Establishing that the old quarry mast was active"
+          ],
+          "c": 1,
+          "h": "Distinguish conditions favorable to a malfunction from proof of human action.",
+          "why": "Cold and hail make icing credible; operator identity comes from the signed transmission log and receiver record."
+        }
+      }
+    },
+    {
+      "id": "heritage-poem",
+      "place": "history-archive",
+      "icon": "📖",
+      "title": "The Sleeping Fir Verse",
+      "type": "Archived poem and commentary",
+      "texts": {
+        "1-2": "An old poem says, “The moon sews a silver road.” It means moonlight shines on the river. No one is sewing a real road.",
+        "3-5": "An archive booklet printed the same lines decades earlier. Its notes explain that the “silver road” is moonlight reflected across Wrenfall Creek; the “sleeping fir” is an old bent tree at the overlook. The broadcast reused figurative language, not a coded demand for rescue.",
+        "6-8": "The primary poem manuscript predates the broadcast by forty years. Later archive commentary identifies the “silver road” as a metaphor for reflected moonlight, while a bent fir overlooking the creek inspired the “sleeping” image. The verse offers an imaginative description of place; treating it as a literal emergency misreads both genre and context."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Does the moon really sew a road?",
+          "a": [
+            "No, it is a picture made with words",
+            "Yes, it uses a giant needle",
+            "Yes, it makes a paved street"
+          ],
+          "c": 0,
+          "h": "Think about whether the moon can sew.",
+          "why": "The poem gives the moon a human action to describe how moonlight looks."
+        },
+        "3-5": {
+          "q": "What does “silver road” most likely mean in the poem?",
+          "a": [
+            "A highway made of coins",
+            "Moonlight reflected across the creek",
+            "An actual road sewn into a hill"
+          ],
+          "c": 1,
+          "h": "Use the archived explanation of the old verse.",
+          "why": "The old commentary connects the figurative silver road to reflected moonlight on water."
+        },
+        "6-8": {
+          "q": "Which interpretation best respects the poem’s genre and imagery?",
+          "a": [
+            "The speaker orders listeners to construct a silver highway",
+            "The “sleeping fir” directly names a missing person",
+            "The personified moon and metaphorical road evoke a nighttime landscape"
+          ],
+          "c": 2,
+          "h": "Use the archival context to test literal versus figurative readings.",
+          "why": "The verse relies on personification and metaphor; it does not describe an urgent instruction or hidden victim."
+        }
+      }
+    },
+    {
+      "id": "quarry-equipment-tag",
+      "place": "quarry-shed",
+      "icon": "🔌",
+      "title": "The Silent Quarry Mast",
+      "type": "Equipment decommission log",
+      "texts": {
+        "1-2": "A sign on the quarry radio says it was unplugged last spring. It cannot send a message now.",
+        "3-5": "A dated inventory shows that Jalen Quill supervised disconnecting the quarry’s mast and removing its power unit in April. A dramatic photograph of the old mast does not prove that it transmitted the October message.",
+        "6-8": "The quarry’s spring decommission receipt records removal of the transmitter power module and sealing of the coaxial connector, confirmed by an equipment serial number. The visually striking tower remains on the skyline, but no verified operational mechanism links it to the midnight broadcast."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Could the unplugged quarry mast send this message?",
+          "a": [
+            "Yes, every old tower can transmit",
+            "No, its power unit was removed",
+            "Yes, because a photo shows the tower"
+          ],
+          "c": 1,
+          "h": "Look for whether the radio still had power.",
+          "why": "The mast was disconnected and had no transmitter power unit."
+        },
+        "3-5": {
+          "q": "Why is the photograph of the quarry mast weak proof of a signal source?",
+          "a": [
+            "Pictures are always incorrect",
+            "The photograph shows a school hallway",
+            "A tower can appear in a photo even when its transmitter is disabled"
+          ],
+          "c": 2,
+          "h": "Use the inventory to check the equipment’s actual condition.",
+          "why": "The dated decommission record contradicts the claim that the pictured mast was operating."
+        },
+        "6-8": {
+          "q": "Which reasoning error does the quarry rumor illustrate?",
+          "a": [
+            "Inferring active transmission from a visible but disconnected structure",
+            "Using independent hardware records to exclude an unlikely source",
+            "Corroborating signal origin with an authenticated transmitter ID"
+          ],
+          "c": 0,
+          "h": "Separate how plausible a location looks from what the source records show.",
+          "why": "The striking landmark invited an unsupported assumption; the maintenance record shows it was inactive."
+        }
+      }
+    },
+    {
+      "id": "overlook-lantern",
+      "place": "trail-overlook",
+      "icon": "🏮",
+      "title": "The Lantern at the Bend",
+      "type": "Trail marker and witness photograph",
+      "texts": {
+        "1-2": "A photo shows a yellow light near a bent fir. It is a small solar path lamp. It is not a person calling for help.",
+        "3-5": "At the Moonpine overlook, a photo shows a lamp below an old bent fir. The trail map lists that lamp as a solar marker installed by volunteers. A listener thought the poem described the lamp, but a familiar landscape feature does not prove the broadcast came from the overlook.",
+        "6-8": "An overlook photograph captures the installed solar lantern beneath the bent fir referenced in the heritage poem. The similarity helped listeners construct a compelling narrative of a stranded speaker, yet the maintenance plaque dates the light to the previous summer. The photograph establishes scenery, not transmission origin."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What made the yellow light?",
+          "a": [
+            "A lost astronaut",
+            "A flashing radio antenna",
+            "A solar path lamp"
+          ],
+          "c": 2,
+          "h": "Look for the label near the trail.",
+          "why": "Volunteers installed a solar lamp to mark the path."
+        },
+        "3-5": {
+          "q": "What can the photo prove?",
+          "a": [
+            "A lamp stood near the bent fir",
+            "The voice was sent from the overlook",
+            "A traveler was trapped beside the lamp"
+          ],
+          "c": 0,
+          "h": "A picture records what is visible, not an unseen transmitter.",
+          "why": "The photo shows a trail lamp; it cannot establish where the radio signal began."
+        },
+        "6-8": {
+          "q": "Why is the lantern clue potentially misleading?",
+          "a": [
+            "The photograph disproves the existence of the old poem",
+            "A real landmark resembles the poem, but resemblance does not locate the transmitter",
+            "A visible light is sufficient proof of a broadcasting station"
+          ],
+          "c": 1,
+          "h": "Distinguish symbolism that seems meaningful from verifiable signal evidence.",
+          "why": "The lamp makes the poetic phrase seem like directions, yet only the transmitter and receiver records identify the source."
+        }
+      }
+    },
+    {
+      "id": "channel-authorization",
+      "place": "northglass-relay",
+      "icon": "🗂️",
+      "title": "Authorized Test Schedule",
+      "type": "Emergency network work order",
+      "texts": {
+        "1-2": "Before midnight, the town approved Mira’s radio test. She was told to check the emergency line after hail broke the antenna cover.",
+        "3-5": "At 11:34 p.m., network coordinator Sol Wen signed a work order authorizing Mira to test the Northglass emergency repeater after hail damaged the antenna guard. The planned test did not authorize a public-band broadcast.",
+        "6-8": "Work order NW-26-81, approved at 23:34, assigns Mira Fen a midnight speech-calibration test on the emergency repeater to verify a storm-compromised antenna guard. The authorization explicitly excludes public bulletin frequency. It independently establishes legitimate purpose while allowing the later selector malfunction to explain the unintended audience."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Was Mira allowed to test the emergency radio?",
+          "a": [
+            "Yes, the work order approved it",
+            "No, the radio was forbidden",
+            "Only the quarry owner could use it"
+          ],
+          "c": 0,
+          "h": "Find who signed the order.",
+          "why": "The network coordinator approved Mira’s safety test before midnight."
+        },
+        "3-5": {
+          "q": "Which distinction is important in the work order?",
+          "a": [
+            "Mira was ordered to scare town residents",
+            "The emergency test was approved, but a public broadcast was not",
+            "The quarry was assigned to host the emergency test"
+          ],
+          "c": 1,
+          "h": "Compare the approved channel to the channel people heard.",
+          "why": "The signed order shows legitimate intent and does not authorize a public announcement."
+        },
+        "6-8": {
+          "q": "What does this document contribute when combined with the selector inspection?",
+          "a": [
+            "Proof that Sol Wen wrote the historic poem on the same night",
+            "A reason to distrust every electronically recorded signal",
+            "An authorized safety purpose and a separate mechanism for accidental public transmission"
+          ],
+          "c": 2,
+          "h": "Identify what each source independently proves.",
+          "why": "The approval explains why Mira transmitted; the inspection explains how that test reached an unintended audience."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "mira-interview",
+      "place": "northglass-relay",
+      "icon": "👩‍🔧",
+      "name": "Mira Fen",
+      "role": "Volunteer emergency-radio operator",
+      "texts": {
+        "1-2": "“I read the old poem into the radio to check it. I was at Northglass Hut. I thought only our team could hear me,” says Mira.",
+        "3-5": "Mira explains, “The hail damaged our antenna cover, so I read a familiar poem to check the emergency receiver. I stood inside Northglass Hut. I did not select the town’s public channel.” Her account matches the signed test log but alone cannot explain why others heard the message.",
+        "6-8": "Mira states that a heritage verse was chosen because its soft and sharp consonants make a useful speech-calibration passage. She describes an authorized emergency-channel transmission from Northglass Relay Hut but did not know that frozen selector contacts had cross-connected the public network. Her firsthand account identifies intent, while the independent receiver and technician records check its accuracy."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What was Mira trying to do?",
+          "a": [
+            "Ask people to find a treasure chest",
+            "Check the emergency radio",
+            "Invite everyone to the quarry"
+          ],
+          "c": 1,
+          "h": "Listen for the purpose she gives.",
+          "why": "Mira says she read the poem to test the radio after the storm."
+        },
+        "3-5": {
+          "q": "What part of Mira’s story needs independent confirmation?",
+          "a": [
+            "That the moon appears at night",
+            "That the old poem has words in it",
+            "That she transmitted at Northglass and did not intend a public message"
+          ],
+          "c": 2,
+          "h": "Compare her claim with transmitter and inspection records.",
+          "why": "The signed log, receiver ID, and frozen selector provide independent checks on Mira’s account."
+        },
+        "6-8": {
+          "q": "Which evaluation of Mira as a narrator is most justified?",
+          "a": [
+            "She has firsthand knowledge of intent but limited awareness of the selector fault",
+            "She knows every listener’s private interpretation",
+            "Her testimony proves the quarry site was transmitting"
+          ],
+          "c": 0,
+          "h": "Account for what an actor can witness and what requires outside evidence.",
+          "why": "Mira can describe her actions, but she did not observe the cross-channel mechanical failure; other records establish it."
+        }
+      }
+    },
+    {
+      "id": "tessa-interview",
+      "place": "broadcast-studio",
+      "icon": "🎧",
+      "name": "Tessa Brook",
+      "role": "Night radio presenter",
+      "texts": {
+        "1-2": "“My clock said 12:07 when I heard the poem. I thought someone might be lost,” says Tessa.",
+        "3-5": "Tessa recalls hearing the mysterious words while her studio wall clock displayed 12:07 a.m. She assumed a traveler needed help and told listeners to stay calm. After checking the digital recorder she learned the actual time was 12:04.",
+        "6-8": "Tessa candidly admits that she publicly described the transmission as “a possible mountain distress call” before verifying its origin. Her recollection relied on the studio wall clock, three minutes ahead of the official receiver. She is a reliable witness to the sound she heard, but not necessarily to the interpretation she broadcast."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Tessa think the message meant?",
+          "a": [
+            "The school was closing",
+            "It was a birthday announcement",
+            "Someone might need help"
+          ],
+          "c": 2,
+          "h": "Look for what worried Tessa.",
+          "why": "Tessa guessed someone might be lost when she heard the mysterious poem."
+        },
+        "3-5": {
+          "q": "Why does Tessa give a time different from the recorder?",
+          "a": [
+            "Her studio clock was three minutes fast",
+            "She listened a week later",
+            "The radio message played on two planets"
+          ],
+          "c": 0,
+          "h": "Look at the clock calibration note.",
+          "why": "The wall clock’s three-minute error accounts for the time difference."
+        },
+        "6-8": {
+          "q": "How should detectives evaluate Tessa’s testimony?",
+          "a": [
+            "Assume her initial interpretation is a direct quotation from the speaker",
+            "Trust her firsthand report of hearing the words but verify her distress-call interpretation",
+            "Reject the existence of the broadcast because her clock was inaccurate"
+          ],
+          "c": 1,
+          "h": "Separate directly perceived events from inferences and a known timekeeping error.",
+          "why": "Tessa heard the message, but her presumed emergency and recorded time require correction by primary records."
+        }
+      }
+    },
+    {
+      "id": "eli-interview",
+      "place": "weather-deck",
+      "icon": "🧭",
+      "name": "Eli Orr",
+      "role": "Ridge weather observer",
+      "texts": {
+        "1-2": "“The hail was loud,” says Eli. “Then ice covered the metal steps. The ridge grew quiet.”",
+        "3-5": "Eli saw glaze ice on exposed rails after the hailstorm and reported it at the weather deck. Eli did not see who used the radio hut, so an icy handrail cannot identify the speaker. The report does make a frozen switch plausible.",
+        "6-8": "Eli’s observations describe a sharp transition from hail to subfreezing fog, with glaze accumulation on metal fittings. Eli never entered the relay hut and cannot claim firsthand knowledge of its selector. That limitation makes the weather report useful corroboration of the failure mechanism, not testimony about an operator’s motives."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Eli see on the steps?",
+          "a": [
+            "Ice",
+            "Flowers",
+            "Toy boats"
+          ],
+          "c": 0,
+          "h": "What covered the metal?",
+          "why": "Eli saw ice on the exposed steps and rails."
+        },
+        "3-5": {
+          "q": "What can Eli’s observation reasonably support?",
+          "a": [
+            "Eli saw Mira transmit the poem",
+            "The ridge was cold enough for ice to form",
+            "The town receiver was broken for a week"
+          ],
+          "c": 1,
+          "h": "Notice what Eli saw and what Eli did not see.",
+          "why": "Ice observations support the possibility of a frozen switch, not the identity of the transmitter."
+        },
+        "6-8": {
+          "q": "Which limit matters when weighing Eli’s account?",
+          "a": [
+            "The witness can automatically identify the radio operator from hail",
+            "The witness provides a signed transmission time from inside the hut",
+            "The witness observed weather outside but not the relay selector inside"
+          ],
+          "c": 2,
+          "h": "Scope the claim to events the witness directly observed.",
+          "why": "Eli can establish environmental conditions, not unseen actions in the radio hut."
+        }
+      }
+    },
+    {
+      "id": "jalen-interview",
+      "place": "quarry-shed",
+      "icon": "⛏️",
+      "name": "Jalen Quill",
+      "role": "Quarry history volunteer",
+      "texts": {
+        "1-2": "“People blame our old mast,” says Jalen. “But we took out its radio power box last spring.”",
+        "3-5": "Jalen hears rumors that the quarry mast sent the message because the tower is visible from town. Jalen says the site was decommissioned in April and produces the removal record. Although Jalen has an interest in defending the quarry, the signed inventory can be checked.",
+        "6-8": "Jalen resents sensational stories about the shuttered quarry and therefore has a motive to defend its reputation. Yet the dated serial-number decommission receipt independently supports the claim that its transmitter was disabled. Detectives should distinguish possible personal bias from documentary corroboration."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What was taken out of the quarry mast?",
+          "a": [
+            "Its roof tiles",
+            "Its radio power box",
+            "Its trail sign"
+          ],
+          "c": 1,
+          "h": "What piece does a radio need to run?",
+          "why": "The transmitter power unit was removed months before the broadcast."
+        },
+        "3-5": {
+          "q": "Why should detectives check Jalen’s statement against a record?",
+          "a": [
+            "Everyone who likes an old tower must be lying",
+            "A photograph always proves a radio is operating",
+            "Jalen might be biased, but the dated removal receipt can verify the claim"
+          ],
+          "c": 2,
+          "h": "Look for a checkable source outside one speaker’s opinion.",
+          "why": "The decommission record supports Jalen’s description despite a possible interest in the quarry’s reputation."
+        },
+        "6-8": {
+          "q": "Which inference about reliability is most justified?",
+          "a": [
+            "A potentially interested witness can still be accurate when independently corroborated",
+            "Possible bias automatically makes every detail false",
+            "A memorable photograph outweighs maintenance records"
+          ],
+          "c": 0,
+          "h": "Consider bias and corroboration separately.",
+          "why": "Jalen’s preference does not nullify a serial-numbered record that independently shows the tower was disabled."
+        }
+      }
+    },
+    {
+      "id": "senna-interview",
+      "place": "trail-overlook",
+      "icon": "🥾",
+      "name": "Senna Vale",
+      "role": "Moonpine trail volunteer",
+      "texts": {
+        "1-2": "“I saw a little light under the bent fir,” says Senna. “It is our path lamp. No one was stuck there.”",
+        "3-5": "Senna was checking the Moonpine trail when the broadcast aired. The solar lamp glowed beneath the bent fir, matching a phrase in the old poem. Senna searched the nearby path and found no stranded traveler, but did not see the transmitter.",
+        "6-8": "Senna describes a lit marker beneath Moonpine’s crooked fir and reports finding no distressed person on the accessible trail segment. The familiar landscape image helps explain how townspeople literalized a figurative verse. The absence of someone on that segment does not by itself prove nobody anywhere needed help; signal-origin records resolve the specific broadcast."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Senna find under the fir?",
+          "a": [
+            "A sleeping dragon",
+            "A missing violin",
+            "A path lamp"
+          ],
+          "c": 2,
+          "h": "What was lighting the bend?",
+          "why": "The light was a solar trail marker."
+        },
+        "3-5": {
+          "q": "What is a fair inference from Senna’s patrol?",
+          "a": [
+            "The visible light was probably a trail marker, not proof of a rescue call",
+            "The transmitter must be hidden in the lamp",
+            "No one anywhere in the mountains could possibly need help"
+          ],
+          "c": 0,
+          "h": "Use the patrol report without claiming more than it covers.",
+          "why": "Senna identified the lamp and found no person on the checked path, but did not locate the broadcast transmitter."
+        },
+        "6-8": {
+          "q": "How does Senna’s perspective explain the rumor without proving it true?",
+          "a": [
+            "The solar lamp transmitted the signed NG-4 identification code",
+            "The real lamp resembles the figurative verse, inviting a mistaken literal reading",
+            "A witness photograph proves the poem was written that night"
+          ],
+          "c": 1,
+          "h": "Think about how familiar details shape interpretation.",
+          "why": "A landmark matching imagery made the rumor persuasive, but the electronic record locates the actual transmitter elsewhere."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "radio-signal",
+    "title": "The Midnight Radio Signal",
+    "subtitle": "CASE FILE 016 • THE VOICE ON THE RIDGE",
+    "goal": "Identify who made the original midnight transmission, where the signal originated, and why a poetic equipment test reached the town radio. Cite independent primary records and distinguish a figurative verse from a distress call.",
+    "brief": {
+      "1-2": "At midnight, people in Wrenfall hear a strange poem on their radios. Some think a hiker is lost. But a storm covered the mountain in ice. Who spoke, where were they, and why could everyone hear the words? Read clues and follow the radio records.",
+      "3-5": "A late-night broadcast unsettles the fictional mountain town of Wrenfall. A voice says that the moon sews a silver road and a sleeping fir keeps a lantern. The local presenter wonders whether someone is stranded. A disconnected quarry mast, a glowing trail lamp, and a three-minute clock error make the reports seem contradictory. Compare the recorded transcript, an archived poem, weather observations, and the radio network’s signed logs to discover who actually transmitted, where, and for what purpose.",
+      "6-8": "Shortly after midnight, Wrenfall’s public bulletin station unexpectedly transmits a lyrical message: “The moon sews a silver road. The sleeping fir keeps one lantern.” A presenter interprets it as a possible distress call, social speculation implicates a long-abandoned quarry mast, and witnesses disagree about the time. Yet the apparent clues involve figurative language, selective interpretation, clock drift, and the difference between a planned emergency-network test and an unintended public rebroadcast. Evaluate original and derivative transcripts, a weather chronology, a decommissioned transmitter, a signed operator log, and an independently authenticated receiver ID. Determine which interpretation survives corroboration and explain the physical chain of events without mistaking metaphor for fact."
+    },
+    "theoryLabels": {
+      "who": "Who sent the original midnight radio message?",
+      "where": "Where did the transmission originate?",
+      "why": "Why did the strange message reach the public radio station?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "mira",
+          "label": "Mira Fen — volunteer emergency-radio operator"
+        },
+        {
+          "id": "tessa",
+          "label": "Tessa Brook — night radio presenter"
+        },
+        {
+          "id": "jalen",
+          "label": "Jalen Quill — quarry volunteer"
+        },
+        {
+          "id": "eli",
+          "label": "Eli Orr — weather observer"
+        },
+        {
+          "id": "senna",
+          "label": "Senna Vale — trail volunteer"
+        }
+      ],
+      "where": [
+        {
+          "id": "northglass",
+          "label": "Northglass Relay Hut on the ridge"
+        },
+        {
+          "id": "quarry",
+          "label": "The disconnected quarry radio mast"
+        },
+        {
+          "id": "overlook",
+          "label": "Moonpine Trail overlook beside the lantern"
+        },
+        {
+          "id": "studio",
+          "label": "Wrenfall town radio studio"
+        },
+        {
+          "id": "weather",
+          "label": "The ridge weather watch deck"
+        }
+      ],
+      "why": [
+        {
+          "id": "accidental-test",
+          "label": "An authorized emergency-radio calibration leaked onto the public band through an iced selector"
+        },
+        {
+          "id": "distress",
+          "label": "A stranded climber deliberately called for rescue"
+        },
+        {
+          "id": "prank",
+          "label": "A volunteer played a prank to frighten radio listeners"
+        },
+        {
+          "id": "quarry-warning",
+          "label": "Quarry staff sent a secret warning about reopened tunnels"
+        },
+        {
+          "id": "treasure",
+          "label": "The poem was a coded invitation to find hidden treasure"
+        }
+      ]
+    },
+    "who": "mira",
+    "where": "northglass",
+    "why": "accidental-test",
+    "proofs": [
+      "signed-transmission-log",
+      "receiver-id-record"
+    ],
+    "feedback": {
+      "who": "Look for a contemporaneous signed operator entry rather than a listener’s suspicion. Mira Fen logged her 00:04 calibration at the relay hut; Tessa heard it in the studio, Eli recorded the weather, Jalen managed a disabled mast, and Senna saw a trail lamp. Which role actually transmitted?",
+      "where": "Compare the synchronized receiver printout with the registered NG-4 transmitter ID. It identifies Northglass Relay Hut, not a trail lamp, quarry, weather deck, or receiving studio. The studio’s wall clock ran three minutes fast; that does not create a second transmitter.",
+      "why": "The work order authorized a post-hail emergency-repeater speech test, not a public warning. Rowan’s inspection found an ice-bridged selector that accidentally connected the test to the public band. The archived verse is metaphorical; neither a lost climber nor deliberate sabotage is supported.",
+      "proofs": "Select BOTH the signed 00:04 TRANSMISSION TEST LOG and the independent NG-4 RECEIVER IDENTIFICATION PRINTOUT. Weather reports, poems, and the switch repair help explain circumstances, but only the operator log plus the separate receiver record directly confirm who transmitted, from where, and for what test."
+    },
+    "resolution": {
+      "summary": "Mira Fen sent a routine authorized emergency-repeater speech test from Northglass Relay Hut at 12:04 a.m. Ice on a channel selector unintentionally carried the poetic calibration onto the town’s public radio. The message was neither a distress call nor a secret warning.",
+      "outcome": "The voice that startled Wrenfall belonged to Mira Fen, a volunteer assigned to check the emergency radio network after hail and freezing temperatures damaged the antenna guard. Before midnight, network coordinator Sol Wen authorized a speech test from Northglass Relay Hut. At 12:04 a.m., Mira read a familiar town heritage verse: “The moon sews a silver road. The sleeping fir keeps one lantern.” The poem was decades old. In it, the moon is personified as a sewer, the silver road is reflected moonlight across Wrenfall Creek, and the sleeping fir is an image of a bent tree near Moonpine Overlook. Mira was testing speech clarity; she did not mean to broadcast a warning to town. Ice had formed across the relay’s channel-selector contacts during the hailstorm. The frozen contact accidentally bridged the emergency test into the public bulletin frequency, so Tessa Brook heard the verse at the radio studio. Tessa’s wall clock said 12:07, but a documented three-minute calibration error means it was 12:04—the same moment recorded by Mira’s signed log and the receiver’s authenticated NG-4 identifier. Tessa understandably wondered whether someone was lost, but that interpretation was not in the transmitted words. A glowing path lamp near the bent fir and the outline of an old quarry mast made a dramatic rumor seem plausible. Neither sight established the source; the quarry transmitter had been powered down since spring. Weather observer Eli Orr’s readings confirmed a hail and freezing sequence that made ice on equipment plausible. At 12:12 a.m., technician Rowan Pike inspected and cleared the bridged channel selector, stopping the accidental public rebroadcast. The signed test log established Mira’s location, identity, and intended task; the independently recorded NG-4 signal corroborated origin and time. After the repair, Wrenfall’s radio station played a correction, explained the verse, and published both the corrected time and the confirmed cause. No hiker was in distress, and no shadowy transmitter had been activated. The detectives solved the case by respecting point of view, checking a primary transcript against a presenter’s interpretation, applying a time correction, and distinguishing metaphorical language from a literal warning.",
+      "timeline": [
+        {
+          "time": "Forty years before the broadcast",
+          "event": "A Wrenfall poet writes the “silver road” and “sleeping fir” verse about moonlit water and a bent tree; the archive preserves the manuscript."
+        },
+        {
+          "time": "April 2026",
+          "event": "Quarry equipment staff permanently disconnect the old mast’s transmitter and remove its power unit."
+        },
+        {
+          "time": "October 19 • 11:15 p.m.",
+          "event": "Hail strikes the Northglass ridge and damages an antenna guard."
+        },
+        {
+          "time": "11:34 p.m.",
+          "event": "Sol Wen authorizes Mira Fen to run an emergency-repeater speech test, not a public announcement."
+        },
+        {
+          "time": "11:42 p.m.",
+          "event": "The weather deck records subfreezing conditions; ice begins forming on exposed ridge fittings."
+        },
+        {
+          "time": "October 20 • 12:04 a.m.",
+          "event": "Mira signs the Northglass test log and reads the old town verse on the intended emergency channel."
+        },
+        {
+          "time": "12:04 a.m.",
+          "event": "The synchronized studio receiver records transmitter identifier NG-4; the iced selector carries the test to the public bulletin channel."
+        },
+        {
+          "time": "12:07 on studio wall clock (actually 12:04)",
+          "event": "Tessa hears the message, briefly interprets the poetic imagery as a possible distress call, and begins asking questions."
+        },
+        {
+          "time": "12:06–12:10 a.m.",
+          "event": "Rumors point to the Moonpine lantern and quarry mast, although the lamp is a marker and the quarry transmitter is disabled."
+        },
+        {
+          "time": "12:12 a.m.",
+          "event": "Technician Rowan Pike finds frozen selector contacts, dries them, and restores isolation between the two radio channels."
+        },
+        {
+          "time": "12:18 a.m.",
+          "event": "A clean follow-up check confirms the emergency link is usable and no longer audible on the town bulletin frequency."
+        },
+        {
+          "time": "October 20 • Morning",
+          "event": "Detectives compare the verbatim transcript, signed test log, NG-4 receiver printout, weather strip, and verse archive; the station corrects its account and explains the accidental rebroadcast."
+        }
+      ]
+    }
+  }
+}

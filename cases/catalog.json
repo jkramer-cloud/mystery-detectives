@@ -172,9 +172,9 @@
       "number": "016",
       "category": "Signal Mystery",
       "icon": "📻",
-      "summary": "A puzzling mountain-town radio broadcast leads students to compare transcripts and weather logs.",
+      "summary": "A midnight verse on Wrenfall radio sounds like a distress message. Compare figurative language, a fast studio clock, storm records, and authenticated relay logs to uncover an accidental emergency-test rebroadcast.",
       "grades": "1–8 (focus: 5–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/radio-signal.json"
     },
     {
