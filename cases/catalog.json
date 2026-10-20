@@ -117,9 +117,9 @@
       "number": "011",
       "category": "Fantasy Mystery",
       "icon": "🐉",
-      "summary": "Rival dragon clans dispute a peace letter; compare their viewpoints to reconstruct its journey.",
+      "summary": "Three dragon clans suspect one another when their peace letter misses its public reading. Reconcile storm signals, biased testimony, courier records, and neutral custody to reconstruct its safe detour.",
       "grades": "1–8 (focus: 5–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/dragon-council.json"
     },
     {
