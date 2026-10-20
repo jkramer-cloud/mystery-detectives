@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "base-camp": {
+      "name": "Hearthline Base Camp",
+      "icon": "⛺",
+      "detail": "A sheltered canvas briefing tent holds the original packing list and the signed placement slip for the emergency cache.",
+      "scene": "hall"
+    },
+    "survey-tent": {
+      "name": "Survey and Map Tent",
+      "icon": "🗺️",
+      "detail": "Copies of the ridge grid lie beneath a waterproof master map; one blurred letter sends readers to the wrong hill.",
+      "scene": "art"
+    },
+    "ridge-fork": {
+      "name": "Splitstone Trail Fork",
+      "icon": "🪨",
+      "detail": "Wind whips around a fork in the trail, where the expedition leader first recorded a hurried interpretation of the map.",
+      "scene": "hall"
+    },
+    "drift-bluff": {
+      "name": "Drift Bluff — D4",
+      "icon": "🌬️",
+      "detail": "An exposed bluff with old marker tape and tracks looks suspicious but has no protected place for a supply cache.",
+      "scene": "storage"
+    },
+    "windglass-shelter": {
+      "name": "Windglass Shelter — B4",
+      "icon": "🏕️",
+      "detail": "A low stone storm shelter has a sheltered west alcove, a blue marker cord, and a sealed inventory tag.",
+      "scene": "storage"
+    },
+    "weather-outpost": {
+      "name": "Sable Crest Weather Outpost",
+      "icon": "🌧️",
+      "detail": "The ridge sensor prints wind alerts that explain the hasty search and the safe return to camp.",
+      "scene": "office"
+    }
+  },
+  "evidence": [
+    {
+      "id": "sealed-gear-audit",
+      "place": "base-camp",
+      "icon": "📦",
+      "title": "Four-Crate Equipment Audit",
+      "type": "Equipment inventory",
+      "texts": {
+        "1-2": "A camp list counts four blue supply crates. All four left camp on Friday. Each crate had an unbroken blue band.",
+        "3-5": "The field team counted four sealed emergency crates at 3:20 p.m. Friday. Niko signed them out together, along with dry blankets and water tablets. No one reported a broken seal or missing crate before the overnight storm. The audit establishes what was packed, not where the cache was left.",
+        "6-8": "Friday’s 3:20 p.m. equipment audit lists four numbered emergency crates, a sealed blue inventory band on each, and supplementary blankets and water-treatment tablets. Niko Pell’s signature confirms custody at departure. The record is contemporaneous evidence of quantity and condition, but it does not identify the final storage site. Investigators should avoid treating a complete departure inventory as proof either of a later theft or of successful delivery."
+      },
+      "questions": {
+        "1-2": {
+          "q": "How many supply crates left camp?",
+          "a": [
+            "Two crates",
+            "Four crates",
+            "Six crates"
+          ],
+          "c": 1,
+          "h": "Find the number next to the blue crates.",
+          "why": "The packing record counts four crates leaving camp on Friday."
+        },
+        "3-5": {
+          "q": "What does the equipment audit establish most clearly?",
+          "a": [
+            "The expedition recovered the crates at D4.",
+            "Someone opened a crate overnight.",
+            "Four sealed crates were signed out before the storm."
+          ],
+          "c": 2,
+          "h": "Look at what the author could know at the time of packing.",
+          "why": "The audit verifies the number and initial condition; it does not record the final cache location."
+        },
+        "6-8": {
+          "q": "Which conclusion respects the limits of this primary source?",
+          "a": [
+            "The audit documents departure custody but cannot by itself establish where the crates were deposited.",
+            "The signature proves Niko secretly kept the supplies.",
+            "The inventory disproves every possible route-map error."
+          ],
+          "c": 0,
+          "h": "Separate a verified handoff at base camp from an unrecorded later arrival.",
+          "why": "A signed departure inventory is evidence of initial custody, not a complete chain of custody or a location fix."
+        }
+      }
+    },
+    {
+      "id": "cache-placement-receipt",
+      "place": "base-camp",
+      "icon": "✍️",
+      "title": "Niko’s Signed Cache Placement Receipt",
+      "type": "Primary placement record",
+      "texts": {
+        "1-2": "Niko wrote: “Friday, 4:40. Four blue crates at Windglass Shelter, west alcove, B4.” Niko signed the note.",
+        "3-5": "Niko’s waterproof placement slip reads, “Friday 4:40 p.m. Four sealed crates set in Windglass Shelter, WEST ALCOVE, grid B4.” It bears Niko’s signature and the four crate numbers. That was before Saturday’s search. The slip describes a completed placement, not a guess about where the supplies ought to be.",
+        "6-8": "The signed 4:40 p.m. Friday placement receipt itemizes crates HC-1 through HC-4 and records their completed deposit at “Windglass Shelter / West Alcove / survey grid B4.” The signer is logistics steward Niko Pell; the four intact band numbers match the departure inventory. Its specificity, timestamp, and firsthand authorship make it stronger evidence of actual placement than Juniper’s later guess from a blurred photocopy. It still benefits from independent location confirmation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does the signed receipt say Niko put the crates?",
+          "a": [
+            "Drift Bluff, D4",
+            "Windglass Shelter, B4",
+            "The weather outpost"
+          ],
+          "c": 1,
+          "h": "Find the shelter and map square on the signed note.",
+          "why": "Niko documented completed placement at Windglass Shelter, west alcove, B4."
+        },
+        "3-5": {
+          "q": "Why is the signed placement slip more useful than a rumor about theft?",
+          "a": [
+            "It contains a drawing of every member of the team.",
+            "It predicts how the storm will move tomorrow.",
+            "It records who placed the crates, the time, and the specific destination."
+          ],
+          "c": 2,
+          "h": "Focus on the date, named signer, and completed action.",
+          "why": "The receipt is a contemporaneous firsthand record of the crate placement."
+        },
+        "6-8": {
+          "q": "Which feature most strengthens the receipt as proof of the cache’s original location?",
+          "a": [
+            "Its use of the word “shelter,” which appears in many documents",
+            "The fact that Niko is an experienced storyteller",
+            "A timestamped firsthand deposit record with matching crate numbers and precise grid reference"
+          ],
+          "c": 2,
+          "h": "Evaluate provenance, specificity, and corroboration rather than vividness.",
+          "why": "The signed receipt documents an actual deposit at B4 and links it to the crates counted at departure."
+        }
+      }
+    },
+    {
+      "id": "smudged-map-copy",
+      "place": "survey-tent",
+      "icon": "🗺️",
+      "title": "Storm-Smudged Route Photocopy",
+      "type": "Damaged secondary map",
+      "texts": {
+        "1-2": "Rain blurred the letter B on a copied map. It looks like D. The team read D4 and went to the wrong hill.",
+        "3-5": "A trail map photocopy shows a smeared “?4” beside a small shelter symbol. Juniper read the faint letter as D, the grid square for Drift Bluff. On the waterproof original, the symbol lies at B4 beside Windglass Shelter. The copy was useful for travel but not reliable enough to settle a disputed letter.",
+        "6-8": "The team’s paper photocopy carries a partly dissolved grid label that can be read as “D4,” although the shelter pictogram and contour shapes correspond to B4 on the protected survey master. Rain has erased the straight edge of the capital B, which explains Juniper’s plausible but mistaken reading. This source demonstrates how a degraded reproduction can misdirect an expedition: the photocopy records the team’s available information, not the actual placement of supplies."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did the team go toward D4?",
+          "a": [
+            "They saw a thief running there.",
+            "A bird carried the map away.",
+            "Rain made the B look like a D."
+          ],
+          "c": 2,
+          "h": "Look at what happened to the letter on the copy.",
+          "why": "The blurred map label made B4 appear to be D4."
+        },
+        "3-5": {
+          "q": "What is the main weakness of the copied route map?",
+          "a": [
+            "The rain blurred the grid label and changed how it could be read.",
+            "It accurately recorded a witnessed theft.",
+            "It was signed by the weather observer after the search."
+          ],
+          "c": 0,
+          "h": "Compare the readable original with the wet photocopy.",
+          "why": "The smudged reproduction is less dependable than the protected master for the exact coordinate."
+        },
+        "6-8": {
+          "q": "What does the photocopy prove about the disputed location?",
+          "a": [
+            "It explains the mistaken D4 inference but does not establish that supplies were at D4.",
+            "It conclusively proves Niko placed crates on Drift Bluff.",
+            "It shows that the original survey was never created."
+          ],
+          "c": 0,
+          "h": "Distinguish evidence of what Juniper believed from evidence of where the crates actually were.",
+          "why": "A damaged copy helps explain a decision without independently verifying the underlying map coordinate."
+        }
+      }
+    },
+    {
+      "id": "survey-correction-overlay",
+      "place": "survey-tent",
+      "icon": "📐",
+      "title": "Waterproof Survey Grid Overlay",
+      "type": "Authoritative survey reference",
+      "texts": {
+        "1-2": "The dry map has a clear B4 by Windglass Shelter. It puts D4 at Drift Bluff. The two places are far apart.",
+        "3-5": "Surveyor Mira’s waterproof grid overlay places the shelter icon inside B4 at the west alcove. The same map labels the exposed Drift Bluff as D4. She signed and dated the overlay on Friday before the crates were delivered. The two locations are not different names for the same place; they are separate map squares.",
+        "6-8": "The Friday-approved waterproof survey overlay, signed by cartographer Mira Sedge, clearly identifies Windglass Shelter and its west alcove in grid B4. D4 is separately labeled “Drift Bluff: exposed ledge; no storage recess.” A faint B on a later photocopy could resemble D, but the underlying contour alignment and the approved legend resolve the ambiguity. In conjunction with Niko’s signed deposit receipt, this independent survey record explains why the expedition searched the wrong terrain."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which map square holds Windglass Shelter?",
+          "a": [
+            "D4",
+            "F9",
+            "B4"
+          ],
+          "c": 2,
+          "h": "Find the clear letters on the dry survey map.",
+          "why": "The waterproof overlay places the shelter and its west alcove in B4."
+        },
+        "3-5": {
+          "q": "Which pair of details corrects the team’s mistake?",
+          "a": [
+            "Both B4 and D4 show the same storage alcove.",
+            "The original shows the shelter at B4 and Drift Bluff at D4.",
+            "The weather station erased all the grid squares."
+          ],
+          "c": 1,
+          "h": "Find the two different named places on the master map.",
+          "why": "The survey distinguishes the shelter’s true grid square from the bluff where the team searched."
+        },
+        "6-8": {
+          "q": "Why is the survey overlay essential when considered with Niko’s receipt?",
+          "a": [
+            "It proves Niko was elsewhere when the crates were loaded.",
+            "It independently identifies B4 as the shelter’s location and rules out D4 as an equivalent cache site.",
+            "It shows the weather was sunny for the entire journey."
+          ],
+          "c": 1,
+          "h": "Ask what the map verifies that a signed placement account alone cannot.",
+          "why": "The independent map fixes the geography, corroborating the receipt’s B4 label and exposing the copied-map error."
+        }
+      }
+    },
+    {
+      "id": "fork-waymark",
+      "place": "ridge-fork",
+      "icon": "🪧",
+      "title": "Splitstone Fork Waymark",
+      "type": "Trail sign",
+      "texts": {
+        "1-2": "The fork sign says “Shelter: west path.” It does not say D4. The wind bent its arrow, but the words are still clear.",
+        "3-5": "The Splitstone marker reads “Windglass Shelter — take the west path.” Its metal arrow was bent toward the east during the storm. Juniper chose the eastern bluff route after glancing at the damaged arrow and the smeared D4 on the map. The lettering and arrow were telling different stories.",
+        "6-8": "At Splitstone Fork, the original painted words “Windglass Shelter / WEST TRAIL” remain legible, while a wind-bent metal arrow points toward the eastern bluff. Juniper relied on the arrow because it seemed consistent with the D4 photocopy. Reading both parts closely exposes their contradiction: one is a durable written direction; the other is damaged physical hardware. The sign illustrates how environmental conditions can make two incomplete clues appear to support a mistaken interpretation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which path do the written words point to?",
+          "a": [
+            "The riverbed",
+            "The east bluff",
+            "The west path"
+          ],
+          "c": 2,
+          "h": "Read the words on the sign, not the bent arrow.",
+          "why": "The painted words direct hikers toward the shelter on the west path."
+        },
+        "3-5": {
+          "q": "What caused the trail sign to give mixed signals?",
+          "a": [
+            "A witness replaced the sign with a secret message.",
+            "The storm bent the arrow while the written west-path label stayed readable.",
+            "The sign said that both directions were closed forever."
+          ],
+          "c": 1,
+          "h": "Compare the metal arrow with the painted letters.",
+          "why": "The physical arrow changed direction, but the original writing still pointed west."
+        },
+        "6-8": {
+          "q": "Which inference best combines the sign and the damaged route copy?",
+          "a": [
+            "The sign independently establishes that a thief moved the cache east.",
+            "The word “west” was a symbolic code for a hidden tunnel.",
+            "Two weather-damaged cues reinforced Juniper’s wrong turn even though the written label contradicted them."
+          ],
+          "c": 2,
+          "h": "Determine which parts were damaged and which parts remained legible.",
+          "why": "The bent arrow and smeared label created a plausible but false eastward interpretation."
+        }
+      }
+    },
+    {
+      "id": "junipers-expedition-journal",
+      "place": "ridge-fork",
+      "icon": "📓",
+      "title": "Juniper’s Storm-Route Journal",
+      "type": "Firsthand journal",
+      "texts": {
+        "1-2": "Juniper wrote: “8:30, I think the map says D4. We are going east.” The words “I think” show a guess.",
+        "3-5": "Juniper’s Saturday journal says, “8:30: D4? I think that is where the cache should be. The arrow points east.” At 8:45, the group reached Drift Bluff and found no crates. The question mark matters: the leader recorded uncertainty, not a confirmed delivery location.",
+        "6-8": "The expedition leader’s journal records “8:30 — copied label D4? arrow seems east; checking bluff before the rain deepens.” A later entry at 8:45 notes that D4 yielded no supplies and that the group began the safe retreat to base camp. Because Juniper directly experienced the search, the journal is useful for reconstructing the team’s decisions and timing. The hesitant punctuation, however, makes it poor evidence of actual crate placement; it documents an inference under pressure."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Was Juniper sure the cache was at D4?",
+          "a": [
+            "Yes, the supplies were seen there.",
+            "No, Juniper wrote “I think.”",
+            "Yes, Niko signed a D4 note."
+          ],
+          "c": 1,
+          "h": "Look for the words that show doubt.",
+          "why": "“I think” tells the reader that D4 was a guess rather than a confirmed fact."
+        },
+        "3-5": {
+          "q": "What happened after Juniper interpreted the map?",
+          "a": [
+            "The group immediately found all four crates at D4.",
+            "The group never left base camp.",
+            "The group searched D4, found no crates, and returned to safety."
+          ],
+          "c": 2,
+          "h": "Follow the 8:30 and 8:45 entries in order.",
+          "why": "The journal puts the mistaken choice before the empty bluff search and retreat."
+        },
+        "6-8": {
+          "q": "How should detectives evaluate Juniper’s firsthand account?",
+          "a": [
+            "Trust it for the search sequence, but not as independent proof that the crate had ever been at D4.",
+            "Reject every timestamp because the author used a question mark.",
+            "Treat Juniper’s guess as equal to Niko’s signed deposit receipt."
+          ],
+          "c": 0,
+          "h": "Separate a witness’s direct actions from the uncertain location interpreted from another source.",
+          "why": "Juniper recorded observed movement and an explicitly tentative inference about the coordinate."
+        }
+      }
+    },
+    {
+      "id": "old-bluff-prints",
+      "place": "drift-bluff",
+      "icon": "👣",
+      "title": "Boot Prints in the Bluff Dust",
+      "type": "Physical trace",
+      "texts": {
+        "1-2": "There are boot prints near D4. A trail worker used this spot on Thursday, before the crates went out.",
+        "3-5": "Boot marks cross the dry patch below Drift Bluff. Rowan said they looked fresh, but the trail-maintenance record says Bram checked the railing here on Thursday. Saturday’s brief rain did not wash the sheltered prints away. Footprints prove someone visited, not that they carried Saturday’s supplies.",
+        "6-8": "The sheltered grit at D4 holds boot impressions that some campers interpreted as evidence of a secret supply transfer. The maintenance roster, however, independently documents Bram’s Thursday railing inspection at the same site. The pattern lacks a dated overlay or identifying mark connecting it to the cache. Because the prints predate Friday’s signed placement, they cannot establish sabotage during the Saturday search; they illustrate the danger of assigning a time to undated physical traces."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who was at Drift Bluff before the storm?",
+          "a": [
+            "Bram, the trail worker",
+            "A secret crate thief",
+            "The camp cook on Saturday"
+          ],
+          "c": 0,
+          "h": "Look for the Thursday work visit.",
+          "why": "Bram inspected the railing at the bluff before the crates were placed."
+        },
+        "3-5": {
+          "q": "Why are the boot prints weak evidence of a stolen cache?",
+          "a": [
+            "They can be explained by an earlier maintenance visit.",
+            "They spell out the name of a thief.",
+            "They show the location of every crate."
+          ],
+          "c": 0,
+          "h": "Check the dates of the work record and the cache placement.",
+          "why": "An undated print at a previously visited site cannot prove a later theft."
+        },
+        "6-8": {
+          "q": "Which missing detail prevents the tracks from establishing sabotage?",
+          "a": [
+            "An estimate of the bluff’s elevation",
+            "The color of the sand beneath each print",
+            "Reliable evidence placing a crate-carrying person at D4 after Friday’s cache placement"
+          ],
+          "c": 2,
+          "h": "Consider how the prints could be tied to the relevant time and action.",
+          "why": "The known Thursday maintenance visit is an alternative explanation, so the prints do not establish a Saturday crime."
+        }
+      }
+    },
+    {
+      "id": "torn-blue-marker",
+      "place": "drift-bluff",
+      "icon": "🧵",
+      "title": "Torn Blue Marker Tape",
+      "type": "Weathered trail material",
+      "texts": {
+        "1-2": "A blue strip is caught on a nail at D4. It looks like crate tape, but the old trail markers were blue too.",
+        "3-5": "Rowan found a ragged blue strip hanging from an old guide post at Drift Bluff. Emergency crates also have blue bands, which started a rumor that the cache had been opened there. Bram’s maintenance sheet lists blue trail ribbons replaced on Thursday, and the strip has a trail-marker stamp, not a crate number.",
+        "6-8": "The torn blue strip at D4 resembles the emergency crates’ sealed bands from a distance, encouraging an accusation of tampering. Close inspection reveals a faded trail-marker stamp and no crate serial number. Bram’s Thursday maintenance list records replacement of blue wayfinding ribbons in that very area. The resemblance is therefore superficial: color alone does not establish common origin. A careful reader should weigh the material’s identifying features and the independently recorded maintenance work."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why does the blue strip not prove a crate was opened?",
+          "a": [
+            "It is old trail ribbon, not numbered crate tape.",
+            "It has a crate number on it.",
+            "It is a drawing of a map."
+          ],
+          "c": 0,
+          "h": "Look for the trail stamp on the strip.",
+          "why": "The strip belongs to a trail marker and lacks any crate band number."
+        },
+        "3-5": {
+          "q": "What additional detail weakens the rumor that the cache was opened at D4?",
+          "a": [
+            "The strip bears a trail-marker stamp and matches replaced ribbons.",
+            "The strip is blue, just like the crate bands.",
+            "The strip was found on a nail."
+          ],
+          "c": 0,
+          "h": "Compare the markings on the two kinds of blue material.",
+          "why": "The stamped trail ribbon has a documented maintenance origin distinct from the sealed crates."
+        },
+        "6-8": {
+          "q": "What reasoning error produced the broken-crate rumor?",
+          "a": [
+            "Comparing serial numbers on two confirmed crate bands",
+            "Mistaking a shared color for proof that two objects have the same origin",
+            "Rejecting an anonymous claim after reviewing a signed record"
+          ],
+          "c": 1,
+          "h": "Identify the feature the rumor depends on and the independent source that challenges it.",
+          "why": "The rumor relies on resemblance, ignoring the trail stamp and earlier ribbon-replacement log."
+        }
+      }
+    },
+    {
+      "id": "shelter-cache-tag",
+      "place": "windglass-shelter",
+      "icon": "🏷️",
+      "title": "West-Alcove Cache Tag",
+      "type": "Independent physical check",
+      "texts": {
+        "1-2": "At Windglass Shelter, four sealed crates sit behind a stone wall. A tag says B4, west alcove. Nothing is gone.",
+        "3-5": "Inside Windglass Shelter’s protected west alcove, an inventory tag lists HC-1 through HC-4. The blue bands remain sealed. The tag identifies B4 and matches the numbers in Friday’s signed receipt. The crates were safe while the team mistakenly searched the exposed bluff two squares away.",
+        "6-8": "A weatherproof tag secured inside Windglass Shelter’s west alcove identifies the cache as B4, lists crate numbers HC-1 through HC-4, and records four intact blue seals. The physical inventory matches Niko’s Friday departure and placement documents. Unlike the ambiguous tape discovered at Drift Bluff, these numbered tags uniquely connect the surviving objects to the expedition’s equipment. The direct observation confirms recovery and shows that the supplies were not stolen or scattered by the storm."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is found in the west alcove?",
+          "a": [
+            "A broken radio only",
+            "Four sealed supply crates",
+            "An empty cave"
+          ],
+          "c": 1,
+          "h": "Count the crates behind the stone wall.",
+          "why": "The full four-crate emergency cache is safe at Windglass Shelter."
+        },
+        "3-5": {
+          "q": "What does the intact shelter inventory prove?",
+          "a": [
+            "The four numbered crates were safely stored at B4.",
+            "The D4 tape came from a broken supply crate.",
+            "The expedition intentionally abandoned supplies on the bluff."
+          ],
+          "c": 0,
+          "h": "Compare the sealed numbered crates to Friday’s list.",
+          "why": "Matching crate numbers and intact seals support safe placement and later recovery."
+        },
+        "6-8": {
+          "q": "Why does the cache tag outweigh the bluff’s blue ribbon as location evidence?",
+          "a": [
+            "It bears matching crate identifiers and is attached to the intact supplies at B4.",
+            "It is made of brighter material than the old ribbon.",
+            "It appears in the story after the ribbon was discovered."
+          ],
+          "c": 0,
+          "h": "Look for unique identifiers and direct contact with the object being traced.",
+          "why": "The numbered tag independently links actual crates to the shelter, unlike a ribbon that merely resembles crate bands."
+        }
+      }
+    },
+    {
+      "id": "storm-sensor-log",
+      "place": "weather-outpost",
+      "icon": "🌧️",
+      "title": "Weather Outpost Alert Strip",
+      "type": "Instrument log",
+      "texts": {
+        "1-2": "At 8:20 Saturday, the weather alarm warned of high wind and heavy rain. The team went back to camp to stay safe.",
+        "3-5": "The ridge outpost printed an 8:20 Saturday alert for gusting wind and rain. Juniper’s team reached Drift Bluff at 8:45, found no supplies, and followed the safe-return plan at 9:00. The log explains why the crew hurried and stopped searching, but it does not show anyone stealing or moving a crate.",
+        "6-8": "The calibrated Sable Crest station registers a rapid pressure drop followed by an 8:20 a.m. severe-weather alert on Saturday. Twenty-five minutes later, the expedition’s journal documents an unsuccessful D4 search; by 9:00 the team had initiated the prearranged safe retreat. The sensor cannot testify about human motives or cache location. It does establish the hostile setting and compressed decision window that made a blurred coordinate and bent sign unusually consequential."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did the 8:20 weather alert warn about?",
+          "a": [
+            "A sunny picnic",
+            "A broken classroom light",
+            "Strong wind and rain"
+          ],
+          "c": 2,
+          "h": "Read the weather words near the time.",
+          "why": "The station warned of wind and rain that made travel unsafe."
+        },
+        "3-5": {
+          "q": "How did the storm affect the team’s search?",
+          "a": [
+            "It proved a person stole the supplies.",
+            "It caused the team to search for three days.",
+            "It pressured the team to hurry and then return to shelter."
+          ],
+          "c": 2,
+          "h": "Follow the weather alert, failed search, and return times.",
+          "why": "The storm shortened the search and made a quick but mistaken route choice more likely."
+        },
+        "6-8": {
+          "q": "What causal claim is supported by the weather log and expedition journal together?",
+          "a": [
+            "Severe weather increased urgency during an already mistaken navigation decision.",
+            "The weather instrument identified the person who stole the supplies.",
+            "The storm generated a new cache receipt at the bluff."
+          ],
+          "c": 0,
+          "h": "Link documented conditions to observed decisions without inventing a culprit.",
+          "why": "The sensor establishes the setting while the journal records the resulting hurried search and safe retreat."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "niko-interview",
+      "place": "base-camp",
+      "icon": "🧭",
+      "name": "Niko Pell",
+      "role": "Supply steward",
+      "texts": {
+        "1-2": "“I left four crates in the west alcove at Windglass Shelter on Friday,” says Niko. “I signed a note when I finished.”",
+        "3-5": "Niko says, “I carried the four blue crates to Windglass Shelter on Friday afternoon, stacked them in the sheltered west alcove, and signed the placement slip. I never walked to Drift Bluff with them.” Niko remembers the split stone near the west trail. His account should be compared to the signed receipt and the later intact crate tags.",
+        "6-8": "Logistics steward Niko Pell recalls making the Friday 4:40 p.m. deposit at Windglass Shelter’s west alcove. “I walked in along the west path and sealed the tag inside the recess; the crates never went to the bluff.” He acknowledges that memories of directions can become uncertain during severe weather, and he directs investigators to the waterproof receipt rather than asking them to trust his word alone. His confidence is relevant, but the contemporaneous signature and matching inventory provide independent tests of his account."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does Niko say he put the crates?",
+          "a": [
+            "Beside a boat dock",
+            "In Windglass Shelter’s west alcove",
+            "At Drift Bluff"
+          ],
+          "c": 1,
+          "h": "Find the place Niko names after “west.”",
+          "why": "Niko says he finished the placement at the shelter’s west alcove."
+        },
+        "3-5": {
+          "q": "How can detectives check Niko’s claim rather than simply believing it?",
+          "a": [
+            "Ask Niko to tell the story more loudly.",
+            "Compare his signed receipt with the numbered shelter inventory.",
+            "Assume his job title makes him always correct."
+          ],
+          "c": 1,
+          "h": "Look for records produced during the placement and recovery.",
+          "why": "The signed slip and matching crate numbers provide documentary corroboration of Niko’s testimony."
+        },
+        "6-8": {
+          "q": "What most increases Niko’s credibility as an account of the original placement?",
+          "a": [
+            "His certainty that no other hiker ever visited D4",
+            "A contemporaneous signed placement slip corroborated by an intact cache tag",
+            "His ability to remember the color of every cloud"
+          ],
+          "c": 1,
+          "h": "Look for sources created independently of this interview.",
+          "why": "Niko’s memory aligns with timestamped documentary and physical evidence, making the B4 placement well supported."
+        }
+      }
+    },
+    {
+      "id": "mira-interview",
+      "place": "survey-tent",
+      "icon": "📏",
+      "name": "Mira Sedge",
+      "role": "Expedition cartographer",
+      "texts": {
+        "1-2": "“My dry map shows B4,” says Mira. “Rain changed the B on a copy. D4 is a different hill.”",
+        "3-5": "Cartographer Mira explains that she approved the master grid on Friday. Windglass Shelter is in B4, while D4 is Drift Bluff. “I watched the ink run down the copied sheet when the rain started,” she says. Her map shows terrain features that make the two squares easy to distinguish if the original is consulted.",
+        "6-8": "Mira Sedge, who prepared and signed the expedition’s survey overlay, distinguishes the fixed B4 shelter location from D4’s exposed bluff. She explains that water dissolved part of the B on a low-quality photocopy and that the storm-bent metal fork arrow seemed to confirm the wrong interpretation. Rather than claim that a symbol cannot ever be mistaken, she identifies specific contours, legend keys, and original annotations that allow anyone to verify her reading. Her testimony illuminates both the physical cause of the error and a method for correcting it."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which square does Mira’s original map show for the shelter?",
+          "a": [
+            "B4",
+            "D4",
+            "A1"
+          ],
+          "c": 0,
+          "h": "Look at Mira’s clear, dry master map.",
+          "why": "Mira’s approved map locates Windglass Shelter in B4."
+        },
+        "3-5": {
+          "q": "Why did the group confuse B4 and D4?",
+          "a": [
+            "Mira intentionally erased the camp name to hide the cache.",
+            "The camp had no map at all.",
+            "The copy’s B blurred and the bent fork arrow seemed to point east."
+          ],
+          "c": 2,
+          "h": "Compare the damaged photocopy with the trail sign.",
+          "why": "Two weather-affected navigation cues made the mistaken D4 route seem reasonable."
+        },
+        "6-8": {
+          "q": "Which detail makes Mira’s correction independently checkable?",
+          "a": [
+            "Mira’s promise never to make an error",
+            "A camp rumor that the east path is unlucky",
+            "The master survey’s labeled contour lines and distinct shelter/bluff grid coordinates"
+          ],
+          "c": 2,
+          "h": "Look for concrete cartographic information other readers can verify.",
+          "why": "The approved overlay provides measurable location information rather than relying solely on Mira’s confidence."
+        }
+      }
+    },
+    {
+      "id": "juniper-interview",
+      "place": "ridge-fork",
+      "icon": "🥾",
+      "name": "Juniper Ash",
+      "role": "Student expedition leader",
+      "texts": {
+        "1-2": "“I thought the wet map said D4,” says Juniper. “We went east, found nothing, then went back to camp.”",
+        "3-5": "Juniper remembers reaching Splitstone Fork at about 8:30 Saturday. “The letter on our copied map looked like D, and the sign’s arrow pointed east,” the leader says. “I wrote D4 with a question mark because I was not certain.” After the empty search, Juniper followed the weather safety plan and returned the team to camp.",
+        "6-8": "Juniper Ash describes the decision point with unusual candor: the softened grid letter resembled D, the eastward metal arrow appeared to agree, and the approaching squall made checking the master copy seem time-consuming. “My journal has a question mark; I was reporting our best guess, not a verified deposit.” The expedition reached D4 at 8:45, then withdrew safely by 9:00. Juniper’s honest acknowledgment of uncertainty increases the usefulness of the testimony for reconstructing choices, but it does not transform the mistaken coordinate into proof."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Juniper do after finding no crates?",
+          "a": [
+            "Led the team safely back to camp",
+            "Buried another crate",
+            "Crossed a flooded river alone"
+          ],
+          "c": 0,
+          "h": "Look at Juniper’s last action during the storm.",
+          "why": "Juniper followed the safe-return plan after the empty bluff search."
+        },
+        "3-5": {
+          "q": "What does Juniper’s question mark beside D4 reveal?",
+          "a": [
+            "Juniper had personally seen crates at D4.",
+            "Juniper treated the destination as uncertain rather than confirmed.",
+            "Juniper secretly received a second map from a thief."
+          ],
+          "c": 1,
+          "h": "Notice the punctuation and the words “best guess.”",
+          "why": "The journal itself marks D4 as an inference made under poor conditions."
+        },
+        "6-8": {
+          "q": "Which assessment of Juniper’s account is best supported?",
+          "a": [
+            "It proves Juniper deliberately concealed supplies from the expedition.",
+            "It accurately records the team’s decisions while acknowledging a faulty location inference.",
+            "It overrules the signed placement receipt simply because it is first-person."
+          ],
+          "c": 1,
+          "h": "Evaluate which portions describe observed events and which are interpretations.",
+          "why": "The testimony and journal reliably trace the eastward search but do not independently establish where Niko placed the cache."
+        }
+      }
+    },
+    {
+      "id": "bram-interview",
+      "place": "drift-bluff",
+      "icon": "🔧",
+      "name": "Bram Alder",
+      "role": "Trail-maintenance specialist",
+      "texts": {
+        "1-2": "“I fixed the railing at Drift Bluff on Thursday,” says Bram. “The blue ribbon and my boot prints were already here.”",
+        "3-5": "Bram says he repaired Drift Bluff’s handrail on Thursday and replaced several blue wayfinding ribbons. “Those tracks could be mine,” he explains. “The strip by the nail has our trail stamp, not a crate number.” His signed Thursday maintenance log is consistent with the marks the team discovered later.",
+        "6-8": "Bram Alder’s Thursday inspection report documents work at D4 before the emergency crates were packed on Friday. He remembers leaving impressions in the sheltered dust and exchanging frayed blue waymark ribbons for fresh ones. The torn fabric at D4 carries the trail-maintenance stamp and cannot be matched to a numbered crate seal. Bram cannot identify every footprint on the bluff, but his verifiable earlier visit gives an ordinary explanation for evidence that otherwise fueled an accusation of theft."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What work did Bram do before the storm?",
+          "a": [
+            "Fixed the bluff railing and trail ribbons",
+            "Moved the supplies to another town",
+            "Painted the shelter door red"
+          ],
+          "c": 0,
+          "h": "Look at Bram’s Thursday job.",
+          "why": "Bram repaired the railing and replaced blue trail ribbons at D4."
+        },
+        "3-5": {
+          "q": "How does Bram’s maintenance record change the meaning of the D4 clues?",
+          "a": [
+            "It offers an earlier, documented source for the tracks and torn ribbon.",
+            "It proves all blue materials are from the emergency crates.",
+            "It says Juniper never visited Drift Bluff."
+          ],
+          "c": 0,
+          "h": "Compare the maintenance date with the cache placement date.",
+          "why": "The Thursday inspection explains traces that existed before Friday’s supply delivery."
+        },
+        "6-8": {
+          "q": "What is the most cautious inference from Bram’s testimony?",
+          "a": [
+            "No person besides Bram could ever leave tracks at D4.",
+            "The marks at D4 do not uniquely identify someone transporting crates during the storm.",
+            "Bram’s record proves a deliberate plot by the surveyor."
+          ],
+          "c": 1,
+          "h": "Consider both the reasonable alternative explanation and what remains unknown.",
+          "why": "Bram’s documented activity undermines the accusation, though it does not identify every possible visitor."
+        }
+      }
+    },
+    {
+      "id": "sal-interview",
+      "place": "weather-outpost",
+      "icon": "🌩️",
+      "name": "Sal Venn",
+      "role": "Ridge weather observer",
+      "texts": {
+        "1-2": "“The storm alarm rang at 8:20,” says Sal. “I told the team to return if they could not find the crates safely.”",
+        "3-5": "Sal watched the ridge sensor issue a strong-wind alert at 8:20 Saturday. The observer sent a radio reminder: if a search becomes unsafe, the team must return to base camp. “No one needed to risk the bluff for the emergency cache,” Sal says. The retreat in Juniper’s journal matches the safety guidance.",
+        "6-8": "Weather observer Sal Venn reports a sudden pressure drop and recorded gusts that triggered the calibrated 8:20 warning. The radio message instructed the expedition to abandon any exposed-bluff search once conditions worsened. Juniper’s 9:00 retreat matches that protocol. Sal emphasizes that meteorological evidence can establish risk and timing but not a person’s intentions or a cache’s position. The storm explains urgency; the damaged map and trail sign explain the navigational mistake."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Sal tell the team to do if the search became unsafe?",
+          "a": [
+            "Stay on the open bluff",
+            "Keep searching all night",
+            "Return to base camp"
+          ],
+          "c": 2,
+          "h": "Find the safety message from the weather observer.",
+          "why": "Sal instructed the team to return to safety when conditions worsened."
+        },
+        "3-5": {
+          "q": "What does Sal’s weather report help explain?",
+          "a": [
+            "Why Niko would secretly steal four numbered crates",
+            "Why the group hurried and ended the exposed search early",
+            "Why Drift Bluff must contain a storage alcove"
+          ],
+          "c": 1,
+          "h": "Focus on the storm warning and the group’s later retreat.",
+          "why": "The weather record establishes dangerous conditions that shortened the search."
+        },
+        "6-8": {
+          "q": "Which distinction is important when using Sal’s testimony?",
+          "a": [
+            "A calibrated sensor can identify the owner of a missing crate.",
+            "Every rainy-day navigation error must be intentional.",
+            "It corroborates the hazardous conditions and retreat timing, not the cache location or anyone’s motive."
+          ],
+          "c": 2,
+          "h": "Separate a weather observation from a claim about human behavior.",
+          "why": "Sal’s evidence supports the setting and sequence, but other records are needed to determine placement and explain the D4 error."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "stormbound-expedition",
+    "title": "The Stormbound Expedition",
+    "subtitle": "CASE FILE 012 • THE WRONG SQUARE ON THE MAP",
+    "goal": "Determine who placed the expedition’s emergency cache, where it actually remained, and why the search team went to an empty bluff. Reconstruct the sequence using a journal, signed placement record, and original survey map.",
+    "brief": {
+      "1-2": "Four emergency supply crates seem lost during a mountain storm! The team searched the wrong hill and had to go back to camp. Read the maps, talk to helpers, and find the safe place where the crates are waiting.",
+      "3-5": "The Hearthline Expedition has prepared four crates of emergency supplies for a trip through the fictional Sable Crest Basin. When Saturday’s storm comes in, a student team follows a wet map to Drift Bluff and finds nothing. Some campers fear the supplies were taken. Investigate a signed supply receipt, a water-smeared map, trail markings, weather records, and eyewitness accounts to discover who placed the crates, where they were actually stored, and why the search failed.",
+      "6-8": "The Hearthline Expedition is studying highland ecosystems in the entirely fictional Sable Crest Basin. Logistics steward Niko Pell deposited an emergency cache before a forecast storm, but when the student team attempted to locate it the next morning, they searched the exposed Drift Bluff and found only tracks and torn blue fabric. Rumors of deliberate interference spread. In fact, a rain-damaged map grid, storm-bent wayfinding hardware, and conflicting assumptions about when physical traces appeared complicate the chronology. Evaluate original records alongside the expedition journal and witness testimony; reconstruct Friday’s placement and Saturday’s search separately before identifying the cause of the apparent disappearance."
+    },
+    "theoryLabels": {
+      "who": "Who made and signed the original emergency-cache placement?",
+      "where": "Where were crates HC-1 through HC-4 actually secured?",
+      "why": "Why did the expedition search an empty location and suspect the cache was missing?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "juniper",
+          "label": "Juniper Ash — student expedition leader"
+        },
+        {
+          "id": "mira",
+          "label": "Mira Sedge — expedition cartographer"
+        },
+        {
+          "id": "niko",
+          "label": "Niko Pell — logistics supply steward"
+        },
+        {
+          "id": "bram",
+          "label": "Bram Alder — trail-maintenance specialist"
+        },
+        {
+          "id": "sal",
+          "label": "Sal Venn — weather observer"
+        }
+      ],
+      "where": [
+        {
+          "id": "drift-d4",
+          "label": "Drift Bluff — exposed grid D4"
+        },
+        {
+          "id": "base-storage",
+          "label": "Hearthline base-camp equipment store"
+        },
+        {
+          "id": "weather-tower",
+          "label": "Sable Crest Weather Outpost"
+        },
+        {
+          "id": "windglass-b4",
+          "label": "Windglass Shelter — west alcove, grid B4"
+        },
+        {
+          "id": "ridge-fork",
+          "label": "Splitstone Trail Fork — behind the sign"
+        }
+      ],
+      "why": [
+        {
+          "id": "weather-stolen",
+          "label": "A stranger stole the emergency crates under cover of the storm."
+        },
+        {
+          "id": "lost-flood",
+          "label": "Floodwater swept every crate from Drift Bluff."
+        },
+        {
+          "id": "false-coordinates",
+          "label": "A rain-smudged B4 looked like D4; a bent sign reinforced the wrong turn."
+        },
+        {
+          "id": "steward-sale",
+          "label": "Niko sold the cache and forged its inventory tags."
+        },
+        {
+          "id": "deliberate-prank",
+          "label": "Juniper moved the supplies to frighten the camp."
+        }
+      ]
+    },
+    "who": "niko",
+    "where": "windglass-b4",
+    "why": "false-coordinates",
+    "proofs": [
+      "cache-placement-receipt",
+      "survey-correction-overlay"
+    ],
+    "feedback": {
+      "who": "Look at the FRIDAY CACHE PLACEMENT RECEIPT, not just Saturday’s trail journal. Who signed the statement that the four numbered crates had been deposited? Mira surveyed the site; Juniper later searched the wrong site; Bram and Sal had other duties.",
+      "where": "The smudged photocopy can make B4 look like D4, but the WATERPROOF SURVEY OVERLAY distinguishes these squares. Combine it with the signed receipt and the sealed tag observed at Windglass Shelter to identify the exact alcove.",
+      "why": "Do not confuse the storm with theft or automatic loss. Compare Juniper’s uncertain “D4?” note, the washed-out letter on the copy, and the fork sign with the bent arrow. What specific navigational error caused the empty search?",
+      "proofs": "Include BOTH Niko’s SIGNED CACHE PLACEMENT RECEIPT (firsthand documentation of the B4 deposit) AND Mira’s WATERPROOF SURVEY GRID OVERLAY (independent confirmation that B4 means Windglass Shelter, not D4). The footprints, weather alert, and blue ribbon explain the rumors but cannot prove the actual cache location together."
+    },
+    "resolution": {
+      "summary": "No one stole the emergency supplies. Niko Pell deposited all four sealed crates in Windglass Shelter’s west alcove, B4, on Friday. A rain-smudged map and bent sign sent Saturday’s search team to D4 instead.",
+      "outcome": "The four-crate cache was never lost or sabotaged. Friday afternoon, logistics steward Niko Pell signed for the emergency supplies and completed their placement at Windglass Shelter’s protected west alcove, grid B4. Cartographer Mira Sedge’s approved waterproof overlay clearly marked B4 as the shelter and D4 as the exposed Drift Bluff. On Saturday, worsening wind and rain washed out the rounded half of the B on a photocopied map; when the team arrived at Splitstone Fork, a storm-bent arrow appeared to confirm a turn toward D4. Student leader Juniper Ash wrote the uncertain guess “D4?” in the trail journal, then led a brief search of the bluff. Footprints and blue tape there fed rumors of tampering, but both were consistent with Bram Alder’s earlier Thursday maintenance visit; neither matched the numbered crate bands. Sal Venn’s weather report explains why the team hurried and retreated safely by 9:00. Once investigators compared Niko’s signed placement receipt with Mira’s independent survey overlay, the discrepancy became clear. After the weather eased, the team located all four sealed crates and their matching tag in the shelter’s west alcove. Juniper publicly corrected the route notes, and the camp agreed to carry waterproof map copies and cross-check coordinates before future trips. The solution depends on keeping Friday’s placement, Saturday’s mistaken search, and later recovery in the correct order.",
+      "timeline": [
+        {
+          "time": "Thursday • 2:15 p.m.",
+          "event": "Bram checks the Drift Bluff railing and replaces blue trail ribbons at D4; the boot prints and old torn strip later cause false suspicion."
+        },
+        {
+          "time": "Friday • 3:20 p.m.",
+          "event": "Four sealed emergency crates HC-1 through HC-4 are counted at Hearthline Base Camp, then signed out by supply steward Niko."
+        },
+        {
+          "time": "Friday • 4:05 p.m.",
+          "event": "Cartographer Mira approves the waterproof survey overlay: Windglass Shelter is B4; exposed Drift Bluff is D4."
+        },
+        {
+          "time": "Friday • 4:40 p.m.",
+          "event": "Niko deposits the four sealed crates at Windglass Shelter’s west alcove, B4, and signs the precise cache-placement receipt."
+        },
+        {
+          "time": "Friday • 5:10 p.m.",
+          "event": "A paper route copy is prepared for the Saturday team; its B4 label later becomes hard to read after exposure to rain."
+        },
+        {
+          "time": "Saturday • 7:30 a.m.",
+          "event": "Juniper leads the student team from base camp with the photocopied route map."
+        },
+        {
+          "time": "Saturday • 8:20 a.m.",
+          "event": "Sal’s ridge weather outpost issues a high-wind and heavy-rain alert, increasing the urgency of the journey."
+        },
+        {
+          "time": "Saturday • 8:30 a.m.",
+          "event": "At Splitstone Fork, the blurred B resembles D and a bent arrow points east. Juniper writes “D4?” and chooses Drift Bluff."
+        },
+        {
+          "time": "Saturday • 8:45 a.m.",
+          "event": "The group searches empty D4, discovers old tracks and torn blue marker tape, and wrongly fears the cache was moved."
+        },
+        {
+          "time": "Saturday • 9:00 a.m.",
+          "event": "Following Sal’s safety guidance, the expedition retreats to base camp rather than continuing on the exposed bluff."
+        },
+        {
+          "time": "Saturday • 9:15 a.m.",
+          "event": "Investigators compare the signed B4 deposit receipt with Mira’s intact map and identify the route-copy misunderstanding."
+        },
+        {
+          "time": "Saturday • 10:15 a.m.",
+          "event": "After weather conditions improve, the group checks the shelter’s west alcove and verifies all four crates and seals are intact."
+        }
+      ]
+    }
+  }
+}

@@ -128,9 +128,9 @@
       "number": "012",
       "category": "Survival Mystery",
       "icon": "⛈️",
-      "summary": "A wilderness expedition’s emergency supply cache is misplaced during a storm.",
+      "summary": "A mountain expedition searches the wrong grid square for emergency supplies. Compare a signed cache receipt, a smudged route map, and storm-time journals to unravel the mix-up.",
       "grades": "1–8 (focus: 5–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/stormbound-expedition.json"
     },
     {
