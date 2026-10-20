@@ -161,9 +161,9 @@
       "number": "015",
       "category": "Art Mystery",
       "icon": "🎨",
-      "summary": "Two paintings share a title, but labels and artist notes reveal a teaching replica.",
+      "summary": "Two identically titled paintings spark a forgery rumor. Compare original artwork notes, replica permissions, a mistaken exhibit label, and signed conservation records to locate a protected original.",
       "grades": "1–8 (focus: 6–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/museum-forgery.json"
     },
     {

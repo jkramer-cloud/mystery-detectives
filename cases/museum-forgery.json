@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "tide-gallery": {
+      "name": "Tide Gallery",
+      "icon": "🖼️",
+      "scene": "art",
+      "detail": "Two frames and two identical title cards have the visitors whispering about a forged painting."
+    },
+    "artist-archive": {
+      "name": "Artist Archive",
+      "icon": "📚",
+      "scene": "library",
+      "detail": "An original sketchbook and signed studio notes explain how the artist painted the coastal scene."
+    },
+    "label-workshop": {
+      "name": "Exhibit Print Workshop",
+      "icon": "🏷️",
+      "scene": "office",
+      "detail": "Proof sheets, print queues, and an outdated template reveal how the misleading label appeared."
+    },
+    "teaching-studio": {
+      "name": "Teaching Studio",
+      "icon": "🎨",
+      "scene": "art",
+      "detail": "Practice canvases, acrylic paints, and permission forms show how an approved study copy was made."
+    },
+    "conservation-lab": {
+      "name": "Conservation Lab",
+      "icon": "🔬",
+      "scene": "storage",
+      "detail": "Moisture meters, magnifiers, signed reports, and soft protective sleeves fill the preservation room."
+    },
+    "collections-vault": {
+      "name": "Secure Collections Vault",
+      "icon": "🔐",
+      "scene": "storage",
+      "detail": "A climate-controlled cabinet contains a freshly logged, carefully protected painting."
+    }
+  },
+  "evidence": [
+    {
+      "id": "gallery-inventory",
+      "place": "tide-gallery",
+      "icon": "🖼️",
+      "title": "Two Frames, One Title",
+      "type": "Gallery inventory and opening photograph",
+      "texts": {
+        "1-2": "The gallery list has two paintings called Lanterns at Low Tide. One frame is empty. A smaller painting hangs nearby. Both have the same title.",
+        "3-5": "The Tide Gallery inventory lists an original painting and a teaching study called Lanterns at Low Tide. The original display frame is empty, while a slightly smaller canvas hangs nearby. A matching title does not prove that the smaller canvas is a stolen original.",
+        "6-8": "The pre-opening inventory distinguishes an original oil canvas from a separately accessioned teaching study, both titled Lanterns at Low Tide. The central original frame is now vacant; a smaller canvas remains on the educational wall. Title identity is therefore insufficient evidence of forgery, ownership, or an illicit exchange."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What do both paintings have in common?",
+          "a": [
+            "Their exact size",
+            "Their missing frames",
+            "Their title"
+          ],
+          "c": 2,
+          "h": "Read what is the same on both cards.",
+          "why": "The gallery inventory gives both works the title Lanterns at Low Tide."
+        },
+        "3-5": {
+          "q": "Which detail best cautions against declaring a forgery?",
+          "a": [
+            "The gallery is near the ocean",
+            "The inventory already lists a separate teaching study",
+            "The frames are made of wood"
+          ],
+          "c": 1,
+          "h": "Compare the original and teaching-study entries.",
+          "why": "The inventory recognizes two different works sharing a title; similarity alone is not evidence of deception."
+        },
+        "6-8": {
+          "q": "What conclusion is defensible from the inventory and empty frame?",
+          "a": [
+            "The original is absent from its display but a separately documented study remains",
+            "The copy was secretly substituted by the painter",
+            "The original was sold during the preview"
+          ],
+          "c": 0,
+          "h": "Distinguish recorded objects from speculation about motives.",
+          "why": "The itemized record supports an absent display original and a legitimate separate study, not a proven theft or sale."
+        }
+      }
+    },
+    {
+      "id": "original-sketch",
+      "place": "artist-archive",
+      "icon": "✏️",
+      "title": "Mara’s Five-Lantern Sketch",
+      "type": "Signed artist primary source",
+      "texts": {
+        "1-2": "Artist Mara Lorne drew five gold lanterns over blue water. She drew a tiny red hook in the last lantern. Her sketch has her name and date.",
+        "3-5": "In a dated, signed sketch, painter Mara Lorne planned five copper-gold lanterns above a jade-green tide stripe. She placed a small red hook inside the fifth lantern. Because the drawing was made by the artist during preparation, it is direct evidence of her intended design.",
+        "6-8": "Mara Lorne’s authenticated 2011 preparatory sketch specifies five copper-amber lanterns, a narrow jade tide line, and a vermilion hook set within lantern five. The dated sketch is a primary artifact documenting the artist’s compositional intent; it cannot by itself establish where the finished painting currently resides."
+      },
+      "questions": {
+        "1-2": {
+          "q": "How many lanterns are on Mara’s sketch?",
+          "a": [
+            "Five",
+            "Three",
+            "Four"
+          ],
+          "c": 0,
+          "h": "Count the lanterns in the drawing description.",
+          "why": "Mara’s original sketch specifies five lanterns."
+        },
+        "3-5": {
+          "q": "Why is Mara’s dated sketch useful evidence?",
+          "a": [
+            "It reports a visitor’s rumor",
+            "It is a modern advertisement",
+            "It records the artist’s design directly"
+          ],
+          "c": 2,
+          "h": "Consider who created the sketch and when.",
+          "why": "A dated sketch made by the artist provides primary evidence of the original design."
+        },
+        "6-8": {
+          "q": "Which inference stays within the sketch’s evidentiary limits?",
+          "a": [
+            "The artist endorsed every later museum label",
+            "The artist planned five lanterns, but the sketch alone does not locate the completed canvas",
+            "The artist deliberately hid the original in the vault"
+          ],
+          "c": 1,
+          "h": "Separate design evidence from custody evidence.",
+          "why": "The signed original design establishes motif details without documenting the later location or disposition of the painting."
+        }
+      }
+    },
+    {
+      "id": "artist-journal",
+      "place": "artist-archive",
+      "icon": "📓",
+      "title": "The Lanterns’ Meaning",
+      "type": "Signed studio journal excerpt",
+      "texts": {
+        "1-2": "Mara wrote, “Each lantern is a helping hand.” She said the sea was dark, but the lamps meant people could help each other find the way.",
+        "3-5": "Mara’s studio journal describes the five lanterns as people helping one another through uncertainty. She calls the green tide line “the line between fear and hope.” Her explanation shows that details in a painting can symbolize an idea rather than merely decorate the scene.",
+        "6-8": "In her original studio journal, Mara rejects the idea that the lanterns celebrate wealth; each represents a distinct act of mutual aid during a coastal evacuation. The jade tide line divides uncertainty from possibility. The author’s commentary is strong primary evidence for the work’s intended symbolism but not for its present conservation status."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What do the lanterns stand for in Mara’s notes?",
+          "a": [
+            "A bag of coins",
+            "People helping one another",
+            "Five racing boats"
+          ],
+          "c": 1,
+          "h": "Look at Mara’s own words about helping.",
+          "why": "Mara says the lanterns represent helping hands."
+        },
+        "3-5": {
+          "q": "Which interpretation best fits Mara’s explanation?",
+          "a": [
+            "The lanterns symbolize cooperation during difficulty",
+            "The lanterns measure the water depth",
+            "The lanterns advertise a painting sale"
+          ],
+          "c": 0,
+          "h": "Identify an idea represented by an image.",
+          "why": "Her description connects the visible lights to mutual aid and shared hope."
+        },
+        "6-8": {
+          "q": "How should detectives use this journal in an argument?",
+          "a": [
+            "As a guarantee that the study copy is illegal",
+            "As a current inventory of vault contents",
+            "As first-person evidence of symbolic intent, not proof of who moved the painting"
+          ],
+          "c": 2,
+          "h": "Think about the author’s knowledge and the date of writing.",
+          "why": "The journal directly documents Mara’s symbolism but predates the museum events under investigation."
+        }
+      }
+    },
+    {
+      "id": "label-template",
+      "place": "label-workshop",
+      "icon": "🏷️",
+      "title": "Outdated “Original” Display Label",
+      "type": "Print proof and queue record",
+      "texts": {
+        "1-2": "A printer kept an old label that said ORIGINAL. Ben used the old page when printing new signs. It put the wrong word beside the study painting.",
+        "3-5": "The workshop queue shows that label editor Ben Arden reused a September template reading “Original oil painting” instead of the approved October wording, “Authorized teaching study.” He printed the outdated label before the gallery opened. A mistaken label can mislead visitors without changing what the canvas actually is.",
+        "6-8": "Print-queue metadata links the study-wall label to an obsolete September template. The approved October proof explicitly identifies Jory Hale’s canvas as an authorized acrylic teaching study, while the printed label retained “Original—Mara Lorne.” The discrepancy documents an administrative labeling error; it does not authenticate the study as Mara’s original or prove deliberate fraud."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What word on the old label was wrong?",
+          "a": [
+            "Museum",
+            "Lantern",
+            "Original"
+          ],
+          "c": 2,
+          "h": "Find the word on the reused sign.",
+          "why": "The outdated label mistakenly called the teaching study the original."
+        },
+        "3-5": {
+          "q": "Which account best explains the misleading sign?",
+          "a": [
+            "Jory changed the original artist’s signature",
+            "The paint colors changed after printing",
+            "Ben printed an old template rather than the approved study label"
+          ],
+          "c": 2,
+          "h": "Compare the approved and printed versions.",
+          "why": "The queue record shows that an outdated template caused a label error."
+        },
+        "6-8": {
+          "q": "What is the strongest inference from the print history?",
+          "a": [
+            "The conservator sold the original using the label",
+            "The gallery made a labeling error; intent to deceive is not established",
+            "Both canvases are therefore modern counterfeits"
+          ],
+          "c": 1,
+          "h": "Look for evidence of process rather than a presumed motive.",
+          "why": "Metadata documents reuse of an obsolete proof, which supports error but not a conclusion of fraud."
+        }
+      }
+    },
+    {
+      "id": "study-permission",
+      "place": "teaching-studio",
+      "icon": "📝",
+      "title": "Permission to Paint a Teaching Study",
+      "type": "Signed artist authorization",
+      "texts": {
+        "1-2": "Mara signed a note that lets student Jory paint a practice copy. The note says the copy must be labeled a study, not the original painting.",
+        "3-5": "A signed permission note from Mara Lorne authorizes apprentice Jory Hale to make a teaching study for the gallery’s workshops. It requires a clear label naming Jory and explaining that the copy is not Mara’s original. This document makes the copy itself legitimate, even though the display label was wrong.",
+        "6-8": "Mara’s October 2 authorization grants Jory Hale permission to reproduce the painting’s composition for a supervised educational demonstration. It explicitly prohibits presenting the acrylic study as the original oil canvas and requires distinct credit. The permission is a primary source for the study’s lawful purpose, not evidence that the original was physically transferred."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who gave Jory permission to paint a copy?",
+          "a": [
+            "A visitor",
+            "Mara Lorne",
+            "The delivery driver"
+          ],
+          "c": 1,
+          "h": "Find the name on the signed note.",
+          "why": "Mara gave Jory written permission to make a teaching study."
+        },
+        "3-5": {
+          "q": "How does this form change the accusation of forgery?",
+          "a": [
+            "It shows the copy was authorized for teaching",
+            "It proves the real painting was destroyed",
+            "It makes an incorrect label accurate"
+          ],
+          "c": 0,
+          "h": "Read what the artist explicitly permitted.",
+          "why": "The copy was approved; the labeling problem is separate from whether making the study was allowed."
+        },
+        "6-8": {
+          "q": "Which claim is directly warranted by the signed permission?",
+          "a": [
+            "The reproduction was authorized with a disclosure condition",
+            "The apprentice became owner of the original canvas",
+            "The original was transferred into museum storage on October 2"
+          ],
+          "c": 0,
+          "h": "Distinguish authorization to create a replica from later custody records.",
+          "why": "The signature grants limited teaching rights and requires honest attribution, without describing subsequent movement of the original."
+        }
+      }
+    },
+    {
+      "id": "pigment-inventory",
+      "place": "teaching-studio",
+      "icon": "🧪",
+      "title": "Two Kinds of Blue Paint",
+      "type": "Teaching-studio pigment record",
+      "texts": {
+        "1-2": "Jory’s supply list says BLUE ACRYLIC. The real painting uses oil paint. Jory also put only four lanterns in the study picture.",
+        "3-5": "Jory’s dated materials sheet records water-based acrylic blue and a four-lantern composition for the teaching canvas. Mara’s original painting is documented as oil paint with five lanterns. The difference helps students identify the two works without claiming that either painting is a secret forgery.",
+        "6-8": "The teaching-studio supply register documents modern water-based acrylic pigments and a four-lantern adaptation for Jory’s study. Mara’s original is inventoried as an oil painting depicting five lamps and a jade tide stripe. Materials and compositional differences jointly corroborate distinct authorship; neither alone reveals the original’s current storage location."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which paint did Jory use for the copy?",
+          "a": [
+            "Acrylic",
+            "Oil for cars",
+            "Chalk dust"
+          ],
+          "c": 0,
+          "h": "Find the paint type on the studio list.",
+          "why": "The materials sheet records acrylic paint for the teaching study."
+        },
+        "3-5": {
+          "q": "What two details help distinguish the study from the original?",
+          "a": [
+            "Its title and the museum building",
+            "Its acrylic materials and four lanterns",
+            "Its ticket price and visitor count"
+          ],
+          "c": 1,
+          "h": "Compare both the paint and the images.",
+          "why": "The material and lantern count differ from those recorded for Mara’s oil original."
+        },
+        "6-8": {
+          "q": "Which argument most accurately combines these records?",
+          "a": [
+            "Identical titles prove the same painter created both",
+            "The study’s acrylic pigments prove the original was sold",
+            "Different media and motifs corroborate two intended works rather than establishing theft"
+          ],
+          "c": 2,
+          "h": "Combine material data with the authorized-study document.",
+          "why": "The controlled differences support the interpretation that Jory produced a known teaching study, separate from the original."
+        }
+      }
+    },
+    {
+      "id": "preview-post",
+      "place": "tide-gallery",
+      "icon": "📱",
+      "title": "“Two Originals?” Visitor Post",
+      "type": "Unverified public media post",
+      "texts": {
+        "1-2": "A visitor named Len posted a photo. It said, “Two originals?” The photo was taken before anyone checked the paint records or old label.",
+        "3-5": "A visitor’s message asks, “Two originals? One gone?” and shows the study with the incorrect label. The post omits the signed teaching permission and museum transfer documents. Its excited question is not independent confirmation that a painting was stolen.",
+        "6-8": "Len’s widely shared preview post pairs the vacant original frame with a photograph of an inaccurately labeled study and speculates about a swapped masterpiece. Its framing invites a sensational conclusion while omitting provenance, the artist’s authorization, and custody records. It is evidence that a rumor circulated—not reliable direct evidence of the original’s fate."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Len share online?",
+          "a": [
+            "A photo with a question",
+            "A signed painting sale",
+            "A museum entry receipt"
+          ],
+          "c": 0,
+          "h": "What did the visitor actually post?",
+          "why": "Len shared a photograph and speculation, not official custody paperwork."
+        },
+        "3-5": {
+          "q": "Why should detectives question the post’s conclusion?",
+          "a": [
+            "It does not include the signed records that could verify the claim",
+            "Online photos cannot show any real object",
+            "The author used short sentences"
+          ],
+          "c": 0,
+          "h": "Consider which sources the post did not check.",
+          "why": "The post relies on a mistaken label and omits documentary evidence."
+        },
+        "6-8": {
+          "q": "What is the fairest assessment of this media source?",
+          "a": [
+            "It conclusively proves the original was replaced with intent to deceive",
+            "Its popularity gives it greater evidentiary force than the museum register",
+            "It documents the spread of a rumor, not an authenticated transfer or forgery"
+          ],
+          "c": 2,
+          "h": "Distinguish what a post proves about public reaction from what it proves about events.",
+          "why": "The post shows how the claim circulated; the custody and conservation records must establish what happened."
+        }
+      }
+    },
+    {
+      "id": "condition-report",
+      "place": "conservation-lab",
+      "icon": "💧",
+      "title": "Water Damage Inspection",
+      "type": "Signed conservation condition report",
+      "texts": {
+        "1-2": "Rain came through a skylight near the original painting. Celia saw tiny bits of paint lifting at the edge. She wrote that the painting needed a dry, safe place.",
+        "3-5": "After wind-driven rain leaked by a skylight on October 18, conservator Celia Venn inspected Mara’s original. Her signed condition report records a damp frame and small flakes of oil paint beginning to lift. She recommended removing the work from public display before further moisture could damage it.",
+        "6-8": "Celia Venn’s 8:05 a.m. condition assessment records moisture intrusion at the gallery skylight, elevated humidity near the original frame, and early lifting of the oil paint along the lower edge. The report recommends temporary climate-controlled isolation. This technical primary source explains a plausible preservation motive, though separate records are needed to confirm the move occurred."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why was Celia worried about the painting?",
+          "a": [
+            "The paint had changed its title",
+            "Water was making the old paint lift",
+            "Someone asked for more lanterns"
+          ],
+          "c": 1,
+          "h": "Find what the rain did near the picture.",
+          "why": "Moisture and lifting paint made the original vulnerable to damage."
+        },
+        "3-5": {
+          "q": "How does the inspection explain a possible motive to move the original?",
+          "a": [
+            "It names the buyer of a secret sale",
+            "It describes a preservation risk from moisture",
+            "It states that Jory forged Mara’s signature"
+          ],
+          "c": 1,
+          "h": "Connect the observed damage to the recommendation.",
+          "why": "The conservator documented damaged paint and recommended safer conditions."
+        },
+        "6-8": {
+          "q": "What can be concluded from this report without overstating it?",
+          "a": [
+            "There was documented conservation risk, but transfer still needs independent confirmation",
+            "Celia certainly removed the original and hid it forever",
+            "The artwork was irreparably ruined and discarded"
+          ],
+          "c": 0,
+          "h": "Separate a professional recommendation from proof of an executed transfer.",
+          "why": "The condition report establishes a need for protection; the signed movement and intake records establish the subsequent custody chain."
+        }
+      }
+    },
+    {
+      "id": "conservation-transfer",
+      "place": "conservation-lab",
+      "icon": "📋",
+      "title": "Signed Painting Transfer Authorization",
+      "type": "Dated preservation move order",
+      "texts": {
+        "1-2": "At 8:29, Celia signed a paper: “Move Mara’s original to Cabinet C-4.” The director signed too. It says the painting needs protection from wet air.",
+        "3-5": "At 8:29 a.m. on October 18, conservator Celia Venn and museum director Imani Reed signed a transfer order. It identifies Mara’s original oil painting, authorizes temporary relocation to Conservation Cabinet C-4, and gives the reason as moisture damage and lifting paint. It does not authorize a sale or exhibition swap.",
+        "6-8": "Transfer authorization 18-C4 bears Celia Venn’s initiating signature and director Imani Reed’s countersignature, timed 8:29 a.m. on October 18. It specifies the original 2011 oil canvas, orders temporary relocation to climate-controlled Cabinet C-4, and cites the skylight leak and pigment instability. As a signed primary custody directive, it establishes authorization and intent, to be checked against a separate receipt for completed delivery."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the order to move the painting?",
+          "a": [
+            "Len the visitor",
+            "Jory the student",
+            "Celia Venn"
+          ],
+          "c": 2,
+          "h": "Read the first name on the order.",
+          "why": "Celia initiated the authorized conservation transfer."
+        },
+        "3-5": {
+          "q": "What does the signed transfer order establish?",
+          "a": [
+            "The museum sold the original to a gallery owner",
+            "The copy was painted without permission",
+            "Celia was authorized to move the original to C-4 for protection"
+          ],
+          "c": 2,
+          "h": "Look at the recipient, destination, and stated purpose.",
+          "why": "The order names the original, Celia, Cabinet C-4, and the preservation reason."
+        },
+        "6-8": {
+          "q": "Which conclusion is best supported by authorization 18-C4?",
+          "a": [
+            "The museum’s social-media rumor is true because the painting moved",
+            "Celia initiated an approved conservation move to C-4; a receipt must confirm arrival",
+            "The artist secretly directed the transfer on the day of the leak"
+          ],
+          "c": 1,
+          "h": "Distinguish a signed instruction from a completed handoff.",
+          "why": "The order identifies authorized actor, intended destination, and preservation rationale; proof of actual custody requires the signed vault intake."
+        }
+      }
+    },
+    {
+      "id": "vault-intake",
+      "place": "collections-vault",
+      "icon": "🔐",
+      "title": "Cabinet C-4 Intake Receipt",
+      "type": "Independent custody receipt",
+      "texts": {
+        "1-2": "At 8:37, Dana wrote that Mara’s real painting arrived in Cabinet C-4. Dana checked the frame tag and put it in the safe, dry room.",
+        "3-5": "The secure-collections register records that Dana Quill received Mara’s oil canvas at 8:37 a.m. on October 18 and placed it inside climate-controlled Cabinet C-4. The receipt includes the painting’s accession number and confirms that the transfer order was actually carried out. No buyer or shipping company is listed.",
+        "6-8": "Registrar Dana Quill’s independent 8:37 a.m. accession receipt matches transfer 18-C4 by object number, title, medium, and Cabinet C-4 destination. Her signed intake verifies physical receipt under stable environmental controls. Combined with Celia’s prior authorization, the separate receipt establishes who initiated the preservation move, where the original ended up, and that it was not dispatched for sale."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did Dana place the real painting?",
+          "a": [
+            "The gift shop",
+            "The front lawn",
+            "Cabinet C-4"
+          ],
+          "c": 2,
+          "h": "Read the place on Dana’s receipt.",
+          "why": "Dana recorded the original’s arrival inside secure Cabinet C-4."
+        },
+        "3-5": {
+          "q": "Why is the intake record stronger than a rumor about the painting?",
+          "a": [
+            "It confirms the original was physically received in secure storage",
+            "It has a colorful cover",
+            "It was shared by many visitors"
+          ],
+          "c": 0,
+          "h": "Find the signed time and object record.",
+          "why": "The receipt independently confirms delivery of the named original to C-4."
+        },
+        "6-8": {
+          "q": "Why should detectives pair this receipt with the move authorization?",
+          "a": [
+            "Both records describe how to paint another study",
+            "The receipt alone identifies the person who made the copy",
+            "Together they document both the approved action and confirmed arrival"
+          ],
+          "c": 2,
+          "h": "Trace the chain from instruction to completed custody.",
+          "why": "The initiating authorization and independent intake together verify mover, destination, and preservation reason."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "celia-statement",
+      "place": "conservation-lab",
+      "icon": "👩‍🔬",
+      "name": "Celia Venn",
+      "role": "Painting conservator",
+      "texts": {
+        "1-2": "Celia said, “I saw the paint start to lift after the rain. I asked to move the original so it would not get worse.” She did not blame the student artist.",
+        "3-5": "Conservator Celia Venn remembers measuring damp air beside the original and seeing paint lifting at its edge. She says she requested an emergency conservation move, not a sale. She also explains that the authorized teaching study remained safe on the other wall.",
+        "6-8": "Celia Venn recalls documenting both elevated humidity and localized paint instability after the skylight leak. She maintains that her signed recommendation prompted temporary relocation, not a clandestine substitution; her account is consistent with the report but is also self-interested. Investigators should corroborate her claim with signatures and the independent intake rather than relying solely on testimony."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Celia want to stop?",
+          "a": [
+            "More paint damage",
+            "A student art class",
+            "A museum song"
+          ],
+          "c": 0,
+          "h": "Notice what she said was happening to the paint.",
+          "why": "Celia wanted to protect the original from further moisture damage."
+        },
+        "3-5": {
+          "q": "Which other record would best confirm Celia’s claim that a move happened?",
+          "a": [
+            "Len’s comment count",
+            "The title printed on the study label",
+            "A signed transfer and receiving record"
+          ],
+          "c": 2,
+          "h": "Look for a record made at the handoff.",
+          "why": "An authorized transfer and independent intake test her statement against documents."
+        },
+        "6-8": {
+          "q": "What is a fair assessment of Celia’s reliability?",
+          "a": [
+            "Her professional title alone proves every assertion",
+            "Her expertise explains the damage, but independent custody records must substantiate her role",
+            "Her concern about humidity proves the label editor lied deliberately"
+          ],
+          "c": 1,
+          "h": "Separate expertise from independent corroboration.",
+          "why": "Celia has direct technical knowledge but a stake in the decision; the signed order and separate receipt corroborate the action."
+        }
+      }
+    },
+    {
+      "id": "jory-statement",
+      "place": "teaching-studio",
+      "icon": "🧑‍🎨",
+      "name": "Jory Hale",
+      "role": "Teaching-studio apprentice",
+      "texts": {
+        "1-2": "Jory said, “I made a practice picture with four lanterns. Mara said I could. I never touched her original painting.”",
+        "3-5": "Student artist Jory Hale says the study was painted with acrylics for a workshop. He deliberately used four lanterns so visitors could compare how artists change a symbol. He keeps Mara’s signed permission on the studio board and says he did not handle the oil original.",
+        "6-8": "Jory Hale describes an explicitly licensed educational reinterpretation, using four lights and acrylic pigments to highlight how changes alter a symbol’s meaning. He denies accessing the original canvas. His material sheet and signed license corroborate legitimate study production, although his testimony cannot independently identify the original’s current custodian."
+      },
+      "questions": {
+        "1-2": {
+          "q": "How many lanterns did Jory paint?",
+          "a": [
+            "Five",
+            "Four",
+            "Seven"
+          ],
+          "c": 1,
+          "h": "Find the number Jory gives for the study.",
+          "why": "Jory says he painted four lanterns in the authorized copy."
+        },
+        "3-5": {
+          "q": "Which document supports Jory’s statement about permission?",
+          "a": [
+            "The visitor’s social-media post",
+            "The artist’s signed teaching-study authorization",
+            "The skylight weather report"
+          ],
+          "c": 1,
+          "h": "Look for something the artist signed.",
+          "why": "Mara’s permission note corroborates the purpose of the study painting."
+        },
+        "6-8": {
+          "q": "What does Jory’s testimony prove most directly when corroborated?",
+          "a": [
+            "An authorized classroom study existed; it does not establish the oil original’s custody",
+            "The conservator invented the water leak",
+            "Jory controlled the secure storage cabinet"
+          ],
+          "c": 0,
+          "h": "Differentiate testimony about making a study from custody of another object.",
+          "why": "His records address replica creation and attribution, while movement of the original requires conservation custody evidence."
+        }
+      }
+    },
+    {
+      "id": "ben-statement",
+      "place": "label-workshop",
+      "icon": "🧑‍💻",
+      "name": "Ben Arden",
+      "role": "Exhibit label editor",
+      "texts": {
+        "1-2": "Ben said, “I used the old label by mistake. I should have printed the one that says teaching study.” He wants to fix the sign.",
+        "3-5": "Label editor Ben Arden explains that he printed an older file shortly before opening. He thought the approval stamp belonged to the current draft and accidentally placed “Original” beside Jory’s study. He accepts responsibility for the confusing label but says he did not move the original.",
+        "6-8": "Ben Arden admits selecting a superseded print template because two nearly identical proofs were stored under the same exhibition folder. Queue timestamps substantiate the production error. His explanation is plausible, but detectives should distinguish this display-label mistake from the separate, signed conservation relocation of the oil original."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What mistake did Ben make?",
+          "a": [
+            "He painted over the original",
+            "He printed the wrong label",
+            "He broke the lock"
+          ],
+          "c": 1,
+          "h": "Find what Ben says he printed.",
+          "why": "Ben admits using an outdated label that called the study the original."
+        },
+        "3-5": {
+          "q": "What caused visitors to misunderstand the study?",
+          "a": [
+            "A signed note giving permission for a copy",
+            "An outdated label that identified it as an original",
+            "The rain gauge outside the museum"
+          ],
+          "c": 1,
+          "h": "Connect Ben’s task to what visitors read.",
+          "why": "The incorrect sign misrepresented the teaching study and fueled confusion."
+        },
+        "6-8": {
+          "q": "How should investigators connect the label error to the missing original?",
+          "a": [
+            "Assume Ben and Celia conspired because both worked that morning",
+            "Treat them as distinct events unless evidence proves a shared scheme",
+            "Conclude that a false label changes the identity of the canvas"
+          ],
+          "c": 1,
+          "h": "Avoid turning coincidence into intent without support.",
+          "why": "The print error is independently documented, while the original’s movement has a separate conservation trail."
+        }
+      }
+    },
+    {
+      "id": "len-statement",
+      "place": "tide-gallery",
+      "icon": "🧑‍📱",
+      "name": "Len Mirth",
+      "role": "Preview visitor and social-media poster",
+      "texts": {
+        "1-2": "Len said, “I saw an empty frame and a sign saying ORIGINAL. I thought a painting was stolen.” Len did not see anyone take a painting.",
+        "3-5": "Visitor Len Mirth saw the empty original frame and photographed the teaching study under its incorrect label. He posted a worried question before speaking with staff. He admits he did not witness anyone carrying the original away and cannot tell whether the frame had been emptied for repair.",
+        "6-8": "Len Mirth’s account provides firsthand observations of a vacant frame and an erroneous label, but his public accusation extrapolates beyond those observations. He neither witnessed removal nor consulted conservation records. His testimony illustrates how selective visual details and an unverified caption can amplify an unsupported claim."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Len see anyone steal the painting?",
+          "a": [
+            "Yes, the student",
+            "Yes, the director",
+            "No"
+          ],
+          "c": 2,
+          "h": "Find what Len says he did not see.",
+          "why": "Len observed an empty frame but did not witness anyone stealing or removing the painting."
+        },
+        "3-5": {
+          "q": "Which part of Len’s story is an inference rather than an observation?",
+          "a": [
+            "That someone stole the original painting",
+            "That the frame was empty",
+            "That the label used the word Original"
+          ],
+          "c": 0,
+          "h": "Identify what Len guessed rather than saw.",
+          "why": "The idea of theft goes beyond his direct observations."
+        },
+        "6-8": {
+          "q": "Which statement best evaluates Len’s account?",
+          "a": [
+            "Every observation is untrue because Len posted online",
+            "The label alone establishes the canvas’s authorship",
+            "Its observations are useful, but the alleged theft is unsupported"
+          ],
+          "c": 2,
+          "h": "Separate recorded sensory details from a causal accusation.",
+          "why": "A vacant frame and misleading label are observable; a secret theft is an unsupported interpretation."
+        }
+      }
+    },
+    {
+      "id": "dana-statement",
+      "place": "collections-vault",
+      "icon": "👩‍💼",
+      "name": "Dana Quill",
+      "role": "Secure-collections registrar",
+      "texts": {
+        "1-2": "Dana said, “I checked the number on the frame and signed for the original. It is safe inside Cabinet C-4.”",
+        "3-5": "Registrar Dana Quill says the original oil painting arrived under a signed conservation transfer at 8:37 a.m. She matched its identification number and placed it into climate-controlled Cabinet C-4. Her own intake log records the time and storage conditions.",
+        "6-8": "Dana Quill, the vault registrar, reports independent receipt of Mara’s original at 8:37 a.m. after matching title, accession number, and oil-medium description against transfer 18-C4. Her contemporaneous signature and environmental entry corroborate the conservation move; her firsthand custody account is stronger evidence of the destination than visitor speculation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Dana check before putting the painting away?",
+          "a": [
+            "The number on its frame",
+            "The gift shop price",
+            "The name of the last visitor"
+          ],
+          "c": 0,
+          "h": "Read what Dana matched on the frame.",
+          "why": "Dana verified the frame’s identifier before storage."
+        },
+        "3-5": {
+          "q": "What makes Dana’s testimony especially useful?",
+          "a": [
+            "She painted the teaching study",
+            "She wrote the social-media rumor",
+            "She personally received the original and signed its intake"
+          ],
+          "c": 2,
+          "h": "Think about what Dana directly handled.",
+          "why": "Dana’s independent receiving role and written intake establish firsthand custody evidence."
+        },
+        "6-8": {
+          "q": "How does Dana’s account affect the argument that the original was sold?",
+          "a": [
+            "It supports documented secure storage and contradicts an undocumented sale hypothesis",
+            "It proves Len photographed the wrong building",
+            "It proves Mara’s sketch was forged"
+          ],
+          "c": 0,
+          "h": "Look for named object, custody, and documented destination.",
+          "why": "Matching identifiers and an independent storage receipt provide stronger support for preservation than the unverified sale claim."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "museum-forgery",
+    "title": "The Painted Replica",
+    "subtitle": "CASE FILE 015 • TWO PAINTINGS, ONE TITLE",
+    "goal": "Identify who authorized and initiated removal of the original Lanterns at Low Tide, where it was relocated, and why. Use the two original custody documents as proof, while evaluating the labels, artistic details, and media rumor.",
+    "brief": {
+      "1-2": "At the Glassmere Art Museum, two pictures have the same title, Lanterns at Low Tide. One frame is empty, and the other painting has the wrong sign. Did someone steal the real picture? Look for clues and learn who moved it, where it went, and why.",
+      "3-5": "Two paintings called Lanterns at Low Tide appear in the fictional Glassmere Art Museum before an exhibition opening. One is Mara Lorne’s oil original; the other is an authorized acrylic study made by student Jory Hale. When the original frame is found empty and an outdated “Original” label appears beside the study, a visitor spreads a theft rumor. Compare the artist’s signed notes, exhibition proofs, paint materials, condition reports, and custody documents to discover which work is which—and what actually happened to the original.",
+      "6-8": "At Glassmere Art Museum, the disappearance of Mara Lorne’s 2011 oil painting Lanterns at Low Tide appears to coincide with the presentation of a nearly identical teaching study. A prematurely printed label identifies the study as the original, and a preview visitor publishes a provocative claim of substitution. But the artist’s preparatory sketch and journal, the apprentice’s licensed acrylic materials, a skylight-moisture inspection, and separate custody records suggest a different narrative. Reconstruct the sequence of exhibition preparation and conservation decisions. Assess descriptive details, separate argument from substantiation, and determine whether the documented replica and missing original indicate fraud or an authorized preservation action."
+    },
+    "theoryLabels": {
+      "who": "Who initiated the documented move of the original painting?",
+      "where": "Where was Mara’s original oil painting placed?",
+      "why": "Why was the original taken off public display?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "celia",
+          "label": "Celia Venn — painting conservator"
+        },
+        {
+          "id": "jory",
+          "label": "Jory Hale — study-copy apprentice"
+        },
+        {
+          "id": "ben",
+          "label": "Ben Arden — label editor"
+        },
+        {
+          "id": "len",
+          "label": "Len Mirth — visiting photographer"
+        },
+        {
+          "id": "dana",
+          "label": "Dana Quill — collections registrar"
+        }
+      ],
+      "where": [
+        {
+          "id": "c4",
+          "label": "Climate-controlled Conservation Cabinet C-4"
+        },
+        {
+          "id": "studio",
+          "label": "On the teaching-studio easel"
+        },
+        {
+          "id": "shipping",
+          "label": "In a crate dispatched to an art buyer"
+        },
+        {
+          "id": "gallery",
+          "label": "Inside the empty original display frame"
+        },
+        {
+          "id": "giftshop",
+          "label": "In the museum gift shop"
+        }
+      ],
+      "why": [
+        {
+          "id": "protect-moisture",
+          "label": "To protect moisture-affected original oil paint from further lifting while it was treated"
+        },
+        {
+          "id": "secret-sale",
+          "label": "To sell the original secretly and pocket the money"
+        },
+        {
+          "id": "replace-copy",
+          "label": "To trick visitors into accepting a forbidden counterfeit"
+        },
+        {
+          "id": "punish-apprentice",
+          "label": "To punish Jory for making a teaching study"
+        },
+        {
+          "id": "prank",
+          "label": "To create an exciting mystery for the exhibition opening"
+        }
+      ]
+    },
+    "who": "celia",
+    "where": "c4",
+    "why": "protect-moisture",
+    "proofs": [
+      "conservation-transfer",
+      "vault-intake"
+    ],
+    "feedback": {
+      "who": "Look closely at transfer form 18-C4: Celia Venn initiated the preservation order at 8:29. Mara authorized a teaching study earlier, Ben printed a misleading label, Len circulated a rumor, and Dana received the object after the transfer. Which signature shows who initiated the move?",
+      "where": "Find Dana Quill’s independent 8:37 intake entry and match its object number to Celia’s 8:29 transfer. Both name climate-controlled Cabinet C-4, not the studio, sales crate, empty frame, or gift shop. Distinguish a display location from actual documented custody.",
+      "why": "Read the signed 8:05 condition report: a skylight leak caused moisture and lifting of the original’s oil paint. The 8:29 order cites that risk as the reason for temporary conservation storage. The authorized acrylic study and incorrect label explain suspicion but do not demonstrate a sale, counterfeit plot, punishment, or prank.",
+      "proofs": "Select BOTH custody records: CONSERVATION TRANSFER 18-C4 signed by Celia and the director, AND the independent CABINET C-4 INTAKE RECEIPT signed by Dana. Artist sketches, paint inventories, and wrong labels help distinguish the canvases, but alone they do not prove the mover, destination, and motive."
+    },
+    "resolution": {
+      "summary": "Celia Venn initiated an authorized protective transfer of Mara Lorne’s original oil painting to climate-controlled Conservation Cabinet C-4 after a skylight leak threatened its paint. Jory’s similar canvas was a permitted teaching study mislabeled through a print error—not a forged substitute.",
+      "outcome": "The art-show mystery began with a powerful but incomplete image: an empty frame beside a work labeled “Original.” Visitors assumed that Mara Lorne’s painting had been swapped for a counterfeit. The evidence showed why that conclusion was too fast. Mara’s 2011 sketch and journal describe five amber lanterns, a jade tide line, and a red hook inside lantern five. Apprentice Jory Hale’s authorized teaching study, painted years later in acrylic, deliberately uses four lanterns and a different tide pattern. The signed study permission required clear attribution. Unfortunately label editor Ben Arden reused an earlier printing template and placed the word “Original” beside Jory’s work, turning a classroom copy into a misleading exhibit. Len Mirth photographed the vacant frame and that label and posted a speculation without checking the museum’s records. On October 18, wind-driven rain leaked by the gallery skylight. At 8:05 conservator Celia Venn documented elevated humidity and lifting oil paint at the original’s lower edge. At 8:29 she initiated transfer form 18-C4, which museum director Imani Reed countersigned, ordering the vulnerable original into controlled storage. At 8:37 secure-collections registrar Dana Quill independently identified and received the same original in Conservation Cabinet C-4. Those two custody documents prove the authorized mover, the actual destination, and the protective reason; neither indicates a sale or deceitful substitution. At opening, museum staff repaired the skylight seal, corrected the display label, and explained the distinction between Mara’s original and Jory’s study. Jory’s work remained useful for comparing composition, mediums, and symbolism, with full permission and attribution. The original was stabilized and would return only after conservation staff determined it was safe. The museum also revised its visitor communications so a dramatic image could not outrun the evidence. The detectives learned that careful description and reliable documentary support are stronger than a compelling rumor, and that two objects can share a title without sharing an identity.",
+      "timeline": [
+        {
+          "time": "2011 • Original studio work",
+          "event": "Mara sketches five amber lanterns, a jade tide line, and a red hook and later completes the original in oils."
+        },
+        {
+          "time": "October 2, 2026",
+          "event": "Mara signs an authorization allowing apprentice Jory to create a clearly labeled teaching study."
+        },
+        {
+          "time": "October 8, 2026",
+          "event": "Jory logs blue acrylic pigments and paints a four-lantern study for the museum teaching exhibition."
+        },
+        {
+          "time": "October 16, 2026",
+          "event": "The exhibit team approves a new study label; Ben’s old “Original” template remains in the print folder."
+        },
+        {
+          "time": "October 18 • 7:40 a.m.",
+          "event": "Wind-driven rain leaks near the skylight and raises humidity around Mara’s original frame."
+        },
+        {
+          "time": "8:05 a.m.",
+          "event": "Celia records lifting paint and writes a condition report recommending temporary isolation."
+        },
+        {
+          "time": "8:29 a.m.",
+          "event": "Celia initiates, and director Imani Reed countersigns, transfer 18-C4 to protect the original."
+        },
+        {
+          "time": "8:37 a.m.",
+          "event": "Dana matches the accession number and signs an independent receipt for the original in Cabinet C-4."
+        },
+        {
+          "time": "9:00 a.m.",
+          "event": "Staff leave the authorized study visible while the original display frame remains empty pending a new notice."
+        },
+        {
+          "time": "9:15 a.m.",
+          "event": "Ben accidentally prints and installs the outdated “Original” label beside the study."
+        },
+        {
+          "time": "10:05 a.m.",
+          "event": "Len photographs the empty frame and misleading label and posts an unverified substitution rumor."
+        },
+        {
+          "time": "October 19, 2026",
+          "event": "Detectives reconstruct the evidence; staff correct the label, explain the authorized study, and conserve the original before its eventual return."
+        }
+      ]
+    }
+  }
+}
