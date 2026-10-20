@@ -183,9 +183,9 @@
       "number": "017",
       "category": "Outdoor Mystery",
       "icon": "🥾",
-      "summary": "Conflicting trail journal entries point toward a seasonal path adjustment.",
+      "summary": "A blue-chevron marker vanishes from an old creek crossing. Reconcile reordered journal pages, a delayed photograph, seasonal detour orders, and a signed installation receipt to find its safe new route.",
       "grades": "1–8 (focus: 3–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/trail-journal.json"
     }
   ]

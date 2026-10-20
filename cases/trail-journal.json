@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "visitor-kiosk": {
+      "name": "Fernwake Visitor Kiosk",
+      "icon": "🗺️",
+      "detail": "A trail map, bulletin board, and weatherproof notebook greet hikers at Fernwake Preserve.",
+      "scene": "hall"
+    },
+    "alder-ford": {
+      "name": "Alder Ford Crossing",
+      "icon": "🌊",
+      "detail": "At the older creek crossing, an empty signpost and swift spring runoff make the missing marker seem alarming.",
+      "scene": "hall"
+    },
+    "dry-ridge": {
+      "name": "Dry Ridge Junction",
+      "icon": "🌲",
+      "detail": "A higher, safer path joins the main trail where a freshly mounted blue-chevron marker points toward the seasonal detour.",
+      "scene": "hall"
+    },
+    "steward-shed": {
+      "name": "Steward Equipment Shed",
+      "icon": "🔧",
+      "detail": "Shelves of trail hardware, authorized work orders, and a signed installation ledger await inspection.",
+      "scene": "storage"
+    },
+    "wildlife-blind": {
+      "name": "Kingfisher Bank Lookout",
+      "icon": "🐦",
+      "detail": "A screened observation platform overlooks a fragile creek bank used by nesting birds.",
+      "scene": "art"
+    },
+    "records-room": {
+      "name": "Fernwake Records Cabin",
+      "icon": "📚",
+      "detail": "Old field journals, dated photographs, and archived trail maps sit in neat boxes beside a scanner.",
+      "scene": "library"
+    }
+  },
+  "evidence": [
+    {
+      "id": "april-journal",
+      "place": "records-room",
+      "icon": "📖",
+      "title": "The April Journal Page",
+      "type": "Original steward field journal",
+      "texts": {
+        "1-2": "A journal from April 12 says, “The blue arrow sign is at Alder Ford.” The page is old. It tells where the sign was in April.",
+        "3-5": "A journal entry dated April 12 reads: “Checked marker HCL-7 at Alder Ford. The blue arrow points across the creek.” Some readers treat this as proof that the marker must still be there. The date shows it describes an earlier trail inspection.",
+        "6-8": "The bound field journal records an April 12 site inspection: “HCL-7 secured at Alder Ford; blue chevron remains visible from the approach.” Its precise description is credible for that date, but the entry predates any seasonal route authorization. The reliability of a source does not make its observations timeless."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where was the blue arrow sign in April?",
+          "a": [
+            "At Alder Ford",
+            "At Dry Ridge Junction",
+            "Inside the school gym"
+          ],
+          "c": 0,
+          "h": "Find the place named on the old page.",
+          "why": "The April journal explicitly says the marker was at Alder Ford at that time."
+        },
+        "3-5": {
+          "q": "What important limit applies to the April entry?",
+          "a": [
+            "It guarantees the marker never moved afterward",
+            "It describes an earlier inspection, not necessarily today",
+            "It records the May detour installation"
+          ],
+          "c": 1,
+          "h": "Check the date before applying the claim to a later month.",
+          "why": "A dated primary account is good evidence of the sign’s April location, but later authorized changes can supersede it."
+        },
+        "6-8": {
+          "q": "What is the best assessment of this primary source?",
+          "a": [
+            "Unreliable because old journals are always invented",
+            "Proof that a later signed transfer must be forged",
+            "Accurate about an April observation but insufficient to establish the present location"
+          ],
+          "c": 2,
+          "h": "Distinguish authenticity from how long an observation remains current.",
+          "why": "The journal accurately documents HCL-7 at Alder Ford on April 12; it cannot negate later transfer records merely because it is firsthand."
+        }
+      }
+    },
+    {
+      "id": "may-journal",
+      "place": "records-room",
+      "icon": "📝",
+      "title": "The Reordered May Page",
+      "type": "Second journal entry with smudged words",
+      "texts": {
+        "1-2": "A page marked May 8 says, “Put the blue sign on the high path.” The page was filed before the April page by mistake. May comes after April.",
+        "3-5": "A page labeled May 8 says: “Moved the blue marker to the high path before the school walk.” It was accidentally placed ahead of an April entry when loose pages were scanned. The apparent backward order is a filing problem, not evidence that time ran backward.",
+        "6-8": "The May 8 field note states: “Shifted HCL-7 to the upper junction under the seasonal route notice; reopened approach from ridge.” A scanning clerk placed its loose page before the April 12 entry. Readers who infer chronology from page order rather than dates create a contradiction that disappears once the original dates are restored."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which journal event happened later?",
+          "a": [
+            "The April 12 inspection",
+            "The May 8 sign move",
+            "The day the preserve opened long ago"
+          ],
+          "c": 1,
+          "h": "Compare the month names and numbers.",
+          "why": "May 8 comes after April 12, even if the pages were scanned out of order."
+        },
+        "3-5": {
+          "q": "Why do the journal pages seem to disagree?",
+          "a": [
+            "The steward wrote both entries on the same day",
+            "The blue sign was never on either route",
+            "They describe different dates and one page was filed out of order"
+          ],
+          "c": 2,
+          "h": "Look for the actual dates, not the order of scanned pages.",
+          "why": "The April note reports an earlier location and the May note records a later relocation; the misplaced page only confuses presentation."
+        },
+        "6-8": {
+          "q": "Which reading strategy best resolves the apparent contradiction?",
+          "a": [
+            "Sequence dated entries by event time instead of scan order",
+            "Reject the May page because it appears first",
+            "Assume every entry describes the same day"
+          ],
+          "c": 0,
+          "h": "Treat document order and historical chronology as different things.",
+          "why": "The May 8 relocation followed the April 12 inspection, regardless of how the loose pages were scanned."
+        }
+      }
+    },
+    {
+      "id": "seasonal-detour-order",
+      "place": "steward-shed",
+      "icon": "📋",
+      "title": "Signed Seasonal Detour Order",
+      "type": "Primary authorization — key proof",
+      "texts": {
+        "1-2": "A park order signed on May 6 says Mara Ives may move sign HCL-7 from Alder Ford to Dry Ridge Junction. The safe trail goes around the flooded bank and bird nests.",
+        "3-5": "A signed May 6 order directs trail steward Mara Ives to relocate HCL-7 from Alder Ford to Dry Ridge Junction for the spring season. The detour avoids high water and nesting birds. The order authorizes the change; it is not a report of theft or vandalism.",
+        "6-8": "Seasonal operations order FW-26-14, dated and signed May 6 by ranger Elin Voss, names Mara Ives as the authorized installer and specifies: “Transfer marker HCL-7, Alder Ford → Dry Ridge Junction; activate upper connector while runoff exceeds the crossing threshold and nesting-bank access is restricted.” This primary-source directive establishes the actor and purpose, though a separate completion record is still needed to verify execution."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who was allowed to move the marker?",
+          "a": [
+            "A random visitor",
+            "A delivery driver named Pip",
+            "Trail steward Mara Ives"
+          ],
+          "c": 2,
+          "h": "Look for the person named on the signed order.",
+          "why": "The May 6 order specifically authorizes trail steward Mara Ives to relocate HCL-7."
+        },
+        "3-5": {
+          "q": "Why did the ranger approve moving HCL-7?",
+          "a": [
+            "To guide hikers around high water and nesting birds",
+            "To hide the hiking trail from tourists",
+            "To replace every forest sign with advertising"
+          ],
+          "c": 0,
+          "h": "Read the safety and wildlife reasons on the order.",
+          "why": "The official directive cites both risky spring runoff and a protected nesting bank as reasons for the seasonal detour."
+        },
+        "6-8": {
+          "q": "What can the signed order establish, and what can it not establish alone?",
+          "a": [
+            "It proves an unknown visitor stole the marker",
+            "It establishes who was authorized and why; a completion record must confirm the move",
+            "It confirms that everyone saw the sign installed"
+          ],
+          "c": 1,
+          "h": "Separate permission to do a task from proof that it was completed.",
+          "why": "The signed May 6 directive is primary evidence of authorization, destination, and rationale; an installation receipt independently verifies the work occurred."
+        }
+      }
+    },
+    {
+      "id": "installation-receipt",
+      "place": "dry-ridge",
+      "icon": "📍",
+      "title": "Dry Ridge Installation Receipt",
+      "type": "Signed and timed completion record — key proof",
+      "texts": {
+        "1-2": "A signed May 8 receipt says Mara put sign HCL-7 at Dry Ridge Junction at 9:20 a.m. A small picture shows the sign beside the high path.",
+        "3-5": "An installation receipt dated May 8 at 9:20 a.m. records Mara Ives fastening HCL-7 at Dry Ridge Junction. It includes a photographed marker serial number and a second worker’s countersignature, which confirms that the assigned move actually happened.",
+        "6-8": "The May 8, 09:20 completion slip records HCL-7’s serial number, the Dry Ridge Junction location, and an image of its fresh mounting brackets. Installer Mara Ives and checker Joel Sato both signed. Because the document records the actual placement rather than a proposed action, it independently corroborates the earlier authorization and fixes the relocated sign’s destination."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where was HCL-7 placed on May 8?",
+          "a": [
+            "At Dry Ridge Junction",
+            "At the old creek crossing",
+            "In the lunchroom"
+          ],
+          "c": 0,
+          "h": "Look at the destination on the signed receipt.",
+          "why": "The receipt records that HCL-7 was installed at Dry Ridge Junction."
+        },
+        "3-5": {
+          "q": "How does this receipt differ from the earlier work order?",
+          "a": [
+            "It cancels the seasonal detour before it began",
+            "It confirms the move was completed instead of merely approved",
+            "It says a thief carried the sign away"
+          ],
+          "c": 1,
+          "h": "Compare a directive for future work with a signed record of finished work.",
+          "why": "The order authorizes the relocation; the installation receipt documents its actual completion on May 8."
+        },
+        "6-8": {
+          "q": "Why is the receipt especially strong evidence of the marker’s location?",
+          "a": [
+            "Its handwriting is more attractive than the old map",
+            "It repeats an anonymous social-media claim",
+            "A timestamp, serial number, photograph, and independent countersignature document placement"
+          ],
+          "c": 2,
+          "h": "Look for directly verifiable identifiers and independent confirmation.",
+          "why": "The signed, timed installation record ties the same HCL-7 serial to the new junction and includes corroborating photo evidence."
+        }
+      }
+    },
+    {
+      "id": "old-kiosk-map",
+      "place": "visitor-kiosk",
+      "icon": "🗺️",
+      "title": "The Familiar Trail Map",
+      "type": "Outdated printed visitor map",
+      "texts": {
+        "1-2": "The map at the kiosk shows the blue arrow beside Alder Ford. Tiny print says the map was made in March, before the spring change.",
+        "3-5": "A March visitor map places marker HCL-7 at Alder Ford. Its footer says “Base route; check seasonal notices.” Hikers relying only on the picture may expect the old marker to remain there, but the map predates the May safety detour.",
+        "6-8": "The popular laminated base map, revised in March, identifies Alder Ford as the permanent route. Its easily overlooked legend directs hikers to current seasonal bulletins. Readers who ignore the publication date and qualifier may mistake a valid historical map for an authoritative description of present trail conditions."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does the map show?",
+          "a": [
+            "A train through the city",
+            "The old trail across Alder Ford",
+            "A boat dock next to school"
+          ],
+          "c": 1,
+          "h": "Look where the printed arrow points.",
+          "why": "The older kiosk map shows the original path through Alder Ford."
+        },
+        "3-5": {
+          "q": "Why might the map confuse a hiker in May?",
+          "a": [
+            "It is a map of an entirely different country",
+            "It shows the sign at Dry Ridge Junction already",
+            "It was printed before the seasonal trail change"
+          ],
+          "c": 2,
+          "h": "Check the map date and seasonal notice.",
+          "why": "The March base map shows the permanent route, while a May detour changes where hikers should go."
+        },
+        "6-8": {
+          "q": "How should investigators use the map responsibly?",
+          "a": [
+            "Treat it as evidence of the baseline route and consult current seasonal notices",
+            "Treat it as proof that all newer signed records are false",
+            "Discard it entirely because it contains no useful information"
+          ],
+          "c": 0,
+          "h": "Interpret the source within its publication date and printed limitations.",
+          "why": "The map remains useful for reconstructing the older trail but is insufficient to establish the current detour after May."
+        }
+      }
+    },
+    {
+      "id": "revised-route-bulletin",
+      "place": "visitor-kiosk",
+      "icon": "🧭",
+      "title": "The Detour Bulletin",
+      "type": "Current public-route notice",
+      "texts": {
+        "1-2": "A new yellow notice says, “Use Dry Ridge Junction this spring.” It also says not to walk across Alder Ford while the creek is high.",
+        "3-5": "A May 7 bulletin instructs hikers to follow the blue-chevron marker at Dry Ridge Junction. It explains that the lower crossing is closed while the creek is high and the nearby nest bank is protected. The notice applies only for the seasonal detour.",
+        "6-8": "The temporary route bulletin dated May 7 specifies that the blue-chevron guidance marker will be moved to Dry Ridge Junction on May 8. It overlays the upper connector on the March base map, closes the lower ford for runoff and nesting protection, and states that the baseline trail will be reconsidered after seasonal hazards subside."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which path should hikers use this spring?",
+          "a": [
+            "The closed ford through the creek",
+            "A path behind the town supermarket",
+            "The higher path by Dry Ridge Junction"
+          ],
+          "c": 2,
+          "h": "Find the place named in the new yellow notice.",
+          "why": "The seasonal notice directs visitors onto the higher detour at Dry Ridge Junction."
+        },
+        "3-5": {
+          "q": "What is the bulletin’s main purpose?",
+          "a": [
+            "To tell hikers how to follow the temporary safe route",
+            "To announce that the preserve is permanently closed",
+            "To report that Mara has been arrested"
+          ],
+          "c": 0,
+          "h": "Ask what action the notice wants readers to take.",
+          "why": "Its purpose is to communicate the current seasonal detour and explain why the old crossing is temporarily off limits."
+        },
+        "6-8": {
+          "q": "How does the bulletin reconcile the old and new maps?",
+          "a": [
+            "It claims the March map never existed",
+            "It overlays a temporary high-route adjustment without erasing the older baseline route",
+            "It confirms the marker moved before the March map was printed"
+          ],
+          "c": 1,
+          "h": "Notice how the documents refer to different conditions and effective dates.",
+          "why": "The March map describes the normal path, while the May bulletin supersedes that guidance for the seasonal closure."
+        }
+      }
+    },
+    {
+      "id": "creek-gauge",
+      "place": "alder-ford",
+      "icon": "🌧️",
+      "title": "Alder Ford Water Readings",
+      "type": "Dated creek safety measurements",
+      "texts": {
+        "1-2": "The creek rose after rain. On May 5, the water was too high for hikers to cross safely. The trail workers marked the ford as closed.",
+        "3-5": "Creek-monitor records show a sharp rise after spring rain on May 5. The water exceeded the posted safe-crossing mark, and the route team recommended the upper connector until levels fell. The measurements explain one reason the marker had to move.",
+        "6-8": "Timestamped gauge readings from May 3–6 show the ford crossing its safety threshold during heavy runoff. The recorded level prompted a temporary closure recommendation, not an accusation of tampering. The objective readings support the order’s risk rationale without, by themselves, identifying who relocated HCL-7."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why was the old creek crossing unsafe?",
+          "a": [
+            "The water was too high",
+            "All the stones had turned to gold",
+            "The bridge had been painted purple"
+          ],
+          "c": 0,
+          "h": "Find what changed in the creek.",
+          "why": "The safety readings report high spring water at Alder Ford."
+        },
+        "3-5": {
+          "q": "What conclusion does the gauge record best support?",
+          "a": [
+            "A visitor certainly stole HCL-7",
+            "A detour was needed because crossing conditions were unsafe",
+            "Mara moved the sign before any rain fell"
+          ],
+          "c": 1,
+          "h": "Separate a safety measurement from an accusation about a person.",
+          "why": "Elevated creek levels explain the safety hazard; they do not independently establish who performed the move."
+        },
+        "6-8": {
+          "q": "What is the evidentiary role of the gauge log?",
+          "a": [
+            "It documents the marker’s exact new mounting location",
+            "It proves every witness statement is false",
+            "It independently supports the hazard motivating the seasonal order"
+          ],
+          "c": 2,
+          "h": "Ask whether the instrument records water, sign movement, or intentions.",
+          "why": "The objective creek measurements corroborate unsafe runoff and the rationale for a high-route detour, but not the completion details."
+        }
+      }
+    },
+    {
+      "id": "wildlife-survey",
+      "place": "wildlife-blind",
+      "icon": "🐣",
+      "title": "Bank Nest Survey",
+      "type": "Habitat protection field report",
+      "texts": {
+        "1-2": "A bird survey found nests near the low trail. People walking close to the creek could disturb the birds. The ranger asked hikers to stay on the high path.",
+        "3-5": "Wildlife volunteers documented active nests along the soft creek bank beside Alder Ford. Their May 4 report recommends keeping hikers away during the breeding season. This gives a second, environmental reason for routing visitors above the creek.",
+        "6-8": "The May 4 nesting-bank assessment records active breeding sites in an easily disturbed riparian area beside the lower trail. The recommendation to redirect foot traffic was a seasonal precaution, not evidence that nesting birds had physically moved or damaged the trail marker. Read beside the water-gauge record, it explains the dual purpose of the temporary route."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What was the ranger trying to protect?",
+          "a": [
+            "A television set beside a tent",
+            "Bird nests near the creek",
+            "A toy airplane in a box"
+          ],
+          "c": 1,
+          "h": "Look for living things named in the survey.",
+          "why": "The survey identifies nests by the low creek trail as an area needing protection."
+        },
+        "3-5": {
+          "q": "What is the best inference from the nest survey?",
+          "a": [
+            "The birds carried the trail marker into the woods",
+            "The wildlife survey ordered every hiker to go home forever",
+            "Keeping people on the high route could reduce disturbance near the bank"
+          ],
+          "c": 2,
+          "h": "Focus on the action that would protect the nest area.",
+          "why": "Diverting foot traffic away from nesting sites reduces disturbance during the sensitive season."
+        },
+        "6-8": {
+          "q": "How does this report contribute to the overall explanation?",
+          "a": [
+            "It substantiates the conservation purpose but does not alone prove the marker’s destination",
+            "It disproves the signed work order",
+            "It confirms that Mara forged the installation photo"
+          ],
+          "c": 0,
+          "h": "Distinguish a reason for action from a record of where the action occurred.",
+          "why": "The nest survey explains the environmental rationale, while separate signed records identify the authorized mover and new placement."
+        }
+      }
+    },
+    {
+      "id": "photo-date-record",
+      "place": "records-room",
+      "icon": "📷",
+      "title": "The Misleading Photo Post",
+      "type": "Image metadata and delayed upload",
+      "texts": {
+        "1-2": "An online picture posted May 9 shows the sign at Alder Ford. But the camera date says April 13. It is an old picture shared later.",
+        "3-5": "A photo uploaded on May 9 shows HCL-7 at Alder Ford and sparks rumors that the relocation never happened. Its original camera timestamp is April 13—weeks before the move. The upload date tells when someone shared the photo, not when it was taken.",
+        "6-8": "Image metadata records the photograph’s capture on April 13, while the community account published it May 9 without an original-date caption. The image accurately depicts the sign at Alder Ford on an earlier date; the misleading inference arises from treating publication time as observation time. Compare metadata with primary relocation receipts."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When was the picture actually taken?",
+          "a": [
+            "May 9",
+            "On the first day of winter",
+            "April 13"
+          ],
+          "c": 2,
+          "h": "Find the camera date, not the day it was posted.",
+          "why": "The image’s recorded capture date is April 13, although it was uploaded May 9."
+        },
+        "3-5": {
+          "q": "What caused the misunderstanding about the photograph?",
+          "a": [
+            "People confused the upload date with the capture date",
+            "The sign appears in two places in the same instant",
+            "The photo was taken after the May 8 relocation"
+          ],
+          "c": 0,
+          "h": "Compare when a picture was captured with when someone shared it.",
+          "why": "A later online posting does not mean the scene was photographed that day."
+        },
+        "6-8": {
+          "q": "Which claim is supported by the image metadata?",
+          "a": [
+            "Every photograph posted after May 8 must be fake",
+            "The photograph is an authentic earlier view, not proof against the later relocation",
+            "A single photo can establish who signed the May 6 work order"
+          ],
+          "c": 1,
+          "h": "Notice what the date can and cannot establish.",
+          "why": "The metadata places the image in April, consistent with the early journal and not in conflict with the later May transfer."
+        }
+      }
+    },
+    {
+      "id": "hardware-check",
+      "place": "alder-ford",
+      "icon": "🔩",
+      "title": "The Empty Mounting Bracket",
+      "type": "Trail hardware inspection",
+      "texts": {
+        "1-2": "The old signpost still has clean bolt holes. No one broke the post. A worker removed the bolts with tools and took the sign away carefully.",
+        "3-5": "At Alder Ford, the marker’s mounting bolts were removed neatly and the support post was undamaged. A steward noted that the hardware matched the workshop tool set. These observations fit planned maintenance better than a sign torn away in anger, though they do not name the worker.",
+        "6-8": "The former HCL-7 mounting point shows an intact post, squared wrench impressions, and no pry damage. This physical trace is consistent with a controlled removal using authorized tools; it weakens the vandalism theory without proving authorization on its own. It becomes meaningful when compared with the May 6 work order and May 8 receipt."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did workers find at the old signpost?",
+          "a": [
+            "Neat holes and no broken wood",
+            "A deep hole made by a bear",
+            "A new sign that said STOP"
+          ],
+          "c": 0,
+          "h": "Look at whether the wood was damaged.",
+          "why": "The post was undamaged, with tidy bolt holes where the sign had been mounted."
+        },
+        "3-5": {
+          "q": "What explanation fits the hardware evidence best?",
+          "a": [
+            "Someone shattered the post with a hammer",
+            "The sign was removed carefully with tools",
+            "A storm bent the sign into the water"
+          ],
+          "c": 1,
+          "h": "Look for damage that would indicate forced removal.",
+          "why": "Neat tool marks and an intact post are more consistent with planned removal than vandalism."
+        },
+        "6-8": {
+          "q": "Which inference is warranted by the old mounting bracket?",
+          "a": [
+            "The bracket alone proves Mara signed the removal order",
+            "The absence of damage proves no marker ever stood there",
+            "Careful removal is plausible, but documents are needed to establish who was authorized"
+          ],
+          "c": 2,
+          "h": "Avoid identifying a person from tool marks alone.",
+          "why": "The physical evidence supports controlled removal but requires a signed directive and completion record for attribution."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "mara-ives",
+      "place": "steward-shed",
+      "icon": "🧑‍🔧",
+      "name": "Mara Ives",
+      "role": "Lead trail steward",
+      "texts": {
+        "1-2": "Mara says, “I moved the blue marker to Dry Ridge on May 8. The ranger told me to do it so hikers could avoid the high creek.”",
+        "3-5": "Trail steward Mara Ives says she transferred HCL-7 to Dry Ridge Junction on May 8, following a signed detour plan. She explains that high runoff made Alder Ford unsafe and that fragile bird nests needed less nearby foot traffic. Her account can be checked against work records.",
+        "6-8": "Mara, the named installer, recalls moving HCL-7 on the morning of May 8 under the seasonal route directive. She cites both hazardous creek conditions and nesting-bank protection. Because her testimony describes her own actions, it is valuable firsthand evidence, but the countersigned installation receipt and original directive are essential independent checks on her claims."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does Mara say she put the sign?",
+          "a": [
+            "In a storage closet at school",
+            "At Dry Ridge Junction",
+            "Under a fallen tree in a cave"
+          ],
+          "c": 1,
+          "h": "Listen for the place Mara names.",
+          "why": "Mara says she moved HCL-7 to Dry Ridge Junction under the approved seasonal plan."
+        },
+        "3-5": {
+          "q": "How can detectives verify Mara’s statement?",
+          "a": [
+            "Accept it solely because Mara sounds confident",
+            "Ask an unrelated visitor to guess the sign color",
+            "Compare it with the signed order and installation receipt"
+          ],
+          "c": 2,
+          "h": "Look for independent records that name the worker and destination.",
+          "why": "The May 6 authorization and May 8 countersigned receipt corroborate Mara’s account."
+        },
+        "6-8": {
+          "q": "What is the strongest evaluation of Mara’s testimony?",
+          "a": [
+            "It is a firsthand account that still benefits from documentary corroboration",
+            "It is automatically false because the speaker participated",
+            "It proves the high-water gauge is unnecessary or fabricated"
+          ],
+          "c": 0,
+          "h": "Remember that firsthand does not mean infallible or independent.",
+          "why": "Mara reports her own actions, but the signed authorization and countersigned completion record strengthen the conclusion."
+        }
+      }
+    },
+    {
+      "id": "lena-quill",
+      "place": "visitor-kiosk",
+      "icon": "🧑‍💼",
+      "name": "Lena Quill",
+      "role": "Visitor information volunteer",
+      "texts": {
+        "1-2": "Lena says a family followed the old March map and thought the blue arrow was missing. She helped them find the new yellow notice.",
+        "3-5": "Lena remembers visitors using the March map after a May detour notice had been posted. When the old marker was absent, they suspected theft. Lena directed them to the new bulletin explaining the safer high route. She did not personally watch the marker being installed.",
+        "6-8": "At the kiosk, Lena describes visitors who treated the laminated baseline map as current operational guidance. She pointed out the temporary May bulletin, but admits she was not present during HCL-7’s relocation. Her account explains the rumor’s spread and illustrates how authoritative-looking materials can become outdated without becoming fraudulent."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did some hikers think the marker had vanished?",
+          "a": [
+            "They saw Mara throw it in the creek",
+            "They forgot where the park was",
+            "They followed an old map"
+          ],
+          "c": 2,
+          "h": "Find which map the family was reading.",
+          "why": "The family relied on a March map that still showed the older trail configuration."
+        },
+        "3-5": {
+          "q": "What is Lena’s testimony best able to explain?",
+          "a": [
+            "Why visitors misunderstood the missing sign",
+            "Who installed HCL-7 at exactly 9:20 a.m.",
+            "Which wrench size was used on the post"
+          ],
+          "c": 0,
+          "h": "Look at what Lena actually saw at the information kiosk.",
+          "why": "Lena observed confused hikers and referred them to the bulletin; she did not witness the installation."
+        },
+        "6-8": {
+          "q": "Which limitation matters most when using Lena’s account?",
+          "a": [
+            "Her explanation cancels every signed park record",
+            "She can explain visitor confusion, but cannot independently verify the relocation work",
+            "She was the only witness who knew the creek level"
+          ],
+          "c": 1,
+          "h": "Separate observed reactions from an event she did not witness.",
+          "why": "Lena’s testimony concerns map use and rumor formation, not firsthand observation of the transfer itself."
+        }
+      }
+    },
+    {
+      "id": "owen-hart",
+      "place": "alder-ford",
+      "icon": "🥾",
+      "name": "Owen Hart",
+      "role": "Day hiker and online commenter",
+      "texts": {
+        "1-2": "Owen says, “The sign was gone when I came by. I thought someone took it.” He never saw anyone stealing a sign.",
+        "3-5": "Owen reached Alder Ford on May 9 and saw the empty mount. He wrote online that the marker had been stolen, but he admits he did not see anyone remove it. His missing-sign observation may be true even though his explanation was only a guess.",
+        "6-8": "Owen’s account accurately records an empty mounting post on May 9. However, his public accusation of theft exceeds the scope of his direct observation: he neither witnessed removal nor checked current detour orders. His statement is useful for contrasting observable detail with causal interpretation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Owen actually see?",
+          "a": [
+            "An empty signpost",
+            "A person stealing the sign",
+            "A bear chewing the trail map"
+          ],
+          "c": 0,
+          "h": "Find the thing Owen saw with his own eyes.",
+          "why": "Owen saw the marker missing from its old post but did not witness a theft."
+        },
+        "3-5": {
+          "q": "What is Owen’s unsupported assumption?",
+          "a": [
+            "That the old post was empty",
+            "That someone stole the sign",
+            "That he visited on May 9"
+          ],
+          "c": 1,
+          "h": "Separate what he saw from what he guessed caused it.",
+          "why": "Owen observed absence and inferred theft without seeing any removal or checking detour records."
+        },
+        "6-8": {
+          "q": "How should his online accusation be evaluated?",
+          "a": [
+            "Assume any firsthand witness knows the cause of what they observed",
+            "Reject his entire account because he used social media",
+            "Treat the empty post as observation and the theft allegation as uncorroborated inference"
+          ],
+          "c": 2,
+          "h": "Distinguish the factual observation from its proposed explanation.",
+          "why": "The empty post is credible firsthand evidence; the theft claim is a speculative causal interpretation contradicted by documentation."
+        }
+      }
+    },
+    {
+      "id": "tess-fen",
+      "place": "wildlife-blind",
+      "icon": "🦉",
+      "name": "Tess Fen",
+      "role": "Nesting-bank survey volunteer",
+      "texts": {
+        "1-2": "Tess counts birds at the creek. She says the high path is quieter for the nesting birds. She did not see the sign being moved.",
+        "3-5": "Wildlife volunteer Tess Fen says a seasonal detour would reduce foot traffic near nesting birds along Alder Ford. She observed more visitors taking the upper route after the bulletin appeared. She did not witness the sign installation and cannot identify the worker.",
+        "6-8": "Tess reports active nesting habitat along the lower creek bank and regards the reroute as a defensible conservation measure. Her surveys document conditions and behavior, not the identity of HCL-7’s installer. Her perspective helps explain why the detour matters, while the operation records establish exactly what was done."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why does Tess like the high trail?",
+          "a": [
+            "It leads straight to a toy shop",
+            "It keeps hikers farther from bird nests",
+            "It is the only place with a bus stop"
+          ],
+          "c": 1,
+          "h": "Find what Tess is trying to protect.",
+          "why": "Tess says the detour reduces human traffic near nesting birds."
+        },
+        "3-5": {
+          "q": "Which part of the mystery can Tess best help explain?",
+          "a": [
+            "The exact signature on the installation receipt",
+            "The April photo’s original camera settings",
+            "The reason the trail should avoid the nesting bank"
+          ],
+          "c": 2,
+          "h": "Consider Tess’s specialty and what she directly studied.",
+          "why": "Her wildlife observations support the conservation rationale rather than the worker’s identity."
+        },
+        "6-8": {
+          "q": "Why is Tess a useful but limited source?",
+          "a": [
+            "Her habitat observations clarify motive, not who physically moved the sign",
+            "She saw every stage of the relocation",
+            "Her bird counts invalidate the creek-gauge readings"
+          ],
+          "c": 0,
+          "h": "Separate evidence about motivation from evidence about action.",
+          "why": "Tess offers credible environmental context but did not witness HCL-7 being transported or installed."
+        }
+      }
+    },
+    {
+      "id": "joel-sato",
+      "place": "dry-ridge",
+      "icon": "🧢",
+      "name": "Joel Sato",
+      "role": "Trail crew checker",
+      "texts": {
+        "1-2": "Joel says, “I checked the new marker at Dry Ridge with Mara.” His name is next to hers on the signed May 8 receipt.",
+        "3-5": "Trail crew checker Joel Sato recalls verifying HCL-7 at Dry Ridge Junction on May 8. He says the serial number matched the old sign, and he countersigned Mara’s installation receipt after looking at the new mounting point.",
+        "6-8": "Joel Sato, serving as the second sign-off on May 8, reports comparing HCL-7’s stamped identifier against the work order and inspecting its new bracket at Dry Ridge Junction. His testimony aligns with the photographed completion slip; it provides independent corroboration beyond the installer’s own recollection."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Joel check?",
+          "a": [
+            "The radio station clock",
+            "A lost library book",
+            "The marker at Dry Ridge Junction"
+          ],
+          "c": 2,
+          "h": "Listen for what Joel inspected.",
+          "why": "Joel inspected the newly mounted HCL-7 sign at Dry Ridge Junction."
+        },
+        "3-5": {
+          "q": "Why does Joel’s signature matter?",
+          "a": [
+            "It provides a second check that the specified marker was installed",
+            "It means he personally wrote the April journal",
+            "It proves Owen watched a theft"
+          ],
+          "c": 0,
+          "h": "Look at Joel’s role as a checker rather than the main installer.",
+          "why": "Joel’s countersignature independently verifies the marker serial and its placement at Dry Ridge."
+        },
+        "6-8": {
+          "q": "Which conclusion is strengthened by Joel’s countersignature?",
+          "a": [
+            "The trail route changed permanently without approval",
+            "The completion record was checked by someone other than the installer",
+            "The social-media photograph was captured in May"
+          ],
+          "c": 1,
+          "h": "A second sign-off supports the receipt’s reliability.",
+          "why": "Joel’s independent inspection corroborates the May 8 placement and helps rule out mistaken identity of the marker."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "trail-journal",
+    "title": "The Trail Journal",
+    "subtitle": "CASE FILE 017 • THE MISSING BLUE ARROW",
+    "goal": "Discover who relocated marker HCL-7, where it was installed, and why. Read the journal by its actual dates, compare outdated and current maps, and corroborate the signed relocation order with the installation receipt.",
+    "brief": {
+      "1-2": "At Fernwake Preserve, a blue arrow sign is missing from its old post by the creek. An April journal says it was there. A May page says it was moved. The pages were mixed up! Follow the dates, check the signs, and find the safe path.",
+      "3-5": "Fernwake Preserve’s blue-chevron trail marker HCL-7 has disappeared from Alder Ford. A hiker calls it theft, an old visitor map still shows the sign there, and the steward’s journal seems to disagree with itself. Spring rain has swollen the creek, and nesting birds occupy the lower bank. Sort the journal entries into time order, compare the temporary route bulletin with the base map, and examine the park’s signed work records. Where is the marker now—and was its disappearance actually a problem?",
+      "6-8": "At Fernwake Preserve, the absence of blue-chevron marker HCL-7 from Alder Ford prompts claims of vandalism. A March visitor map and an April field journal agree that it belonged at the creek crossing, but another journal page appears out of sequence, and a photograph shared in May seems to confirm the old location. Investigators must distinguish capture dates from upload dates, scanned page order from event chronology, and direct observation from rumor. Correlate measured high-water conditions, a riparian nesting survey, an official May detour order, and a countersigned installation record. Determine who moved the marker, its documented destination, and why this change preserves both visitor safety and habitat."
+    },
+    "theoryLabels": {
+      "who": "Who relocated blue-chevron marker HCL-7?",
+      "where": "Where is HCL-7 installed for the seasonal route?",
+      "why": "Why was the marker moved?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "mara",
+          "label": "Mara Ives — authorized trail steward"
+        },
+        {
+          "id": "owen",
+          "label": "Owen Hart — hiker who reported theft"
+        },
+        {
+          "id": "lena",
+          "label": "Lena Quill — kiosk volunteer"
+        },
+        {
+          "id": "tess",
+          "label": "Tess Fen — wildlife survey volunteer"
+        },
+        {
+          "id": "joel",
+          "label": "Joel Sato — crew checker"
+        }
+      ],
+      "where": [
+        {
+          "id": "dry-ridge",
+          "label": "Dry Ridge Junction, beside the upper connector"
+        },
+        {
+          "id": "alder-ford",
+          "label": "The original post at Alder Ford"
+        },
+        {
+          "id": "records",
+          "label": "The Fernwake Records Cabin"
+        },
+        {
+          "id": "shed",
+          "label": "Locked inside the steward equipment shed"
+        },
+        {
+          "id": "wildlife",
+          "label": "Hidden beneath the wildlife lookout"
+        }
+      ],
+      "why": [
+        {
+          "id": "seasonal",
+          "label": "To guide hikers around high spring runoff and protect the nesting creek bank"
+        },
+        {
+          "id": "theft",
+          "label": "To steal the marker and sell it as scrap"
+        },
+        {
+          "id": "prank",
+          "label": "To trick visiting hikers as a prank"
+        },
+        {
+          "id": "permanent",
+          "label": "To erase the preserve’s original route permanently"
+        },
+        {
+          "id": "storm",
+          "label": "Because wind blew the sign to the ridge without human help"
+        }
+      ]
+    },
+    "who": "mara",
+    "where": "dry-ridge",
+    "why": "seasonal",
+    "proofs": [
+      "seasonal-detour-order",
+      "installation-receipt"
+    ],
+    "feedback": {
+      "who": "Start with the May 6 signed order. It names Mara Ives as the authorized installer of HCL-7; Joel Sato checked the installation afterward. Owen observed the old post, Lena described confused visitors, and Tess studied nesting habitat. Who actually performed the relocation?",
+      "where": "The old March map and April photo show the FORMER location at Alder Ford. Read the May 8 installation receipt for the marker’s serial number, date, photograph, and exact destination. Which junction has the verified new mount?",
+      "why": "Check the hazard measurements, nesting-bank report, and seasonal route directive. The temporary relocation keeps hikers away from hazardous high water AND protects sensitive nesting habitat. There is no evidence of theft, vandalism, a prank, or an unapproved permanent removal.",
+      "proofs": "Choose BOTH the SIGNED SEASONAL DETOUR ORDER and the DRY RIDGE INSTALLATION RECEIPT. The first authorizes Mara, identifies both locations, and explains the safety and conservation reasons. The second documents the actual 9:20 a.m. installation, serial number, photo, and independent countersignature. Old maps, photos, and witness guesses are not enough."
+    },
+    "resolution": {
+      "summary": "Trail steward Mara Ives moved marker HCL-7 from Alder Ford to Dry Ridge Junction on May 8 under a signed seasonal detour plan. High spring water made the ford unsafe, and nesting birds required quieter access along the creek bank. The marker was neither stolen nor lost.",
+      "outcome": "The missing blue arrow was not stolen. Fernwake Preserve’s route had changed temporarily because the landscape had changed. In early April, HCL-7 stood at Alder Ford, and the March visitor map correctly showed the permanent route across the creek. Trail steward Mara Ives recorded the marker there on April 12; an April 13 photograph later provided the same historical view. Both records were authentic, but neither described the trail after the spring runoff. Heavy rains pushed the creek above its safe-crossing threshold by May 5, and the May 4 wildlife survey identified sensitive nesting sites along the same lower bank. On May 6, ranger Elin Voss signed a seasonal detour order naming Mara as installer and directing HCL-7 from Alder Ford to Dry Ridge Junction. The upper path would keep hikers away from dangerous water and give nesting birds a quieter bank. A May 7 public bulletin announced the upcoming change. At 9:20 a.m. on May 8, Mara installed the original HCL-7 at Dry Ridge Junction, and crew checker Joel Sato signed the completion receipt after verifying its stamped serial number and newly fastened bracket. The sign was never destroyed or sold; it was carefully unbolted, transported, and reinstalled for the temporary detour. Confusion arose for understandable reasons. First, the visitor map displayed the older baseline route, with a seasonal-closure warning printed in small type. Second, the loose May journal page had been scanned before the April page, inviting readers to mistake file order for event order. Third, an April 13 image showing the marker at Alder Ford was uploaded without its original date on May 9. Its publication date was mistaken for its capture date. Finally, hiker Owen Hart accurately observed the empty post, but interpreted it as theft despite not witnessing a removal. Visitor volunteer Lena Quill explained the outdated map; wildlife volunteer Tess Fen supplied habitat context; and Joel independently confirmed installation. Each person contributed a different part of the story, yet the signed directive and countersigned receipt supplied the decisive who, where, and why. The investigators restored the actual sequence, distinguished main ideas from incidental details, and checked conclusions against primary documents. The preserve will reconsider the lower crossing when conditions permit. Until then, the blue arrow guides travelers along the safe high connector, and the old journal remains a record of its own date—not a contradiction of what happened afterward.",
+      "timeline": [
+        {
+          "time": "March 2026",
+          "event": "The baseline visitor map is printed with marker HCL-7 at Alder Ford and a reminder to check seasonal notices."
+        },
+        {
+          "time": "April 12",
+          "event": "Mara Ives inspects HCL-7 at Alder Ford and records its original placement in her field journal."
+        },
+        {
+          "time": "April 13",
+          "event": "A photograph captures HCL-7 at the creek crossing; the image is not shared publicly until May."
+        },
+        {
+          "time": "May 4",
+          "event": "Wildlife surveyors record active nests beside the lower trail and recommend limiting nearby hikers."
+        },
+        {
+          "time": "May 5",
+          "event": "Creek gauge readings exceed the ford’s safe-crossing threshold after spring rainfall."
+        },
+        {
+          "time": "May 6",
+          "event": "Ranger Elin Voss signs a seasonal route order naming Mara as installer and directing HCL-7 from Alder Ford to Dry Ridge."
+        },
+        {
+          "time": "May 7",
+          "event": "The preserve posts a yellow bulletin announcing the temporary high connector and lower-bank restrictions."
+        },
+        {
+          "time": "May 8 • 9:20 a.m.",
+          "event": "Mara mounts the original HCL-7 at Dry Ridge Junction; Joel Sato countersigns the dated, photographed installation receipt."
+        },
+        {
+          "time": "May 8 • afternoon",
+          "event": "Mara records the relocation in a loose journal page later scanned ahead of the older April entry."
+        },
+        {
+          "time": "May 9 • morning",
+          "event": "A hiker sees the empty Alder Ford post and guesses that the sign was stolen."
+        },
+        {
+          "time": "May 9 • afternoon",
+          "event": "A visitor shares the April 13 photograph without noting its original date, amplifying the incorrect rumor."
+        },
+        {
+          "time": "Following investigation",
+          "event": "The detectives reconcile the records, confirm the temporary relocation, and publish accurate detour guidance."
+        }
+      ]
+    }
+  }
+}
