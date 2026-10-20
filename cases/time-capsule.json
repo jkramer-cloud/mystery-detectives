@@ -1,0 +1,901 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "capsule-room": {
+      "name": "Capsule Examination Room",
+      "icon": "📜",
+      "scene": "office",
+      "detail": "An opened brass capsule rests beside numbered letter pages and a careful inventory of its contents."
+    },
+    "assembly-hall": {
+      "name": "Old Assembly Hall",
+      "icon": "🏫",
+      "scene": "gym",
+      "detail": "An anniversary display holds the yearbook, a ceremony photograph, and a reproduction of the sealing program."
+    },
+    "news-archive": {
+      "name": "Community News Archive",
+      "icon": "📰",
+      "scene": "library",
+      "detail": "Bound newspapers, editors’ working notes, and corrections reveal how a public story was assembled."
+    },
+    "art-workroom": {
+      "name": "Former Art Workroom",
+      "icon": "🎨",
+      "scene": "art",
+      "detail": "Restored drawing tables display the school’s original ink-handling and paper-preservation notes."
+    },
+    "records-office": {
+      "name": "School Records Office",
+      "icon": "🗂️",
+      "scene": "office",
+      "detail": "Signed transfer forms and accession registers record the movements of archival materials."
+    },
+    "map-cabinet": {
+      "name": "Historical Map Cabinet",
+      "icon": "🗺️",
+      "scene": "storage",
+      "detail": "Narrow drawers hold blue preservation envelopes, old school plans, and numbered custody labels."
+    }
+  },
+  "evidence": [
+    {
+      "id": "opening-inventory",
+      "title": "2026 Capsule Opening Inventory",
+      "type": "Present-day signed inventory",
+      "place": "capsule-room",
+      "icon": "📦",
+      "texts": {
+        "1-2": "The capsule was opened today. It held pages 1 and 4 of a four-page letter. Pages 2 and 3 were not inside.",
+        "3-5": "When Alderwick School opened its 1999 time capsule in 2026, archivist Nia Bell recorded pages 1 and 4 of a four-page student letter. The envelope had spaces labeled 1, 2, 3, and 4; positions 2 and 3 were empty. Her signed inventory describes what was found, not what happened in 1999.",
+        "6-8": "The 2026 opening inventory, witnessed by two staff members, lists only leaves 1 and 4 of the 1999 student letter. The capsule’s inner sleeve has four numbered slots, with slots 2 and 3 empty; no torn edges remain on the surviving leaves. This contemporary primary record establishes the present contents but cannot, by itself, distinguish removal before sealing from later loss."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which pages were found?",
+          "a": [
+            "Pages 2 and 3",
+            "All four pages",
+            "Pages 1 and 4"
+          ],
+          "c": 2,
+          "h": "Look at the two numbers in the opening list.",
+          "why": "The inventory names pages 1 and 4; two middle pages were missing."
+        },
+        "3-5": {
+          "q": "What does the opening inventory prove?",
+          "a": [
+            "The letter was stolen in 2026",
+            "Only pages 1 and 4 were inside when the capsule was opened",
+            "A newspaper writer took the missing pages"
+          ],
+          "c": 1,
+          "h": "Consider what an inventory can observe directly.",
+          "why": "An inventory records the opening contents. It does not establish who moved the other pages years earlier."
+        },
+        "6-8": {
+          "q": "Which claim is warranted by this primary source alone?",
+          "a": [
+            "Two numbered leaves were absent at the 2026 opening, but their earlier path remains undetermined",
+            "The editor secretly rewrote the whole letter",
+            "The middle pages were deliberately destroyed after burial"
+          ],
+          "c": 0,
+          "h": "Separate the observation in 2026 from a theory about 1999.",
+          "why": "The signed record provides direct evidence of present contents but not the cause or timing of the absence."
+        }
+      }
+    },
+    {
+      "id": "surviving-letter",
+      "title": "Original Letter Leaves 1 and 4",
+      "type": "Original handwritten letter",
+      "place": "capsule-room",
+      "icon": "✉️",
+      "texts": {
+        "1-2": "Page 1 says, “Dear future students.” Page 4 says, “We hope you keep our garden growing.” The two pages have no torn edges.",
+        "3-5": "Page 1 begins, “To the students of tomorrow: we planted a school garden because we wanted a place to learn together.” Page 4 concludes, “Take care of what others leave you.” Both surviving leaves are numbered in violet ink. Their smooth edges suggest that the missing middle pages were separate sheets, not pieces ripped from a bound letter.",
+        "6-8": "The original 1999 letter survives as separate, numbered leaves 1 and 4. Its opening announces a collective letter to future students, while its closing urges stewardship of the school garden. Continuous page numbering and intact sheet edges weaken the rumor of a letter violently torn apart. The content supports the letter’s theme but cannot identify the custodian of the absent leaves."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did the letter ask future students to care for?",
+          "a": [
+            "The school garden",
+            "A trophy",
+            "A secret tunnel"
+          ],
+          "c": 0,
+          "h": "Read what page 4 hopes students will keep growing.",
+          "why": "The closing page asks future students to care for the garden."
+        },
+        "3-5": {
+          "q": "Which detail challenges the story that someone ripped pages out?",
+          "a": [
+            "The letter mentions a garden",
+            "The paper is old",
+            "The leaves have smooth edges and their own page numbers"
+          ],
+          "c": 2,
+          "h": "Think about what ripped pages usually look like.",
+          "why": "The original separate sheets have intact edges, so removing middle leaves did not require tearing."
+        },
+        "6-8": {
+          "q": "Which inference best combines form and content without going beyond the source?",
+          "a": [
+            "The letter’s theme guarantees every page was sealed",
+            "The missing leaves were separate numbered sheets, while the surviving text emphasizes stewardship",
+            "A garden reference identifies the thief"
+          ],
+          "c": 1,
+          "h": "Use both the numbering and the final message, but avoid inferring a culprit.",
+          "why": "The physical format and closing theme are observable; the letter alone cannot prove what became of pages 2 and 3."
+        }
+      }
+    },
+    {
+      "id": "yearbook-caption",
+      "title": "1999 Yearbook Ceremony Caption",
+      "type": "Published student yearbook caption",
+      "place": "assembly-hall",
+      "icon": "📖",
+      "texts": {
+        "1-2": "The yearbook says, “Our whole letter went into the capsule!” A small note says the caption was written before the ceremony.",
+        "3-5": "The 1999 yearbook shows the class gathered near the time capsule. Beneath the photograph is the caption, “Our complete letter went into the future!” In the margin of the layout sheet, editors dated that caption May 27, a week before the June 3 sealing. The caption was a prediction that was not checked against the final inventory.",
+        "6-8": "A triumphant 1999 yearbook caption declares that the “complete class letter” entered the sealed capsule. However, its typeset proof carries a May 27 approval date, preceding the June 3 ceremony and the rain-damaged page transfer. As a prewritten account printed afterward, the caption is valuable evidence of the celebration’s intended narrative but weak evidence of what the sealed capsule actually contained."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Was the caption written before or after the ceremony?",
+          "a": [
+            "After",
+            "Before",
+            "It has no date"
+          ],
+          "c": 1,
+          "h": "Find the note about when the words were written.",
+          "why": "The caption was prepared before the class sealed the capsule."
+        },
+        "3-5": {
+          "q": "Why should detectives be careful with the yearbook caption?",
+          "a": [
+            "It was written before the event it describes",
+            "Yearbooks cannot contain photographs",
+            "It lists the pages in the capsule"
+          ],
+          "c": 0,
+          "h": "Compare May 27 with June 3.",
+          "why": "A caption written ahead of time may describe a plan rather than what ultimately happened."
+        },
+        "6-8": {
+          "q": "What limitation most directly reduces the caption’s evidentiary weight?",
+          "a": [
+            "Its celebratory tone is always false",
+            "It names no modern students",
+            "It reports the anticipated outcome without a post-ceremony contents check"
+          ],
+          "c": 2,
+          "h": "Look at publication timing and the difference between reporting and verifying.",
+          "why": "The proof predates the changed plan; no contemporaneous itemized verification accompanies the claim."
+        }
+      }
+    },
+    {
+      "id": "ceremony-photograph",
+      "title": "June 3 Ceremony Photograph",
+      "type": "Dated photograph and program",
+      "place": "assembly-hall",
+      "icon": "📷",
+      "texts": {
+        "1-2": "A photo shows the class beside a closed capsule. You cannot see which pages are inside it.",
+        "3-5": "The June 3 photograph shows teachers closing the capsule at 10:05 a.m. A student holds up the front page of the letter for the camera. The other leaves are hidden behind the podium. The program says the letter would be included, but it does not list the number of pages actually placed inside.",
+        "6-8": "A dated photograph captures the 10:05 sealing ceremony and a student displaying leaf 1 for the audience. Neither the shutter angle nor the printed ceremony program reveals what was inside the capsule when its lid closed. The image authenticates the event and its approximate time but cannot corroborate the yearbook’s assertion that all four leaves were enclosed."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Does the picture show every page inside the capsule?",
+          "a": [
+            "No, the inside is not visible",
+            "Yes, all four",
+            "Only pages 2 and 3"
+          ],
+          "c": 0,
+          "h": "What is hidden once the lid is closed?",
+          "why": "The image shows the ceremony, not the capsule’s complete contents."
+        },
+        "3-5": {
+          "q": "What question can the photograph answer best?",
+          "a": [
+            "Who stored pages 2 and 3",
+            "Why two pages were damp",
+            "Whether the capsule was sealed that morning"
+          ],
+          "c": 2,
+          "h": "Photographs can prove visible events but not hidden actions.",
+          "why": "The photograph documents the ceremony and timing, not the secret contents or motive."
+        },
+        "6-8": {
+          "q": "Which conclusion avoids mistaking visual evidence for a complete account?",
+          "a": [
+            "The photo proves an accusation against the editor",
+            "The photo confirms sealing occurred but does not resolve which leaves were enclosed",
+            "Because leaf 1 is visible, pages 2 and 3 must also be enclosed"
+          ],
+          "c": 1,
+          "h": "Separate what the camera records from what lies beyond its view.",
+          "why": "The photo documents a visible ceremony; the documentary custody trail must answer which pages entered the capsule."
+        }
+      }
+    },
+    {
+      "id": "community-clipping",
+      "title": "1999 Community News Story",
+      "type": "Secondary newspaper report",
+      "place": "news-archive",
+      "icon": "🗞️",
+      "texts": {
+        "1-2": "A newspaper wrote, “All four pages are safe in the capsule.” The reporter did not watch anyone count the pages.",
+        "3-5": "A June 5, 1999 community newspaper reported that the entire four-page letter was sealed. Its writer quoted the printed ceremony program and the yearbook caption but did not interview the student who handled the wet pages or inspect the capsule contents. The news story repeats information from other sources.",
+        "6-8": "The June 5 local report assures readers that “all four leaves” were sealed. Editorial notes identify the ceremony program and an advance copy of the yearbook caption as its sources; neither counted the final contents. Thus the report is a secondary account whose confident phrasing exceeds its firsthand verification, a useful case study in how an untested claim becomes established history through repetition."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did the reporter count the pages?",
+          "a": [
+            "Yes",
+            "Only two",
+            "No"
+          ],
+          "c": 2,
+          "h": "Read the line about what the reporter did not see.",
+          "why": "The article repeated a claim without personally checking the pages."
+        },
+        "3-5": {
+          "q": "Why is the news article not strong proof of all four pages being sealed?",
+          "a": [
+            "It repeats earlier claims rather than a direct count",
+            "It is printed on paper",
+            "It mentions the school’s name"
+          ],
+          "c": 0,
+          "h": "Identify where the reporter got the claim.",
+          "why": "Both quoted sources relied on the plan for the ceremony rather than an inventory."
+        },
+        "6-8": {
+          "q": "What source criticism is most justified?",
+          "a": [
+            "Two published claims drawn from the same unverified source do not constitute independent corroboration",
+            "All newspaper articles must be disregarded",
+            "The yearbook and newspaper are independent eyewitnesses"
+          ],
+          "c": 0,
+          "h": "Follow the chain of attribution instead of counting how many times a claim appears.",
+          "why": "The story and caption share the same pre-event origin, so repetition does not independently verify the capsule contents."
+        }
+      }
+    },
+    {
+      "id": "reporter-working-notes",
+      "title": "Reporter’s Working Notes",
+      "type": "Original editorial notes",
+      "place": "news-archive",
+      "icon": "✏️",
+      "texts": {
+        "1-2": "The reporter wrote: “Used program text. Could not reach Rhea.” Rhea helped care for the letter.",
+        "3-5": "The reporter’s notebook has a June 4 entry: “Used program and caption; student archivist Rhea Fen unavailable.” A later pencil note reads, “Ask whether wet pages were dried separately.” The printed article left that question unanswered. These working notes show which information the writer had and what remained unconfirmed.",
+        "6-8": "The original journalist’s notebook lists two derivative sources—the program and preapproved yearbook copy—and one absent source, student archivist Rhea Fen. Its unanswered marginal query about damp leaves indicates the reporter recognized a possible gap in the coverage. Comparing draft process with final publication exposes uncertainty that the finished article concealed."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Whom could the reporter not reach?",
+          "a": [
+            "Eli",
+            "Rhea",
+            "Nia"
+          ],
+          "c": 1,
+          "h": "Look for the person called the student archivist.",
+          "why": "The reporter’s notes say Rhea was unavailable."
+        },
+        "3-5": {
+          "q": "What can the unpublished notes tell us that the printed report does not?",
+          "a": [
+            "The capsule was never sealed",
+            "The writer knew the wet-page question was not answered",
+            "The reporter took the missing pages"
+          ],
+          "c": 1,
+          "h": "Look for a question in the notes that remained open.",
+          "why": "The notes reveal an acknowledged gap that disappeared from the confidently written article."
+        },
+        "6-8": {
+          "q": "What does comparing the reporter’s notes with the article reveal about authorial choices?",
+          "a": [
+            "Editorial notes prove fraud by the student archivist",
+            "The journalist possessed the complete missing letter",
+            "The published certainty masked the writer’s unresolved sourcing question"
+          ],
+          "c": 2,
+          "h": "Compare the private “ask whether” reminder with the public declarative sentence.",
+          "why": "The writer omitted uncertainty about the damp pages, making the finished article seem more conclusive than the underlying reporting."
+        }
+      }
+    },
+    {
+      "id": "ink-drying-log",
+      "title": "Art Workroom Blotter Log",
+      "type": "1999 preservation work record",
+      "place": "art-workroom",
+      "icon": "🧽",
+      "texts": {
+        "1-2": "Rain came in through a window. Two letter pages got damp. The art helper gave Rhea clean blotting paper.",
+        "3-5": "At 9:12 a.m. on June 3, rain blew through an open art-room window as the four-page letter was being displayed. The art helper’s log describes damp ink on leaves 2 and 3. At 9:19, Rhea Fen received blotters and a stiff protective sleeve. Drying the sheets flat would prevent smears and sticking.",
+        "6-8": "The art workroom log records wind-driven rain entering at 9:12 on June 3 and moisture affecting leaves 2 and 3 of the numbered letter. At 9:19 the helper issued acid-free blotters and a rigid sleeve to Rhea Fen. The incident provides a plausible preservation motive and a dated sequence, but the art-room log alone does not establish the final storage location."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why did Rhea need special paper?",
+          "a": [
+            "To erase the letter",
+            "To dry wet pages safely",
+            "To make a new yearbook"
+          ],
+          "c": 1,
+          "h": "Think about the ink and rain.",
+          "why": "The blotters protected pages 2 and 3 while they dried."
+        },
+        "3-5": {
+          "q": "What event came before Rhea received the blotters?",
+          "a": [
+            "Rain dampened pages 2 and 3",
+            "The capsule was opened in 2026",
+            "The newspaper story was published"
+          ],
+          "c": 0,
+          "h": "Compare 9:12 and 9:19 on June 3.",
+          "why": "The pages became damp first; the preservation materials were issued afterward."
+        },
+        "6-8": {
+          "q": "Which inference does the blotter log most strongly support?",
+          "a": [
+            "The class planned to censor the garden letter",
+            "The art assistant rewrote two pages",
+            "Separate storage could have been a protective response to moisture damage"
+          ],
+          "c": 2,
+          "h": "Use the physical problem and the reason for issuing preservation materials.",
+          "why": "The log supports a non-malicious drying motive, but requires a custody record to locate the pages."
+        }
+      }
+    },
+    {
+      "id": "signed-transfer-slip",
+      "title": "Rhea’s Signed Preservation Transfer",
+      "type": "1999 original custody transfer — required proof",
+      "place": "records-office",
+      "icon": "🖋️",
+      "texts": {
+        "1-2": "Rhea signed a note at 9:28. It says: “Pages 2 and 3. Blue envelope B-6. Map Cabinet, Drawer 3. Keep flat until dry.”",
+        "3-5": "A preservation transfer slip dated June 3, 1999, 9:28 a.m., bears Rhea Fen’s signature: “Remove damp leaves 2 and 3 from sealing materials; place flat in blue envelope B-6, Map Cabinet Drawer 3. Hold flat until dry; do not put wet pages in capsule.” A second signature by records clerk Soren Vale acknowledges receipt. The slip records an authorized temporary move rather than a secret theft.",
+        "6-8": "The signed June 3, 1999, 9:28 transfer form explicitly identifies leaves 2–3, blue preservation envelope B-6, and Map Cabinet Drawer 3. Rhea Fen initiated the transfer; records clerk Soren Vale countersigned custody. The instruction “hold flat until dry; restore only after conservation clearance” explains why the leaves did not accompany the ceremony materials. This contemporaneous primary source establishes who initiated the move, the intended repository, and the stated conservation purpose."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who signed the request to move the pages?",
+          "a": [
+            "Eli Torin",
+            "The newspaper reporter",
+            "Rhea Fen"
+          ],
+          "c": 2,
+          "h": "Find the name next to 9:28.",
+          "why": "Rhea Fen signed the dated preservation transfer."
+        },
+        "3-5": {
+          "q": "What is the best reason to trust this form over a later rumor?",
+          "a": [
+            "It contains a colorful drawing",
+            "It names specific pages, a destination, a time, and two signatures",
+            "It says nobody ever makes mistakes"
+          ],
+          "c": 1,
+          "h": "Look for details that can be checked against another independent record.",
+          "why": "The dated, countersigned original specifies custody and a verifiable envelope location."
+        },
+        "6-8": {
+          "q": "What inference is justified by the transfer slip’s wording and countersignature?",
+          "a": [
+            "Rhea formally relocated damp pages for preservation, with a traceable custody chain",
+            "Rhea intended the pages to disappear permanently",
+            "The news editor ordered Rhea to conceal the letter"
+          ],
+          "c": 0,
+          "h": "Read “hold flat until dry” alongside the countersignature and precise location.",
+          "why": "The signed form documents authorized conservation and location; it does not support a theft or censorship theory."
+        }
+      }
+    },
+    {
+      "id": "envelope-accession",
+      "title": "Blue Envelope B-6 Accession Register",
+      "type": "1999 original records register — required proof",
+      "place": "map-cabinet",
+      "icon": "🗄️",
+      "texts": {
+        "1-2": "The map cabinet book says: “B-6: Letter pages 2 and 3, Drawer 3.” A clerk signed when the envelope arrived.",
+        "3-5": "In Map Cabinet Drawer 3, the 1999 accession register lists “B-6 — Alderwick class letter, pages 2–3; received from Rhea Fen, 9:34 June 3; protection hold.” Records clerk Soren Vale signed beside the entry. The envelope’s old shelf label was later filed under “1998 preparations,” because planning began the year before the ceremony.",
+        "6-8": "The original accession ledger records envelope B-6 in Map Cabinet Drawer 3 at 9:34 on June 3, 1999. It names leaves 2 and 3, links them to Rhea Fen’s 9:28 transfer, and includes Soren Vale’s receipt signature. A later index category, “1998 preparations,” reflects the date of initial drafting, not the date of physical deposit. This independent custody entry corroborates the transfer slip and resolves the confusion produced by the cabinet’s misleading subject heading."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does the register say the pages went?",
+          "a": [
+            "Map Cabinet Drawer 3",
+            "Inside the trophy case",
+            "Into the newspaper office"
+          ],
+          "c": 0,
+          "h": "Read the drawer number next to B-6.",
+          "why": "The accession register records the two pages in Drawer 3."
+        },
+        "3-5": {
+          "q": "Why are the two signed records stronger together?",
+          "a": [
+            "Both guess where the pages might be",
+            "Both were written in 2026",
+            "One reports the move and the other confirms the envelope arrived"
+          ],
+          "c": 2,
+          "h": "Find which record says “send” and which says “received.”",
+          "why": "The transfer and accession create a matched, time-stamped custody trail."
+        },
+        "6-8": {
+          "q": "How should a historian treat the “1998 preparations” index label?",
+          "a": [
+            "As conclusive proof the pages were deposited in 1998",
+            "As a later filing category that must be checked against the dated 1999 accession",
+            "As evidence that the original signatures were forged"
+          ],
+          "c": 1,
+          "h": "Separate a subject heading from the dated primary entry.",
+          "why": "The register records a 1999 deposit despite the later index category referring to early preparations."
+        }
+      }
+    },
+    {
+      "id": "envelope-contents",
+      "title": "Preserved Leaves in Envelope B-6",
+      "type": "Physical original letter leaves and sleeve",
+      "place": "map-cabinet",
+      "icon": "🔎",
+      "texts": {
+        "1-2": "The blue envelope holds pages 2 and 3. Their numbers match the letter. One corner has a pale rain mark.",
+        "3-5": "Inside B-6 lie two sheets marked 2 and 3 in the same violet ink as the letter in the capsule. A pale water mark crosses the bottom of both sheets. Their text describes how students first mapped the garden and promised to share its produce. The pages are intact; they were stored apart, not destroyed.",
+        "6-8": "The physical contents of B-6 match the missing letter’s numbering, violet ink, and paper stock. Water tide-lines remain along the lower margins, consistent with the blotter log. Leaf 2 explains that students measured the future garden site, and leaf 3 records a promise to distribute seedlings to neighbors. This original material establishes continuity of the letter and confirms that preservation—not an attempt to suppress a controversial passage—explains the separation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Which pages are inside the blue envelope?",
+          "a": [
+            "1 and 4",
+            "2 and 3",
+            "A new newspaper"
+          ],
+          "c": 1,
+          "h": "Match the violet page numbers in the envelope.",
+          "why": "B-6 holds the two middle pages missing from the capsule."
+        },
+        "3-5": {
+          "q": "What evidence links these pages to the letter from the capsule?",
+          "a": [
+            "Matching violet numbers, paper, and ink",
+            "A modern rumor about a prank",
+            "The yearbook title alone"
+          ],
+          "c": 0,
+          "h": "Compare the physical pages and their markings.",
+          "why": "The ink, paper, and page sequence link the envelope contents to the surviving letter."
+        },
+        "6-8": {
+          "q": "Which interpretation best fits the complete documentary and physical record?",
+          "a": [
+            "The pages were rewritten recently to hide a scandal",
+            "The garden promise proves the newspaper writer moved the pages",
+            "The preserved leaves complete the original letter and retain water marks consistent with the 1999 drying record"
+          ],
+          "c": 2,
+          "h": "Consider signatures, sequential numbering, ink, and water marks together.",
+          "why": "The original sheets and matched custody records support conservation of the same letter; neither forgery nor censorship is documented."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "rhea-interview",
+      "title": "Rhea Fen",
+      "type": "Former student archivist",
+      "place": "records-office",
+      "icon": "🗝️",
+      "texts": {
+        "1-2": "“I moved the wet pages to a blue envelope,” Rhea says. “I thought we would put them back after they dried.”",
+        "3-5": "Rhea, the student archivist in 1999, recalls: “The rain soaked two pages before the ceremony. I followed the clerk’s instructions, signed a transfer, and put the pages in B-6. The sealing went ahead while the pages dried. The sealed capsule could not be reopened, and our records never received a corrected contents list.” She adds that she did not want anyone to lose the school garden story.",
+        "6-8": "Rhea Fen recalls initiating a temporary conservation transfer, not revising the student letter. She admits an error in follow-through: “The ceremony proceeded without the middle leaves, and the intended reunion was never scheduled after my graduation.” Her recollection is potentially self-serving, so detectives should corroborate it against her original signed form, Soren’s accession, and the surviving water-marked pages rather than accept her motive on personality alone."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Why does Rhea say she moved the pages?",
+          "a": [
+            "To keep them from being damaged",
+            "To win a prize",
+            "To hide a map"
+          ],
+          "c": 0,
+          "h": "What did the rain do to the paper?",
+          "why": "Rhea says she stored damp pages to protect them."
+        },
+        "3-5": {
+          "q": "What makes Rhea’s explanation testable?",
+          "a": [
+            "Her memories alone",
+            "The color of the classroom walls",
+            "The signed transfer and the envelope inventory"
+          ],
+          "c": 2,
+          "h": "Name records made when the pages were moved.",
+          "why": "Independent dated documents can confirm Rhea’s claim."
+        },
+        "6-8": {
+          "q": "How should investigators evaluate Rhea’s potentially self-protective testimony?",
+          "a": [
+            "Believe it because Rhea was a good student",
+            "Corroborate her account using the contemporaneous transfer, accession receipt, and the surviving original sheets",
+            "Reject it because she admits making a mistake"
+          ],
+          "c": 1,
+          "h": "Prefer records created during the move over either trust or suspicion alone.",
+          "why": "Matched primary records independently support Rhea’s sequence and stated purpose."
+        }
+      }
+    },
+    {
+      "id": "eli-interview",
+      "title": "Eli Torin",
+      "type": "Former yearbook editor",
+      "place": "assembly-hall",
+      "icon": "📚",
+      "texts": {
+        "1-2": "“I wrote the yearbook words before the big day,” Eli says. “I thought all the pages would go in.”",
+        "3-5": "Eli, the yearbook editor, says, “I approved ‘complete letter’ on May 27 while everyone still planned to bury all four pages. When the printing deadline passed, we could not change the caption after the rain.” Eli saw the ceremony but did not count the pages before the lid closed.",
+        "6-8": "Former editor Eli Torin distinguishes editorial intention from event verification. The yearbook proof was approved May 27, before the June 3 water incident. Eli concedes the celebratory caption was not revised after the contents changed. The interview explains the caption’s provenance without establishing where the removed leaves went."
+      },
+      "questions": {
+        "1-2": {
+          "q": "When did Eli write the caption?",
+          "a": [
+            "After 2026",
+            "During the news interview",
+            "Before the sealing day"
+          ],
+          "c": 2,
+          "h": "Find the phrase about “before the big day.”",
+          "why": "Eli prepared the caption before the ceremony."
+        },
+        "3-5": {
+          "q": "Why did the yearbook say “complete letter”?",
+          "a": [
+            "Eli watched four pages placed inside",
+            "Eli expected the original plan to happen and could not revise the printed caption",
+            "Eli found the missing leaves years later"
+          ],
+          "c": 1,
+          "h": "Think about printing deadlines and changing plans.",
+          "why": "The caption recorded an expectation, not a verified final inventory."
+        },
+        "6-8": {
+          "q": "What is the most defensible use of Eli’s testimony?",
+          "a": [
+            "Use it to explain why a prewritten secondary claim persisted, while relying on custody records for actual contents",
+            "Treat it as proof the pages were destroyed",
+            "Use it to discredit every photo taken at the school"
+          ],
+          "c": 0,
+          "h": "Ask what the interview clarifies, and what it cannot directly establish.",
+          "why": "Eli explains the publication error but cannot authenticate the missing pages’ custody."
+        }
+      }
+    },
+    {
+      "id": "faye-interview",
+      "title": "Faye Marrin",
+      "type": "Former community reporter",
+      "place": "news-archive",
+      "icon": "📰",
+      "texts": {
+        "1-2": "“I copied the ceremony program,” Faye says. “I did not see inside the capsule.”",
+        "3-5": "Faye, who wrote the June 5 article, admits, “The school program said the four-page letter would be sealed, and I treated that future plan as a finished fact. I did try calling Rhea about two damp pages.” Her working notes show the unanswered call. Faye now says the article should have included that uncertainty.",
+        "6-8": "Reporter Faye Marrin acknowledges that her polished article converted planned inclusion into asserted historical fact. Her notes record an unreturned call to Rhea and an unresolved question about moisture-damaged leaves. The interview illuminates a common sourcing hazard: derivative documents can be mistaken for independent confirmation when attribution is lost."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Faye look inside the capsule?",
+          "a": [
+            "Yes",
+            "Only in 2026",
+            "No"
+          ],
+          "c": 2,
+          "h": "Notice what she says she did not see.",
+          "why": "Faye relied on the program rather than inspecting the contents."
+        },
+        "3-5": {
+          "q": "Which reading habit would have improved the original article?",
+          "a": [
+            "Assume a program always records what happened",
+            "Ask a firsthand custodian and report what remains unconfirmed",
+            "Ignore every other account"
+          ],
+          "c": 1,
+          "h": "Compare a plan with an observed result.",
+          "why": "Checking the primary custody evidence could have prevented overstating the conclusion."
+        },
+        "6-8": {
+          "q": "Why do the newspaper and yearbook not provide two independent confirmations?",
+          "a": [
+            "They were published in different years",
+            "The article drew on the same unverified pre-ceremony claims as the caption",
+            "They have different page sizes"
+          ],
+          "c": 1,
+          "h": "Trace each claim back to its source.",
+          "why": "Sharing a single unverified origin weakens apparent corroboration despite two separate publications."
+        }
+      }
+    },
+    {
+      "id": "gus-interview",
+      "title": "Gus Halden",
+      "type": "Former art workroom aide",
+      "place": "art-workroom",
+      "icon": "🖌️",
+      "texts": {
+        "1-2": "“Rain wet the middle pages of the class letter,” Gus says. “I gave Rhea special paper to dry them.”",
+        "3-5": "Gus remembers a sudden gust through the art-room window at 9:12. “The violet ink on leaves 2 and 3 looked ready to run. I gave Rhea blotters and told her to keep the sheets flat until dry.” Gus did not follow Rhea to the records office, so he cannot say which drawer she used.",
+        "6-8": "Gus Halden’s account supplies direct observation of the initial rain damage and the conservation advice. The 9:19 materials entry in the workroom log corroborates his memory, but his testimony stops before the transfer. Distinguishing the limits of an eyewitness’s vantage point prevents mistaking a trustworthy account of one step for full knowledge of the event."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Gus give Rhea?",
+          "a": [
+            "A camera",
+            "Blotting paper",
+            "A key to the gym"
+          ],
+          "c": 1,
+          "h": "What could help wet ink dry safely?",
+          "why": "Gus supplied blotters, not a hiding place."
+        },
+        "3-5": {
+          "q": "Which part of the event could Gus describe firsthand?",
+          "a": [
+            "The moment wet pages received drying materials",
+            "The exact drawer used later",
+            "The 2026 capsule opening"
+          ],
+          "c": 0,
+          "h": "Look at where Gus worked and what he saw.",
+          "why": "Gus observed the moisture problem, but not the final storage location."
+        },
+        "6-8": {
+          "q": "How should Gus’s testimony be limited?",
+          "a": [
+            "Assume he knew what happened afterward",
+            "Reject his account because he did not witness every event",
+            "Accept his firsthand account of wet pages and consult later records for the storage route"
+          ],
+          "c": 2,
+          "h": "Separate the step he saw from the later custody sequence.",
+          "why": "His observation is relevant to motive; transfer and accession records establish destination."
+        }
+      }
+    },
+    {
+      "id": "nia-interview",
+      "title": "Nia Bell",
+      "type": "Present-day archive curator",
+      "place": "map-cabinet",
+      "icon": "🔍",
+      "texts": {
+        "1-2": "“The letter pages were not stolen,” Nia says. “We found them safe in the old map drawer.”",
+        "3-5": "Nia, who documented the 2026 capsule opening, explains: “I first searched under 1999 time capsules. Envelope B-6 was indexed under ‘1998 preparations,’ because the class began writing the letter in 1998. When I checked the original signed register instead of the later heading, I found B-6 in Drawer 3.” Nia verified the two leaves against the original letter.",
+        "6-8": "Curator Nia Bell describes a modern retrieval failure caused by a later subject classification, not a nineteenth-century secret or deliberate erasure. A search under the ceremony year missed envelope B-6 because the index described an earlier planning phase. Consulting the signed 1999 accession register restored the correct chronology and location. Her modern testimony is reinforced by the physical envelope, original page numbering, and the custody documents."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did Nia find the missing leaves?",
+          "a": [
+            "Map Cabinet Drawer 3",
+            "The garden",
+            "A trophy box"
+          ],
+          "c": 0,
+          "h": "Follow the old cabinet record.",
+          "why": "Nia used the old archive register to find blue envelope B-6 in Map Cabinet Drawer 3."
+        },
+        "3-5": {
+          "q": "Why did Nia’s first search fail?",
+          "a": [
+            "The pages had been burned",
+            "Rhea changed the date on the letter",
+            "The envelope was filed under “1998 preparations,” not the 1999 ceremony"
+          ],
+          "c": 2,
+          "h": "Read how the index named the envelope.",
+          "why": "The filing category was based on when planning began, not when the pages were stored."
+        },
+        "6-8": {
+          "q": "What research strategy corrected the archivist’s first unsuccessful search?",
+          "a": [
+            "Cross-check the later subject index against the original dated accession register and the physical envelope",
+            "Treat the modern index heading as a complete timeline",
+            "Guess that all old records were altered"
+          ],
+          "c": 0,
+          "h": "Distinguish catalog metadata from the original recorded event.",
+          "why": "The signed register and physical evidence corrected the misleading later classification."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "time-capsule",
+    "title": "The School Time Capsule",
+    "subtitle": "CASE FILE 014 • THE FOUR-PAGE LETTER",
+    "goal": "Determine who temporarily removed the two middle pages, where they were stored, and why the 1999 accounts incorrectly claimed the complete letter was sealed. Support the explanation with both original custody records.",
+    "brief": {
+      "1-2": "Alderwick School opened an old time capsule. It held pages 1 and 4 of a letter, but pages 2 and 3 were missing! Look at pictures, ask witnesses, and read old records to learn who moved the pages, where they went, and why.",
+      "3-5": "When fictional Alderwick School opens a time capsule sealed in 1999, two pages are missing from a four-page letter written for future students. The yearbook and a community newspaper both claim the entire letter was placed inside. Yet the opening inventory lists only pages 1 and 4. Investigate the old art workroom, ceremony records, news reports, signed documents, and school map cabinet. Which sources describe what people expected to happen, and which record what actually happened?",
+      "6-8": "In 2026, Alderwick School unseals a capsule deposited at its 1999 anniversary celebration. A four-leaf letter intended for future students survives only as leaves 1 and 4 inside the container. Two published accounts insist that the complete letter was enclosed, sparking theories of theft and censorship. However, those accounts may repeat an advance ceremony plan rather than independent observation. Investigate preapproved yearbook copy, a community reporter’s draft notes, a water-damage log, signed archival custody forms, and a misleading subject index. Reconstruct what happened on June 3, 1999, explain why the written histories disagree, and identify the missing leaves through authentic primary-source evidence."
+    },
+    "theoryLabels": {
+      "who": "Who initiated the documented removal of pages 2 and 3?",
+      "where": "Where were the missing pages stored after the transfer?",
+      "why": "Why were the middle pages separated from the capsule materials?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "rhea",
+          "label": "Rhea Fen — the 1999 student archivist"
+        },
+        {
+          "id": "eli",
+          "label": "Eli Torin — the yearbook editor"
+        },
+        {
+          "id": "faye",
+          "label": "Faye Marrin — community reporter"
+        },
+        {
+          "id": "gus",
+          "label": "Gus Halden — art workroom aide"
+        },
+        {
+          "id": "nia",
+          "label": "Nia Bell — 2026 archivist"
+        }
+      ],
+      "where": [
+        {
+          "id": "garden",
+          "label": "Buried beside the original school garden"
+        },
+        {
+          "id": "news-desk",
+          "label": "Stored in the community newspaper office"
+        },
+        {
+          "id": "blue-b6",
+          "label": "Blue envelope B-6 in Map Cabinet Drawer 3"
+        },
+        {
+          "id": "ceremony-box",
+          "label": "Hidden in the assembly hall podium"
+        },
+        {
+          "id": "sealed-capsule",
+          "label": "Still inside the sealed time capsule"
+        }
+      ],
+      "why": [
+        {
+          "id": "protect-damp",
+          "label": "To keep rain-damp ink and paper flat and safe while they dried; the pages were never returned after the ceremony"
+        },
+        {
+          "id": "hide-criticism",
+          "label": "To censor the students’ criticism of school leaders"
+        },
+        {
+          "id": "win-contest",
+          "label": "To enter a secret writing contest"
+        },
+        {
+          "id": "sell-pages",
+          "label": "To sell the old pages for money"
+        },
+        {
+          "id": "mislead-news",
+          "label": "To trick the newspaper into publishing a false story"
+        }
+      ]
+    },
+    "who": "rhea",
+    "where": "blue-b6",
+    "why": "protect-damp",
+    "proofs": [
+      "signed-transfer-slip",
+      "envelope-accession"
+    ],
+    "feedback": {
+      "who": "Check RHEA’S SIGNED PRESERVATION TRANSFER: it is dated June 3, 1999, at 9:28 and carries her name. Eli prewrote the yearbook caption, Faye reported the ceremony, Gus supplied drying materials, and Nia opened the capsule decades later. Which one initiated the actual removal?",
+      "where": "Compare the 9:28 TRANSFER SLIP and 9:34 BLUE ENVELOPE ACCESSION. Both identify B-6, Map Cabinet Drawer 3. The later “1998 preparations” subject heading describes when the letter was first planned, not the physical storage date.",
+      "why": "Read the ART WORKROOM BLOTTER LOG before choosing a motive. Wind-driven rain dampened leaves 2 and 3 at 9:12; preservation materials were issued at 9:19. The signed slip orders a temporary drying hold. The newspaper’s overconfident account arose from an unverified pre-ceremony plan, not from a documented plot to conceal the letter.",
+      "proofs": "Choose BOTH primary custody documents: RHEA’S SIGNED PRESERVATION TRANSFER (9:28; pages 2–3 to envelope B-6) AND THE BLUE ENVELOPE B-6 ACCESSION REGISTER (9:34; receipt in Drawer 3). The yearbook, news story, and photograph explain confusion but do not by themselves prove the movement and destination."
+    },
+    "resolution": {
+      "summary": "Rhea Fen moved rain-damp leaves 2 and 3 into blue preservation envelope B-6 in Map Cabinet Drawer 3 on June 3, 1999. A temporary conservation hold became a decades-long filing oversight—not theft or censorship.",
+      "outcome": "In 2026 the school feared that half of its historic letter had been stolen. The surviving pages, the yearbook, and a confident community-news article appeared to contradict one another. The original records resolve the conflict. On June 3, 1999, wind blew rain through an art workroom window just before the time-capsule ceremony. Leaves 2 and 3 of the four-page student letter became damp, and Gus Halden issued blotting materials to protect their violet ink. Student archivist Rhea Fen signed a temporary transfer at 9:28, directing the pages to blue preservation envelope B-6 in Map Cabinet Drawer 3. The school records clerk acknowledged receiving that envelope at 9:34. The capsule was sealed at 10:05 with the remaining leaves 1 and 4 while the wet pages were kept flat. Once the capsule was sealed, it was not reopened; the school failed to correct the public contents list and eventually lost track of the separately preserved leaves. Meanwhile, yearbook editor Eli Torin had written a celebratory “complete letter” caption before the rain, and reporter Faye Marrin repeated the ceremony program without checking the final contents. Both published accounts described the original plan, not the actual inventory. Years later a subject index classified B-6 under “1998 preparations,” the letter’s first drafting period, making the envelope difficult to locate under 1999. Nia Bell finally followed the original signed register and recovered the intact middle leaves, still showing faint water marks. Together the four pages describe the students’ garden project and their hope that future classes would share its harvest. Alderwick School restores the full letter in a protective display, corrects the yearbook and news captions in its historical exhibit, and credits the student and records clerk who preserved the missing pages. Detectives learn that two repeating accounts do not outweigh an independently documented primary-source trail.",
+      "timeline": [
+        {
+          "time": "1998 • Autumn",
+          "event": "Students begin planning the future-students letter and school garden story; later staff use “1998 preparations” as a broad index heading."
+        },
+        {
+          "time": "May 27, 1999",
+          "event": "Eli approves the yearbook caption saying the complete letter will enter the time capsule, before the sealing day."
+        },
+        {
+          "time": "June 3, 1999 • 9:12 a.m.",
+          "event": "Wind-driven rain reaches the art workroom and dampens letter leaves 2 and 3."
+        },
+        {
+          "time": "9:19 a.m.",
+          "event": "Gus issues blotters and a protective sleeve to Rhea so the damp leaves can be held flat."
+        },
+        {
+          "time": "9:28 a.m.",
+          "event": "Rhea signs a temporary preservation transfer for leaves 2–3 to blue envelope B-6, Map Cabinet Drawer 3."
+        },
+        {
+          "time": "9:34 a.m.",
+          "event": "Soren countersigns the envelope’s arrival in the original accession register."
+        },
+        {
+          "time": "10:05 a.m.",
+          "event": "The ceremony closes the capsule with leaves 1 and 4; the separated pages remain in protective storage."
+        },
+        {
+          "time": "June 5, 1999",
+          "event": "Faye’s newspaper story repeats the planned four-page inclusion from the program and preapproved yearbook copy without a final inventory."
+        },
+        {
+          "time": "After graduation",
+          "event": "The temporary hold is never closed; a later subject index places B-6 under the earlier “1998 preparations” heading."
+        },
+        {
+          "time": "2026 • Capsule opening",
+          "event": "Nia inventories leaves 1 and 4 only, prompting speculation about the missing middle pages."
+        },
+        {
+          "time": "2026 • Archive investigation",
+          "event": "Detectives compare primary and secondary sources; Nia uses the 1999 signed accession register to locate B-6 and restore pages 2 and 3."
+        },
+        {
+          "time": "2026 • Final exhibit",
+          "event": "The complete letter is preserved and the historical captions are corrected to explain why the middle pages were not sealed."
+        }
+      ]
+    }
+  }
+}

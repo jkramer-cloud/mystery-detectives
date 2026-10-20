@@ -150,9 +150,9 @@
       "number": "014",
       "category": "Historical Mystery",
       "icon": "🕰️",
-      "summary": "A time capsule reveals an old letter with missing pages and contradictory records.",
+      "summary": "A school’s time-capsule letter has two missing pages. Compare a prewritten yearbook caption, a repeated newspaper claim, and signed 1999 custody records to discover a forgotten conservation transfer.",
       "grades": "1–8 (focus: 3–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/time-capsule.json"
     },
     {
