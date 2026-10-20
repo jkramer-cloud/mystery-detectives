@@ -137,11 +137,11 @@
       "id": "secret-academy",
       "title": "The Secret Academy",
       "number": "013",
-      "category": "Code Mystery",
+      "category": "Academy Code Mystery",
       "icon": "🧩",
-      "summary": "Students follow word puzzles and coded instructions through a mysterious academy.",
+      "summary": "At Emberrise Academy, a secret first-letter message appears in experiment reports. Separate copying errors from an intentional safety warning through timestamps, lab readings, and close reading.",
       "grades": "1–8 (focus: 5–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/secret-academy.json"
     },
     {
