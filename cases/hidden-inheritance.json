@@ -1,0 +1,893 @@
+{
+  "schemaVersion": 1,
+  "locations": {
+    "inventor-study": {
+      "name": "Mina’s Workshop Study",
+      "icon": "🛠️",
+      "detail": "An old planning desk is crowded with clever machines, postcards, and a riddle that mentions mending.",
+      "scene": "office"
+    },
+    "gallery": {
+      "name": "Glasswing Gallery",
+      "icon": "🖼️",
+      "detail": "A sparkling invitation and an unsigned display proposal have convinced some people that the collection belongs here.",
+      "scene": "art"
+    },
+    "city-records": {
+      "name": "Larkhaven Records Office",
+      "icon": "📜",
+      "detail": "A registry clerk keeps original legal records and copies of ceremonial announcements in separate folders.",
+      "scene": "library"
+    },
+    "commons": {
+      "name": "Town Commons Bulletin Board",
+      "icon": "📰",
+      "detail": "A much-shared headline and a young inventor’s notebook offer very different versions of the donation story.",
+      "scene": "hall"
+    },
+    "loading-bay": {
+      "name": "Old Mill Loading Bay",
+      "icon": "📦",
+      "detail": "A confusing route tag and a timed transfer slip reveal where the collection traveled.",
+      "scene": "storage"
+    },
+    "repair-studio": {
+      "name": "Northbridge Repair Studio",
+      "icon": "🔧",
+      "detail": "Students fix lamps and radios in a sunny east classroom; an equipment log hangs beside the door.",
+      "scene": "art"
+    }
+  },
+  "evidence": [
+    {
+      "id": "margin-riddle",
+      "place": "inventor-study",
+      "icon": "📝",
+      "title": "Mina’s Margin Riddle",
+      "type": "Handwritten Note",
+      "texts": {
+        "1-2": "Mina wrote: “Let my tools teach where broken things get fixed.” She did not name a person.",
+        "3-5": "A penciled note in Mina Solis’s old notebook reads, “Let my tools teach where broken things become lessons, not trophies.” It points toward a purpose, but it names no legal recipient.",
+        "6-8": "Written in the margin of a design notebook, Mina Solis’s phrase “where broken things become lessons, not trophies” offers a metaphorical preference for use over display. As informal private writing, however, it cannot by itself establish the binding terms of a donation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does Mina hope her tools will do?",
+          "a": [
+            "Help people learn",
+            "Be sold for candy",
+            "Be locked away"
+          ],
+          "c": 0,
+          "h": "Look at the word “teach.”",
+          "why": "Mina says the tools should teach, so she wants them used for learning."
+        },
+        "3-5": {
+          "q": "Which conclusion is best supported by the riddle?",
+          "a": [
+            "The gallery already owns the tools.",
+            "Mina left everything to her nephew.",
+            "Mina values hands-on learning more than trophies."
+          ],
+          "c": 2,
+          "h": "“Lessons” and “trophies” are contrasted.",
+          "why": "The contrast implies a preference, but the note is not a formal transfer."
+        },
+        "6-8": {
+          "q": "What is the main limitation of the handwritten phrase as proof of ownership?",
+          "a": [
+            "It mentions a workshop.",
+            "It was written in pencil.",
+            "It suggests intent but does not legally identify a recipient."
+          ],
+          "c": 2,
+          "h": "Distinguish a metaphor from a named beneficiary.",
+          "why": "The phrase supplies context for motive, not documentary proof of who received the collection."
+        }
+      }
+    },
+    {
+      "id": "open-class-postcard",
+      "place": "inventor-study",
+      "icon": "📬",
+      "title": "Postcard from an Open Workshop",
+      "type": "Personal Correspondence",
+      "texts": {
+        "1-2": "The postcard says: “Thanks, Mina! We fixed our lamps at Northbridge Repair Studio.”",
+        "3-5": "Children from Northbridge Repair Studio mailed Mina a thank-you card after a free lamp-repair class. The message shows she knew and supported the studio before she retired.",
+        "6-8": "A dated postcard from Northbridge Repair Studio thanks Mina for mentoring children during free repair sessions. The message establishes a prior connection and an educational value, but friendship with an institution is not equivalent to a signed gift."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did the children fix lamps?",
+          "a": [
+            "At Northbridge Repair Studio",
+            "At the town gallery",
+            "At the loading bay"
+          ],
+          "c": 0,
+          "h": "The studio name is printed in the postcard.",
+          "why": "The postcard names Northbridge Repair Studio."
+        },
+        "3-5": {
+          "q": "What does the thank-you postcard show?",
+          "a": [
+            "The children owned Mina’s house.",
+            "Mina had helped learners at the repair studio.",
+            "The workshop received the collection that day."
+          ],
+          "c": 1,
+          "h": "Look for the past event and avoid assuming a later event.",
+          "why": "The card documents an earlier class, not a transfer of the collection."
+        },
+        "6-8": {
+          "q": "How should a careful detective use this correspondence?",
+          "a": [
+            "Dismiss it because children wrote it.",
+            "Treat it as the final legal bequest.",
+            "Use it to support Mina’s educational motives, then seek a formal deed."
+          ],
+          "c": 2,
+          "h": "A personal relationship can explain motive without confirming title.",
+          "why": "It corroborates educational purpose but cannot replace official donation records."
+        }
+      }
+    },
+    {
+      "id": "gallery-invitation",
+      "place": "gallery",
+      "icon": "🎟️",
+      "title": "Gallery Tribute Invitation",
+      "type": "Public Announcement",
+      "texts": {
+        "1-2": "The gallery card says, “See Mina’s inventions at our party!” It does not say the gallery owns them.",
+        "3-5": "The Glasswing Gallery sent invitations to a celebration honoring Mina Solis. It promised a slideshow of her inventions and led some readers to expect a permanent exhibit, though ownership was never mentioned.",
+        "6-8": "A polished Glasswing Gallery invitation advertises “an evening celebrating the genius of Mina Solis” with images of her collection. Its promotional language could imply an exhibition to a hurried reader, but it contains no acquisition terms or recipient designation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is the gallery planning?",
+          "a": [
+            "A celebration",
+            "A secret sale",
+            "A boat trip"
+          ],
+          "c": 0,
+          "h": "Find the event described in the invitation.",
+          "why": "The card invites people to a celebration of Mina’s work."
+        },
+        "3-5": {
+          "q": "What detail prevents the invitation from proving that the gallery owns the collection?",
+          "a": [
+            "Its pictures are colorful.",
+            "It talks about a celebration, not a donation agreement.",
+            "It names Mina."
+          ],
+          "c": 1,
+          "h": "Which sentence would show an actual ownership transfer?",
+          "why": "Celebrating someone’s work does not establish ownership."
+        },
+        "6-8": {
+          "q": "Which reading strategy best addresses the invitation’s ambiguity?",
+          "a": [
+            "Assume promotional language is legally binding.",
+            "Treat attractive artwork as proof.",
+            "Separate its advertised event from unsupported assumptions of acquisition."
+          ],
+          "c": 2,
+          "h": "Advertising often suggests more than it explicitly states.",
+          "why": "The text establishes an event and pictures, not a legally completed transfer."
+        }
+      }
+    },
+    {
+      "id": "unsigned-gallery-proposal",
+      "place": "gallery",
+      "icon": "📄",
+      "title": "Unsigned Exhibition Proposal",
+      "type": "Draft Agreement",
+      "texts": {
+        "1-2": "The paper says, “Possible show at Glasswing Gallery.” The signature lines are empty.",
+        "3-5": "A gallery form proposes borrowing Mina’s devices for a six-month exhibit. Both signature lines are blank, and the top is stamped “DRAFT — NOT APPROVED.” This idea was discussed but never agreed to.",
+        "6-8": "An undated draft offers a temporary six-month loan to Glasswing Gallery, not a gift. Its explicit “NOT APPROVED” stamp and absent signatures prevent investigators from treating proposed exhibition terms as evidence of a completed transaction."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What is missing from the gallery proposal?",
+          "a": [
+            "A map",
+            "The required signatures",
+            "A picture of Mina"
+          ],
+          "c": 1,
+          "h": "Look for what the empty lines should contain.",
+          "why": "The unsigned draft does not show an agreement."
+        },
+        "3-5": {
+          "q": "Which statement is justified by this form?",
+          "a": [
+            "A gallery loan was proposed but not finalized.",
+            "The gallery legally received a permanent gift.",
+            "The studio signed away its tools."
+          ],
+          "c": 0,
+          "h": "Check the stamp and the kind of proposal.",
+          "why": "The stamp and blank signatures show the temporary proposal was never approved."
+        },
+        "6-8": {
+          "q": "Why is this document weak evidence for the gallery’s claim?",
+          "a": [
+            "It was filed in a folder.",
+            "It is an unexecuted temporary-loan draft, not a signed transfer of title.",
+            "It refers to a six-month exhibition."
+          ],
+          "c": 1,
+          "h": "Does a draft transfer ownership?",
+          "why": "An unsigned loan proposal has a different legal meaning from an executed donation deed."
+        }
+      }
+    },
+    {
+      "id": "signed-donation-deed",
+      "place": "city-records",
+      "icon": "✍️",
+      "title": "Signed Donation Deed",
+      "type": "Original Legal Record",
+      "texts": {
+        "1-2": "Mina signed a paper. It gives her 24 teaching machines to Northbridge Repair Studio for free classes.",
+        "3-5": "A deed signed by Mina Solis and witnessed by city clerk Soren Vale on May 14 names Northbridge Repair Studio as the recipient of 24 demonstration machines. It says they must be used for free community repair-and-build lessons and cannot be sold.",
+        "6-8": "The original May 14 deed bears Mina Solis’s signature and registrar Soren Vale’s witness mark. It explicitly conveys title to 24 instructional mechanisms to Northbridge Repair Studio, restricted to free public repair education, with resale prohibited. Unlike metaphors, invitations, or draft exhibits, this primary source states the legal recipient and purpose."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who receives Mina’s 24 machines?",
+          "a": [
+            "Mina’s nephew",
+            "Glasswing Gallery",
+            "Northbridge Repair Studio"
+          ],
+          "c": 2,
+          "h": "The deed names one recipient.",
+          "why": "The signed deed names Northbridge Repair Studio."
+        },
+        "3-5": {
+          "q": "Which two facts does the signed deed directly establish?",
+          "a": [
+            "The studio receives the devices for free lessons and cannot resell them.",
+            "The nephew should take the machines home.",
+            "The gallery owns everything and may sell it."
+          ],
+          "c": 0,
+          "h": "Read the recipient and the restriction.",
+          "why": "The deed identifies Northbridge and its educational-use restriction."
+        },
+        "6-8": {
+          "q": "Why should this record outrank the gallery invitation in deciding legal title?",
+          "a": [
+            "It looks older.",
+            "It contains technical vocabulary.",
+            "It is an executed primary document naming a recipient and conditions."
+          ],
+          "c": 2,
+          "h": "Compare what each source actually authorizes.",
+          "why": "The signed deed is direct contemporary evidence of transfer; the invitation advertises only a celebration."
+        }
+      }
+    },
+    {
+      "id": "registration-index",
+      "place": "city-records",
+      "icon": "🗂️",
+      "title": "Registry Index Card B-12",
+      "type": "Administrative Index",
+      "texts": {
+        "1-2": "The card says “B-12: learning tools, deed filed.” B-12 is a file number.",
+        "3-5": "The town registry’s index card lists “B-12 — instructional mechanisms — executed deed in donations volume.” Some visitors mistake B-12 for a warehouse shelf, but the card is a guide to the legal record.",
+        "6-8": "Registry entry B-12 cross-references a signed donation deed in volume 7. Although a rumor calls B-12 a secret storage compartment, this archival index functions as a locator for documentation, not a record of where physical equipment went."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What does B-12 help people find?",
+          "a": [
+            "A treasure cave",
+            "A signed donation paper",
+            "A new computer game"
+          ],
+          "c": 1,
+          "h": "Look at what the card calls a deed.",
+          "why": "B-12 is a filing reference to the donation deed."
+        },
+        "3-5": {
+          "q": "What is the most reasonable interpretation of B-12?",
+          "a": [
+            "A registry reference leading to the deed",
+            "Proof the nephew owns the tools",
+            "The location code of hidden machines"
+          ],
+          "c": 0,
+          "h": "What does an index card normally point to?",
+          "why": "The entry leads readers to a recorded document, not a hiding place."
+        },
+        "6-8": {
+          "q": "What false inference does the index explicitly correct?",
+          "a": [
+            "That an archival identifier must be the physical destination of the collection.",
+            "That the machines were built for instruction.",
+            "That a signed deed matters more than gossip."
+          ],
+          "c": 0,
+          "h": "Do not confuse a document location with an object location.",
+          "why": "The administrative locator B-12 has no independent bearing on the equipment’s storage destination."
+        }
+      }
+    },
+    {
+      "id": "rumor-headline",
+      "place": "commons",
+      "icon": "📰",
+      "title": "The Town-Blog Headline",
+      "type": "Secondary Account",
+      "texts": {
+        "1-2": "A blog says “Mina gives collection to her family?” It has a question mark.",
+        "3-5": "A town blog headlines its story “Family to Inherit Mina’s Machines?” The article quotes no signed papers. Its author based the guess on seeing Mina’s nephew Eli carry a wooden key box.",
+        "6-8": "An online post titled “A Family Inheritance?” converts an observer’s sighting of Eli Solis with a key box into speculation about the collection’s ownership. The interrogative headline and absence of sourced legal records signal that this is a secondary, unverified interpretation."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Does the headline prove Eli owns the machines?",
+          "a": [
+            "Yes, because it is online.",
+            "Yes, because Eli carried a box.",
+            "No, it is only a question without proof."
+          ],
+          "c": 2,
+          "h": "Notice the question mark.",
+          "why": "The headline asks a question and cites no signed transfer."
+        },
+        "3-5": {
+          "q": "What makes the blog less reliable than a signed deed?",
+          "a": [
+            "It lacks documentary proof and draws a conclusion from a sighting.",
+            "It was written in complete sentences.",
+            "It appeared before lunchtime."
+          ],
+          "c": 0,
+          "h": "Identify the source of its claim.",
+          "why": "A sighting and speculation cannot override an original legal instrument."
+        },
+        "6-8": {
+          "q": "Which bias or reasoning flaw is most apparent in the post?",
+          "a": [
+            "It distinguishes legal title from temporary custody.",
+            "It conflates a relative’s possession of keys with ownership of donated assets.",
+            "It cites too many primary sources."
+          ],
+          "c": 1,
+          "h": "Carrying keys does not imply inheriting the objects.",
+          "why": "The reporter uses an ambiguous observation as a basis for a stronger unsupported ownership claim."
+        }
+      }
+    },
+    {
+      "id": "student-class-notes",
+      "place": "commons",
+      "icon": "📔",
+      "title": "Young Inventor’s Notebook",
+      "type": "Firsthand Class Notes",
+      "texts": {
+        "1-2": "Jun wrote, “Mina taught us to fix, not throw away.” Jun went to the free repair class.",
+        "3-5": "Jun, a student at the public repair classes, wrote that Mina preferred repairing broken radios to displaying perfect models behind glass. Jun’s notes describe the classes but do not name the legal owner of the devices.",
+        "6-8": "A student participant’s dated field notes describe Mina urging young makers to repair discarded radios and explain each step to someone else. This firsthand recollection illuminates her values, though it provides neither a signed transfer nor an inventory chain of custody."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What did Mina teach Jun to do?",
+          "a": [
+            "Only look at machines behind glass",
+            "Hide all the radios",
+            "Fix things instead of throwing them away"
+          ],
+          "c": 2,
+          "h": "Jun describes the repair class.",
+          "why": "Jun learned that objects can often be fixed."
+        },
+        "3-5": {
+          "q": "What can these class notes support?",
+          "a": [
+            "Jun legally inherited 24 devices.",
+            "Mina valued practical repair education.",
+            "The gallery had signed a deed."
+          ],
+          "c": 1,
+          "h": "The student describes lessons, not legal transfer.",
+          "why": "The notes corroborate educational philosophy but not ownership."
+        },
+        "6-8": {
+          "q": "What is the strongest appropriate use of Jun’s recollection?",
+          "a": [
+            "As proof the community voted for a recipient.",
+            "As corroboration of Mina’s motive, checked against formal records.",
+            "As the only evidence that a donation took place."
+          ],
+          "c": 1,
+          "h": "Different sources answer different questions.",
+          "why": "A firsthand account of Mina’s teaching practice supports motive, not the deed’s recipient or delivery location."
+        }
+      }
+    },
+    {
+      "id": "loading-route-tag",
+      "place": "loading-bay",
+      "icon": "🏷️",
+      "title": "Route Tag: “North Light”",
+      "type": "Transport Label",
+      "texts": {
+        "1-2": "The box tag says “North Light.” It is the nickname of the studio’s east room.",
+        "3-5": "The movers labeled one crate “North Light — East Classroom.” Glasswing Gallery also has a bright north window, so a passerby assumed the boxes were headed there. The full tag names the repair studio’s classroom code.",
+        "6-8": "The crate tag “North Light / E-Class” uses Northbridge Repair Studio’s nickname for its east classroom, where a skylight faces north. A gallery employee misread the poetic abbreviation as a gallery destination, but the complete logistical code matches the workshop manifest."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where does the full box tag point?",
+          "a": [
+            "A secret vault",
+            "Mina’s kitchen",
+            "The repair studio’s east classroom"
+          ],
+          "c": 2,
+          "h": "Use the full label, not only “North Light.”",
+          "why": "The label gives the east classroom at Northbridge Repair Studio."
+        },
+        "3-5": {
+          "q": "Why could the words “North Light” cause confusion?",
+          "a": [
+            "The crate is empty.",
+            "They are written in red.",
+            "More than one building has a bright northern window."
+          ],
+          "c": 2,
+          "h": "A nickname can resemble another place.",
+          "why": "Only the full location code resolves the nickname."
+        },
+        "6-8": {
+          "q": "What reading strategy best resolves the ambiguous route tag?",
+          "a": [
+            "Assume “North Light” is the art gallery’s formal name.",
+            "Read the complete code and corroborate it with the shipping manifest.",
+            "Discard the tag for being poetic."
+          ],
+          "c": 1,
+          "h": "A partial phrase is less precise than the full record.",
+          "why": "Context and matching transport documents identify the workshop classroom."
+        }
+      }
+    },
+    {
+      "id": "signed-intake-receipt",
+      "place": "repair-studio",
+      "icon": "📋",
+      "title": "Signed Studio Intake Receipt",
+      "type": "Original Custody Record",
+      "texts": {
+        "1-2": "At 10:42, Talia signed a paper. All 24 machines arrived in the east classroom of Northbridge Repair Studio.",
+        "3-5": "The studio’s intake receipt at 10:42 a.m. lists all 24 demonstration machines, crate marks L-1 through L-4, and Northbridge Repair Studio’s east classroom. Workshop director Talia Moss and driver Corin Ash both signed it.",
+        "6-8": "A contemporaneous 10:42 a.m. chain-of-custody receipt records 24 mechanisms, crates L-1–L-4, delivered intact to Northbridge Repair Studio, East Classroom. Signatures from receiving director Talia Moss and independent driver Corin Ash corroborate actual delivery, independently of the donation deed’s intended destination."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did the 24 machines arrive?",
+          "a": [
+            "At Mina’s house",
+            "At Northbridge Repair Studio",
+            "At the gallery"
+          ],
+          "c": 1,
+          "h": "Read the place next to the time.",
+          "why": "The signed receipt confirms their arrival in the studio’s east classroom."
+        },
+        "3-5": {
+          "q": "What makes this receipt strong evidence of delivery?",
+          "a": [
+            "It quotes an old riddle.",
+            "It has decorative lettering.",
+            "It records count, destination, time, and two signatures."
+          ],
+          "c": 2,
+          "h": "Look for verifiable details and independent confirmation.",
+          "why": "The detailed signed inventory provides direct evidence that the devices arrived at the named destination."
+        },
+        "6-8": {
+          "q": "How does the receipt complement the deed?",
+          "a": [
+            "The deed establishes intended title and purpose; the receipt verifies physical delivery.",
+            "The receipt replaces the signed deed’s legal terms.",
+            "Both are speculative announcements."
+          ],
+          "c": 0,
+          "h": "Compare authorization versus what actually occurred.",
+          "why": "Together the two primary sources establish the intended recipient, authorized purpose, and completed transfer."
+        }
+      }
+    }
+  ],
+  "interviews": [
+    {
+      "id": "eli-interview",
+      "place": "inventor-study",
+      "icon": "🧑",
+      "name": "Eli Solis",
+      "role": "Mina’s Nephew",
+      "texts": {
+        "1-2": "“I carried Mina’s key box. It held labels and old screws. The machines are not mine,” says Eli.",
+        "3-5": "Eli says he carried Mina’s wooden key box to the records office. He believed one letter might name a family heir, but the box contained filing labels and spare screws. “I was hopeful, not certain,” he admits.",
+        "6-8": "“I initially assumed Aunt Mina might leave me the mechanisms,” Eli explains, “because she trusted me with her key box.” After opening the box at the registrar’s desk, he found labels, not a will. His expectation reveals a personal stake, but his candid correction does not establish the deed’s terms."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What was in Eli’s key box?",
+          "a": [
+            "Labels and spare screws",
+            "Coins and rings",
+            "A signed family will"
+          ],
+          "c": 0,
+          "h": "Eli tells you what was in the box.",
+          "why": "The keys did not prove that he inherited any machines."
+        },
+        "3-5": {
+          "q": "Why might Eli have believed he would inherit the devices?",
+          "a": [
+            "He had a signed gift paper.",
+            "He confused being trusted with the box with being named an heir.",
+            "Mina already gave him all the crates."
+          ],
+          "c": 1,
+          "h": "Separate what he hoped from what he found.",
+          "why": "His personal expectation was based on trust and a box, not the deed."
+        },
+        "6-8": {
+          "q": "Which interpretation best accounts for Eli’s possible bias?",
+          "a": [
+            "He had a personal interest in the outcome, so his expectations require corroboration.",
+            "Being a relative automatically disqualifies his testimony.",
+            "His key box proves he received a donation."
+          ],
+          "c": 0,
+          "h": "Personal stakes can shape inference without proving dishonesty.",
+          "why": "Eli admits a hopeful assumption. Investigators still need independent primary documents."
+        }
+      }
+    },
+    {
+      "id": "marin-interview",
+      "place": "gallery",
+      "icon": "👩‍🎨",
+      "name": "Marin Pike",
+      "role": "Glasswing Gallery Curator",
+      "texts": {
+        "1-2": "“I planned a party for Mina. We did not sign a paper to take her machines,” Marin says.",
+        "3-5": "Marin organized an exhibit celebrating Mina and hoped the gallery could borrow the collection. “I drafted an agreement,” she says, “but no one signed it.” She mistook Mina’s phrase “not trophies” as a playful joke rather than a preference for active learning.",
+        "6-8": "Gallery curator Marin Pike recalls negotiating a possible six-month display and commissioning invitations before permission was finalized. Her promotional deadline made a future exhibition appear certain. She acknowledges that the unsigned loan draft transferred no title, while insisting that the phrase “not trophies” was ambiguous rather than an explicit rejection of museums."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Did Marin sign a deal to receive the machines?",
+          "a": [
+            "Yes",
+            "No",
+            "She forgot"
+          ],
+          "c": 1,
+          "h": "Marin says what happened to the draft.",
+          "why": "Marin says the proposal was not signed."
+        },
+        "3-5": {
+          "q": "Which motive might shape Marin’s interpretation?",
+          "a": [
+            "She owned all the machines already.",
+            "She wanted to move away.",
+            "She was working to secure a gallery exhibition."
+          ],
+          "c": 2,
+          "h": "Consider what Marin hoped would happen.",
+          "why": "Marin’s investment in an exhibition may color her reading of an ambiguous phrase."
+        },
+        "6-8": {
+          "q": "How does Marin’s account illustrate the limits of interpretation?",
+          "a": [
+            "It proves every promotional claim is false.",
+            "Her hoped-for exhibit may influence her reading, but legal ownership requires executed documents.",
+            "It turns the riddle into a signed contract."
+          ],
+          "c": 1,
+          "h": "Contrast interpretive preference with legal evidence.",
+          "why": "Marin is a plausible interested narrator, but a draft and an invitation are not a transfer."
+        }
+      }
+    },
+    {
+      "id": "soren-interview",
+      "place": "city-records",
+      "icon": "🧑‍💼",
+      "name": "Soren Vale",
+      "role": "City Records Registrar",
+      "texts": {
+        "1-2": "“I saw Mina sign her gift paper on May 14. It says Northbridge Repair Studio,” says Soren.",
+        "3-5": "Soren witnessed Mina sign the donation deed on May 14 and filed it under registry reference B-12. He explains that B-12 is a document number, not the secret location of the devices. Anyone can check the original deed in the records office.",
+        "6-8": "Registrar Soren Vale describes witnessing Mina’s signature on May 14 and indexing the executed instrument as B-12 in donations volume 7. He distinguishes a clerk’s testimony from the underlying primary record: his memory supports the transaction, while the preserved signed deed supplies the exact recipient and restriction."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Who did Soren see sign the gift paper?",
+          "a": [
+            "Mina",
+            "Marin",
+            "Eli"
+          ],
+          "c": 0,
+          "h": "Soren tells you the signer’s name.",
+          "why": "Mina signed the deed witnessed by Soren."
+        },
+        "3-5": {
+          "q": "What misunderstanding does Soren correct?",
+          "a": [
+            "B-12 refers to a deed file rather than a hidden room.",
+            "The gallery is the repair studio.",
+            "Every invitation is a deed."
+          ],
+          "c": 0,
+          "h": "Look for his explanation of B-12.",
+          "why": "Soren confirms B-12 is a records reference."
+        },
+        "6-8": {
+          "q": "Which source should be decisive if Soren’s memory differs from the precise written terms?",
+          "a": [
+            "A gallery invitation.",
+            "A social-media headline.",
+            "The original signed and filed deed."
+          ],
+          "c": 2,
+          "h": "Witness recollection can be checked against a contemporaneous record.",
+          "why": "The signed primary document contains the exact legally operative language."
+        }
+      }
+    },
+    {
+      "id": "corin-interview",
+      "place": "loading-bay",
+      "icon": "🚚",
+      "name": "Corin Ash",
+      "role": "Independent Delivery Driver",
+      "texts": {
+        "1-2": "“I took four crates to the east room at Northbridge Repair Studio. Talia signed for them,” says Corin.",
+        "3-5": "Corin says he loaded four crates, marked L-1 through L-4, and drove them to the studio. He did not read the donation deed. “The receiving sheet said East Classroom,” he recalls, “and Talia counted the 24 machines before signing.”",
+        "6-8": "Independent driver Corin Ash confirms moving crates L-1 through L-4 from the Old Mill Loading Bay to Northbridge’s east classroom. He distinguishes his direct observation of delivery from the legal reason for the transfer, which he did not personally verify. His testimony can be checked against the jointly signed 10:42 intake receipt."
+      },
+      "questions": {
+        "1-2": {
+          "q": "Where did Corin deliver the crates?",
+          "a": [
+            "A secret tunnel",
+            "Northbridge Repair Studio",
+            "Glasswing Gallery"
+          ],
+          "c": 1,
+          "h": "Corin names the receiving place.",
+          "why": "Corin delivered the crates to the studio."
+        },
+        "3-5": {
+          "q": "What can Corin verify directly?",
+          "a": [
+            "The inventor’s private thoughts.",
+            "Who owns the gallery.",
+            "Where he delivered the crates and who signed for them."
+          ],
+          "c": 2,
+          "h": "Corin was present for transport, not every earlier decision.",
+          "why": "His firsthand knowledge concerns delivery rather than Mina’s internal motives."
+        },
+        "6-8": {
+          "q": "What is the best way to evaluate Corin’s account?",
+          "a": [
+            "Compare his delivery description with the signed receipt while checking motive in the deed.",
+            "Reject it because he was paid to drive.",
+            "Assume his testimony proves both legal title and motive."
+          ],
+          "c": 0,
+          "h": "Different records answer different parts of the mystery.",
+          "why": "An independent signed delivery record corroborates location; the deed establishes title and authorized purpose."
+        }
+      }
+    },
+    {
+      "id": "talia-interview",
+      "place": "repair-studio",
+      "icon": "👩‍🔧",
+      "name": "Talia Moss",
+      "role": "Repair Studio Director",
+      "texts": {
+        "1-2": "“The machines are here for everyone to learn,” Talia says. “Students will fix things in free classes.”",
+        "3-5": "Talia says Northbridge Repair Studio received the machines for free lessons. Her class list includes children and adults, and her intake record matches the driver’s count. “We are not selling them,” she adds, “because Mina asked us to keep teaching.”",
+        "6-8": "Studio director Talia Moss anticipates using the mechanisms in no-cost public classes, consistent with the deed’s restrictions. Because the workshop benefits from the gift, her interpretation deserves scrutiny. However, a co-signed delivery receipt and the original donation deed independently support the recipient, location, and stated educational purpose."
+      },
+      "questions": {
+        "1-2": {
+          "q": "What will students do with Mina’s machines?",
+          "a": [
+            "Sell them",
+            "Hide them from the town",
+            "Use them to learn repairs"
+          ],
+          "c": 2,
+          "h": "Talia describes the classes.",
+          "why": "Talia plans free hands-on repair lessons."
+        },
+        "3-5": {
+          "q": "What evidence strengthens Talia’s account despite her interest in the donation?",
+          "a": [
+            "Her friendly smile",
+            "The signed deed and independent delivery receipt",
+            "Her job title alone"
+          ],
+          "c": 1,
+          "h": "Find records made by more than one person.",
+          "why": "Both primary documents corroborate her claims."
+        },
+        "6-8": {
+          "q": "Which conclusion best balances Talia’s stake and the documentary record?",
+          "a": [
+            "She benefits, but the deed and co-signed receipt independently corroborate her account.",
+            "Because she benefits, her testimony must be false.",
+            "Her testimony alone overrides any signed records."
+          ],
+          "c": 0,
+          "h": "A potential interest is not automatically a contradiction.",
+          "why": "Reliable reasoning combines possible bias with corroboration rather than accepting or rejecting a witness reflexively."
+        }
+      }
+    }
+  ],
+  "case": {
+    "id": "hidden-inheritance",
+    "title": "The Hidden Inheritance",
+    "subtitle": "CASE FILE 010 • THE LAST INSTRUCTION",
+    "goal": "Discover the intended beneficiary of Mina Solis’s collection, where the devices actually arrived, and why she gave them away. Compare beneficiaries’ interpretations with original signed records; distinguish ambiguous clues from primary-source proof.",
+    "brief": {
+      "1-2": "Mina Solis built 24 clever machines. She retired and wants to give them away. Her nephew, an art gallery, and a repair studio all think they may get them. Follow notes and delivery papers to find who receives the machines, where they went, and why.",
+      "3-5": "Retired inventor Mina Solis has promised to donate a collection of 24 teaching machines to help her town. Her nephew once carried a mysterious key box, Glasswing Gallery printed invitations, and Mina left a riddle about “broken things becoming lessons.” Each person reads her words differently. Students must follow the paperwork from her study through the city registry and delivery route, then use the strongest records to name the real recipient, final location, and educational purpose.",
+      "6-8": "In the fictional town of Larkhaven, retired inventor Mina Solis’s carefully assembled collection of 24 instructional mechanisms has become the subject of competing expectations. A nephew mistakes a key-box errand for evidence of inheritance; a gallery curator treats an unsigned exhibition proposal as a likely acquisition; townspeople turn the inventor’s metaphoric instruction about “lessons, not trophies” into conflicting claims. Rather than selecting the most sympathetic beneficiary, reconstruct the formal donation and subsequent chain of custody from archival originals, promotional documents, private notes, and firsthand testimony. Determine who was legally named, where the devices were actually delivered, and why resale was prohibited."
+    },
+    "theoryLabels": {
+      "who": "Which organization is the named recipient of Mina’s collection?",
+      "where": "Where were the 24 devices confirmed delivered?",
+      "why": "What purpose did Mina legally specify for the donation?"
+    },
+    "theoryChoices": {
+      "who": [
+        {
+          "id": "eli",
+          "label": "Eli Solis — Mina’s nephew and family heir"
+        },
+        {
+          "id": "glasswing",
+          "label": "Glasswing Gallery — proposed exhibition host"
+        },
+        {
+          "id": "northbridge",
+          "label": "Northbridge Repair Studio — community workshop"
+        },
+        {
+          "id": "city-archive",
+          "label": "Larkhaven City Archives — filing office"
+        },
+        {
+          "id": "private-collector",
+          "label": "A private collector who offered to buy the models"
+        }
+      ],
+      "where": [
+        {
+          "id": "inventor-study",
+          "label": "Mina’s workshop study, still in storage"
+        },
+        {
+          "id": "gallery",
+          "label": "Glasswing Gallery, north-window display hall"
+        },
+        {
+          "id": "northbridge-east",
+          "label": "Northbridge Repair Studio, east classroom"
+        },
+        {
+          "id": "loading-bay",
+          "label": "Old Mill Loading Bay, awaiting delivery"
+        },
+        {
+          "id": "city-records",
+          "label": "Larkhaven records office, file B-12"
+        }
+      ],
+      "why": [
+        {
+          "id": "resale",
+          "label": "To let an heir sell the mechanisms for profit"
+        },
+        {
+          "id": "exhibition",
+          "label": "To make an exclusive gallery show with paid admission"
+        },
+        {
+          "id": "free-education",
+          "label": "To provide free community repair-and-build lessons, without resale"
+        },
+        {
+          "id": "hidden-prize",
+          "label": "To stage an inheritance contest with a secret cash prize"
+        },
+        {
+          "id": "private-storage",
+          "label": "To preserve the mechanisms where nobody can touch them"
+        }
+      ]
+    },
+    "who": "northbridge",
+    "where": "northbridge-east",
+    "why": "free-education",
+    "proofs": [
+      "signed-donation-deed",
+      "signed-intake-receipt"
+    ],
+    "feedback": {
+      "who": "A key box, publicity invitation, or draft exhibit can create hopes without transferring ownership. Inspect Mina’s ORIGINAL signed donation deed at Larkhaven Records Office: it names the recipient and conditions explicitly.",
+      "where": "The phrase “North Light” and file number B-12 are easy to misinterpret. Find the 10:42 signed STUDIO INTAKE receipt; it records the actual delivery room, inventory count, and two witnesses.",
+      "why": "The margin riddle suggests Mina’s values, but it does not state legal conditions. Re-read the executed deed: what must the new owner do for the community, and what is expressly prohibited?",
+      "proofs": "Select BOTH the Signed Donation Deed and the Signed Studio Intake Receipt. The first establishes recipient and educational purpose; the second independently verifies delivery of all 24 machines to the east classroom."
+    },
+    "resolution": {
+      "summary": "Mina Solis gave all 24 teaching mechanisms to Northbridge Repair Studio for free public repair lessons; the devices arrived intact in its east classroom at 10:42 a.m.",
+      "outcome": "There was no secret contest and no hidden family inheritance. Mina retired, but she did not want her inventions locked behind glass or sold to the highest bidder. Her playful riddle — 'where broken things become lessons, not trophies' — described her educational values, not a legal recipient. Eli Solis had only transported a box of filing labels. Glasswing Gallery had prepared an unsigned proposal for a temporary show, then mistakenly promoted it as if an exhibition were certain. A blogger inferred ownership from a family errand and a question-mark headline. The true primary evidence was already in public records: Mina's May 14 witnessed donation deed named Northbridge Repair Studio and required free community instruction, with resale prohibited. The mover's full route tag clarified that 'North Light' was the studio's east classroom, not the gallery's north window, and the independent 10:42 intake record proved that all 24 mechanisms arrived. Eli and Marin each acknowledge that their early expectations were unsupported; Marin offers to display photographs instead, while Talia Moss organizes a free open-house repair day. Students learn that motives can explain a choice, but signed primary sources and corroborated custody records decide the factual question.",
+      "timeline": [
+        {
+          "time": "April 22 • afternoon",
+          "event": "Mina visits a free Northbridge repair lesson; student Jun records her preference for teaching through fixing."
+        },
+        {
+          "time": "May 9 • 2:00 p.m.",
+          "event": "Marin drafts an optional six-month gallery loan proposal; no one signs it."
+        },
+        {
+          "time": "May 12 • 4:30 p.m.",
+          "event": "Glasswing sends invitations for a tribute slideshow without naming an owner."
+        },
+        {
+          "time": "May 14 • 9:00 a.m.",
+          "event": "Mina signs the donation deed before registrar Soren, giving 24 mechanisms to Northbridge Repair Studio for free lessons, with resale prohibited."
+        },
+        {
+          "time": "May 14 • 9:20 a.m.",
+          "event": "Registrar Soren indexes the already-witnessed, signed deed as B-12 in donations volume 7."
+        },
+        {
+          "time": "May 15 • 8:50 a.m.",
+          "event": "Eli brings Mina’s key box of filing labels to the registry and realizes it contains no family bequest."
+        },
+        {
+          "time": "May 15 • 9:30 a.m.",
+          "event": "A blog speculates about a family inheritance after observing Eli carrying the key box."
+        },
+        {
+          "time": "May 16 • 10:05 a.m.",
+          "event": "Corin loads crates L-1 through L-4 at Old Mill and checks the full “North Light / E-Class” delivery code."
+        },
+        {
+          "time": "May 16 • 10:42 a.m.",
+          "event": "Corin and Talia sign an intake receipt verifying all 24 machines in Northbridge’s east classroom."
+        },
+        {
+          "time": "May 16 • 3:30 p.m.",
+          "event": "A public ceremony clarifies the studio’s free teaching purpose; the gallery agrees to exhibit photographs instead of owning the devices."
+        }
+      ]
+    }
+  }
+}

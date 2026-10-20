@@ -106,9 +106,9 @@
       "number": "010",
       "category": "Puzzle Mystery",
       "icon": "🗝️",
-      "summary": "A retired inventor’s puzzling instructions hide the destination of a community collection.",
+      "summary": "A retired inventor’s cryptic bequest pits family expectations against gallery publicity. Follow signed records and delivery receipts to discover the recipient of 24 teaching machines.",
       "grades": "1–8 (focus: 6–8)",
-      "status": "planned",
+      "status": "ready",
       "file": "cases/hidden-inheritance.json"
     },
     {
